@@ -4,6 +4,37 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
+async function proxyMiniBlastToBackend(query: string) {
+  const backendUrl = process.env.CUTICULOME_TOOLS_BACKEND_URL;
+
+  if (!backendUrl) {
+    return null;
+  }
+
+  const response = await fetch(`${backendUrl.replace(/\/$/, "")}/miniblast`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query,
+    }),
+  });
+
+  const payload = await response.json();
+
+  if (!response.ok) {
+    const message =
+      typeof payload.detail === "string"
+        ? payload.detail
+        : payload.error ?? "miniBLAST backend failed.";
+
+    throw new Error(message);
+  }
+
+  return payload;
+}
+
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as {
@@ -11,6 +42,13 @@ export async function POST(request: Request) {
     };
 
     const query = body.query ?? "";
+    const backendResult = await proxyMiniBlastToBackend(query);
+
+    if (backendResult) {
+      return Response.json(backendResult, {
+        status: 200,
+      });
+    }
 
     const result = await runMiniBlast(query);
 
