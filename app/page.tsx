@@ -6,19 +6,19 @@ const mainSections = [
   {
     title: "Browse the database",
     description:
-      "Search curated arthropod cuticular proteins by species, family, accession, and standardized nomenclature.",
+      "Search curated arthropod cuticular proteins by species, family, and standardized nomenclature.",
     href: "/browse",
   },
   {
     title: "Protein families",
     description:
-      "Explore cuticular protein families, conserved domains, HMM-supported classifications, and literature references.",
+      "Explore cuticular protein families, conserved domains, and HMM-supported classifications.",
     href: "/families",
   },
   {
     title: "Species",
     description:
-      "View species-specific protein sets, taxonomy, available annotations, and downloadable FASTA files.",
+      "View species-specific protein sets, available annotations, and downloadable FASTA files.",
     href: "/species",
   },
   {

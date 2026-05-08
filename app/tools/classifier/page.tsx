@@ -8,8 +8,8 @@ export default function ClassifierPage() {
   return (
     <SitePage
       eyebrow="Protein classification"
-      title="Cuticular Classifier"
-      description="Classify candidate proteins into cuticular protein families using the current Cuticulome.db HMM classifier models."
+      title="Cuticular Protein Classifier"
+      description="Classify candidate proteins into cuticular protein families using the current Cuticulome.org HMM classifier models."
     >
       <CuticularClassifierTool />
     </SitePage>

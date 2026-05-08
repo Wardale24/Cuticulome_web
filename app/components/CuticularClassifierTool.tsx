@@ -99,7 +99,7 @@ export default function CuticularClassifierTool() {
           <div>
             <label
               htmlFor="classifier-sequence"
-              className="text-sm font-semibold text-[#2a2118]"
+              className="block px-4 text-sm font-semibold text-[#2a2118]"
             >
               Paste protein sequence
             </label>
@@ -109,7 +109,7 @@ export default function CuticularClassifierTool() {
               value={sequenceText}
               onChange={(event) => setSequenceText(event.target.value)}
               placeholder={">query\nMKKLLVVAAALVAAQASA..."}
-              className="mt-2 min-h-[260px] w-full rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 font-mono text-sm leading-6 text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
+              className="mt-2 min-h-[260px] w-full resize-none rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 font-mono text-sm leading-6 text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
             />
 
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">
@@ -137,40 +137,28 @@ export default function CuticularClassifierTool() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6">
+          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6 lg:mt-7">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
               How it works
             </p>
 
             <h2 className="mt-3 text-2xl font-semibold text-[#2a2118]">
-              Classify a protein using Cuticulome.db HMMs
+              Classify proteins using Cuticulome.org HMMs
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
               The classifier compares a submitted amino acid sequence against
-              the current Cuticulome.db HMM models and reports the best
+              the current Cuticulome.org HMM models and reports the best
               supported cuticular protein family classification.
             </p>
 
-            <div className="mt-6 grid gap-3">
-              <div className="rounded-2xl border border-[#d8cbb7] bg-[#fffdf8] p-4">
-                <p className="text-sm font-semibold text-[#2a2118]">
-                  Accepted input
-                </p>
-                <p className="mt-1 text-sm text-[#6a5d4d]">
-                  Plain amino acid sequence or single-entry FASTA.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#d8cbb7] bg-[#fffdf8] p-4">
-                <p className="text-sm font-semibold text-[#2a2118]">
-                  Output
-                </p>
-                <p className="mt-1 text-sm text-[#6a5d4d]">
-                  Prediction, confidence, interpretation, best HMM hit, and all
-                  detected HMM hits.
-                </p>
-              </div>
+            <div className="mt-6 rounded-2xl border border-[#d8cbb7] bg-[#fffdf8] p-4">
+              <p className="text-sm font-semibold text-[#2a2118]">
+                Accepted input
+              </p>
+              <p className="mt-1 text-sm text-[#6a5d4d]">
+                Plain amino acid sequence or single-entry FASTA.
+              </p>
             </div>
           </div>
         </div>

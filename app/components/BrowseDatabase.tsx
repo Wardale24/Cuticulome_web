@@ -1,23 +1,92 @@
 import Link from "next/link";
 import { getBrowseData } from "../lib/cuticulome-db";
+import { getDatabaseStatistics } from "../lib/statistics";
+
+const PAGE_SIZE = 100;
 
 type BrowseDatabaseProps = {
   searchTerm: string;
   selectedFamily: string;
   selectedSpecies: string;
+  currentPage: number;
 };
+
+function createPageHref({
+  page,
+  searchTerm,
+  selectedFamily,
+  selectedSpecies,
+}: {
+  page: number;
+  searchTerm: string;
+  selectedFamily: string;
+  selectedSpecies: string;
+}) {
+  const params = new URLSearchParams();
+
+  if (searchTerm.trim().length > 0) {
+    params.set("q", searchTerm.trim());
+  }
+
+  if (selectedFamily !== "All families") {
+    params.set("family", selectedFamily);
+  }
+
+  if (selectedSpecies !== "All species") {
+    params.set("species", selectedSpecies);
+  }
+
+  if (page > 1) {
+    params.set("page", String(page));
+  }
+
+  const queryString = params.toString();
+
+  return queryString.length > 0 ? `/browse?${queryString}` : "/browse";
+}
+
+function getVisiblePageNumbers(currentPage: number, totalPages: number) {
+  const pages = new Set<number>();
+
+  pages.add(1);
+  pages.add(totalPages);
+
+  for (let page = currentPage - 2; page <= currentPage + 2; page += 1) {
+    if (page >= 1 && page <= totalPages) {
+      pages.add(page);
+    }
+  }
+
+  return Array.from(pages).sort((a, b) => a - b);
+}
 
 export default function BrowseDatabase({
   searchTerm,
   selectedFamily,
   selectedSpecies,
+  currentPage,
 }: BrowseDatabaseProps) {
-  const { records, families, species, totalRecords, totalFamilies, totalSpecies } =
+  const { records, families, species, totalRecords, totalFamilies } =
     getBrowseData({
       searchTerm,
       selectedFamily,
       selectedSpecies,
     });
+
+  const statistics = getDatabaseStatistics();
+
+  const filteredRecordCount = records.length;
+  const totalPages = Math.max(Math.ceil(filteredRecordCount / PAGE_SIZE), 1);
+  const safeCurrentPage = Math.min(Math.max(currentPage, 1), totalPages);
+  const startIndex = (safeCurrentPage - 1) * PAGE_SIZE;
+  const endIndex = startIndex + PAGE_SIZE;
+  const paginatedRecords = records.slice(startIndex, endIndex);
+  const visiblePageNumbers = getVisiblePageNumbers(safeCurrentPage, totalPages);
+
+  const firstShownRecord =
+    filteredRecordCount === 0 ? 0 : startIndex + 1;
+
+  const lastShownRecord = Math.min(endIndex, filteredRecordCount);
 
   return (
     <div className="space-y-8">
@@ -39,7 +108,7 @@ export default function BrowseDatabase({
               name="q"
               type="text"
               defaultValue={searchTerm}
-              placeholder="Search by name, accession, species, family, or length..."
+              placeholder="Search by name, accession, species, or family..."
               className="mt-2 w-full rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 text-sm text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
             />
           </div>
@@ -106,30 +175,30 @@ export default function BrowseDatabase({
         <div className="mt-6 grid gap-4 md:grid-cols-4">
           <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
             <p className="text-3xl font-semibold text-[#2a2118]">
-              {records.length}
+              {filteredRecordCount.toLocaleString()}
             </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Displayed records</p>
+            <p className="mt-1 text-sm text-[#6a5d4d]">Filtered records</p>
           </div>
 
           <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
             <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalRecords}
+              {totalRecords.toLocaleString()}
             </p>
             <p className="mt-1 text-sm text-[#6a5d4d]">Total proteins</p>
           </div>
 
           <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
             <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalFamilies}
+              {statistics.functionDefinedProteins.toLocaleString()}
             </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Families detected</p>
+            <p className="mt-1 text-sm text-[#6a5d4d]">Function-defined</p>
           </div>
 
           <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
             <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalSpecies}
+              {totalFamilies.toLocaleString()}
             </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Species represented</p>
+            <p className="mt-1 text-sm text-[#6a5d4d]">Protein families</p>
           </div>
         </div>
       </form>
@@ -142,7 +211,9 @@ export default function BrowseDatabase({
                 Protein records
               </h2>
               <p className="mt-1 text-sm text-[#6a5d4d]">
-                Results are loaded directly from cuticulome.db.
+                Showing {firstShownRecord.toLocaleString()}–
+                {lastShownRecord.toLocaleString()} of{" "}
+                {filteredRecordCount.toLocaleString()} matching records.
               </p>
             </div>
 
@@ -170,7 +241,7 @@ export default function BrowseDatabase({
             </thead>
 
             <tbody>
-              {records.map((record) => (
+              {paginatedRecords.map((record) => (
                 <tr
                   key={`${record.id}-${record.accession}`}
                   className="border-t border-[#e5d9c6] bg-[#fffdf8] transition hover:bg-[#fff7ea]"
@@ -225,7 +296,7 @@ export default function BrowseDatabase({
           </table>
         </div>
 
-        {records.length === 0 && (
+        {paginatedRecords.length === 0 && (
           <div className="px-6 py-12 text-center">
             <p className="text-sm font-semibold text-[#2a2118]">
               No matching records found.
@@ -233,6 +304,81 @@ export default function BrowseDatabase({
             <p className="mt-2 text-sm text-[#6a5d4d]">
               Try changing the search term, family filter, or species filter.
             </p>
+          </div>
+        )}
+
+        {filteredRecordCount > PAGE_SIZE && (
+          <div className="border-t border-[#d8cbb7] bg-[#fffaf1] px-6 py-5">
+            <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-center">
+              <p className="text-sm text-[#6a5d4d]">
+                Page {safeCurrentPage.toLocaleString()} of{" "}
+                {totalPages.toLocaleString()}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                <Link
+                  href={createPageHref({
+                    page: Math.max(safeCurrentPage - 1, 1),
+                    searchTerm,
+                    selectedFamily,
+                    selectedSpecies,
+                  })}
+                  className={
+                    safeCurrentPage === 1
+                      ? "pointer-events-none rounded-full border border-[#d8cbb7] px-4 py-2 text-sm font-semibold text-[#b8aa96] opacity-60"
+                      : "rounded-full border border-[#c8b89d] px-4 py-2 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+                  }
+                >
+                  Previous
+                </Link>
+
+                {visiblePageNumbers.map((page, index) => {
+                  const previousPage = visiblePageNumbers[index - 1];
+                  const shouldShowEllipsis =
+                    previousPage !== undefined && page - previousPage > 1;
+
+                  return (
+                    <span key={page} className="flex items-center gap-2">
+                      {shouldShowEllipsis && (
+                        <span className="px-1 text-sm text-[#6a5d4d]">…</span>
+                      )}
+
+                      <Link
+                        href={createPageHref({
+                          page,
+                          searchTerm,
+                          selectedFamily,
+                          selectedSpecies,
+                        })}
+                        className={
+                          page === safeCurrentPage
+                            ? "rounded-full bg-[#2a2118] px-4 py-2 text-sm font-semibold text-white"
+                            : "rounded-full border border-[#c8b89d] px-4 py-2 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+                        }
+                      >
+                        {page}
+                      </Link>
+                    </span>
+                  );
+                })}
+
+                <Link
+                  href={createPageHref({
+                    page: Math.min(safeCurrentPage + 1, totalPages),
+                    searchTerm,
+                    selectedFamily,
+                    selectedSpecies,
+                  })}
+                  className={
+                    safeCurrentPage === totalPages
+                      ? "pointer-events-none rounded-full border border-[#d8cbb7] px-4 py-2 text-sm font-semibold text-[#b8aa96] opacity-60"
+                      : "rounded-full border border-[#c8b89d] px-4 py-2 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+                  }
+                >
+                  Next
+                </Link>
+              </div>
+            </div>
           </div>
         )}
       </div>

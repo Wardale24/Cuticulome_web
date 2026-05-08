@@ -9,7 +9,7 @@ export default function MiniBlastPage() {
     <SitePage
       eyebrow="Sequence search"
       title="miniBLAST"
-      description="Compare a protein sequence against curated Cuticulome.db proteins using a lightweight BLASTP search."
+      description="Compare a protein sequence against curated Cuticulome.org proteins using a lightweight BLASTP search."
     >
       <MiniBlastTool />
     </SitePage>

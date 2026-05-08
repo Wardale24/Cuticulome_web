@@ -8,7 +8,6 @@ type SitePageProps = {
 };
 
 export default function SitePage({
-  eyebrow,
   title,
   description,
   children,
@@ -19,10 +18,6 @@ export default function SitePage({
 
       <section className="border-b border-[#d8cbb7] bg-[#fffaf1]">
         <div className="mx-auto max-w-7xl px-6 py-16">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#8c3f2b]">
-            {eyebrow}
-          </p>
-
           <h1 className="max-w-4xl text-5xl font-semibold leading-tight tracking-tight text-[#2a2118] md:text-6xl">
             {title}
           </h1>
@@ -46,9 +41,8 @@ export default function SitePage({
       </section>
 
       <footer className="border-t border-[#d8cbb7] bg-[#fffaf1]">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-6 py-8 text-sm text-[#6a5d4d] md:flex-row">
-          <p>© Cuticulome.db</p>
-          <p>Curated arthropod cuticular protein database</p>
+        <div className="mx-auto flex max-w-7xl px-6 py-8 text-sm text-[#6a5d4d]">
+          <p>© Cuticulome.org</p>
         </div>
       </footer>
     </main>

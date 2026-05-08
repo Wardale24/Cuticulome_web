@@ -41,7 +41,7 @@ export default function DownloadsBrowser() {
             </h2>
             <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6a5d4d]">
               Download a FASTA file containing all protein sequences currently
-              available in Cuticulome.db.
+              available in Cuticulome.org.
             </p>
 
             <Link

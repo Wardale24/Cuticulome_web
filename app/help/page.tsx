@@ -79,8 +79,8 @@ export default function HelpPage() {
   return (
     <SitePage
       eyebrow="Documentation"
-      title="Understanding Cuticulome.db"
-      description="Learn how to browse the database, interpret protein records, use miniBLAST, run the Cuticular Classifier, understand standardized nomenclature, and contribute new annotations."
+      title="Understanding Cuticulome.org"
+      description="Learn how to browse the database, interpret protein records, use miniBLAST, run the Cuticular Protein Classifier, understand standardized nomenclature, and contribute new annotations."
     >
       <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
         <aside className="lg:sticky lg:top-8 lg:self-start">
@@ -103,7 +103,7 @@ export default function HelpPage() {
                 miniBLAST
               </a>
               <a href="#classifier" className="hover:text-[#2a2118]">
-                Cuticular Classifier
+                Cuticular Protein Classifier
               </a>
               <a href="#nomenclature" className="hover:text-[#2a2118]">
                 Nomenclature
@@ -121,14 +121,14 @@ export default function HelpPage() {
         <div className="space-y-8">
           <HelpSection id="overview" title="Overview">
             <p>
-              <strong className="text-[#2a2118]">Cuticulome.db</strong>{" "}
+              <strong className="text-[#2a2118]">Cuticulome.org</strong>{" "}
               compiles verified information on function-defined arthropod
               cuticular proteins, including protein family, tissue specificity,
               and identified or inferred functions.
             </p>
 
             <p>
-              The goal of Cuticulome.db is to centralize cuticular protein
+              The goal of Cuticulome.org is to centralize cuticular protein
               information across arthropod species to facilitate downstream
               comparative studies, sequence searches, functional annotation, and
               broader cuticle biology analyses.
@@ -229,7 +229,7 @@ export default function HelpPage() {
               <p>
                 The Species and Families pages provide higher-level summaries,
                 allowing users to inspect which species and protein families are
-                currently represented in Cuticulome.db.
+                currently represented in Cuticulome.org.
               </p>
             </div>
 
@@ -267,7 +267,7 @@ export default function HelpPage() {
             <p>
               The <strong className="text-[#2a2118]">miniBLAST</strong> tool
               allows users to compare a protein sequence against all protein
-              sequences currently available in Cuticulome.db.
+              sequences currently available in Cuticulome.org.
             </p>
 
             <p>
@@ -288,12 +288,12 @@ export default function HelpPage() {
                 {
                   label: "Status",
                   description:
-                    "Indicates whether the matching protein is function-defined in Cuticulome.db.",
+                    "Indicates whether the matching protein is function-defined in Cuticulome.org.",
                 },
                 {
                   label: "Protein",
                   description:
-                    "Standardized Cuticulome.db protein name, or original protein name if no standardized name is available.",
+                    "Standardized Cuticulome.org protein name, or original protein name if no standardized name is available.",
                 },
                 {
                   label: "% Identity",
@@ -330,20 +330,20 @@ export default function HelpPage() {
             <ActionLink href="/tools/miniblast">Open miniBLAST</ActionLink>
           </HelpSection>
 
-          <HelpSection id="classifier" title="Cuticular Classifier">
+          <HelpSection id="classifier" title="Cuticular Protein Classifier">
             <p>
               The{" "}
               <strong className="text-[#2a2118]">
-                Cuticular Classifier
+                Cuticular Protein Classifier
               </strong>{" "}
               allows users to query a protein sequence and assess whether it
               resembles one of the defined cuticular protein families
-              represented in Cuticulome.db.
+              represented in Cuticulome.org.
             </p>
 
             <p>
               This tool uses the family-specific profile HMMs developed for
-              Cuticulome.db, together with supporting conserved-sequence
+              Cuticulome.org, together with supporting conserved-sequence
               features where relevant. These models are built directly from
               curated cuticular protein sequences in the database and are
               intended to help classify new or unannotated protein sequences.
@@ -413,7 +413,7 @@ export default function HelpPage() {
             </div>
 
             <ActionLink href="/tools/classifier">
-              Open Cuticular Classifier
+              Open Cuticular Protein Classifier
             </ActionLink>
           </HelpSection>
 
@@ -456,7 +456,7 @@ export default function HelpPage() {
 
               <p className="mt-2">
                 To improve consistency and database searchability,
-                Cuticulome.db standardizes protein names using the following
+                Cuticulome.org standardizes protein names using the following
                 format:
               </p>
 
@@ -576,7 +576,7 @@ export default function HelpPage() {
 
               <ul className="mt-2 list-disc space-y-2 pl-6">
                 <li>
-                  Cuticulome.db is not attempting to officially rename proteins.
+                  Cuticulome.org is not attempting to officially rename proteins.
                   The standardization applies only within the database for
                   consistency and searchability.
                 </li>
@@ -585,7 +585,7 @@ export default function HelpPage() {
                 </li>
                 <li>
                   Users can search for proteins using standardized
-                  Cuticulome.db names or common alternatives.
+                  Cuticulome.org names or common alternatives.
                 </li>
               </ul>
             </div>
@@ -599,7 +599,7 @@ export default function HelpPage() {
             </p>
 
             <p>
-              All submissions are reviewed by the Cuticulome.db curators before
+              All submissions are reviewed by the Cuticulome.org curators before
               being added to ensure data quality, consistency, and appropriate
               documentation.
             </p>
@@ -607,7 +607,7 @@ export default function HelpPage() {
             <p>
               For large batches of newly identified proteins, species-level
               datasets, or functional annotations, please contact the
-              Cuticulome.db team directly rather than submitting entries one by
+              Cuticulome.org team directly rather than submitting entries one by
               one.
             </p>
 
@@ -625,7 +625,7 @@ export default function HelpPage() {
           <HelpSection id="contact" title="Questions or feedback">
             <p>
               For questions, suggestions, corrections, collaborations, or to
-              report issues with Cuticulome.db, please visit the contact page.
+              report issues with Cuticulome.org, please visit the contact page.
             </p>
 
             <ActionLink href="/contact">Contact us</ActionLink>
@@ -633,7 +633,7 @@ export default function HelpPage() {
 
           <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-5 text-sm text-[#6a5d4d]">
             <p>
-              <strong className="text-[#2a2118]">Cuticulome.db v0.1</strong> ·
+              <strong className="text-[#2a2118]">Cuticulome.org v0.1</strong> ·
               Latest update: 2026 Q2
             </p>
           </div>

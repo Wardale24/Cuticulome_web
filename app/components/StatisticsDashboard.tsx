@@ -61,7 +61,7 @@ export default function StatisticsDashboard() {
         <StatCard
           label="Proteins"
           value={statistics.totalProteins.toLocaleString()}
-          detail="Total protein records in Cuticulome.db"
+          detail="Total protein records in Cuticulome.org"
         />
 
         <StatCard
@@ -241,7 +241,7 @@ export default function StatisticsDashboard() {
         </p>
 
         <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
-          Statistics are generated directly from the local Cuticulome.db SQLite
+          Statistics are generated directly from the local Cuticulome.org SQLite
           database. Family counts use curated protein-family assignments stored
           in the database, and function-defined coverage is based on whether a
           protein has one or more entries in the curated functional annotation

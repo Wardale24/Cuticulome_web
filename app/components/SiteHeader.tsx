@@ -43,7 +43,7 @@ export default function SiteHeader() {
             className="text-xl font-semibold tracking-tight text-[#2a2118]"
             onClick={() => setIsMenuOpen(false)}
           >
-            Cuticulome.db
+            Cuticulome.org
           </Link>
 
           <nav className="hidden items-center gap-4 text-xs font-semibold text-[#6a5d4d] lg:flex">
