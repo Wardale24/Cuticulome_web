@@ -1,0 +1,11 @@
+protein_id	protein_name	species_code	species_name	current_family	CPCFC_score	CPCFC_evalue
+Bdo_CPCFC	CPCFC	Bdo	Bactrocera dorsalis	CPCFC	230.6	1.7e-69
+Cfe_CL5048.Contig2-CPCFC	CL5048.Contig2-CPCFC	Cfe	Cryptolestes ferrugineus	CPCFC	223.6	2.4e-67
+Foc_CPCFC1	CPCFC1	Foc	Frankliniella occidentalis	CPCFC	205.8	7.4e-62
+Cfe_Unigene17315-CPCFC	Unigene17315-CPCFC	Cfe	Cryptolestes ferrugineus	CPCFC	198.1	1.7e-59
+Foc_CPCFC2	CPCFC2	Foc	Frankliniella occidentalis	CPCFC	133.7	1.1e-39
+Lmi_CPFL2	CPFL2	Lmi	Locusta migratoria	CPFL	70.6	2.7e-20
+Bmo_CPH1	CPH1	Bmo	Bombyx mori	CPH	41.5	2.4e-11
+Aga_CPR77	CPR77	Aga	Anopheles gambiae	CPR RR-1	17.9	0.00043
+Nlu_Cpr54	Cpr54	Nlu	Nilaparvata lugens	CPR RR-2	16.2	0.0015
+Bmo_CPR96	CPR96	Bmo	Bombyx mori	CPR RR-2	14.2	0.0062

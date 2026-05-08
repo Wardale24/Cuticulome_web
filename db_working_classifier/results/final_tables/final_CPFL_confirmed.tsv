@@ -1,0 +1,16 @@
+protein_id	protein_name	species_code	species_name	current_family	CPF_score	CPF_evalue	CPFL_score	CPFL_evalue	delta_CPFL_minus_CPF	higher_score_prediction	CPFL_confident	classifier_prediction	confidence	status	feature_validation	CPF_44_motif_count	CPF_Cterminal_ASA	CPFL_Cterminal_HSA_or_ASA	last_10aa
+Aga_CPFL1	CPFL1	Aga	Anopheles gambiae	CPFL	24.8	2.8e-06	140.3	1.4e-41	115.5	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	yes	yes	YADNAAHYAW
+Aga_CPFL2	CPFL2	Aga	Anopheles gambiae	CPFL	0.0		195.5	1.7e-58	195.5	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AYGGYGAHGW
+Aga_CPFL3	CPFL3	Aga	Anopheles gambiae	CPFL	0.0		204.2	3.7e-61	204.2	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AYGGYGAHGW
+Aga_CPFL4	CPFL4	Aga	Anopheles gambiae	CPFL	8.5	0.28	202.0	1.8e-60	193.5	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AYGGYGAHGW
+Aga_CPFL5	CPFL5	Aga	Anopheles gambiae	CPFL	7.3	0.65	199.2	1.2e-59	191.9	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AYGGYGAHGW
+Aga_CPFL6	CPFL6	Aga	Anopheles gambiae	CPFL	8.5	0.28	202.0	1.8e-60	193.5	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AYGGYGAHGW
+Aga_CPFL7	CPFL7	Aga	Anopheles gambiae	CPFL	0.0		196.2	1e-58	196.2	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AYGGYGAHGW
+Bmo_CPFL1	CPFL1	Bmo	Bombyx mori	CPFL	0.0		38.8	1.9e-10	38.8	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	GLPHGLAHGW
+Bmo_CPFL2	CPFL2	Bmo	Bombyx mori	CPFL	24.9	2.5e-06	148.6	4.2e-44	123.7	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	yes	yes	FNGHGASYSW
+Bmo_CPFL3	CPFL3	Bmo	Bombyx mori	CPFL	44.7	2.2e-12	76.5	5.4e-22	31.8	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	yes	yes	YSGLSGHYGW
+Bmo_CPFL4	CPFL4	Bmo	Bombyx mori	CPFL	32.5	1.2e-08	120.0	2.4e-35	87.5	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	yes	yes	FSGHGATYGW
+Cfe_Unigene10721-CPFL	Unigene10721-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		50.4	5.1e-14	50.4	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AGYGYGAHGW
+Cfe_Unigene13963-CPFL	Unigene13963-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		94.8	1.3e-27	94.8	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	AAHVPSIHAW
+Cfe_Unigene15011-CPFL	Unigene15011-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	13.7	0.0068	48.3	2.3e-13	34.6	CPFL	yes	CPFL	high	confirmed	CPFL_Cterminal_support	0	no	yes	GYGYSLGHGW
+Lmi_CPFL2	CPFL2	Lmi	Locusta migratoria	CPFL	0.0		43.2	8.3e-12	43.2	CPFL	yes	CPFL	high	confirmed	HMM_delta_support_no_CPFL_terminal_feature	0	no	no	PAACPGYPFC

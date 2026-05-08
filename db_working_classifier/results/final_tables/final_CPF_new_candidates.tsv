@@ -1,0 +1,3 @@
+protein_id	protein_name	species_code	species_name	current_family	CPF_score	CPF_evalue	CPF_confident	classifier_prediction	confidence	status	feature_validation	length	CPF_44_motif_count	CPF_44_motif_start	CPF_44_motif_sequence	CPF_Cterminal_ASA	CPFL_Cterminal_HSA_or_ASA	last_10aa	weird_characters
+Tmo_LPCP-22	LPCP-22	Tmo	Tenebrio molitor	low complexity	112.0	5.1e-33	yes	CPF	high	new_CPF_like_candidate	exact_44aa_and_Cterminal_support	211	1	73	AVGASHQSVVRSLGGNQAVSHYSKAVDSAFSSVRKFDTRVTNDA	yes	yes	FSGLGASYAW	
+Tpa_C1B-like	C1B-like	Tpa	Thrips palmi	CPR RR-1	129.1	2.9e-38	yes	CPF	high	new_CPF_like_candidate	Cterminal_support_only	183	0	NA	NA	yes	yes	YTSGPIAYAY	

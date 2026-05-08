@@ -1,0 +1,30 @@
+protein_id	protein_name	species_code	species_name	current_family	CPLCA_score	CPLCA_evalue
+Aga_CPLCA1	CPLCA1	Aga	Anopheles gambiae	CPLCA	221.4	8e-67
+Aga_CPLCA2	CPLCA2	Aga	Anopheles gambiae	CPLCA	215.5	5.4e-65
+Aga_CPLCA3	CPLCA3	Aga	Anopheles gambiae	CPLCA	183.1	5.4e-55
+Dme_Retinin	Retinin	Dme	Drosophila melanogaster	CPLCA	143.9	6.2e-43
+Cfe_Unigene10128-CPLCA	Unigene10128-CPLCA	Cfe	Cryptolestes ferrugineus	CPLCA	67.5	2.3e-19
+Cfe_Unigene10721-CPFL	Unigene10721-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	28.8	2.1e-07
+Cfe_Unigene13963-CPFL	Unigene13963-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	19.1	0.00019
+Cfe_Unigene362-CPLCG	Unigene362-CPLCG	Cfe	Cryptolestes ferrugineus	CPLCG	17.4	0.00069
+Bmo_CPH10	CPH10	Bmo	Bombyx mori	CPH	17.2	0.00076
+Aga_TWDL11	TWDL11	Aga	Anopheles gambiae	Tweedle	16.9	0.00097
+Bmo_CPR57	CPR57	Bmo	Bombyx mori	His-rich CPR RR-2	16.3	0.0015
+Bmo_CPH6	CPH6	Bmo	Bombyx mori	CPH	16.2	0.0015
+Foc_CPF2	CPF2	Foc	Frankliniella occidentalis	CPF	14.1	0.0067
+Bmo_CPR83	CPR83	Bmo	Bombyx mori	CPR RR-2	14.0	0.0072
+Dma_A0A0P5STA8	A0A0P5STA8	Dma	Daphnia magna	NULL	13.8	0.0088
+Aga_CPLCX2	CPLCX2	Aga	Anopheles gambiae	NULL	13.7	0.0092
+Bmo_CPG46	CPG46	Bmo	Bombyx mori	CPG	12.6	0.02
+Tca_CP63	CP63	Tca	Tribolium castaneum	non-canonical CP	11.2	0.055
+Bmo_CPH9	CPH9	Bmo	Bombyx mori	CPH	10.2	0.11
+Bmo_CPH11	CPH11	Bmo	Bombyx mori	CPH	9.8	0.15
+Bmo_CPR104	CPR104	Bmo	Bombyx mori	CPR RR-2	8.1	0.5
+Bmo_CPR84	CPR84	Bmo	Bombyx mori	CPR RR-2	7.1	0.99
+Dme_Cpr64Aa	Cpr64Aa	Dme	Drosophila melanogaster	CPR RR-2	6.7	1.4
+Bmo_CPR103	CPR103	Bmo	Bombyx mori	CPR RR-2	6.3	1.7
+Dmo_CPR_Uncharacterized_56	CPR_Uncharacterized_56	Dmo	Drosophila mojavensis	CPR	4.9	4.8
+Bmo_CPR71	CPR71	Bmo	Bombyx mori	CPR RR-2	4.7	5.5
+Asi_CPF1	CPF1	Asi	Anopheles sinensis	CPF	4.6	5.9
+Bmo_CPR67	CPR67	Bmo	Bombyx mori	CPR RR-2	4.6	6.0
+Bmo_CPR102	CPR102	Bmo	Bombyx mori	CPR RR-2	4.4	6.8

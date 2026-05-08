@@ -1,11 +1,6 @@
 import Link from "next/link";
-
-const databaseStats = [
-  { label: "Species", value: "50+" },
-  { label: "Proteins", value: "2,200+" },
-  { label: "Protein families", value: "Curated" },
-  { label: "Analysis tools", value: "2" },
-];
+import SiteHeader from "./components/SiteHeader";
+import { getDownloadsData } from "./lib/cuticulome-db";
 
 const mainSections = [
   {
@@ -25,6 +20,12 @@ const mainSections = [
     description:
       "View species-specific protein sets, taxonomy, available annotations, and downloadable FASTA files.",
     href: "/species",
+  },
+  {
+    title: "Statistics",
+    description:
+      "View database-wide summaries, including family distribution, top species, and functional annotation coverage.",
+    href: "/statistics",
   },
   {
     title: "Downloads",
@@ -49,37 +50,22 @@ const tools = [
   },
 ];
 
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 export default function Home() {
+  const { totalProteins, totalSpecies, totalFamilies } = getDownloadsData();
+
+  const databaseStats = [
+    { label: "Species", value: totalSpecies.toLocaleString() },
+    { label: "Proteins", value: totalProteins.toLocaleString() },
+    { label: "Protein families", value: totalFamilies.toLocaleString() },
+    { label: "Analysis tools", value: tools.length.toLocaleString() },
+  ];
+
   return (
     <main className="min-h-screen bg-[#f7f2e8] text-[#221d18]">
-      <header className="border-b border-[#d8cbb7] bg-[#fffaf1]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link href="/" className="text-xl font-semibold tracking-tight text-[#2a2118]">
-            Cuticulome.db
-          </Link>
-
-          <nav className="hidden items-center gap-7 text-sm font-medium text-[#6a5d4d] md:flex">
-            <Link href="/browse" className="hover:text-[#2a2118]">
-              Browse
-            </Link>
-            <Link href="/families" className="hover:text-[#2a2118]">
-              Families
-            </Link>
-            <Link href="/species" className="hover:text-[#2a2118]">
-              Species
-            </Link>
-            <Link href="/tools/miniblast" className="hover:text-[#2a2118]">
-              miniBLAST
-            </Link>
-            <Link href="/tools/classifier" className="hover:text-[#2a2118]">
-              Classifier
-            </Link>
-            <Link href="/help" className="hover:text-[#2a2118]">
-              Help
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section className="border-b border-[#d8cbb7] bg-[#fffaf1]">
         <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
@@ -173,7 +159,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
           {mainSections.map((section) => (
             <Link
               key={section.title}

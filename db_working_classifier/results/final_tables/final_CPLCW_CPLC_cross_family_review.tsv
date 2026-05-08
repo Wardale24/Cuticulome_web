@@ -1,0 +1,2 @@
+protein_id	protein_name	species_code	species_name	current_family	CPLCW_score	CPLCW_evalue	CPLCW_confident	classifier_prediction	confidence	status	feature_validation	length	tryptophan_count	tryptophan_percent	glycine_percent	alanine_percent	W_last80_count	W_last80_match	weird_characters
+Aga_CPLCG20	CPLCG20	Aga	Anopheles gambiae	CPLCG	366.4	3.1e-111	yes	CPLCW	high	CPLC_cross_family_review	HMM_support_W_outside_last80	619	1	0.16	5.2	18.1	0	NA	

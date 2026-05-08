@@ -1,0 +1,19 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Tweedle_Twdl.aln     -            237 query_ce6414f6       -            616    9e-164  532.9   0.0   1   2   1.5e-81   7.7e-81  261.4   0.2    13   228     1   276     1   284 0.80 -
+Tweedle_Twdl.aln     -            237 query_ce6414f6       -            616    9e-164  532.9   0.0   2   2   5.5e-84   2.9e-83  269.4   0.0     7   218   331   615   321   616 0.82 -
+CPT.aln              -            329 query_ce6414f6       -            616   2.4e-31   99.1  28.6   1   2   8.3e-15   4.4e-14   42.4   5.8    21   255    18   235     1   250 0.60 -
+CPT.aln              -            329 query_ce6414f6       -            616   2.4e-31   99.1  28.6   2   2   1.1e-19   5.9e-19   58.4  14.9     1   256   337   586   337   597 0.64 -
+CPG.aln              -            199 query_ce6414f6       -            616   2.8e-11   34.1  22.9   1   2     0.023      0.12    2.7   0.4     7    67     1    54     1   235 0.62 -
+CPG.aln              -            199 query_ce6414f6       -            616   2.8e-11   34.1  22.9   2   2   5.2e-12   2.8e-11   34.1  22.9     6   110   336   493   330   598 0.45 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_ce6414f6.faa
+# Target file:     classifier_db/cuticulome_classifiers.hmm
+# Option settings: hmmscan --domtblout /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_ce6414f6.domtbl classifier_db/cuticulome_classifiers.hmm /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_ce6414f6.faa 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/db_working_classifier
+# Date:            Fri May  1 09:49:15 2026
+# [ok]

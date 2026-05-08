@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SiteHeader from "./SiteHeader";
 
 type SitePageProps = {
   eyebrow: string;
@@ -15,37 +15,7 @@ export default function SitePage({
 }: SitePageProps) {
   return (
     <main className="min-h-screen bg-[#f7f2e8] text-[#221d18]">
-      <header className="border-b border-[#d8cbb7] bg-[#fffaf1]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link
-            href="/"
-            className="text-xl font-semibold tracking-tight text-[#2a2118]"
-          >
-            Cuticulome.db
-          </Link>
-
-          <nav className="hidden items-center gap-7 text-sm font-medium text-[#6a5d4d] md:flex">
-            <Link href="/browse" className="hover:text-[#2a2118]">
-              Browse
-            </Link>
-            <Link href="/families" className="hover:text-[#2a2118]">
-              Families
-            </Link>
-            <Link href="/species" className="hover:text-[#2a2118]">
-              Species
-            </Link>
-            <Link href="/tools/miniblast" className="hover:text-[#2a2118]">
-              miniBLAST
-            </Link>
-            <Link href="/tools/classifier" className="hover:text-[#2a2118]">
-              Classifier
-            </Link>
-            <Link href="/help" className="hover:text-[#2a2118]">
-              Help
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <section className="border-b border-[#d8cbb7] bg-[#fffaf1]">
         <div className="mx-auto max-w-7xl px-6 py-16">

@@ -1,0 +1,79 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_c905ecec.faa
+# target HMM database:             classifier_db/cuticulome_classifiers.hmm
+# per-dom hits tabular output:     /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_c905ecec.domtbl
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query_c905ecec  [L=184]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    6.1e-49  156.7  12.5    6.2e-49  156.7  11.1    1.6  2  CPAP1.aln  
+    1.3e-06   17.9   4.4    1.3e-06   17.9   4.4    1.4  2  CPAP3.aln  
+
+
+Domain annotation for each model (and alignments):
+>> CPAP1.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   1.0     0.097      0.77     171     192 ..      21      35 ..       3      65 .. 0.41
+   2 !  156.7  11.1   7.8e-50   6.2e-49      29     138 ..      58     174 ..      18     182 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.097
+       CPAP1.aln 171 etvPseeeaeekqtsssqpsqa 192
+                     + +P++++ +e       psq 
+  query_c905ecec  21 SNAPQTNAGSE-------PSQD 35 
+                     22222222222.......1111 PP
+
+  == domain 2  score: 156.7 bits;  conditional E-value: 7.8e-50
+       CPAP1.aln  29 p..........slpgrpgvdypvlseipetsFsCd.grapGyYAdvetgCqvfHvCdkdgrkasflCpngtlFdqetlvCdwwfnvdCseseklY 112
+                     p          s+pgrpg+dyp+l +ip+t+F+Cd + +pG++Ad++t+Cq +H+Cd dgr+a flCpngt F+q+++vCdwwfnv+C+ s++lY
+  query_c905ecec  58 PsvqeylelgkSIPGRPGTDYPILASIPYTNFYCDeQEYPGFFADMDTRCQGWHYCDIDGRQATFLCPNGTQFSQAVFVCDWWFNVRCDLSPRLY 152
+                     155556666669*********************************************************************************** PP
+
+       CPAP1.aln 113 dlNeelyksdqkPekvpeakkeells 138
+                     ++N++ly+   +P k+++++++++++
+  query_c905ecec 153 SINARLYQ---RP-KFNPTQPHRVIT 174
+                     ********...68.788888875544 PP
+
+>> CPAP3.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.3      0.69       5.5     221     228 ..      20      27 ..       5      47 .. 0.34
+   2 !   17.9   4.4   1.7e-07   1.3e-06      94     147 ..      88     143 ..      81     153 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 0.69
+       CPAP3.aln 221 ecedayke 228
+                     + ++ +++
+  query_c905ecec  20 TSNAPQTN 27 
+                     22222221 PP
+
+  == domain 2  score: 17.9 bits;  conditional E-value: 1.7e-07
+       CPAP3.aln  94 teeCprqy..GifahedeskCdkfinC.vnGeatelkCpeGLaydeetksCdWpdev 147
+                     +  C+ q   G+fa  d + C+ +++C ++G++ ++ Cp+G  + ++  +CdW  +v
+  query_c905ecec  88 NFYCDEQEypGFFADMD-TRCQGWHYCdIDGRQATFLCPNGTQFSQAVFVCDWWFNV 143
+                     55676653359999655.58*******88************************6555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (184 residues searched)
+Target model(s):                          16  (3270 nodes)
+Passed MSV filter:                         3  (0.1875); expected 0.3 (0.02)
+Passed bias filter:                        3  (0.1875); expected 0.3 (0.02)
+Passed Vit filter:                         2  (0.125); expected 0.0 (0.001)
+Passed Fwd filter:                         2  (0.125); expected 0.0 (1e-05)
+Initial search space (Z):                 16  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.10
+# Mc/sec: 5.73
+//
+[ok]

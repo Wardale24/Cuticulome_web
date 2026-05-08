@@ -1,0 +1,16 @@
+protein_id	protein_name	species_code	species_name	current_family	CPF_score	CPF_evalue	CPF_confident	classifier_prediction	confidence	status	feature_validation	length	CPF_44_motif_count	CPF_44_motif_start	CPF_44_motif_sequence	CPF_Cterminal_ASA	CPFL_Cterminal_HSA_or_ASA	last_10aa	weird_characters
+Aga_CPFL1	CPFL1	Aga	Anopheles gambiae	CPFL	24.8	2.8e-06	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_features_but_no_confident_HMM	251	0	NA	NA	yes	yes	YADNAAHYAW	
+Aga_CPFL2	CPFL2	Aga	Anopheles gambiae	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	229	0	NA	NA	no	yes	AYGGYGAHGW	
+Aga_CPFL3	CPFL3	Aga	Anopheles gambiae	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	240	0	NA	NA	no	yes	AYGGYGAHGW	
+Aga_CPFL4	CPFL4	Aga	Anopheles gambiae	CPFL	8.5	0.28	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	196	0	NA	NA	no	yes	AYGGYGAHGW	
+Aga_CPFL5	CPFL5	Aga	Anopheles gambiae	CPFL	7.3	0.65	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	196	0	NA	NA	no	yes	AYGGYGAHGW	
+Aga_CPFL6	CPFL6	Aga	Anopheles gambiae	CPFL	8.5	0.28	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	196	0	NA	NA	no	yes	AYGGYGAHGW	
+Aga_CPFL7	CPFL7	Aga	Anopheles gambiae	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	229	0	NA	NA	no	yes	AYGGYGAHGW	
+Bmo_CPFL1	CPFL1	Bmo	Bombyx mori	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	258	0	NA	NA	no	yes	GLPHGLAHGW	
+Bmo_CPFL2	CPFL2	Bmo	Bombyx mori	CPFL	24.9	2.5e-06	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_features_but_no_confident_HMM	252	0	NA	NA	yes	yes	FNGHGASYSW	
+Bmo_CPFL3	CPFL3	Bmo	Bombyx mori	CPFL	44.7	2.2e-12	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_features_but_no_confident_HMM	237	0	NA	NA	yes	yes	YSGLSGHYGW	
+Bmo_CPFL4	CPFL4	Bmo	Bombyx mori	CPFL	32.5	1.2e-08	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_features_but_no_confident_HMM	305	0	NA	NA	yes	yes	FSGHGATYGW	
+Cfe_Unigene10721-CPFL	Unigene10721-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	103	0	NA	NA	no	yes	AGYGYGAHGW	
+Cfe_Unigene13963-CPFL	Unigene13963-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	172	0	NA	NA	no	yes	AAHVPSIHAW	
+Cfe_Unigene15011-CPFL	Unigene15011-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	13.7	0.0068	no	no_confident_CPF_hit	low	CPFL_not_CPF	CPF_CPFL_Cterminal_only_no_confident_HMM	106	0	NA	NA	no	yes	GYGYSLGHGW	
+Lmi_CPFL2	CPFL2	Lmi	Locusta migratoria	CPFL	0.0		no	no_confident_CPF_hit	low	CPFL_not_CPF	no_CPF_support	104	0	NA	NA	no	no	PAACPGYPFC	

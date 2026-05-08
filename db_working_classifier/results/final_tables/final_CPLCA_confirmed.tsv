@@ -1,0 +1,6 @@
+protein_id	protein_name	species_code	species_name	current_family	CPLCA_score	CPLCA_evalue	CPLCA_confident	classifier_prediction	confidence	status	feature_validation	length	retinin_exact_count	retinin_exact_start	retinin_exact_match	retinin_relaxed_count	retinin_relaxed_start	retinin_relaxed_match	alanine_percent	weird_characters
+Aga_CPLCA1	CPLCA1	Aga	Anopheles gambiae	CPLCA	221.4	8e-67	yes	CPLCA	high	confirmed	relaxed_Retinin_C_support	194	0	NA	NA	1	55	EPTVAHVGTIEKSVPTGYSHQSFTQYHNKQVAEPVFAPAVKKT	23.7	
+Aga_CPLCA2	CPLCA2	Aga	Anopheles gambiae	CPLCA	215.5	5.4e-65	yes	CPLCA	high	confirmed	relaxed_Retinin_C_support	196	0	NA	NA	1	56	EPTVAHVGTVVKTVPTGVTHTSSAVVHDTKVREDVYAPAVKKT	24.5	
+Aga_CPLCA3	CPLCA3	Aga	Anopheles gambiae	CPLCA	183.1	5.4e-55	yes	CPLCA	high	confirmed	exact_and_relaxed_Retinin_C_support	128	1	49	EPTVAHVGSLVKTIPTAVSHQSSTVVHNSAKITEPIYAPAVKQT	1	49	EPTVAHVGSLVKTIPTAVSHQSSTVVHNSAKITEPIYAPAVKQT	21.1	
+Cfe_Unigene10128-CPLCA	Unigene10128-CPLCA	Cfe	Cryptolestes ferrugineus	CPLCA	67.5	2.3e-19	yes	CPLCA	high	confirmed	HMM_support_no_Retinin_regex_support	85	0	NA	NA	0	NA	NA	18.8	
+Dme_Retinin	Retinin	Dme	Drosophila melanogaster	CPLCA	143.9	6.2e-43	yes	CPLCA	high	confirmed	HMM_support_no_Retinin_regex_support	191	0	NA	NA	0	NA	NA	11.0	

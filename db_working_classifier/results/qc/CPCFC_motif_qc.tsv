@@ -1,0 +1,6 @@
+protein_id	source_fasta	length	cysteine_count	cysteine_percent	proline_percent	tyrosine_percent	alanine_percent	glycine_percent	tryptophan_percent	weird_characters	C_x5_C_count	C_x5_C_first_start	C_x5_C_first_match	CPNYPxC_count	CPNYPxC_first_start	CPNYPxC_first_match	CPNY_or_CPNF_x_C_count	CPNY_or_CPNF_x_C_first_start	CPNY_or_CPNF_x_C_first_match	C_x4_8_C_count	C_x4_8_C_first_start	C_x4_8_C_first_match
+Bdo_CPCFC	CPCFC.fasta	162	7	4.3	17.3	2.5	17.3	9.3	4.9		3	36	CPGFPIC	1	117	CPNYPFC	2	117	CPNYPFC	3	36	CPGFPIC
+Cfe_CL5048.Contig2-CPCFC	CPCFC.fasta	196	5	2.6	12.2	2.6	13.8	14.8	6.1		2	41	CPNFPNC	1	189	CPNYPFC	2	41	CPNFPNC	2	41	CPNFPNC
+Cfe_Unigene17315-CPCFC	CPCFC.fasta	199	5	2.5	14.1	9.0	19.6	7.0	0.0		2	42	CPNYPDC	2	42	CPNYPDC	2	42	CPNYPDC	2	42	CPNYPDC
+Foc_CPCFC1	CPCFC.fasta	153	6	3.9	17.6	9.8	21.6	5.9	0.0		3	31	CPNYPHC	3	31	CPNYPHC	3	31	CPNYPHC	3	31	CPNYPHC
+Foc_CPCFC2	CPCFC.fasta	145	7	4.8	13.8	6.2	14.5	7.6	0.7		3	62	CPGYPLC	2	106	CPNYPYC	2	106	CPNYPYC	3	62	CPGYPLC

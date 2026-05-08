@@ -1,0 +1,124 @@
+#                                                                      --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name               accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#       ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Foc_CPLCP11                 -          CPLCP.aln            -            1.2e-96  320.4 125.6   7.1e-55  183.6  45.0   3.7   1   1   2   3   3   3   2 -
+Foc_CPLCP13                 -          CPLCP.aln            -            3.4e-83  276.3 120.0     1e-54  183.1  52.3   3.5   2   1   0   2   2   2   2 -
+Cfe_Unigene15156-CPLCP      -          CPLCP.aln            -            6.9e-75  249.1 232.4   1.8e-46  156.1  46.4   4.5   1   1   3   4   4   4   4 -
+Nlu_CPLCP5                  -          CPLCP.aln            -              1e-72  242.0 147.4   1.2e-38  130.5  11.0   3.4   1   1   2   3   3   3   3 -
+Aga_CPLCP21                 -          CPLCP.aln            -            1.2e-71  238.5  57.6   1.4e-71  238.3  57.6   1.0   1   0   0   1   1   1   1 -
+Nlu_CPLCP2                  -          CPLCP.aln            -            9.2e-71  235.6 157.8   5.8e-37  125.0  15.6   3.2   1   1   2   3   3   3   3 -
+Aga_CPLCP13                 -          CPLCP.aln            -            1.2e-70  235.2  53.4   1.4e-70  235.1  53.4   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP18                 -          CPLCP.aln            -            1.4e-70  235.1  60.2   1.5e-70  234.9  60.2   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP19                 -          CPLCP.aln            -            1.4e-70  235.1  60.2   1.5e-70  234.9  60.2   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP23                 -          CPLCP.aln            -            1.4e-70  235.1  60.2   1.5e-70  234.9  60.2   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP16                 -          CPLCP.aln            -            2.2e-70  234.4  60.2   2.4e-70  234.3  60.2   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP17                 -          CPLCP.aln            -            3.3e-70  233.8  53.1   3.7e-70  233.7  53.1   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP22                 -          CPLCP.aln            -            6.7e-70  232.8  61.4   7.4e-70  232.7  61.4   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP14                 -          CPLCP.aln            -            7.4e-70  232.7  51.9   8.2e-70  232.5  51.9   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP15                 -          CPLCP.aln            -            9.7e-70  232.3  60.6   1.1e-69  232.1  60.6   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP20                 -          CPLCP.aln            -            2.9e-68  227.4  55.6   3.2e-68  227.3  55.6   1.0   1   0   0   1   1   1   1 -
+Foc_CPLCP5                  -          CPLCP.aln            -            9.2e-66  219.3  42.0     1e-65  219.1  42.0   1.0   1   0   0   1   1   1   1 -
+Cfe_Unigene14806-CPLCP      -          CPLCP.aln            -            1.6e-65  218.4 170.3   8.7e-37  124.4  59.5   4.1   1   1   2   3   3   3   3 -
+Nlu_CPLCP3                  -          CPLCP.aln            -            2.5e-65  217.8 123.4   2.1e-40  136.3  19.8   3.0   1   1   1   2   2   2   2 -
+Foc_CPLCP2                  -          CPLCP.aln            -            2.1e-64  214.8 145.7   7.1e-33  111.6  20.5   3.0   1   1   2   3   3   3   3 -
+Foc_CPLCP9                  -          CPLCP.aln            -            7.4e-63  209.7  40.1   9.6e-63  209.4  40.1   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCP25                 -          CPLCP.aln            -              1e-62  209.3  57.5   1.2e-62  209.1  57.5   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP12                 -          CPLCP.aln            -            4.9e-62  207.1 272.8   8.3e-29   98.3  36.7   5.1   1   1   3   4   4   4   4 -
+Nlu_CPLCP6                  -          CPLCP.aln            -            8.7e-62  206.2 155.1   1.5e-32  110.6  32.5   3.2   1   1   2   3   3   3   3 -
+Bmo_GRP3                    -          CPLCP.aln            -            3.4e-61  204.3 260.2   1.8e-31  107.1  60.1   4.7   1   1   2   4   4   4   4 -
+Nlu_CPLCP4                  -          CPLCP.aln            -            5.5e-61  203.6  40.7     6e-61  203.5  40.7   1.0   1   0   0   1   1   1   1 -
+Bmo_CPG13                   -          CPLCP.aln            -            1.5e-60  202.2 210.1   3.5e-31  106.1  43.5   3.4   1   1   2   3   3   3   3 -
+Bmo_CPG12                   -          CPLCP.aln            -            5.6e-60  200.3 192.8     1e-28   98.0  44.8   4.8   1   1   3   4   4   4   4 -
+Aga_CPLCP8                  -          CPLCP.aln            -            2.1e-58  195.2  57.6   2.6e-58  194.9  57.6   1.0   1   0   0   1   1   1   1 -
+Foc_CPLCP3                  -          CPLCP.aln            -            2.7e-58  194.8  35.5     5e-58  193.9  35.5   1.5   1   1   0   1   1   1   1 -
+Aga_CPLCP1                  -          CPLCP.aln            -            4.8e-58  194.0  51.7   5.4e-58  193.8  51.7   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCP11                 -          CPLCP.aln            -            4.9e-57  190.7 260.8   5.7e-26   89.0  33.5   4.5   1   1   3   4   4   4   4 -
+Aga_CPLCP26                 -          CPLCP.aln            -            2.1e-56  188.6  70.2   3.8e-56  187.8  70.2   1.3   1   1   0   1   1   1   1 -
+Bmo_CPG24                   -          CPLCP.aln            -            3.4e-56  187.9 239.0   9.9e-28   94.8  47.6   5.1   1   1   3   4   4   4   4 -
+Foc_CPLCP10                 -          CPLCP.aln            -            3.7e-56  187.8  48.0   3.7e-56  187.8  48.0   2.3   1   1   1   2   2   1   1 -
+Aga_CPLCP24                 -          CPLCP.aln            -            1.6e-55  185.8  55.4   1.9e-55  185.5  55.4   1.1   1   0   0   1   1   1   1 -
+Foc_CPLCP1                  -          CPLCP.aln            -            3.6e-55  184.6 159.3   7.9e-26   88.6  23.7   3.9   1   1   2   3   3   3   3 -
+Nlu_CPLCP1                  -          CPLCP.aln            -            3.6e-55  184.6  92.8   1.4e-36  123.8  10.5   3.0   1   1   1   2   2   2   2 -
+Aga_CPLCP28                 -          CPLCP.aln            -            4.1e-55  184.4  42.1   4.8e-55  184.2  42.1   1.0   1   0   0   1   1   1   1 -
+Cfe_CL4305.Contig1-CPLCP    -          CPLCP.aln            -            1.1e-54  183.1  15.4   1.1e-54  183.1  15.4   2.1   1   1   1   2   2   1   1 -
+Foc_CPLCP12                 -          CPLCP.aln            -            3.6e-54  181.3  82.9   9.8e-46  153.7  38.9   2.0   1   1   1   2   2   2   2 -
+Aga_CPLCP9                  -          CPLCP.aln            -              1e-53  179.9 288.6   3.9e-26   89.5  32.1   5.6   1   1   4   5   5   4   4 -
+Aga_CPLCP27                 -          CPLCP.aln            -            2.3e-53  178.7  54.5   2.8e-53  178.4  54.5   1.0   1   0   0   1   1   1   1 -
+Foc_CPLCP4                  -          CPLCP.aln            -            7.9e-53  176.9  33.0   7.9e-53  176.9  33.0   2.3   1   1   1   2   2   1   1 -
+Aga_CPLCP10                 -          CPLCP.aln            -            8.2e-52  173.6 216.6   1.9e-21   74.2  40.2   5.2   1   1   3   4   4   4   4 -
+Foc_CPLCP8                  -          CPLCP.aln            -            1.1e-51  173.2  40.2   1.2e-51  173.1  40.2   1.0   1   0   0   1   1   1   1 -
+Foc_CPLCP15                 -          CPLCP.aln            -            1.6e-51  172.7  40.8   2.6e-51  172.0  40.8   1.3   1   1   0   1   1   1   1 -
+Aga_CPLCP3                  -          CPLCP.aln            -            1.8e-51  172.5 197.5   6.2e-20   69.3  25.2   4.5   1   1   3   4   4   4   4 -
+Cfe_CL4803.Contig1-CPLCP    -          CPLCP.aln            -            2.3e-50  168.9  76.2   6.9e-39  131.3   7.2   4.4   1   1   2   3   3   2   2 -
+Foc_CPLCP16                 -          CPLCP.aln            -            1.2e-48  163.2  47.2   1.2e-48  163.2  47.2   3.8   1   1   1   2   2   1   1 -
+Bmo_CPH42                   -          CPLCP.aln            -            1.3e-48  163.1  30.7   1.6e-48  162.8  30.7   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCP6                  -          CPLCP.aln            -            1.5e-48  162.9  92.0     8e-43  144.2  90.5   2.0   1   1   1   2   2   2   2 -
+Cfe_CL3437.Contig1-CPLCP    -          CPLCP.aln            -            4.7e-47  158.0  81.8   3.3e-30  102.9  79.0   4.1   1   1   1   3   3   2   2 -
+Foc_CPLCP6                  -          CPLCP.aln            -            9.5e-47  157.0  47.9   1.1e-46  156.8  47.9   1.0   1   0   0   1   1   1   1 -
+Foc_CPLCP14                 -          CPLCP.aln            -            3.9e-45  151.8  74.8     1e-43  147.1  59.1   4.3   1   1   1   2   2   1   1 -
+Aga_CPLCP7                  -          CPLCP.aln            -            5.3e-44  148.0  77.9   5.3e-44  148.0  77.9   3.4   1   1   2   3   3   1   1 -
+Aga_CPLCP5                  -          CPLCP.aln            -            6.7e-43  144.4  14.1     9e-43  144.0  14.1   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCP2                  -          CPLCP.aln            -            8.6e-43  144.1 128.4   8.6e-28   95.0  46.8   4.4   1   1   2   3   3   2   2 -
+Aga_CPLCP4                  -          CPLCP.aln            -            4.7e-41  138.4  49.4   3.1e-40  135.7  49.4   1.9   1   1   0   1   1   1   1 -
+Bmo_CPG11                   -          CPLCP.aln            -            5.1e-40  135.0 277.5     2e-18   64.4  76.2   6.5   1   1   5   6   6   5   5 -
+Bmo_CPG39                   -          CPLCP.aln            -            2.3e-39  132.9  19.2   2.3e-39  132.9  19.2   1.9   2   0   0   2   2   1   1 -
+Dme_Vajk4                   -          CPLCP.aln            -            3.3e-38  129.1 198.3   4.4e-16   56.7  87.3   5.3   1   1   2   3   3   3   3 -
+Bge_CPLCP1                  -          CPLCP.aln            -            1.2e-37  127.2 218.0   1.2e-14   51.9  41.4   4.3   1   1   3   4   4   4   4 -
+Foc_CPLCP7                  -          CPLCP.aln            -            3.9e-35  119.0  79.8   4.4e-33  112.3  66.4   2.4   1   1   1   2   2   2   2 -
+Bmo_CPG38                   -          CPLCP.aln            -            5.8e-35  118.5  96.6   2.2e-32  110.0  36.9   3.0   2   1   1   3   3   2   2 -
+Bmo_CPH41                   -          CPLCP.aln            -            1.6e-34  117.0 203.8   1.1e-14   52.1  92.2   3.5   1   1   2   3   3   3   3 -
+Dme_Vajk1                   -          CPLCP.aln            -              2e-32  110.1 268.8   1.5e-14   51.6  63.4   4.2   1   1   3   4   4   4   4 -
+Bmo_CPH35                   -          CPLCP.aln            -            1.2e-25   88.0 191.5   5.4e-15   53.1  37.5   5.3   2   1   4   6   6   5   4 -
+Bmo_CPG7                    -          CPLCP.aln            -            5.6e-22   76.0  53.8   1.4e-21   74.6  53.8   1.6   1   1   0   1   1   1   1 -
+Bmo_CPH33                   -          CPLCP.aln            -            9.1e-17   58.9  70.1   9.1e-17   58.9  70.1   1.5   1   1   1   2   2   1   1 -
+Bmo_CPG8                    -          CPLCP.aln            -              6e-16   56.2  87.1   5.1e-11   40.1  54.6   3.1   1   1   1   2   2   2   2 -
+Dma_A0A164YX87              -          CPLCP.aln            -              1e-14   52.2  61.4     1e-14   52.2  61.4   2.9   2   1   1   3   3   3   1 -
+Bmo_CPG25                   -          CPLCP.aln            -            1.5e-14   51.7   0.2   2.5e-14   50.9   0.2   1.4   1   1   0   1   1   1   1 -
+Cfe_CL5122.Contig1-CPRNC    -          CPLCP.aln            -            1.9e-12   44.7 161.2     3e-07   27.7  54.5   5.2   2   2   3   5   5   3   3 -
+Bmo_CPG1                    -          CPLCP.aln            -            2.8e-11   40.9   0.4   2.8e-11   40.9   0.4   2.0   1   1   1   2   2   1   1 -
+Bmo_CPG26                   -          CPLCP.aln            -            4.6e-09   33.7   1.7   4.6e-09   33.7   1.7   2.1   1   1   1   2   2   1   1 -
+Bmo_CPG27                   -          CPLCP.aln            -              5e-09   33.6   2.0     5e-09   33.6   2.0   2.1   1   1   1   2   2   1   1 -
+Bmo_CPG28                   -          CPLCP.aln            -            6.7e-09   33.1   2.5   6.7e-09   33.1   2.5   2.1   1   1   1   2   2   1   1 -
+Bmo_CPH32                   -          CPLCP.aln            -            5.6e-08   30.1   0.4     7e-08   29.8   0.4   1.2   1   0   0   1   1   1   1 -
+Dma_A0A164U2H5              -          CPLCP.aln            -            2.5e-05   21.4  37.3   2.5e-05   21.4  37.3   6.1   2   2   3   5   5   2   2 -
+Bmo_CPG3                    -          CPLCP.aln            -            9.5e-05   19.6  15.0   9.5e-05   19.6  15.0   2.4   1   1   1   2   2   1   1 -
+Bmo_CPG19                   -          CPLCP.aln            -            9.6e-05   19.5   0.8   0.00019   18.6   0.8   1.5   1   1   0   1   1   1   1 -
+Dma_A0A164VQM0              -          CPLCP.aln            -            0.00049   17.2  68.9    0.0058   13.7  44.8   3.1   1   1   2   3   3   3   1 -
+Dwi_CPR_Uncharacterized_C   -          CPLCP.aln            -            0.00069   16.7   9.7    0.0078   13.3   9.7   2.0   1   1   0   1   1   1   1 -
+Aga_CPR41                   -          CPLCP.aln            -            0.00083   16.5   5.3     0.001   16.2   5.3   1.1   1   0   0   1   1   1   1 -
+Dma_A0A164LPC5              -          CPLCP.aln            -            0.00087   16.4  14.5    0.0015   15.6  12.4   1.9   1   1   1   2   2   2   2 -
+Aga_CPR40                   -          CPLCP.aln            -            0.00088   16.4   5.4    0.0011   16.0   5.4   1.2   1   0   0   1   1   1   1 -
+Aga_CPR43                   -          CPLCP.aln            -            0.00088   16.4   5.4    0.0011   16.0   5.4   1.2   1   0   0   1   1   1   1 -
+Aga_CPR45                   -          CPLCP.aln            -            0.00088   16.4   5.4    0.0011   16.0   5.4   1.2   1   0   0   1   1   1   1 -
+Aga_CPR46                   -          CPLCP.aln            -            0.00088   16.4   5.4    0.0011   16.0   5.4   1.2   1   0   0   1   1   1   1 -
+Bmo_CPG6                    -          CPLCP.aln            -             0.0026   14.9  27.5      0.44    7.5  27.5   2.3   1   1   0   1   1   1   0 -
+Dan_CPR_Uncharacterized_92  -          CPLCP.aln            -             0.0041   14.2   0.0    0.0046   14.0   0.0   1.1   1   0   0   1   1   1   1 -
+Dps_CPR_Uncharacterized_47  -          CPLCP.aln            -             0.0055   13.8   0.1    0.0058   13.7   0.1   1.0   1   0   0   1   1   1   1 -
+Dvi_CPR_Uncharacterized_108 -          CPLCP.aln            -             0.0059   13.7   0.0    0.0061   13.6   0.0   1.1   1   0   0   1   1   1   1 -
+Bmo_CPH36                   -          CPLCP.aln            -             0.0065   13.6  50.6    0.0094   13.0  50.3   1.4   1   1   0   1   1   1   1 -
+Dan_CPR_Uncharacterized_51  -          CPLCP.aln            -              0.009   13.1   0.0    0.0097   13.0   0.0   1.1   1   0   0   1   1   1   1 -
+Bmo_CPG36                   -          CPLCP.aln            -              0.011   12.8   3.5     0.012   12.7   3.5   1.0   1   0   0   1   1   1   0 -
+Dmo_CPR_Uncharacterized_103 -          CPLCP.aln            -              0.016   12.3   0.0     0.016   12.2   0.0   1.1   1   0   0   1   1   1   0 -
+Foc_CPG6                    -          CPLCP.aln            -              0.016   12.3   0.0     0.034   11.2   0.0   1.6   1   1   0   1   1   1   0 -
+Dme_Cpr65Ec                 -          CPLCP.aln            -              0.019   12.0   0.0      0.02   11.9   0.0   1.1   1   0   0   1   1   1   0 -
+Aga_CPR36                   -          CPLCP.aln            -               0.02   11.9  11.3     0.034   11.2  11.3   1.3   1   1   0   1   1   1   0 -
+Bmo_CPG34                   -          CPLCP.aln            -              0.038   11.0   4.4      0.12    9.4   4.4   1.7   1   1   0   1   1   1   0 -
+Aga_TWDL5                   -          CPLCP.aln            -              0.051   10.6   2.7      0.14    9.2   0.6   2.5   1   1   1   2   2   1   0 -
+Dma_A0A164ZRB3              -          CPLCP.aln            -              0.088    9.8   9.8      0.33    8.0   9.8   1.8   1   1   0   1   1   1   0 -
+Foc_CPG4                    -          CPLCP.aln            -               0.55    7.2  15.0       3.5    4.6  15.1   1.8   1   1   0   1   1   1   0 -
+Dma_A0A0P5ZG64              -          CPLCP.aln            -               0.75    6.8  16.2      0.18    8.9  10.2   2.5   1   1   1   2   2   2   0 -
+Bmo_CPG2                    -          CPLCP.aln            -               0.95    6.5  13.5   1.8e+02   -1.0  13.5   2.0   1   1   0   1   1   1   0 -
+Bmo_CPG18                   -          CPLCP.aln            -                1.7    5.6  12.0         4    4.4  12.0   1.6   1   1   0   1   1   1   0 -
+Bmo_CPG16                   -          CPLCP.aln            -                1.9    5.5  12.8        17    2.3  12.8   2.1   1   1   0   1   1   1   0 -
+Bmo_CPR144                  -          CPLCP.aln            -                2.4    5.1  21.5     0.016   12.3   3.3   2.7   1   1   1   2   2   1   0 -
+Dan_CPR_Uncharacterized_71  -          CPLCP.aln            -                6.4    3.7  17.2        57    0.7  17.1   2.0   1   1   0   1   1   1   0 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      CPLCP.hmm
+# Target file:     all_proteins.fasta
+# Option settings: hmmsearch --tblout CPLCP_vs_all.tbl CPLCP.hmm all_proteins.fasta 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/HMM
+# Date:            Thu Apr 30 14:39:14 2026
+# [ok]

@@ -1,0 +1,17 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+CPAP1.aln            -            264 query_c905ecec       -            184   6.1e-49  156.7  12.5   1   2     0.097      0.77   -1.0   1.0   171   192    21    35     3    65 0.41 -
+CPAP1.aln            -            264 query_c905ecec       -            184   6.1e-49  156.7  12.5   2   2   7.8e-50   6.2e-49  156.7  11.1    29   138    58   174    18   182 0.86 -
+CPAP3.aln            -            269 query_c905ecec       -            184   1.3e-06   17.9   4.4   1   2      0.69       5.5   -3.8   0.3   221   228    20    27     5    47 0.34 -
+CPAP3.aln            -            269 query_c905ecec       -            184   1.3e-06   17.9   4.4   2   2   1.7e-07   1.3e-06   17.9   4.4    94   147    88   143    81   153 0.81 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_c905ecec.faa
+# Target file:     classifier_db/cuticulome_classifiers.hmm
+# Option settings: hmmscan --domtblout /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_c905ecec.domtbl classifier_db/cuticulome_classifiers.hmm /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_c905ecec.faa 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/db_working_classifier
+# Date:            Thu May  7 11:40:33 2026
+# [ok]

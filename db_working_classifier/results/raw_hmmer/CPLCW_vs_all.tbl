@@ -1,0 +1,22 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Aga_CPLCW8           -          CPLCW.aln            -           2.1e-112  370.2  36.5   2.6e-82  272.3  20.0   2.0   1   1   1   2   2   2   2 -
+Aga_CPLCG20          -          CPLCW.aln            -           3.1e-111  366.4  36.4   3.7e-81  268.6  19.4   5.9   3   3   4   7   7   7   2 -
+Aga_CPLCW4           -          CPLCW.aln            -           1.1e-109  361.3  35.4   3.1e-82  272.1  19.7   2.0   1   1   1   2   2   2   2 -
+Aga_CPLCW2           -          CPLCW.aln            -           9.8e-108  355.0  26.1  1.1e-107  354.8  26.1   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCW9           -          CPLCW.aln            -           1.6e-105  347.8  25.5  1.8e-105  347.6  25.5   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCW7           -          CPLCW.aln            -           3.7e-103  340.1  25.2  4.1e-103  340.0  25.2   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCW1           -          CPLCW.aln            -            2.8e-96  317.7  23.0   4.1e-96  317.2  23.0   1.2   1   0   0   1   1   1   1 -
+Aga_CPLCW5           -          CPLCW.aln            -            1.7e-68  227.4  14.7   1.9e-68  227.2  14.7   1.0   1   0   0   1   1   1   1 -
+Dma_A0A0P5WB21       -          CPLCW.aln            -            0.00052   17.6   5.0      0.33    8.5   0.1   3.9   4   0   0   4   4   4   2 | Pro-resilin
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      CPLCW.hmm
+# Target file:     all_proteins.fasta
+# Option settings: hmmsearch --tblout CPLCW_vs_all.tbl CPLCW.hmm all_proteins.fasta 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/HMM
+# Date:            Thu Apr 30 14:22:44 2026
+# [ok]

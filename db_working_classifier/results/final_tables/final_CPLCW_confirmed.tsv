@@ -1,0 +1,8 @@
+protein_id	protein_name	species_code	species_name	current_family	CPLCW_score	CPLCW_evalue	CPLCW_confident	classifier_prediction	confidence	status	feature_validation	length	tryptophan_count	tryptophan_percent	glycine_percent	alanine_percent	W_last80_count	W_last80_match	weird_characters
+Aga_CPLCW1	CPLCW1	Aga	Anopheles gambiae	CPLCW	317.7	2.8e-96	yes	CPLCW	high	confirmed	weak_W_feature_support	153	1	0.65	9.2	10.5	1	W	
+Aga_CPLCW2	CPLCW2	Aga	Anopheles gambiae	CPLCW	355.0	9.8e-108	yes	CPLCW	high	confirmed	weak_W_feature_support	164	1	0.61	11.0	9.8	1	W	
+Aga_CPLCW4	CPLCW4	Aga	Anopheles gambiae	CPLCW	361.3	1.1e-109	yes	CPLCW	high	confirmed	weak_W_feature_support	171	1	0.58	12.9	8.8	1	W	
+Aga_CPLCW5	CPLCW5	Aga	Anopheles gambiae	CPLCW	227.4	1.7e-68	yes	CPLCW	high	confirmed	HMM_support_no_W_detected	106	0	0.00	5.7	11.3	0	NA	
+Aga_CPLCW7	CPLCW7	Aga	Anopheles gambiae	CPLCW	340.1	3.7e-103	yes	CPLCW	high	confirmed	weak_W_feature_support	161	1	0.62	11.2	8.7	1	W	
+Aga_CPLCW8	CPLCW8	Aga	Anopheles gambiae	CPLCW	370.2	2.1e-112	yes	CPLCW	high	confirmed	weak_W_feature_support	175	1	0.57	12.0	9.1	1	W	
+Aga_CPLCW9	CPLCW9	Aga	Anopheles gambiae	CPLCW	347.8	1.6e-105	yes	CPLCW	high	confirmed	weak_W_feature_support	169	1	0.59	10.1	10.1	1	W	

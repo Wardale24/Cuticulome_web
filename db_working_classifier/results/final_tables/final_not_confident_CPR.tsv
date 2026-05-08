@@ -1,0 +1,1050 @@
+protein_id	protein_name	species_code	species_name	current_family	CPR_score	CPR_evalue	CPR_confident	RR1_score	RR2_score	delta_RR1_minus_RR2	RR_classifier_prediction	RR_classifier_status	final_prediction	final_status
+Aae_L000085-PA	L000085-PA	Aae	Aedes aegypti	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-A	CPAP1-A	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-B1	CPAP1-B1	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-B2	CPAP1-B2	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-C	CPAP1-C	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-F	CPAP1-F	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-G	CPAP1-G	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-H	CPAP1-H	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-J	CPAP1-J	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-K_iso1	CPAP1-K_iso1	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-K_iso2	CPAP1-K_iso2	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-M	CPAP1-M	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-N	CPAP1-N	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP1-O	CPAP1-O	Aga	Anopheles gambiae	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-A1b	CPAP3-A1b	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-A1c	CPAP3-A1c	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-B	CPAP3-B	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-C	CPAP3-C	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-D1	CPAP3-D1	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-D2_iso1	CPAP3-D2_iso1	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-D2_iso2	CPAP3-D2_iso2	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPAP3-E	CPAP3-E	Aga	Anopheles gambiae	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPF1	CPF1	Aga	Anopheles gambiae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPF2	CPF2	Aga	Anopheles gambiae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPF3	CPF3	Aga	Anopheles gambiae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPF4	CPF4	Aga	Anopheles gambiae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL1	CPFL1	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL2	CPFL2	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL3	CPFL3	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL4	CPFL4	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL5	CPFL5	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL6	CPFL6	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPFL7	CPFL7	Aga	Anopheles gambiae	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLC#	CPLCG4	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLC8	CPLCG3	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCA1	CPLCA1	Aga	Anopheles gambiae	CPLCA	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCA2	CPLCA2	Aga	Anopheles gambiae	CPLCA	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCA3	CPLCA3	Aga	Anopheles gambiae	CPLCA	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG1	CPLCG1	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG10	CPLCG10	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG11	CPLCG11	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG12	CPLCG12	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG13	CPLCG13	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG14	CPLCG14	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG15	CPLCG15	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG16	CPLCG16	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG17	CPLCG17	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG18	CPLCG18	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG19	CPLCG19	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG2	CPLCG2	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG20	CPLCG20	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG21	CPLCG21	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG22	CPLCG22	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG23	CPLCG23	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG24	CPLCG24	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG25	CPLCG25	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG26	CPLCG26	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG27	CPLCG27	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG3	CPLCG3	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG4	CPLCG4	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG5	CPLCG5	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG6	CPLCG6	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG7	CPLCG7	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG8	CPLCG8	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCG9	CPLCG9	Aga	Anopheles gambiae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP1	CPLCP1	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP10	CPLCP10	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP11	CPLCP11	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP12	CPLCP12	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP13	CPLCP13	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP14	CPLCP14	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP15	CPLCP15	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP16	CPLCP16	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP17	CPLCP17	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP18	CPLCP18	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP19	CPLCP19	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP2	CPLCP2	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP20	CPLCP20	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP21	CPLCP21	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP22	CPLCP22	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP23	CPLCP23	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP24	CPLCP24	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP25	CPLCP25	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP26	CPLCP26	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP27	CPLCP27	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP28	CPLCP28	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP3	CPLCP3	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP4	CPLCP4	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP5	CPLCP5	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP6	CPLCP6	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP7	CPLCP7	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP8	CPLCP8	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCP9	CPLCP9	Aga	Anopheles gambiae	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW1	CPLCW1	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW2	CPLCW2	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW4	CPLCW4	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW5	CPLCW5	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW7	CPLCW7	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW8	CPLCW8	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCW9	CPLCW9	Aga	Anopheles gambiae	CPLCW	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCX1	CPLCX1	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCX2	CPLCX2	Aga	Anopheles gambiae	NULL	0.0		no	7.9	0.0	7.9	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPLCX3	CPLCX3	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPR111	CPR111	Aga	Anopheles gambiae	CPR RR-2	18.1	0.00031	no	48.6	20.4	28.2	CPR RR-1	conflict	not_confident_CPR	not_confident_CPR
+Aga_CPR130	CPR130	Aga	Anopheles gambiae	CPR RR-3	27.4	4.3e-07	no	44.9	9.7	35.2	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Aga_CPR138	CPR138	Aga	Anopheles gambiae	CPR RR-1	0.0		no	10.6	28.2	-17.6	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Aga_CPR152	CPR152	Aga	Anopheles gambiae	CPR RR-2	0.0		no	18.4	61.9	-43.5	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Aga_CPR157	CPR157	Aga	Anopheles gambiae	CPR	0.0		no	23.0	27.4	-4.4	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Aga_CPR160	CPR160	Aga	Anopheles gambiae	CPR	0.0		no	31.8	0.0	31.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Aga_CPR161_iso1	CPR161_iso1	Aga	Anopheles gambiae	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPR162	CPR162	Aga	Anopheles gambiae	CPR	0.0		no	35.2	9.4	25.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Aga_CPR163	CPR163	Aga	Anopheles gambiae	CPR	21.4	3e-05	no	29.4	0.0	29.4	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Aga_CPR164	CPR164	Aga	Anopheles gambiae	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPTC1	CPTC1	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPTC2	CPTC2	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPTC3	CPTC3	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_CPTC4	CPTC4	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_P000989-PA	P000989-PA	Aga	Anopheles gambiae	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL1	TWDL1	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL10	TWDL10	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL11	TWDL11	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL12	TWDL12	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL2	TWDL2	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL3	TWDL3	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL4	TWDL4	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL5	TWDL5	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL6	TWDL6	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL7	TWDL7	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL8	TWDL8	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aga_TWDL9	TWDL9	Aga	Anopheles gambiae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Aip_Y-y	Y-y	Aip	Agrotis ipsilon	Yellow	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Ame_Lac2	Lac2	Ame	Apis mellifera	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Ame_Twdl1	Twdl1	Ame	Apis mellifera	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Ame_Twdl2	Twdl2	Ame	Apis mellifera	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Asi_CPF1	CPF1	Asi	Anopheles sinensis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Asi_Lac2	Lac2	Asi	Anopheles sinensis	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bdo_CPAP3-A1	CPAP3-A1	Bdo	Bactrocera dorsalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bdo_CPAP3-B	CPAP3-B	Bdo	Bactrocera dorsalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bdo_CPAP3-D2	CPAP3-D2	Bdo	Bactrocera dorsalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bdo_CPAP3-E	CPAP3-E	Bdo	Bactrocera dorsalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bdo_CPAP3-E2	CPAP3-E2	Bdo	Bactrocera dorsalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bdo_CPCFC	CPCFC	Bdo	Bactrocera dorsalis	CPCFC	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bge_CPLCP1	CPLCP1	Bge	Blattella germanica	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bge_Y-y	Y-y	Bge	Blattella germanica	Yellow	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-A	CPAP1-A	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-B	CPAP1-B	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-B2	CPAP1-B2	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-C	CPAP1-C	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-D	CPAP1-D	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-F	CPAP1-F	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-G	CPAP1-G	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-H	CPAP1-H	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-I	CPAP1-I	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-J	CPAP1-J	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-K	CPAP1-K	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-L	CPAP1-L	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-M	CPAP1-M	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-N	CPAP1-N	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP1-O	CPAP1-O	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-A1	CPAP3-A1	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-A2	CPAP3-A2	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-B	CPAP3-B	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-C	CPAP3-C	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-D1	CPAP3-D1	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-D2	CPAP3-D2	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-E	CPAP3-E	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-E2	CPAP3-E2	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPAP3-E4	CPAP3-E4	Bmo	Bombyx mori	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPF	CPF	Bmo	Bombyx mori	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPFL1	CPFL1	Bmo	Bombyx mori	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPFL2	CPFL2	Bmo	Bombyx mori	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPFL3	CPFL3	Bmo	Bombyx mori	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPFL4	CPFL4	Bmo	Bombyx mori	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG1	CPG1	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG10	CPG10	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG11	CPG11	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG12	CPG12	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG13	CPG13	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG14	CPG14	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG15	CPG15	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG16	CPG16	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG17	CPG17	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG18	CPG18	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG19	CPG19	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG2	CPG2	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG20	CPG20	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG21	CPG21	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG22	CPG22	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG23	CPG23	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG24	CPG24	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG25	CPG25	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG26	CPG26	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG27	CPG27	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG28	CPG28	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG3	CPG3	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG30	CPG30	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG31	CPG31	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG32	CPG32	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG33	CPG33	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG34	CPG34	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG35	CPG35	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG36	CPG36	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG37	CPG37	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG38	CPG38	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG39	CPG39	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG4	CPG4	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG40	CPG40	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG41	CPG41	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG42	CPG42	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG43	CPG43	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG44	CPG44	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG45	CPG45	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG46	CPG46	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG47	CPG47	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG48	CPG48	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG49	CPG49	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG5	CPG5	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG50	CPG50	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG6	CPG6	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG7	CPG7	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG8	CPG8	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPG9	CPG9	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH1	CPH1	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH10	CPH10	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH11	CPH11	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH12	CPH12	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH13	CPH13	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH14	CPH14	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH15	CPH15	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH16	CPH16	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH17	CPH17	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH18	CPH18	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH19	CPH19	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH2	CPH2	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH20	CPH20	Bmo	Bombyx mori	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH21	CPH21	Bmo	Bombyx mori	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH22	CPH22	Bmo	Bombyx mori	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH23	CPH23	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH24	CPH24	Bmo	Bombyx mori	low complexity	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH25	CPH25	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH26	CPH26	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH27	CPH27	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH28	CPH28	Bmo	Bombyx mori	CPH	0.0		no	32.2	29.7	2.5	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Bmo_CPH3	CPH3	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH30	CPH30	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH32	CPH32	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH33	CPH33	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH34	CPH34	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH35	CPH35	Bmo	Bombyx mori	CPH	20.5	5.6e-05	no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH36	CPH36	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH37	CPH37	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH38	CPH38	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH39	CPH39	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH4	CPH4	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH40	CPH40	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH41	CPH41	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH42	CPH42	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH43	CPH43	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH44	CPH44	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH45	CPH45	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH46	CPH46	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH47	CPH47	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH6	CPH6	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH7	CPH7	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH8	CPH8	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPH9	CPH9	Bmo	Bombyx mori	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPR10	CPR10	Bmo	Bombyx mori	CPR RR-1	17.9	0.00036	no	68.2	20.9	47.3	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR140	CPR140	Bmo	Bombyx mori	CPR RR-2	0.0		no	23.0	81.8	-58.8	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR141	CPR141	Bmo	Bombyx mori	CPR RR-2	28.9	1.5e-07	no	25.5	38.3	-12.8	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Bmo_CPR143	CPR143	Bmo	Bombyx mori	CPR RR-2	0.0		no	21.3	68.2	-46.9	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR145	CPR145	Bmo	Bombyx mori	CPR RR-2	0.0		no	32.3	67.9	-35.6	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR146	CPR146	Bmo	Bombyx mori	CPR RR-3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPR148	CPR148	Bmo	Bombyx mori	CPR RR-1	0.0		no	52.4	0.0	52.4	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR162	CPR162	Bmo	Bombyx mori	CPR RR-3	29.6	9.6e-08	no	24.3	14.1	10.2	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Bmo_CPR21	CPR21	Bmo	Bombyx mori	CPR RR-1	18.1	0.0003	no	92.4	0.0	92.4	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR22	CPR22	Bmo	Bombyx mori	CPR RR-1	0.0		no	24.0	0.0	24.0	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPR54	CPR54	Bmo	Bombyx mori	CPR RR-1	12.2	0.02	no	42.1	15.2	26.9	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Bmo_CPT1	CPT1	Bmo	Bombyx mori	CPT	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPT2	CPT2	Bmo	Bombyx mori	CPT	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPT3	CPT3	Bmo	Bombyx mori	CPT	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_CPT4	CPT4	Bmo	Bombyx mori	CPT	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_GRP1	GRP1	Bmo	Bombyx mori	CPT	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_GRP2	GRP2	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_GRP3	GRP3	Bmo	Bombyx mori	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_LSPMP-like	LSPMP-like	Bmo	Bombyx mori	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_PCP	PCP	Bmo	Bombyx mori	low complexity	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Bmo_Resilin	Resilin	Bmo	Bombyx mori	CPR RR-2	0.0		no	23.1	82.3	-59.2	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Bta_CP9	CP9	Bta	Bemisia tabaci	CPR RR-1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL1548.Contig1-Tweedle	CL1548.Contig1-Tweedle	Cfe	Cryptolestes ferrugineus	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL2407.Contig1-RR1	CL2407.Contig1-RR1	Cfe	Cryptolestes ferrugineus	CPR RR-1	25.7	1.5e-06	no	70.3	21.4	48.9	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Cfe_CL2972.Contig2-CPRNC	CL2972.Contig2-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	28.5	2.1e-07	no	31.0	29.5	1.5	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Cfe_CL3437.Contig1-CPLCP	CL3437.Contig1-CPLCP	Cfe	Cryptolestes ferrugineus	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL3825.Contig1-Tweedle	CL3825.Contig1-Tweedle	Cfe	Cryptolestes ferrugineus	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL4305.Contig1-CPLCP	CL4305.Contig1-CPLCP	Cfe	Cryptolestes ferrugineus	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL4803.Contig1-CPLCP	CL4803.Contig1-CPLCP	Cfe	Cryptolestes ferrugineus	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL5048.Contig2-CPCFC	CL5048.Contig2-CPCFC	Cfe	Cryptolestes ferrugineus	CPCFC	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CL5122.Contig1-CPRNC	CL5122.Contig1-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	0.0		no	0.0	20.6	-20.6	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-A	CPAP1-A	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-B	CPAP1-B	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-B2	CPAP1-B2	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-C	CPAP1-C	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-D	CPAP1-D	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-F	CPAP1-F	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-G	CPAP1-G	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-H	CPAP1-H	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-I	CPAP1-I	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-J	CPAP1-J	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-K	CPAP1-K	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-M	CPAP1-M	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP1-N	CPAP1-N	Cfe	Cryptolestes ferrugineus	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-A1	CPAP3-A1	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-B	CPAP3-B	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-C1	CPAP3-C1	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-C2	CPAP3-C2	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-D1	CPAP3-D1	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-D2	CPAP3-D2	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_CPAP3-E	CPAP3-E	Cfe	Cryptolestes ferrugineus	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene10128-CPLCA	Unigene10128-CPLCA	Cfe	Cryptolestes ferrugineus	CPLCA	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene10721-CPFL	Unigene10721-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene13921-CPRNC	Unigene13921-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	0.0		no	31.8	0.0	31.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Cfe_Unigene13963-CPFL	Unigene13963-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene14052-CPRNC	Unigene14052-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	0.0		no	60.8	29.3	31.5	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Cfe_Unigene14806-CPLCP	Unigene14806-CPLCP	Cfe	Cryptolestes ferrugineus	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene15011-CPFL	Unigene15011-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene15156-CPLCP	Unigene15156-CPLCP	Cfe	Cryptolestes ferrugineus	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene15571-RR2	Unigene15571-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	0.0		no	0.0	84.5	-84.5	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Cfe_Unigene16129-Tweedle	Unigene16129-Tweedle	Cfe	Cryptolestes ferrugineus	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene17163-CPRNC	Unigene17163-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	26.4	8.9e-07	no	44.6	0.0	44.6	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Cfe_Unigene17315-CPCFC	Unigene17315-CPCFC	Cfe	Cryptolestes ferrugineus	CPCFC	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cfe_Unigene362-CPLCG	Unigene362-CPLCG	Cfe	Cryptolestes ferrugineus	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cme_CPG1	CPG1	Cme	Cnaphalocrocis medinalis	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cme_Tweedle1	Tweedle1	Cme	Cnaphalocrocis medinalis	CPT	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cpi_CPLCG5	CPLCG5	Cpi	Culex pipiens	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Cpo_CPR35	CPR35	Cpo	Cydia pomonella	CPR RR-1	11.5	0.031	no	122.2	0.0	122.2	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dan_CPF1	CPF1	Dan	Drosophila ananassae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPF2	CPF2	Dan	Drosophila ananassae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPF3	CPF3	Dan	Drosophila ananassae	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPLCG1	CPLCG1	Dan	Drosophila ananassae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPLCG2	CPLCG2	Dan	Drosophila ananassae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPLCG3	CPLCG3	Dan	Drosophila ananassae	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPR_Uncharacterized_	CPR_Uncharacterized_	Dan	Drosophila ananassae	CPR	13.5	0.008	no	18.1	0.0	18.1	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPR_Uncharacterized_1	CPR_Uncharacterized_1	Dan	Drosophila ananassae	CPR	7.8	0.43	no	55.8	17.0	38.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dan_CPR_Uncharacterized_2	CPR_Uncharacterized_2	Dan	Drosophila ananassae	CPR	27.9	3e-07	no	69.5	14.4	55.1	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dan_CPR_Uncharacterized_41	CPR_Uncharacterized_41	Dan	Drosophila ananassae	CPR	0.0		no	25.5	87.6	-62.1	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dan_CPR_Uncharacterized_43	CPR_Uncharacterized_43	Dan	Drosophila ananassae	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_CPR_Uncharacterized_97	CPR_Uncharacterized_97	Dan	Drosophila ananassae	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle1	Tweedle1	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle10	Tweedle10	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle11	Tweedle11	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle12	Tweedle12	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle13	Tweedle13	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle14	Tweedle14	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle15	Tweedle15	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle16	Tweedle16	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle17	Tweedle17	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle18	Tweedle18	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle19	Tweedle19	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle2	Tweedle2	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle20	Tweedle20	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle21	Tweedle21	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle22	Tweedle22	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle23	Tweedle23	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle24	Tweedle24	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle25	Tweedle25	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle26	Tweedle26	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle27	Tweedle27	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle28	Tweedle28	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle3	Tweedle3	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle4	Tweedle4	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle6	Tweedle6	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle7	Tweedle7	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle8	Tweedle8	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dan_Tweedle9	Tweedle9	Dan	Drosophila ananassae	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dci_CP8	CP8	Dci	Diaphorina citri	CPR RR-2	0.0		no	0.0	89.3	-89.3	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Dgr_CPF1	CPF1	Dgr	Drosophila grimshawi	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_CPF2	CPF2	Dgr	Drosophila grimshawi	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_CPF3	CPF3	Dgr	Drosophila grimshawi	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_CPLCG1	CPLCG1	Dgr	Drosophila grimshawi	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_CPLCG2	CPLCG2	Dgr	Drosophila grimshawi	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_CPLCG3	CPLCG3	Dgr	Drosophila grimshawi	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_113	CPR_Uncharacterized_113	Dgr	Drosophila grimshawi	CPR	24.3	3.9e-06	no	30.9	20.1	10.8	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_116	CPR_Uncharacterized_116	Dgr	Drosophila grimshawi	CPR	29.4	1.1e-07	no	22.8	16.8	6.0	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_127	CPR_Uncharacterized_127	Dgr	Drosophila grimshawi	CPR	10.6	0.059	no	41.4	22.3	19.1	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_2	CPR_Uncharacterized_2	Dgr	Drosophila grimshawi	CPR	28.7	1.7e-07	no	74.2	23.8	50.4	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_51	CPR_Uncharacterized_51	Dgr	Drosophila grimshawi	CPR	29.2	1.3e-07	no	34.7	14.9	19.8	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_72	CPR_Uncharacterized_72	Dgr	Drosophila grimshawi	CPR	0.0		no	21.4	77.7	-56.3	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dgr_CPR_Uncharacterized_77	CPR_Uncharacterized_77	Dgr	Drosophila grimshawi	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle1	Tweedle1	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle10	Tweedle10	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle11	Tweedle11	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle12	Tweedle12	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle13	Tweedle13	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle14	Tweedle14	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle15	Tweedle15	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle16	Tweedle16	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle17	Tweedle17	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle18	Tweedle18	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle19	Tweedle19	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle2	Tweedle2	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle20	Tweedle20	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle21	Tweedle21	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle22	Tweedle22	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle23	Tweedle23	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle24	Tweedle24	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle25	Tweedle25	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle26	Tweedle26	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle27	Tweedle27	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle3	Tweedle3	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle4	Tweedle4	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle5	Tweedle5	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle6	Tweedle6	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle7	Tweedle7	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle8	Tweedle8	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dgr_Tweedle9	Tweedle9	Dgr	Drosophila grimshawi	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0A7CK57	A0A0A7CK57	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N7ZEQ8	A0A0N7ZEQ8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N7ZV12	A0A0N7ZV12	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N7ZXU0	A0A0N7ZXU0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8A0T1	A0A0N8A0T1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8A5S5	A0A0N8A5S5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8AFU1	A0A0N8AFU1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8AIP1	A0A0N8AIP1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8AIV3	A0A0N8AIV3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8B736	A0A0N8B736	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8BB85	A0A0N8BB85	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8BCV5_Obst-A	A0A0N8BCV5_Obst-A	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8BD27	A0A0N8BD27	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8BLW1	A0A0N8BLW1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8C5H6	A0A0N8C5H6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8C962	A0A0N8C962	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8CFK0	A0A0N8CFK0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8D4S4	A0A0N8D4S4	Dma	Daphnia magna	NULL	0.0		no	37.1	0.0	37.1	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8D726	A0A0N8D726	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8DDM6	A0A0N8DDM6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8DN86	A0A0N8DN86	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0N8EDG8	A0A0N8EDG8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4WQY2	A0A0P4WQY2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4WUQ4	A0A0P4WUQ4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4X051	A0A0P4X051	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4Y9X6	A0A0P4Y9X6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4YEF1	A0A0P4YEF1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4YRK4	A0A0P4YRK4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P4ZIY8	A0A0P4ZIY8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5AHU6	A0A0P5AHU6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5AHY8	A0A0P5AHY8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5BKY0	A0A0P5BKY0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5CQN1	A0A0P5CQN1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5DQE9	A0A0P5DQE9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5DRY5	A0A0P5DRY5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5E3A2	A0A0P5E3A2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5EJV0	A0A0P5EJV0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5FUH3	A0A0P5FUH3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5G9T5	A0A0P5G9T5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5GAQ1	A0A0P5GAQ1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5GEN8	A0A0P5GEN8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5GHN5	A0A0P5GHN5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5GQN5	A0A0P5GQN5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5GYD2	A0A0P5GYD2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5HJP0 | CPR78Cc	A0A0P5HJP0 | CPR78Cc	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5HSS6	A0A0P5HSS6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5J5X1	A0A0P5J5X1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5J823	A0A0P5J823	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5J9L4	A0A0P5J9L4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5JSZ5	A0A0P5JSZ5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5KHH2	A0A0P5KHH2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5KJ62	A0A0P5KJ62	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5L1Q6	A0A0P5L1Q6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5LSH1	A0A0P5LSH1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5M4M9	A0A0P5M4M9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5M6B2	A0A0P5M6B2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5MKK7	A0A0P5MKK7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5MQ50	A0A0P5MQ50	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5PEI8 | Pro-resilin	A0A0P5PEI8 | Pro-resilin	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5Q3J5	A0A0P5Q3J5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5S9M7	A0A0P5S9M7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5SW44	A0A0P5SW44	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5TNV1	A0A0P5TNV1	Dma	Daphnia magna	NULL	0.0		no	28.7	145.5	-116.8	CPR RR-2	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5TR26	A0A0P5TR26	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5UJZ3	A0A0P5UJZ3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5UWJ6 | 66D-like	A0A0P5UWJ6 | 66D-like	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5VBF7	A0A0P5VBF7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5VG56	A0A0P5VG56	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5VHX6	A0A0P5VHX6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5VJX3	A0A0P5VJX3	Dma	Daphnia magna	NULL	0.0		no	30.7	0.0	30.7	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5W9D9	A0A0P5W9D9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5WB21 | Pro-resilin	A0A0P5WB21 | Pro-resilin	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5WJM5	A0A0P5WJM5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5WUA4	A0A0P5WUA4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5X4A2	A0A0P5X4A2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5XM77	A0A0P5XM77	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5XUG0	A0A0P5XUG0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5Y6E4	A0A0P5Y6E4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YCK0	A0A0P5YCK0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YD00	A0A0P5YD00	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YEB4	A0A0P5YEB4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YKU8	A0A0P5YKU8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YRA0	A0A0P5YRA0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YVL4	A0A0P5YVL4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5YWX1	A0A0P5YWX1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5Z2Y2	A0A0P5Z2Y2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZBW3	A0A0P5ZBW3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZG31	A0A0P5ZG31	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZG64	A0A0P5ZG64	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZGF9	A0A0P5ZGF9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZKZ4	A0A0P5ZKZ4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZQ74	A0A0P5ZQ74	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZV57	A0A0P5ZV57	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P5ZX24	A0A0P5ZX24	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6A1T0	A0A0P6A1T0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6AFG0	A0A0P6AFG0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6AFH5_iso2	A0A0P6AFH5_iso2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6B3M3	A0A0P6B3M3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6BP38	A0A0P6BP38	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6C3B8	A0A0P6C3B8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6C730 | Dusky	A0A0P6C730 | Dusky	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6CSB9	A0A0P6CSB9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6D363	A0A0P6D363	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6DZG8	A0A0P6DZG8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6E5V3	A0A0P6E5V3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6EXT2	A0A0P6EXT2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6FAA3	A0A0P6FAA3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6FMD2	A0A0P6FMD2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6FY90	A0A0P6FY90	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6GKG4	A0A0P6GKG4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6GRW6	A0A0P6GRW6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6IC66	A0A0P6IC66	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A0P6IFY3	A0A0P6IFY3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CAG3	A0A162CAG3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CB87	A0A162CB87	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CB96	A0A162CB96	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CE10	A0A162CE10	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CFV2	A0A162CFV2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CJH2	A0A162CJH2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162CMV0	A0A162CMV0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162D7A0	A0A162D7A0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162DCV8	A0A162DCV8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162DGC9	A0A162DGC9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162EDE1	A0A162EDE1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162N930	A0A162N930	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162NC65	A0A162NC65	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162NHE4	A0A162NHE4	Dma	Daphnia magna	NULL	0.0		no	0.0	44.8	-44.8	CPR RR-2	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162NZ08	A0A162NZ08	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162PK45 | SgAbd-1	A0A162PK45 | SgAbd-1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162QBA2	A0A162QBA2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162QX71	A0A162QX71	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162QZK2	A0A162QZK2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162R0Z1	A0A162R0Z1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162RTH7	A0A162RTH7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162S0P7	A0A162S0P7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162S4K9	A0A162S4K9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162S9F3	A0A162S9F3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162SEV5	A0A162SEV5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162SIK0	A0A162SIK0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162SJG6	A0A162SJG6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162SNC7	A0A162SNC7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162SQV9	A0A162SQV9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A162T5Q5	A0A162T5Q5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164GC58	A0A164GC58	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164H286	A0A164H286	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164K434 | Dusky-like	A0A164K434 | Dusky-like	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164K4K6	A0A164K4K6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164K7H4	A0A164K7H4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164KDF9	A0A164KDF9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164KFV1	A0A164KFV1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164KJP0	A0A164KJP0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164KTN1	A0A164KTN1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164KV13	A0A164KV13	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164L146	A0A164L146	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164LF84	A0A164LF84	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164LP69	A0A164LP69	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164LPA0	A0A164LPA0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164LPA4	A0A164LPA4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164NCG7	A0A164NCG7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164NEQ9	A0A164NEQ9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164NLM3	A0A164NLM3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164NWW6	A0A164NWW6	Dma	Daphnia magna	NULL	0.0		no	34.6	199.9	-165.3	CPR RR-2	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PHW4	A0A164PHW4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PIN1 | SgAbd-1	A0A164PIN1 | SgAbd-1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PIP9 | CPR65Av	A0A164PIP9 | CPR65Av	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PJ70 | CPR49Ag_iso1	A0A164PJ70 | CPR49Ag_iso1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PJ70 | CPR49Ag_iso2	A0A164PJ70 | CPR49Ag_iso2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PJ70 | CPR49Ag_iso3	A0A164PJ70 | CPR49Ag_iso3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PJC7	A0A164PJC7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PJT9	A0A164PJT9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PL39	A0A164PL39	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PLM5	A0A164PLM5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PLR1	A0A164PLR1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PMY4	A0A164PMY4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164PVJ3	A0A164PVJ3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164QGZ0	A0A164QGZ0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164QLL2	A0A164QLL2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164QU37	A0A164QU37	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164R629	A0A164R629	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164RHQ1	A0A164RHQ1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164RZD6	A0A164RZD6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164S7N3	A0A164S7N3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164T1N4	A0A164T1N4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164TXN6	A0A164TXN6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164U0J7	A0A164U0J7	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164U2H5	A0A164U2H5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164UBZ2	A0A164UBZ2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164UFW9	A0A164UFW9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164V3C5	A0A164V3C5	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164V864	A0A164V864	Dma	Daphnia magna	NULL	22.3	1.6e-05	no	26.6	9.9	16.7	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dma_A0A164VEC4	A0A164VEC4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164VFT6	A0A164VFT6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164VFV8	A0A164VFV8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164VK58	A0A164VK58	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164VLV1	A0A164VLV1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164VQM0	A0A164VQM0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164WL64	A0A164WL64	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164WRK2	A0A164WRK2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164WRM1	A0A164WRM1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164WTV1	A0A164WTV1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164WWC9	A0A164WWC9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164WYK8	A0A164WYK8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164XQP6	A0A164XQP6	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164XXI4	A0A164XXI4	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164XY56	A0A164XY56	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164Y6Z1	A0A164Y6Z1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164Y7C0	A0A164Y7C0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164YAJ9	A0A164YAJ9	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164YCT3	A0A164YCT3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164YWG1	A0A164YWG1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164YX87	A0A164YX87	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164ZHM0	A0A164ZHM0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164ZRB3	A0A164ZRB3	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164ZW19_iso1	A0A164ZW19_iso1	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164ZW19_iso2	A0A164ZW19_iso2	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164ZXW0	A0A164ZXW0	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A164ZY01	A0A164ZY01	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A165A0I1	A0A165A0I1	Dma	Daphnia magna	NULL	7.6	0.51	no	37.7	8.6	29.1	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dma_A0A165AJU8	A0A165AJU8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dma_S4UCD8	S4UCD8	Dma	Daphnia magna	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_ACP1	ACP1	Dme	Drosophila melanogaster	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG14638	CG14638	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG5480	CG5480	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG6478	CG6478	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG7203	CG7203	Dme	Drosophila melanogaster	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG7214	CG7214	Dme	Drosophila melanogaster	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG7548	CG7548	Dme	Drosophila melanogaster	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG8541	CG8541	Dme	Drosophila melanogaster	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_CG8543	CG8543	Dme	Drosophila melanogaster	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Cht10	Cht10	Dme	Drosophila melanogaster	Chitinase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Cht2	Cht2	Dme	Drosophila melanogaster	Chitinase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Cpr47Ef_iso1	Cpr47Ef_iso1	Dme	Drosophila melanogaster	CPR RR-1	0.0		no	136.2	27.2	109.0	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dme_Cpr47Ef_iso2	Cpr47Ef_iso2	Dme	Drosophila melanogaster	CPR RR-1	0.0		no	136.3	27.3	109.0	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dme_Cpr49Ac_iso2	Cpr49Ac_iso2	Dme	Drosophila melanogaster	CPR RR-1	0.0		no	100.6	14.1	86.5	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dme_Cpr49Ac_iso3	Cpr49Ac_iso3	Dme	Drosophila melanogaster	CPR RR-1	0.0		no	99.5	12.5	87.0	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dme_Cpr49Ac_iso4	Cpr49Ac_iso4	Dme	Drosophila melanogaster	CPR RR-1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Cpr72Ea	Cpr72Ea	Dme	Drosophila melanogaster	CPR RR-3	19.1	0.00015	no	39.4	4.0	35.4	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Dme_Cpr97Ea_iso1	Cpr97Ea_iso1	Dme	Drosophila melanogaster	CPR RR-1	26.8	6.9e-07	no	63.7	22.1	41.6	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dme_Cpr97Ea_iso2	Cpr97Ea_iso2	Dme	Drosophila melanogaster	CPR RR-1	17.7	0.00042	no	59.4	18.0	41.4	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Dme_Dsc73	Dsc73	Dme	Drosophila melanogaster	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_EDG91	EDG91	Dme	Drosophila melanogaster	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_JS	JS	Dme	Drosophila melanogaster	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Lac2	Lac2	Dme	Drosophila melanogaster	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Obst-A	Obst-A	Dme	Drosophila melanogaster	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Obst-C	Obst-C	Dme	Drosophila melanogaster	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Obst-E	Obst-E	Dme	Drosophila melanogaster	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Retinin	Retinin	Dme	Drosophila melanogaster	CPLCA	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Schlaff	Schlaff	Dme	Drosophila melanogaster	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Serp	Serp	Dme	Drosophila melanogaster	Chitin deacetylase - group I	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Snsl	Snsl	Dme	Drosophila melanogaster	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Snu	Snu	Dme	Drosophila melanogaster	ABC transporter	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TG	TG	Dme	Drosophila melanogaster	Enzyme	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TwdlD	TwdlD	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleC	TweedleC	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleE	TweedleE	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleF	TweedleF	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleG	TweedleG	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleH	TweedleH	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleJ	TweedleJ	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleK	TweedleK	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleL	TweedleL	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleM	TweedleM	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleN	TweedleN	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleO	TweedleO	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleP	TweedleP	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleQ	TweedleQ	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleR	TweedleR	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleS	TweedleS	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleT	TweedleT	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleV	TweedleV	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleW	TweedleW	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleX	TweedleX	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleY	TweedleY	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_TweedleZ	TweedleZ	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Tweedlealpha	Tweedlealpha	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Tweedlebeta	Tweedlebeta	Dme	Drosophila melanogaster	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Vajk1	Vajk1	Dme	Drosophila melanogaster	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Vajk4	Vajk4	Dme	Drosophila melanogaster	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Verm	Verm	Dme	Drosophila melanogaster	Chitin deacetylase - group I	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_Y	Y	Dme	Drosophila melanogaster	Yellow	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dme_resilin_iso1	resilin_iso1	Dme	Drosophila melanogaster	CPR RR-2	0.0		no	0.0	82.9	-82.9	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Dme_resilin_iso2	resilin_iso2	Dme	Drosophila melanogaster	CPR RR-2	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPF1	CPF1	Dmo	Drosophila mojavensis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPF2	CPF2	Dmo	Drosophila mojavensis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPF3	CPF3	Dmo	Drosophila mojavensis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPLCG1	CPLCG1	Dmo	Drosophila mojavensis	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPLCG2	CPLCG2	Dmo	Drosophila mojavensis	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPLCG3	CPLCG3	Dmo	Drosophila mojavensis	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPR_Uncharacterized_107	CPR_Uncharacterized_107	Dmo	Drosophila mojavensis	CPR	21.5	2.8e-05	no	35.6	0.0	35.6	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dmo_CPR_Uncharacterized_44	CPR_Uncharacterized_44	Dmo	Drosophila mojavensis	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_CPR_Uncharacterized_65	CPR_Uncharacterized_65	Dmo	Drosophila mojavensis	CPR	21.6	2.7e-05	no	63.2	13.2	50.0	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dmo_CPR_Uncharacterized_68	CPR_Uncharacterized_68	Dmo	Drosophila mojavensis	CPR	28.9	1.6e-07	no	80.3	20.0	60.3	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dmo_CPR_Uncharacterized_81	CPR_Uncharacterized_81	Dmo	Drosophila mojavensis	CPR	27.5	4.1e-07	no	96.6	0.0	96.6	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle1	Tweedle1	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle10	Tweedle10	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle11	Tweedle11	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle12	Tweedle12	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle13	Tweedle13	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle14	Tweedle14	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle15	Tweedle15	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle16	Tweedle16	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle17	Tweedle17	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle18	Tweedle18	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle19	Tweedle19	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle2	Tweedle2	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle20	Tweedle20	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle21	Tweedle21	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle22	Tweedle22	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle23	Tweedle23	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle24	Tweedle24	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle25	Tweedle25	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle26	Tweedle26	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle3	Tweedle3	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle4	Tweedle4	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle5	Tweedle5	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle6	Tweedle6	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle7	Tweedle7	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle8	Tweedle8	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dmo_Tweedle9	Tweedle9	Dmo	Drosophila mojavensis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPF1	CPF1	Dps	Drosophila pseudoobscura	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPF2	CPF2	Dps	Drosophila pseudoobscura	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPF3	CPF3	Dps	Drosophila pseudoobscura	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPLCG1	CPLCG1	Dps	Drosophila pseudoobscura	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPLCG2	CPLCG2	Dps	Drosophila pseudoobscura	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPLCG3	CPLCG3	Dps	Drosophila pseudoobscura	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_CPR_Uncharacterized_31	CPR_Uncharacterized_31	Dps	Drosophila pseudoobscura	CPR	11.4	0.034	no	41.3	0.0	41.3	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dps_CPR_Uncharacterized_H	CPR_Uncharacterized_H	Dps	Drosophila pseudoobscura	CPR	18.7	0.00021	no	56.3	7.8	48.5	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dps_Tweedle1	Tweedle1	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle12	Tweedle12	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle14	Tweedle14	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle15	Tweedle15	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle17	Tweedle17	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle18	Tweedle18	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle19	Tweedle19	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle20	Tweedle20	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle21	Tweedle21	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle22	Tweedle22	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle23	Tweedle23	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle24	Tweedle24	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle27	Tweedle27	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle28	Tweedle28	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle29	Tweedle29	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle3	Tweedle3	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle30	Tweedle30	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle32	Tweedle32	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle33	Tweedle33	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle34	Tweedle34	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle35	Tweedle35	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle36	Tweedle36	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle4	Tweedle4	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle5	Tweedle5	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle6	Tweedle6	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle7	Tweedle7	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle8	Tweedle8	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dps_Tweedle9	Tweedle9	Dps	Drosophila pseudoobscura	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_Tubby-like	Tubby-like	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlC-like	TwdlC-like	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlF	TwdlF	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlG	TwdlG	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlJ-like	TwdlJ-like	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlT-like	TwdlT-like	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlV	TwdlV	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_TwdlW-like	TwdlW-like	Dsu	Drosophila suzukii	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dsu_dusky-like	dusky-like	Dsu	Drosophila suzukii	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPF1	CPF1	Dvi	Drosophila virilis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPF2	CPF2	Dvi	Drosophila virilis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPF3	CPF3	Dvi	Drosophila virilis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPLCG1	CPLCG1	Dvi	Drosophila virilis	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPLCG2	CPLCG2	Dvi	Drosophila virilis	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPLCG3	CPLCG3	Dvi	Drosophila virilis	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPR_Uncharacterized_118	CPR_Uncharacterized_118	Dvi	Drosophila virilis	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPR_Uncharacterized_26	CPR_Uncharacterized_26	Dvi	Drosophila virilis	CPR	0.0		no	19.8	83.7	-63.9	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dvi_CPR_Uncharacterized_29	CPR_Uncharacterized_29	Dvi	Drosophila virilis	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_CPR_Uncharacterized_43	CPR_Uncharacterized_43	Dvi	Drosophila virilis	CPR	28.6	1.9e-07	no	39.8	0.0	39.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dvi_CPR_Uncharacterized_71	CPR_Uncharacterized_71	Dvi	Drosophila virilis	CPR	21.6	2.7e-05	no	65.1	8.3	56.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dvi_CPR_Uncharacterized_72	CPR_Uncharacterized_72	Dvi	Drosophila virilis	CPR	20.2	7e-05	no	47.1	26.7	20.4	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle1	Tweedle1	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle10	Tweedle10	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle12	Tweedle12	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle13	Tweedle13	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle14	Tweedle14	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle15	Tweedle15	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle16	Tweedle16	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle17	Tweedle17	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle18	Tweedle18	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle19	Tweedle19	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle2	Tweedle2	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle20	Tweedle20	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle21	Tweedle21	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle22	Tweedle22	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle23	Tweedle23	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle24	Tweedle24	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle25	Tweedle25	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle26	Tweedle26	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle3	Tweedle3	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle4	Tweedle4	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle5	Tweedle5	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle6	Tweedle6	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle7	Tweedle7	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle8	Tweedle8	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dvi_Tweedle9	Tweedle9	Dvi	Drosophila virilis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPF1	CPF1	Dwi	Drosophila willistoni	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPF2	CPF2	Dwi	Drosophila willistoni	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPF3	CPF3	Dwi	Drosophila willistoni	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPLCG1	CPLCG1	Dwi	Drosophila willistoni	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPLCG2	CPLCG2	Dwi	Drosophila willistoni	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPLCG3	CPLCG3	Dwi	Drosophila willistoni	CPLCG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_CPR_Uncharacterized_106	CPR_Uncharacterized_106	Dwi	Drosophila willistoni	CPR	16.5	0.00095	no	60.9	7.7	53.2	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dwi_CPR_Uncharacterized_B	CPR_Uncharacterized_B	Dwi	Drosophila willistoni	CPR	0.0		no	0.0	81.4	-81.4	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Dwi_CPR_Uncharacterized_D	CPR_Uncharacterized_D	Dwi	Drosophila willistoni	CPR	0.0		no	20.9	15.6	5.3	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dwi_CPR_Uncharacterized_F	CPR_Uncharacterized_F	Dwi	Drosophila willistoni	CPR	25.0	2.3e-06	no	37.9	20.8	17.1	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle1	Tweedle1	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle10	Tweedle10	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle11	Tweedle11	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle12	Tweedle12	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle13	Tweedle13	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle14	Tweedle14	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle15	Tweedle15	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle16	Tweedle16	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle17	Tweedle17	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle18	Tweedle18	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle19	Tweedle19	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle2	Tweedle2	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle20	Tweedle20	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle21	Tweedle21	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle22	Tweedle22	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle23	Tweedle23	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle24	Tweedle24	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle25	Tweedle25	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle26	Tweedle26	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle27	Tweedle27	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle28	Tweedle28	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle3	Tweedle3	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle4	Tweedle4	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle5	Tweedle5	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle6	Tweedle6	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle7	Tweedle7	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle8	Tweedle8	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Dwi_Tweedle9	Tweedle9	Dwi	Drosophila willistoni	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_1	CPAP1_1	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_10	CPAP1_10	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_11	CPAP1_11	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_12	CPAP1_12	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_13	CPAP1_13	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_14	CPAP1_14	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_15	CPAP1_15	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_16	CPAP1_16	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_2	CPAP1_2	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_3	CPAP1_3	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_4	CPAP1_4	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_5	CPAP1_5	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_6	CPAP1_6	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_7	CPAP1_7	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_8	CPAP1_8	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP1_9	CPAP1_9	Foc	Frankliniella occidentalis	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP3_1	CPAP3_1	Foc	Frankliniella occidentalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP3_2	CPAP3_2	Foc	Frankliniella occidentalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP3_3	CPAP3_3	Foc	Frankliniella occidentalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP3_4	CPAP3_4	Foc	Frankliniella occidentalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP3_5	CPAP3_5	Foc	Frankliniella occidentalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPAP3_6	CPAP3_6	Foc	Frankliniella occidentalis	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPCFC1	CPCFC1	Foc	Frankliniella occidentalis	CPCFC	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPCFC2	CPCFC2	Foc	Frankliniella occidentalis	CPCFC	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPF1	CPF1	Foc	Frankliniella occidentalis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPF2	CPF2	Foc	Frankliniella occidentalis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPF3	CPF3	Foc	Frankliniella occidentalis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPF4	CPF4	Foc	Frankliniella occidentalis	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPG1	CPG1	Foc	Frankliniella occidentalis	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPG2	CPG2	Foc	Frankliniella occidentalis	CPG	15.9	0.0015	no	26.6	0.0	26.6	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Foc_CPG3	CPG3	Foc	Frankliniella occidentalis	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPG4	CPG4	Foc	Frankliniella occidentalis	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPG5	CPG5	Foc	Frankliniella occidentalis	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPG6	CPG6	Foc	Frankliniella occidentalis	CPG	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP1	CPLCP1	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP10	CPLCP10	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP11	CPLCP11	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP12	CPLCP12	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP13	CPLCP13	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP14	CPLCP14	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP15	CPLCP15	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP16	CPLCP16	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP2	CPLCP2	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP3	CPLCP3	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP4	CPLCP4	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP5	CPLCP5	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP6	CPLCP6	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP7	CPLCP7	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP8	CPLCP8	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_CPLCP9	CPLCP9	Foc	Frankliniella occidentalis	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_RR-1_25	RR-1_25	Foc	Frankliniella occidentalis	CPR RR-1	0.0		no	51.4	0.0	51.4	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Foc_RR-1_28	RR-1_28	Foc	Frankliniella occidentalis	CPR RR-1	23.0	9.7e-06	no	65.0	19.8	45.2	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Foc_RR-2_1	RR-2_1	Foc	Frankliniella occidentalis	CPR RR-2	0.0		no	28.1	70.5	-42.4	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Foc_RR-2_21	RR-2_21	Foc	Frankliniella occidentalis	CPR RR-2	7.7	0.47	no	24.0	65.0	-41.0	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Foc_RR-2_23	RR-2_23	Foc	Frankliniella occidentalis	CPR RR-2	0.0		no	37.2	58.1	-20.9	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Foc_RR-2_24	RR-2_24	Foc	Frankliniella occidentalis	CPR RR-2	26.3	9.6e-07	no	25.4	33.2	-7.8	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Foc_RR-2_25	RR-2_25	Foc	Frankliniella occidentalis	CPR RR-2	0.0		no	67.0	34.8	32.2	CPR RR-1	conflict	not_confident_CPR	not_confident_CPR
+Foc_RR-2_27	RR-2_27	Foc	Frankliniella occidentalis	CPR RR-2	6.9	0.79	no	41.5	30.5	11.0	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Foc_RR-2_8	RR-2_8	Foc	Frankliniella occidentalis	CPR RR-2	0.0		no	0.0	81.4	-81.4	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Foc_RR-NC_1	RR-NC_1	Foc	Frankliniella occidentalis	NULL	26.5	8.5e-07	no	65.4	12.9	52.5	CPR RR-1	other_family_with_RR_hit	not_confident_CPR	not_confident_CPR
+Foc_RR-NC_5	RR-NC_5	Foc	Frankliniella occidentalis	NULL	0.0		no	0.0	17.0	-17.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_RR-NC_7	RR-NC_7	Foc	Frankliniella occidentalis	NULL	22.4	1.5e-05	no	0.0	18.5	-18.5	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_RR-NC_8	RR-NC_8	Foc	Frankliniella occidentalis	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL1	TWDL1	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL10	TWDL10	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL2	TWDL2	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL3	TWDL3	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL4	TWDL4	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL5	TWDL5	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL6	TWDL6	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL7	TWDL7	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL8	TWDL8	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Foc_TWDL9	TWDL9	Foc	Frankliniella occidentalis	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Isc_EEC00993.1	EEC00993.1	Isc	Ixodes scapularis	CPAP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Isc_EEC04237.1	EEC04237.1	Isc	Ixodes scapularis	CPAP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Isc_EEC07402.1	EEC07402.1	Isc	Ixodes scapularis	CPAP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Isc_EEC11064.1	EEC11064.1	Isc	Ixodes scapularis	NULL	27.2	5.1e-07	no	21.2	28.6	-7.4	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Isc_EEC12627.1	EEC12627.1	Isc	Ixodes scapularis	CPAP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Isc_EEC17151.1	EEC17151.1	Isc	Ixodes scapularis	CPAP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_CDA1	CDA1	Lmi	Locusta migratoria	Chitin deacetylase - group I	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_CDA2	CDA2	Lmi	Locusta migratoria	Chitin deacetylase - group I	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_CPFL2	CPFL2	Lmi	Locusta migratoria	CPFL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_CPH-1	CPH-1	Lmi	Locusta migratoria	CPH	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-A1	Obst-A1	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-A2	Obst-A2	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-B	Obst-B	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-C	Obst-C	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-D1	Obst-D1	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-D2	Obst-D2	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-E1	Obst-E1	Lmi	Locusta migratoria	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-F	Obst-F	Lmi	Locusta migratoria	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Obst-H	Obst-H	Lmi	Locusta migratoria	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Lmi_Snsl	Snsl	Lmi	Locusta migratoria	ABC transporter	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Mal_Lac2	Lac2	Mal	Monochamus alternatus	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Mpu_Lac2	Lac2	Mpu	Megacopta punctatissima	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CP21.92	CP21.92	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-A	CPAP1-A	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-B	CPAP1-B	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-C	CPAP1-C	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-D	CPAP1-D	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-E_iso1	CPAP1-E	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-E_iso2	CPAP1-E_iso2	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-F	CPAP1-F	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-G	CPAP1-G	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-H	CPAP1-H	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-I	CPAP1-I	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-J	CPAP1-J	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-K	CPAP1-K	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-L	CPAP1-L	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-M	CPAP1-M	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-N	CPAP1-N	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-O	CPAP1-O	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-P	CPAP1-P	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP1-Q	CPAP1-Q	Nlu	Nilaparvata lugens	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-A1	CPAP3-A1	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-A2	CPAP3-A2	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-B	CPAP3-B	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-C5a	CPAP3-C5a	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-C5b	CPAP3-C5b	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-D1	CPAP3-D1	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-D2	CPAP3-D2	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAP3-E	CPAP3-E	Nlu	Nilaparvata lugens	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAPn-10	CPAPn-10	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAPn-3	CPAPn-3	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPAPn-7	CPAPn-7	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPF3a	CPF3a	Nlu	Nilaparvata lugens	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPF3b	CPF3b	Nlu	Nilaparvata lugens	CPF	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPG1	CPG1	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPG2	CPG2	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPG3	CPG3	Nlu	Nilaparvata lugens	NULL	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPLCP1	CPLCP1	Nlu	Nilaparvata lugens	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPLCP2	CPLCP2	Nlu	Nilaparvata lugens	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPLCP3	CPLCP3	Nlu	Nilaparvata lugens	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPLCP4	CPLCP4	Nlu	Nilaparvata lugens	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPLCP5	CPLCP5	Nlu	Nilaparvata lugens	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_CPLCP6	CPLCP6	Nlu	Nilaparvata lugens	CPLCP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_Cpr11	Cpr11	Nlu	Nilaparvata lugens	CPR	0.0		no	42.3	14.8	27.5	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr29	Cpr29	Nlu	Nilaparvata lugens	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_Cpr30	Cpr30	Nlu	Nilaparvata lugens	CPR	10.2	0.08	no	55.4	23.7	31.7	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr31	Cpr31	Nlu	Nilaparvata lugens	CPR	0.0		no	28.3	33.0	-4.7	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Nlu_Cpr32	Cpr32	Nlu	Nilaparvata lugens	CPR	0.0		no	68.1	26.8	41.3	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr36	Cpr36	Nlu	Nilaparvata lugens	CPR	0.0		no	35.8	0.0	35.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr6	Cpr6	Nlu	Nilaparvata lugens	CPR RR-1	0.0		no	37.0	0.0	37.0	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Nlu_Cpr62	Cpr62	Nlu	Nilaparvata lugens	CPR RR-2	0.0		no	0.0	53.4	-53.4	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Nlu_Cpr64	Cpr64	Nlu	Nilaparvata lugens	CPR RR-2	0.0		no	29.6	97.6	-68.0	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Nlu_Cpr71	Cpr71	Nlu	Nilaparvata lugens	CPR	0.0		no	22.6	54.3	-31.7	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr75	Cpr75	Nlu	Nilaparvata lugens	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_Cpr76	Cpr76	Nlu	Nilaparvata lugens	CPR	0.0		no	22.1	68.0	-45.9	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr80	Cpr80	Nlu	Nilaparvata lugens	CPR	0.0		no	0.0	71.3	-71.3	CPR RR-2	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr83	Cpr83	Nlu	Nilaparvata lugens	CPR RR-2	0.0		no	0.0	77.0	-77.0	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Nlu_Cpr85	Cpr85	Nlu	Nilaparvata lugens	CPR	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_Cpr8_iso1	Cpr8	Nlu	Nilaparvata lugens	CPR RR-1	25.9	1.3e-06	no	21.3	0.0	21.3	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Nlu_Cpr8_iso2	Cpr8_iso2	Nlu	Nilaparvata lugens	CPR	22.8	1.1e-05	no	21.1	0.0	21.1	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr94	Cpr94	Nlu	Nilaparvata lugens	CPR	11.5	0.033	no	39.8	13.5	26.3	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_Cpr95	Cpr95	Nlu	Nilaparvata lugens	CPR	22.9	1e-05	no	41.2	36.6	4.6	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Nlu_Cpr96	Cpr96	Nlu	Nilaparvata lugens	CPR	6.1	1.4	no	28.8	0.0	28.8	CPR RR-1	subclassified_from_CPR	not_confident_CPR	not_confident_CPR
+Nlu_TwdlE1	TwdlE1	Nlu	Nilaparvata lugens	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_TwdlE2	TwdlE2	Nlu	Nilaparvata lugens	Twdl	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Nlu_TwdlE3	TwdlE3	Nlu	Nilaparvata lugens	Tweedle	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Npl_Lac2	Lac2	Npl	Nysius plebeius	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Ofa_Lac2	Lac2	Ofa	Oncopeltus fasciatus	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Pci_CPAP3-2	CPAP3-2	Pci	Panonychus citri	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Pci_CPAP3-E	CPAP3-E	Pci	Panonychus citri	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Pps_CPR2	CPR2	Pps	Pardosa pseudoannulata	CPR RR-1	0.0		no	56.8	25.9	30.9	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Pxy_PCP	PCP	Pxy	Plutella xylostella	CPR RR-1	27.9	3.1e-07	no	73.1	13.0	60.1	CPR RR-1	confirmed	not_confident_CPR	not_confident_CPR
+Rpe_Lac2	Lac2	Rpe	Riptortus pedestris	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Sgr_pro-resilin	pro-resilin	Sgr	Schistocerca gregaria	CPR RR-2	0.0		no	29.3	80.9	-51.6	CPR RR-2	confirmed	not_confident_CPR	not_confident_CPR
+Tca_CHT10	CHT10	Tca	Tribolium castaneum	Chitinase - group II	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CHT5	CHT5	Tca	Tribolium castaneum	Chitinase - group I	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CHT7	CHT7	Tca	Tribolium castaneum	Chitinase - group III	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CP30	CP30	Tca	Tribolium castaneum	Low complexity	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CP63	CP63	Tca	Tribolium castaneum	non-canonical CP	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-A	CPAP1-A	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-B	CPAP1-B	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-C	CPAP1-C	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-D	CPAP1-D	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-E	CPAP1-E	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-F	CPAP1-F	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-G	CPAP1-G	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-H	CPAP1-H	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-I	CPAP1-I	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP1-J	CPAP1-J	Tca	Tribolium castaneum	CPAP1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-A1	CPAP3-A1	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-A2	CPAP3-A2	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-B	CPAP3-B	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-C5a	CPAP3-C5a	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-C5b	CPAP3-C5b	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-D1	CPAP3-D1	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-D2	CPAP3-D2	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_CPAP3-E	CPAP3-E	Tca	Tribolium castaneum	CPAP3	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_IDGF4	IDGF4	Tca	Tribolium castaneum	Chitinase - group IV	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_Lac2	Lac2	Tca	Tribolium castaneum	Muticopper oxidase / Phenol oxidase	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tca_Y-e	Y-e	Tca	Tribolium castaneum	Yellow	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tci_CPR	CPR	Tci	Tetranychus cinnabarinus	CPR	0.0		no	43.6	26.4	17.2	CPR RR ambiguous	ambiguous	not_confident_CPR	not_confident_CPR
+Tmo_LPCP-22	LPCP-22	Tmo	Tenebrio molitor	low complexity	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR
+Tpa_C1B-like	C1B-like	Tpa	Thrips palmi	CPR RR-1	0.0		no	0.0	0.0	0.0	no_confident_RR_hit	no_confident_hit	not_confident_CPR	not_confident_CPR

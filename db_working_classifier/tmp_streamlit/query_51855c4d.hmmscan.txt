@@ -1,0 +1,109 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_51855c4d.faa
+# target HMM database:             classifier_db/cuticulome_classifiers.hmm
+# per-dom hits tabular output:     /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_51855c4d.domtbl
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query_51855c4d  [L=521]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------         -----------
+   2.4e-109  355.5 130.4   2.2e-108  352.3 103.4    3.0  2  CPT.aln           
+      1e-45  146.5   0.4      1e-45  146.5   0.4    1.8  2  Tweedle_Twdl.aln  
+
+
+Domain annotation for each model (and alignments):
+>> CPT.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  352.3 103.4  2.8e-109  2.2e-108       1     312 [.       1     422 [.       1     438 [. 0.96
+   2 ?    2.0  25.4     0.011     0.085     239     326 ..     440     520 ..     422     521 .] 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 352.3 bits;  conditional E-value: 2.8e-109
+         CPT.aln   1 mrallvlavvlavaaadepelgYsYkaPqtsyg......sessssisggkrtsaiGgsggsvgggsgGl..........vslgsgysskGgslGg 79 
+                     m+a+l+l+v+++v+aad+++lgY+Y++Pqtsyg      s+sss+++++++ts++Ggsg++vggg+gG+          v++++gy+s Ggs+G+
+  query_51855c4d   1 MNAFLILTVAFGVVAADVSSLGYQYNVPQTSYGipshqiSASSSNYNTRYTTSGSGGSGFGVGGGQGGVvsypagsvgtVYQTTGYQSGGGSAGF 95 
+                     99********************************************************************************************* PP
+
+         CPT.aln  80 glgs.................gsGsGysf..gGsglsgsaysssgaigggs.....dsgsgGgysgg............................ 122
+                     g+gs                 gsGsGy++  gGsg+sgsay+ssg++gggs     +sgs+Gg sgg                            
+  query_51855c4d  96 GSGSagfgsgsagfgsgssgfGSGSGYQSvgGGSGYSGSAYQSSGSFGGGSgsfggGSGSFGGGSGGsagslnlgaslahtfqaqsaqkyqqqiq 190
+                     *****************************999******************87898888899999998**************************** PP
+
+         CPT.aln 123 yqqqP.lvqkhiYvhvaPeepeeqrprkiivvapaqkhYkiiFikaPspptptapiiPvqpqneektlvYvLvkkPeeqpdiviPkiapkqPskP 216
+                     yq+qP +v+kh+Yvh+aPeepe+++pr ++v++paqkhYkiiFik+Ps+++++a+i+Pv+pq+eekt+vYvLvkkPe+q+d+v+Pki++k+PskP
+  query_51855c4d 191 YQSQPaQVFKHFYVHAAPEEPETAKPRGPVVLPPAQKHYKIIFIKTPSAAGAGAQIAPVVPQTEEKTIVYVLVKKPEAQADLVLPKIEQKPPSKP 285
+                     *********************************************************************************************** PP
+
+         CPT.aln 217 evyFikYktkkesgavinniv.............GvGlGGGl.GglgGg............lggGsgggldgG....isggslGvgGisggs... 278
+                     ev+FikYk+k+es+avinniv             GvG+GGG+ G+ +Gg            ++gGs++g++gG    +sg+s+G++G++g+s   
+  query_51855c4d 286 EVFFIKYKNKDESQAVINNIVsdynkgqqtvsvsGVGVGGGAgGAGAGGfsgssgssgfsgFSGGSSSGFSGGsssgFSGDSAGFSGLAGLSggs 380
+                     ******************************************6667777*****************99999999999*******99877666554 PP
+
+         CPT.aln 279 lGgglsgasdsga........eisgdvGsigtdevavegghg 312
+                      G+gls+++dsg+        +++++vGs++t++++++gg++
+  query_51855c4d 381 GGAGLSVVTDSGSfggqydsgSAGSTVGSFETASAGLSGGYS 422
+                     999*************************************97 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.011
+         CPT.aln 239 vGlGGGlGglgGglggGsgggldgGisggslGvgGisggslGgglsgasdsgaeisgdvGsigtdevavegghgGvpsetYGpPgfka 326
+                      G G  lGg++   +   g ++ +G+ + + G+ G+ +gs+G+g  + + ++    +++ s   d ++++ ++ Gvp+etYG+P+fk+
+  query_51855c4d 440 SGGGSSLGGVSISRSEPVGQAVTSGYDSSDSGSVGLISGSVGSGGFSGAIGA----SSTVSY--DATSLS-SSQGVPHETYGIPSFKT 520
+                     2222333444444555556666666666666666666666665544444443....111222..222233.3459***********97 PP
+
+>> Tweedle_Twdl.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  146.5   0.4   1.3e-46     1e-45      13     187 ..       1     335 [.       1     369 [. 0.73
+   2 ?   -2.9   0.2      0.55       4.4     162     212 ..     460     517 ..     434     519 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 146.5 bits;  conditional E-value: 1.3e-46
+  Tweedle_Twdl.aln  13 mrafvvllcllalasarp...gYnyqp........apss...........................gssy....................... 44 
+                       m+af++l + +++++a     gY+y+         +  +                           g  +                       
+    query_51855c4d   1 MNAFLILTVAFGVVAADVsslGYQYNVpqtsygipS--HqisasssnyntryttsgsggsgfgvggG--Qggvvsypagsvgtvyqttgyqsg 89 
+                       888987777788888833346999954455666440..14444444555555555555444444441..033344444444555555555666 PP
+
+  Tweedle_Twdl.aln  45 ............................................................................................. 44 
+                                                                                                                    
+    query_51855c4d  90 ggsagfgsgsagfgsgsagfgsgssgfgsgsgyqsvgggsgysgsayqssgsfgggsgsfgggsgsfgggsggsagslnlgaslahtfqaqsa 182
+                       666666667777777777777788888888888888999999999999999999999999999999999999999999999988887765443 PP
+
+  Tweedle_Twdl.aln  45 ...gpanypa......api.vtKefYvhvApeEeeeeepqakeqlagspkknyrVvFIKaPenslenaalalakqaaeekTaIYVLsKkp.da 126
+                          +     +      +p+ v K+fYvh+ApeE+e ++ ++   +  +++k+y+++FIK+P++    a++a+  +++eekT++YVL+Kkp  +
+    query_51855c4d 183 qkyQ-----QqiqyqsQPAqVFKHFYVHAAPEEPETAK-PRGPVVLPPAQKHYKIIFIKTPSAAGAGAQIAPVVPQTEEKTIVYVLVKKPeAQ 269
+                       3221.....13445564445**************9999.6666779********************************************999 PP
+
+  Tweedle_Twdl.aln 127 aelanklaaaptkpsKPeVyFiKYkTpeeaanaqreiqaqydqlggssessdegv........apvlsv 187
+                       a+l+ +   +++ psKPeV+FiKYk ++e+++  ++i ++y+  +g+++ s  gv        a + ++
+    query_51855c4d 270 ADLVLPKI-EQKPPSKPEVFFIKYKNKDESQAVINNIVSDYN--KGQQTVSVSGVgvgggaggAGAGGF 335
+                       99999999.********************************9..4555555444433444444444444 PP
+
+  == domain 2  score: -2.9 bits;  conditional E-value: 0.55
+  Tweedle_Twdl.aln 162 eiqaqydqlggssessdegvapvlsvasaapagapa............ssseyqapsssyl.Pa 212
+                       ++ + yd+    s     g   + ++++a                    ss++  p+++y+ P+
+    query_51855c4d 460 AVTSGYDSSDSGSVGLISGSVGSGGFSGA------IgasstvsydatsLSSSQGVPHETYGiPS 517
+                       33444444444444444444444444432......02222233344442334578888887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (521 residues searched)
+Target model(s):                          16  (3270 nodes)
+Passed MSV filter:                         9  (0.5625); expected 0.3 (0.02)
+Passed bias filter:                        4  (0.25); expected 0.3 (0.02)
+Passed Vit filter:                         3  (0.1875); expected 0.0 (0.001)
+Passed Fwd filter:                         3  (0.1875); expected 0.0 (1e-05)
+Initial search space (Z):                 16  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.13
+# Mc/sec: 12.84
+//
+[ok]

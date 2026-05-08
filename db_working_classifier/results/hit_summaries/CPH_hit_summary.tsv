@@ -1,0 +1,308 @@
+protein_id	protein_name	species_code	species_name	current_family	CPH_score	CPH_evalue
+Bmo_CPH14	CPH14	Bmo	Bombyx mori	CPH	80.5	3e-23
+Bmo_CPH15	CPH15	Bmo	Bombyx mori	CPH	78.8	1e-22
+Bmo_CPH9	CPH9	Bmo	Bombyx mori	CPH	74.1	2.8e-21
+Bmo_CPH28	CPH28	Bmo	Bombyx mori	CPH	72.0	1.2e-20
+Bmo_CPH2	CPH2	Bmo	Bombyx mori	CPH	62.4	1.1e-17
+Bmo_CPH10	CPH10	Bmo	Bombyx mori	CPH	61.1	2.7e-17
+Bmo_CPH11	CPH11	Bmo	Bombyx mori	CPH	58.0	2.5e-16
+Bmo_CPH16	CPH16	Bmo	Bombyx mori	CPH	57.0	4.8e-16
+Bmo_CPH8	CPH8	Bmo	Bombyx mori	CPH	56.9	5.1e-16
+Bmo_CPH7	CPH7	Bmo	Bombyx mori	CPH	55.5	1.4e-15
+Bmo_CPH39	CPH39	Bmo	Bombyx mori	CPH	52.9	8.5e-15
+Bmo_CPFL1	CPFL1	Bmo	Bombyx mori	CPFL	51.8	1.9e-14
+Bmo_CPH30	CPH30	Bmo	Bombyx mori	CPH	51.3	2.6e-14
+Bmo_CPH13	CPH13	Bmo	Bombyx mori	CPH	48.8	1.6e-13
+Bmo_CPH12	CPH12	Bmo	Bombyx mori	CPH	48.1	2.6e-13
+Bmo_CPH6	CPH6	Bmo	Bombyx mori	CPH	47.5	3.8e-13
+Bmo_CPH37	CPH37	Bmo	Bombyx mori	CPH	44.8	2.7e-12
+Bmo_CPH38	CPH38	Bmo	Bombyx mori	CPH	42.9	1e-11
+Bmo_CPH3	CPH3	Bmo	Bombyx mori	CPH	39.3	1.3e-10
+Bmo_CPH40	CPH40	Bmo	Bombyx mori	CPH	37.7	4e-10
+Bmo_CPH19	CPH19	Bmo	Bombyx mori	CPH	35.9	1.4e-09
+Tca_CP63	CP63	Tca	Tribolium castaneum	non-canonical CP	34.7	3.2e-09
+Bmo_CPH4	CPH4	Bmo	Bombyx mori	CPH	33.7	6.7e-09
+Bmo_CPH26	CPH26	Bmo	Bombyx mori	CPH	32.8	1.2e-08
+Dmo_CPR_Uncharacterized_67	CPR_Uncharacterized_67	Dmo	Drosophila mojavensis	CPR	32.7	1.3e-08
+Cfe_CL4537.Contig1-RR1	CL4537.Contig1-RR1	Cfe	Cryptolestes ferrugineus	CPR RR-1	32.1	2e-08
+Bmo_CPH47	CPH47	Bmo	Bombyx mori	CPH	31.2	3.9e-08
+Bmo_CPH25	CPH25	Bmo	Bombyx mori	CPH	30.7	5.6e-08
+Dan_CPR_Uncharacterized_107	CPR_Uncharacterized_107	Dan	Drosophila ananassae	CPR	30.6	6e-08
+Dvi_CPR_Uncharacterized_74	CPR_Uncharacterized_74	Dvi	Drosophila virilis	CPR	30.3	7.2e-08
+Dmo_CPR_Uncharacterized_62	CPR_Uncharacterized_62	Dmo	Drosophila mojavensis	CPR	30.2	7.6e-08
+Bmo_CPH36	CPH36	Bmo	Bombyx mori	CPH	30.0	9e-08
+Foc_CPLCP10	CPLCP10	Foc	Frankliniella occidentalis	CPLCP	28.9	2e-07
+Aga_CPLCP1	CPLCP1	Aga	Anopheles gambiae	CPLCP	28.8	2.1e-07
+Bmo_CPH34	CPH34	Bmo	Bombyx mori	CPH	28.6	2.5e-07
+Dps_CPR_Uncharacterized_6	CPR_Uncharacterized_6	Dps	Drosophila pseudoobscura	CPR	28.3	3e-07
+Aga_CPR130	CPR130	Aga	Anopheles gambiae	CPR RR-3	28.3	3e-07
+Bmo_CPH24	CPH24	Bmo	Bombyx mori	low complexity	27.8	4.4e-07
+Cfe_Unigene10721-CPFL	Unigene10721-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	26.9	8e-07
+Aga_CPLCP15	CPLCP15	Aga	Anopheles gambiae	CPLCP	26.9	8.1e-07
+Dme_Cpr92F	Cpr92F	Dme	Drosophila melanogaster	CPR RR-3	26.1	1.4e-06
+Dps_CPR_Uncharacterized_34	CPR_Uncharacterized_34	Dps	Drosophila pseudoobscura	CPR	25.6	2e-06
+Foc_CPF4	CPF4	Foc	Frankliniella occidentalis	CPF	25.6	2.1e-06
+Dwi_CPR_Uncharacterized_115	CPR_Uncharacterized_115	Dwi	Drosophila willistoni	CPR	25.5	2.1e-06
+Bmo_CPR59	CPR59	Bmo	Bombyx mori	CPR RR-2	25.1	3e-06
+Bmo_CPH42	CPH42	Bmo	Bombyx mori	CPH	24.8	3.5e-06
+Dgr_CPR_Uncharacterized_113	CPR_Uncharacterized_113	Dgr	Drosophila grimshawi	CPR	24.5	4.2e-06
+Bmo_CPR32	CPR32	Bmo	Bombyx mori	CPR RR-1	24.5	4.3e-06
+Bmo_CPH17	CPH17	Bmo	Bombyx mori	CPH	24.3	4.9e-06
+Mme_CPR14	CPR14	Mme	Microplitis mediator	CPR RR-1	24.2	5.5e-06
+Bmo_CPG46	CPG46	Bmo	Bombyx mori	CPG	23.4	9.4e-06
+Aga_CPLCP7	CPLCP7	Aga	Anopheles gambiae	CPLCP	23.3	9.9e-06
+Dme_Cpr72Eb	Cpr72Eb	Dme	Drosophila melanogaster	CPR RR-3	23.3	1e-05
+Foc_RR-1_14	RR-1_14	Foc	Frankliniella occidentalis	CPR RR-1	23.2	1.1e-05
+Aga_CPLCX2	CPLCX2	Aga	Anopheles gambiae	NULL	22.8	1.4e-05
+Dwi_CPR_Uncharacterized_F	CPR_Uncharacterized_F	Dwi	Drosophila willistoni	CPR	22.8	1.5e-05
+Cfe_Unigene10128-CPLCA	Unigene10128-CPLCA	Cfe	Cryptolestes ferrugineus	CPLCA	22.1	2.4e-05
+Lmi_CPH-1	CPH-1	Lmi	Locusta migratoria	CPH	22.0	2.5e-05
+Bmo_CPR93	CPR93	Bmo	Bombyx mori	CPR RR-2	22.0	2.6e-05
+Dgr_CPR_Uncharacterized_31	CPR_Uncharacterized_31	Dgr	Drosophila grimshawi	CPR	21.9	2.7e-05
+Foc_CPLCP5	CPLCP5	Foc	Frankliniella occidentalis	CPLCP	21.9	2.7e-05
+Cfe_Unigene11854-RR1	Unigene11854-RR1	Cfe	Cryptolestes ferrugineus	CPR RR-1	21.6	3.3e-05
+Dvi_CPR_Uncharacterized_63	CPR_Uncharacterized_63	Dvi	Drosophila virilis	CPR	21.4	3.9e-05
+Dps_CPR_Uncharacterized_90	CPR_Uncharacterized_90	Dps	Drosophila pseudoobscura	CPR	21.2	4.6e-05
+Dps_CPR_Uncharacterized_96	CPR_Uncharacterized_96	Dps	Drosophila pseudoobscura	CPR	21.2	4.6e-05
+Dvi_CPR_Uncharacterized_89	CPR_Uncharacterized_89	Dvi	Drosophila virilis	CPR	20.9	5.6e-05
+Dme_Lcp65Ag3	Lcp65Ag3	Dme	Drosophila melanogaster	CPR RR-1	20.8	5.9e-05
+Dme_Lcp65Ag1	Lcp65Ag1	Dme	Drosophila melanogaster	CPR RR-1	20.8	6e-05
+Dme_Lcp65Ag2	Lcp65Ag2	Dme	Drosophila melanogaster	CPR RR-1	20.8	6e-05
+Bmo_CPR2	CPR2	Bmo	Bombyx mori	CPR RR-1	20.8	6.1e-05
+Foc_CPF3	CPF3	Foc	Frankliniella occidentalis	CPF	20.8	6.1e-05
+Aga_CPLCA3	CPLCA3	Aga	Anopheles gambiae	CPLCA	20.7	6.5e-05
+Dvi_CPR_Uncharacterized_90	CPR_Uncharacterized_90	Dvi	Drosophila virilis	CPR	20.6	6.8e-05
+Dgr_Tweedle14	Tweedle14	Dgr	Drosophila grimshawi	Tweedle	20.4	8e-05
+Dps_CPR_Uncharacterized_94	CPR_Uncharacterized_94	Dps	Drosophila pseudoobscura	CPR	20.2	8.9e-05
+Dan_CPR_Uncharacterized_94	CPR_Uncharacterized_94	Dan	Drosophila ananassae	CPR	20.2	8.9e-05
+Dps_CPR_Uncharacterized_91	CPR_Uncharacterized_91	Dps	Drosophila pseudoobscura	CPR	20.2	9.3e-05
+Dgr_Tweedle26	Tweedle26	Dgr	Drosophila grimshawi	Tweedle	20.0	0.0001
+Foc_RR-1_15	RR-1_15	Foc	Frankliniella occidentalis	CPR RR-1	20.0	0.00011
+Aga_TWDL11	TWDL11	Aga	Anopheles gambiae	Tweedle	19.9	0.00011
+Lmi_Abd-2	Abd-2	Lmi	Locusta migratoria	RR-1	19.7	0.00013
+Dmo_CPR_Uncharacterized_83	CPR_Uncharacterized_83	Dmo	Drosophila mojavensis	CPR	19.7	0.00013
+Bmo_CPR67	CPR67	Bmo	Bombyx mori	CPR RR-2	19.6	0.00014
+Dmo_CPR_Uncharacterized_89	CPR_Uncharacterized_89	Dmo	Drosophila mojavensis	CPR	19.6	0.00014
+Aga_CPR15	CPR15	Aga	Anopheles gambiae	CPR RR-1	19.5	0.00015
+Aga_CPF4	CPF4	Aga	Anopheles gambiae	CPF	19.4	0.00016
+Dmo_CPR_Uncharacterized_86	CPR_Uncharacterized_86	Dmo	Drosophila mojavensis	CPR	19.4	0.00016
+Dgr_CPR_Uncharacterized_34	CPR_Uncharacterized_34	Dgr	Drosophila grimshawi	CPR	19.4	0.00016
+Dgr_CPR_Uncharacterized_35	CPR_Uncharacterized_35	Dgr	Drosophila grimshawi	CPR	19.4	0.00016
+Bmo_CPR39	CPR39	Bmo	Bombyx mori	CPR RR-1	19.4	0.00016
+Dps_CPR_Uncharacterized_104	CPR_Uncharacterized_104	Dps	Drosophila pseudoobscura	CPR	19.3	0.00017
+Ago_SgAbd2-like	SgAbd2-like	Ago	Aphis gossypii	CPR RR-1	19.1	0.0002
+Aga_CPLCP18	CPLCP18	Aga	Anopheles gambiae	CPLCP	19.0	0.00021
+Aga_CPLCP19	CPLCP19	Aga	Anopheles gambiae	CPLCP	19.0	0.00021
+Aga_CPLCP23	CPLCP23	Aga	Anopheles gambiae	CPLCP	19.0	0.00021
+Mme_CPR3	CPR3	Mme	Microplitis mediator	CPR RR-1	19.0	0.00021
+Dgr_CPR_Uncharacterized_25	CPR_Uncharacterized_25	Dgr	Drosophila grimshawi	CPR	18.7	0.00026
+Dme_Lcp65Ab1	Lcp65Ab1	Dme	Drosophila melanogaster	CPR RR-1	18.7	0.00027
+Dme_Lcp65Ab2	Lcp65Ab2	Dme	Drosophila melanogaster	CPR RR-1	18.7	0.00027
+Dmo_CPR_Uncharacterized_88	CPR_Uncharacterized_88	Dmo	Drosophila mojavensis	CPR	18.5	0.0003
+Foc_RR-1_1	RR-1_1	Foc	Frankliniella occidentalis	CPR RR-1	18.4	0.00032
+Cfe_Unigene13963-CPFL	Unigene13963-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	18.3	0.00035
+Nlu_Cpr14	Cpr14	Nlu	Nilaparvata lugens	CPR	18.2	0.00036
+Aga_CPF3	CPF3	Aga	Anopheles gambiae	CPF	18.2	0.00037
+Dme_Cpr66Ca_iso2	Cpr66Ca_iso2	Dme	Drosophila melanogaster	CPR RR-2	18.2	0.00037
+Bmo_CPR95	CPR95	Bmo	Bombyx mori	CPR RR-2	18.2	0.00038
+Bmo_CPH33	CPH33	Bmo	Bombyx mori	CPH	18.2	0.00038
+Bmo_CPH5	CPH5	Bmo	Bombyx mori	CPH	18.1	0.00039
+Bmo_CPR44	CPR44	Bmo	Bombyx mori	CPR RR-1	18.1	0.00039
+Foc_RR-1_13	RR-1_13	Foc	Frankliniella occidentalis	CPR RR-1	17.9	0.00047
+Dan_Tweedle17	Tweedle17	Dan	Drosophila ananassae	Tweedle	17.9	0.00047
+Dps_CPR_Uncharacterized_82	CPR_Uncharacterized_82	Dps	Drosophila pseudoobscura	CPR	17.7	0.00054
+Dwi_Tweedle27	Tweedle27	Dwi	Drosophila willistoni	Tweedle	17.7	0.00054
+Bmo_CPG43	CPG43	Bmo	Bombyx mori	CPG	17.7	0.00054
+Aga_CPLCP13	CPLCP13	Aga	Anopheles gambiae	CPLCP	17.5	0.00062
+Bmo_CPR30	CPR30	Bmo	Bombyx mori	CPR RR-1	17.4	0.00066
+Bmo_CPR77	CPR77	Bmo	Bombyx mori	CPR RR-2	17.3	0.00068
+Dan_Tweedle27	Tweedle27	Dan	Drosophila ananassae	Tweedle	17.3	0.00072
+Dan_CPR_Uncharacterized_64	CPR_Uncharacterized_64	Dan	Drosophila ananassae	CPR	17.2	0.00074
+Aga_CPLCP16	CPLCP16	Aga	Anopheles gambiae	CPLCP	17.2	0.00074
+Dme_Cpr65Ax1	Cpr65Ax1	Dme	Drosophila melanogaster	CPR RR-1	17.2	0.00075
+Dme_Cpr65Ax2	Cpr65Ax2	Dme	Drosophila melanogaster	CPR RR-1	17.2	0.00075
+Dmo_CPR_Uncharacterized_100	CPR_Uncharacterized_100	Dmo	Drosophila mojavensis	CPR	17.2	0.00078
+Cfe_CL1548.Contig1-Tweedle	CL1548.Contig1-Tweedle	Cfe	Cryptolestes ferrugineus	Tweedle	17.0	0.00085
+Dan_CPR_Uncharacterized_96	CPR_Uncharacterized_96	Dan	Drosophila ananassae	CPR	17.0	0.00087
+Dan_CPR_Uncharacterized_84	CPR_Uncharacterized_84	Dan	Drosophila ananassae	CPR	17.0	0.00088
+Dwi_CPR_Uncharacterized_15	CPR_Uncharacterized_15	Dwi	Drosophila willistoni	CPR	17.0	0.00088
+Cfe_Unigene13309-RR1	Unigene13309-RR1	Cfe	Cryptolestes ferrugineus	CPR RR-1	17.0	0.00088
+Aga_CPLCP14	CPLCP14	Aga	Anopheles gambiae	CPLCP	16.9	0.00093
+Nlu_CP21.92	CP21.92	Nlu	Nilaparvata lugens	NULL	16.6	0.0012
+Lmi_ACP7	ACP7	Lmi	Locusta migratoria	CPR RR-2	16.6	0.0012
+Dwi_CPR_Uncharacterized_98	CPR_Uncharacterized_98	Dwi	Drosophila willistoni	CPR	16.5	0.0013
+Dgr_CPR_Uncharacterized_27	CPR_Uncharacterized_27	Dgr	Drosophila grimshawi	CPR	16.5	0.0013
+Lmi_Abd-6	Abd-6	Lmi	Locusta migratoria	CPR RR-1	16.4	0.0013
+Tpa_Abd4-like	Abd4-like	Tpa	Thrips palmi	CPR RR-1	16.4	0.0013
+Aga_CPLCP17	CPLCP17	Aga	Anopheles gambiae	CPLCP	16.2	0.0015
+Bmo_CPR49	CPR49	Bmo	Bombyx mori	CPR RR-1	16.2	0.0016
+Dwi_CPR_Uncharacterized_18	CPR_Uncharacterized_18	Dwi	Drosophila willistoni	CPR	16.0	0.0017
+Dvi_Tweedle16	Tweedle16	Dvi	Drosophila virilis	Tweedle	16.0	0.0018
+Aga_CPR70	CPR70	Aga	Anopheles gambiae	CPR RR-2	15.9	0.0019
+Dma_A0A0P5S9E1	A0A0P5S9E1	Dma	Daphnia magna	NULL	15.9	0.0019
+Dgr_CPR_Uncharacterized_28	CPR_Uncharacterized_28	Dgr	Drosophila grimshawi	CPR	15.9	0.0019
+Foc_RR-1_12	RR-1_12	Foc	Frankliniella occidentalis	CPR RR-1	15.8	0.002
+Aga_CPR105	CPR105	Aga	Anopheles gambiae	CPR RR-1	15.7	0.0021
+Dwi_CPR_Uncharacterized_34	CPR_Uncharacterized_34	Dwi	Drosophila willistoni	CPR	15.7	0.0022
+Dwi_CPR_Uncharacterized_35	CPR_Uncharacterized_35	Dwi	Drosophila willistoni	CPR	15.7	0.0022
+Aga_CPR23	CPR23	Aga	Anopheles gambiae	CPR RR-1	15.6	0.0023
+Bmo_CPR63	CPR63	Bmo	Bombyx mori	CPR RR-2	15.6	0.0023
+Dwi_CPR_Uncharacterized_116	CPR_Uncharacterized_116	Dwi	Drosophila willistoni	CPR	15.5	0.0025
+Dan_CPR_Uncharacterized_93	CPR_Uncharacterized_93	Dan	Drosophila ananassae	CPR	15.4	0.0027
+Dwi_CPR_Uncharacterized_24	CPR_Uncharacterized_24	Dwi	Drosophila willistoni	CPR	15.4	0.0028
+Dwi_CPR_Uncharacterized_32	CPR_Uncharacterized_32	Dwi	Drosophila willistoni	CPR	15.2	0.003
+Dgr_CPR_Uncharacterized_10	CPR_Uncharacterized_10	Dgr	Drosophila grimshawi	CPR	15.1	0.0032
+Dwi_CPR_Uncharacterized_14	CPR_Uncharacterized_14	Dwi	Drosophila willistoni	CPR	15.1	0.0032
+Bmo_CPR70	CPR70	Bmo	Bombyx mori	CPR RR-2	15.1	0.0033
+Bmo_CPR46	CPR46	Bmo	Bombyx mori	CPR RR-1	15.1	0.0033
+Foc_RR-1_20	RR-1_20	Foc	Frankliniella occidentalis	CPR RR-1	15.1	0.0033
+Dps_CPR_Uncharacterized_80	CPR_Uncharacterized_80	Dps	Drosophila pseudoobscura	CPR	15.1	0.0033
+Dan_CPR_Uncharacterized_83	CPR_Uncharacterized_83	Dan	Drosophila ananassae	CPR	15.1	0.0033
+Dps_CPR_Uncharacterized_78	CPR_Uncharacterized_78	Dps	Drosophila pseudoobscura	CPR	15.1	0.0034
+Dgr_CPR_Uncharacterized_23	CPR_Uncharacterized_23	Dgr	Drosophila grimshawi	CPR	15.0	0.0035
+Dvi_CPR_Uncharacterized_80	CPR_Uncharacterized_80	Dvi	Drosophila virilis	CPR	15.0	0.0036
+Dvi_CPR_Uncharacterized_83	CPR_Uncharacterized_83	Dvi	Drosophila virilis	CPR	15.0	0.0036
+Bmo_LCP18	LCP18	Bmo	Bombyx mori	CPR RR-1	15.0	0.0036
+Dan_CPR_Uncharacterized_82	CPR_Uncharacterized_82	Dan	Drosophila ananassae	CPR	14.9	0.0039
+Bmo_CPH32	CPH32	Bmo	Bombyx mori	CPH	14.8	0.004
+Dps_CPR_Uncharacterized_70	CPR_Uncharacterized_70	Dps	Drosophila pseudoobscura	CPR	14.8	0.0041
+Dgr_CPR_Uncharacterized_93	CPR_Uncharacterized_93	Dgr	Drosophila grimshawi	CPR	14.8	0.0043
+Cfe_Unigene15011-CPFL	Unigene15011-CPFL	Cfe	Cryptolestes ferrugineus	CPFL	14.7	0.0043
+Dwi_CPR_Uncharacterized_29	CPR_Uncharacterized_29	Dwi	Drosophila willistoni	CPR	14.7	0.0044
+Dma_A0A0P5GXK9	A0A0P5GXK9	Dma	Daphnia magna	NULL	14.7	0.0044
+Bmo_CPR34	CPR34	Bmo	Bombyx mori	CPR RR-1	14.7	0.0045
+Dme_Cpr62Bb	Cpr62Bb	Dme	Drosophila melanogaster	CPR RR-2	14.6	0.0046
+Dvi_CPR_Uncharacterized_82	CPR_Uncharacterized_82	Dvi	Drosophila virilis	CPR	14.6	0.0047
+Bmo_CPH21	CPH21	Bmo	Bombyx mori	NULL	14.6	0.0048
+Cfe_Unigene14194-RR1	Unigene14194-RR1	Cfe	Cryptolestes ferrugineus	CPR RR-1	14.5	0.0051
+Bmo_CPH23	CPH23	Bmo	Bombyx mori	CPH	14.3	0.0059
+Iri_ACP16.8	ACP16.8	Iri	Ixodes ricinus	CPR RR-2	14.2	0.0064
+Dwi_CPR_Uncharacterized_28	CPR_Uncharacterized_28	Dwi	Drosophila willistoni	CPR	14.1	0.0065
+Dwi_CPR_Uncharacterized_27	CPR_Uncharacterized_27	Dwi	Drosophila willistoni	CPR	14.1	0.0067
+Dma_A0A0P5ZBY3	A0A0P5ZBY3	Dma	Daphnia magna	NULL	14.1	0.0067
+Aga_CPR73	CPR73	Aga	Anopheles gambiae	CPR RR-1	14.0	0.0073
+Foc_RR-1_22	RR-1_22	Foc	Frankliniella occidentalis	CPR RR-1	13.8	0.0081
+Dmo_Tweedle21	Tweedle21	Dmo	Drosophila mojavensis	Tweedle	13.8	0.0082
+Dma_A0A164VNS4	A0A164VNS4	Dma	Daphnia magna	NULL	13.7	0.0087
+Sex_CPG316	CPG316	Sex	Spodoptera exigua	CPR RR-2	13.7	0.0089
+Dmo_CPR_Uncharacterized_35	CPR_Uncharacterized_35	Dmo	Drosophila mojavensis	CPR	13.6	0.0095
+Cqu_Crus3	Crus3	Cqu	Cherax quadricarinatus	NULL	13.5	0.01
+Dme_Ccp84Ad	Ccp84Ad	Dme	Drosophila melanogaster	CPR RR-2	13.3	0.011
+Aga_CPR131	CPR131	Aga	Anopheles gambiae	CPR RR-2	13.3	0.012
+Bmo_CPR84	CPR84	Bmo	Bombyx mori	CPR RR-2	13.3	0.012
+Dma_A0A164MLN1	A0A164MLN1	Dma	Daphnia magna	NULL	13.2	0.013
+Dvi_CPR_Uncharacterized_66	CPR_Uncharacterized_66	Dvi	Drosophila virilis	CPR	13.0	0.015
+Sex_CPG860	CPG860	Sex	Spodoptera exigua	CPR RR-2	13.0	0.015
+Har_LCP17	LCP17	Har	Helicoverpa armigera	CPR RR-1	13.0	0.015
+Dsu_TwdlF	TwdlF	Dsu	Drosophila suzukii	Tweedle	12.8	0.017
+Bmo_CPH27	CPH27	Bmo	Bombyx mori	CPH	12.7	0.018
+Cfe_CL1911.Contig2-RR2	CL1911.Contig2-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	12.7	0.018
+Cfe_Unigene9627-RR2	Unigene9627-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	12.7	0.018
+Bmo_CPG25	CPG25	Bmo	Bombyx mori	CPG	12.6	0.019
+Bmo_CPR134	CPR134	Bmo	Bombyx mori	CPR RR-2	12.5	0.021
+Aga_CPLCA2	CPLCA2	Aga	Anopheles gambiae	CPLCA	12.5	0.021
+Dwi_CPR_Uncharacterized_112	CPR_Uncharacterized_112	Dwi	Drosophila willistoni	CPR	12.5	0.022
+Dwi_CPR_Uncharacterized_113	CPR_Uncharacterized_113	Dwi	Drosophila willistoni	CPR	12.5	0.022
+Bmo_CPR57	CPR57	Bmo	Bombyx mori	His-rich CPR RR-2	12.1	0.028
+Bmo_CPG2	CPG2	Bmo	Bombyx mori	CPG	12.0	0.03
+Mpe_CP5	CP5	Mpe	Myzus persicae	CPR RR-1	12.0	0.03
+Dmo_CPR_Uncharacterized_59	CPR_Uncharacterized_59	Dmo	Drosophila mojavensis	CPR	11.7	0.036
+Dma_A0A0P5EZ95	A0A0P5EZ95	Dma	Daphnia magna	NULL	11.7	0.036
+Dan_CPR_Uncharacterized_8	CPR_Uncharacterized_8	Dan	Drosophila ananassae	CPR	11.6	0.039
+Aga_CPLCP20	CPLCP20	Aga	Anopheles gambiae	CPLCP	11.3	0.047
+Bmo_CPH18	CPH18	Bmo	Bombyx mori	CPH	11.3	0.048
+Bmo_CPR161	CPR161	Bmo	Bombyx mori	CPR RR-2	11.3	0.049
+Aga_CPLCX1	CPLCX1	Aga	Anopheles gambiae	NULL	11.0	0.059
+Dmo_CPR_Uncharacterized_95	CPR_Uncharacterized_95	Dmo	Drosophila mojavensis	CPR	11.0	0.059
+Dmo_CPR_Uncharacterized_60	CPR_Uncharacterized_60	Dmo	Drosophila mojavensis	CPR	11.0	0.059
+Aga_CPR135	CPR135	Aga	Anopheles gambiae	CPR RR-2	10.9	0.063
+Dma_A0A0P5M683	A0A0P5M683	Dma	Daphnia magna	NULL	10.8	0.067
+Dan_CPF1	CPF1	Dan	Drosophila ananassae	CPF	10.7	0.073
+Bmo_CPG4	CPG4	Bmo	Bombyx mori	CPG	10.6	0.078
+Bmo_CPH43	CPH43	Bmo	Bombyx mori	CPH	10.5	0.085
+Bmo_CPH44	CPH44	Bmo	Bombyx mori	CPH	10.5	0.085
+Bmo_CPH45	CPH45	Bmo	Bombyx mori	CPH	10.5	0.085
+Bmo_CPH46	CPH46	Bmo	Bombyx mori	CPH	10.5	0.085
+Aga_CPR98	CPR98	Aga	Anopheles gambiae	CPR RR-2	10.2	0.1
+Bmo_CPR64	CPR64	Bmo	Bombyx mori	CPR RR-2	10.2	0.11
+Bmo_CPG1	CPG1	Bmo	Bombyx mori	CPG	10.0	0.12
+Aga_CPLCA1	CPLCA1	Aga	Anopheles gambiae	CPLCA	9.9	0.13
+Dvi_CPR_Uncharacterized_94	CPR_Uncharacterized_94	Dvi	Drosophila virilis	CPR	9.9	0.13
+Bmo_CPR99	CPR99	Bmo	Bombyx mori	CPR RR-2	9.8	0.14
+Dgr_CPR_Uncharacterized_8	CPR_Uncharacterized_8	Dgr	Drosophila grimshawi	CPR	9.8	0.14
+Cfe_Unigene14282-RR2	Unigene14282-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	9.7	0.15
+Cfe_Unigene362-CPLCG	Unigene362-CPLCG	Cfe	Cryptolestes ferrugineus	CPLCG	9.6	0.17
+Bmo_CPR98	CPR98	Bmo	Bombyx mori	CPR RR-2	9.4	0.19
+Dvi_CPR_Uncharacterized_69	CPR_Uncharacterized_69	Dvi	Drosophila virilis	CPR	9.4	0.19
+Dgr_CPR_Uncharacterized_59	CPR_Uncharacterized_59	Dgr	Drosophila grimshawi	CPR	9.4	0.19
+Dme_Ccp84Aa	Ccp84Aa	Dme	Drosophila melanogaster	CPR RR-2	9.3	0.2
+Dmo_CPR_Uncharacterized_56	CPR_Uncharacterized_56	Dmo	Drosophila mojavensis	CPR	9.2	0.21
+Dps_CPR_Uncharacterized_39	CPR_Uncharacterized_39	Dps	Drosophila pseudoobscura	CPR	9.2	0.22
+Aga_CPLCG14	CPLCG14	Aga	Anopheles gambiae	CPLCG	9.1	0.22
+Bmo_CPR100	CPR100	Bmo	Bombyx mori	CPR RR-2	9.1	0.23
+Dwi_CPF1	CPF1	Dwi	Drosophila willistoni	CPF	9.1	0.23
+Foc_CPG1	CPG1	Foc	Frankliniella occidentalis	CPG	8.9	0.27
+Cfe_Unigene1649-RR2	Unigene1649-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	8.7	0.29
+Nlu_Cpr6	Cpr6	Nlu	Nilaparvata lugens	CPR RR-1	8.7	0.3
+Dgr_CPR_Uncharacterized_14	CPR_Uncharacterized_14	Dgr	Drosophila grimshawi	CPR	8.6	0.32
+Dan_CPR_Uncharacterized_99	CPR_Uncharacterized_99	Dan	Drosophila ananassae	CPR	8.6	0.34
+Bmo_WCP2	WCP2	Bmo	Bombyx mori	CPR RR-2	8.3	0.41
+Aga_CPR107	CPR107	Aga	Anopheles gambiae	CPR RR-2	8.2	0.43
+Dvi_CPR_Uncharacterized_65	CPR_Uncharacterized_65	Dvi	Drosophila virilis	CPR	8.2	0.43
+Aga_CPLCP28	CPLCP28	Aga	Anopheles gambiae	CPLCP	8.2	0.44
+Dan_CPR_Uncharacterized_102	CPR_Uncharacterized_102	Dan	Drosophila ananassae	CPR	7.9	0.55
+Bmo_CPG3	CPG3	Bmo	Bombyx mori	CPG	7.8	0.56
+Bmo_CPG41	CPG41	Bmo	Bombyx mori	CPG	7.8	0.59
+Bmo_CPR73	CPR73	Bmo	Bombyx mori	CPR RR-2	7.7	0.62
+Bmo_CPR69	CPR69	Bmo	Bombyx mori	CPR RR-2	7.5	0.68
+Dgr_CPR_Uncharacterized_13	CPR_Uncharacterized_13	Dgr	Drosophila grimshawi	CPR	7.5	0.69
+Dgr_CPR_Uncharacterized_7	CPR_Uncharacterized_7	Dgr	Drosophila grimshawi	CPR	7.4	0.79
+Dme_Ccp84Ae	Ccp84Ae	Dme	Drosophila melanogaster	CPR RR-2	7.3	0.83
+Dan_CPR_Uncharacterized_46	CPR_Uncharacterized_46	Dan	Drosophila ananassae	CPR	7.1	0.94
+Dme_Ccp84Ag	Ccp84Ag	Dme	Drosophila melanogaster	CPR RR-2	7.1	0.95
+Nlu_CPF3a	CPF3a	Nlu	Nilaparvata lugens	CPF	7.1	0.97
+Dma_A0A0P5GHN5	A0A0P5GHN5	Dma	Daphnia magna	NULL	7.0	1.0
+Bmo_CPH1	CPH1	Bmo	Bombyx mori	CPH	7.0	1.0
+Aga_CPLCG7	CPLCG7	Aga	Anopheles gambiae	CPLCG	6.8	1.2
+Dgr_CPR_Uncharacterized_39	CPR_Uncharacterized_39	Dgr	Drosophila grimshawi	CPR	6.6	1.3
+Dme_Cpr62Bc	Cpr62Bc	Dme	Drosophila melanogaster	CPR RR-2	6.4	1.6
+Dme_Cpr5C	Cpr5C	Dme	Drosophila melanogaster	CPR RR-2	6.3	1.6
+Dme_TweedleH	TweedleH	Dme	Drosophila melanogaster	Tweedle	6.3	1.7
+Bmo_CPR96	CPR96	Bmo	Bombyx mori	CPR RR-2	6.1	1.9
+Bmo_CPR58	CPR58	Bmo	Bombyx mori	CPR RR-2	6.1	2.0
+Bmo_CPR150	CPR150	Bmo	Bombyx mori	CPR RR-2	6.1	2.0
+Bmo_CPR97	CPR97	Bmo	Bombyx mori	CPR RR-2	5.8	2.4
+Aga_CPR115	CPR115	Aga	Anopheles gambiae	CPR RR-2	5.7	2.5
+Dan_Tweedle20	Tweedle20	Dan	Drosophila ananassae	Tweedle	5.7	2.5
+Dan_CPR_Uncharacterized_13	CPR_Uncharacterized_13	Dan	Drosophila ananassae	CPR	5.7	2.5
+Dan_CPR_Uncharacterized_98	CPR_Uncharacterized_98	Dan	Drosophila ananassae	CPR	5.5	2.9
+Dvi_CPR_Uncharacterized_70	CPR_Uncharacterized_70	Dvi	Drosophila virilis	CPR	5.5	2.9
+Aga_CPLCG10	CPLCG10	Aga	Anopheles gambiae	CPLCG	5.4	3.2
+Dmo_CPF2	CPF2	Dmo	Drosophila mojavensis	CPF	5.3	3.3
+Pxy_LCP-17	LCP-17	Pxy	Plutella xylostella	CPR RR-1	5.3	3.5
+Dma_A0A0P5STA8	A0A0P5STA8	Dma	Daphnia magna	NULL	5.1	3.9
+Bmo_CPR75	CPR75	Bmo	Bombyx mori	CPR RR-2	5.0	4.2
+Dmo_CPR_Uncharacterized_63	CPR_Uncharacterized_63	Dmo	Drosophila mojavensis	CPR	5.0	4.2
+Dwi_CPR_Uncharacterized_109	CPR_Uncharacterized_109	Dwi	Drosophila willistoni	CPR	5.0	4.2
+Aga_CPR59	CPR59	Aga	Anopheles gambiae	CPR RR-2	4.9	4.3
+Aga_CPR110	CPR110	Aga	Anopheles gambiae	CPR RR-2	4.8	4.7
+Aga_CPLCX3	CPLCX3	Aga	Anopheles gambiae	NULL	4.8	4.8
+Dan_CPR_Uncharacterized_45	CPR_Uncharacterized_45	Dan	Drosophila ananassae	CPR	4.7	5.0
+Dvi_CPR_Uncharacterized_67	CPR_Uncharacterized_67	Dvi	Drosophila virilis	CPR	4.7	5.1
+Aga_CPR120	CPR120	Aga	Anopheles gambiae	CPR RR-2	4.6	5.6
+Dan_CPR_Uncharacterized_104	CPR_Uncharacterized_104	Dan	Drosophila ananassae	CPR	4.5	5.9
+Aga_CPLCP25	CPLCP25	Aga	Anopheles gambiae	CPLCP	4.4	6.4
+Foc_RR-1_21	RR-1_21	Foc	Frankliniella occidentalis	CPR RR-1	4.3	6.6
+Dme_Ccp84Ab	Ccp84Ab	Dme	Drosophila melanogaster	CPR RR-2	4.2	7.2
+Aga_CPR109	CPR109	Aga	Anopheles gambiae	CPR RR-2	4.1	8.0
+Cfe_Unigene11823-RR2	Unigene11823-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	4.0	8.5
+Aga_CPR158	CPR158	Aga	Anopheles gambiae	CPR	4.0	8.6
+Cfe_Unigene13687-RR2	Unigene13687-RR2	Cfe	Cryptolestes ferrugineus	CPR RR-2	4.0	8.7
+Aga_CPR118	CPR118	Aga	Anopheles gambiae	CPR RR-2	3.9	8.8
+Aga_CPR119	CPR119	Aga	Anopheles gambiae	CPR RR-2	3.9	8.8
+Bmo_CPR158	CPR158	Bmo	Bombyx mori	CPR RR-2	3.9	8.8
+Dgr_CPR_Uncharacterized_12	CPR_Uncharacterized_12	Dgr	Drosophila grimshawi	CPR	3.9	8.9
+Aga_CPR99	CPR99	Aga	Anopheles gambiae	CPR RR-2	3.9	9.2
+Aga_CPFL1	CPFL1	Aga	Anopheles gambiae	CPFL	3.9	9.2
+Aga_CPR93	CPR93	Aga	Anopheles gambiae	CPR RR-2	3.8	9.4
+Dan_CPR_Uncharacterized_101	CPR_Uncharacterized_101	Dan	Drosophila ananassae	CPR	3.8	9.6

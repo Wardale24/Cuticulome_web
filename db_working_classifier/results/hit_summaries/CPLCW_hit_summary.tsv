@@ -1,0 +1,10 @@
+protein_id	protein_name	species_code	species_name	current_family	CPLCW_score	CPLCW_evalue
+Aga_CPLCW8	CPLCW8	Aga	Anopheles gambiae	CPLCW	370.2	2.1e-112
+Aga_CPLCG20	CPLCG20	Aga	Anopheles gambiae	CPLCG	366.4	3.1e-111
+Aga_CPLCW4	CPLCW4	Aga	Anopheles gambiae	CPLCW	361.3	1.1e-109
+Aga_CPLCW2	CPLCW2	Aga	Anopheles gambiae	CPLCW	355.0	9.8e-108
+Aga_CPLCW9	CPLCW9	Aga	Anopheles gambiae	CPLCW	347.8	1.6e-105
+Aga_CPLCW7	CPLCW7	Aga	Anopheles gambiae	CPLCW	340.1	3.7e-103
+Aga_CPLCW1	CPLCW1	Aga	Anopheles gambiae	CPLCW	317.7	2.8e-96
+Aga_CPLCW5	CPLCW5	Aga	Anopheles gambiae	CPLCW	227.4	1.7e-68
+Dma_A0A0P5WB21	NOT_FOUND	NOT_FOUND	NOT_FOUND	NOT_FOUND	17.6	0.00052

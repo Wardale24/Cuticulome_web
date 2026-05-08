@@ -1,0 +1,17 @@
+#                                                                               --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name           accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#   ------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+CPR_RR-2.clean_seed.aln -            157 query_cf5ea67d       -            145   8.2e-43  136.4   3.2   1   1   2.3e-43   9.4e-43  136.2   3.2    16   117     1   130     1   144 0.72 -
+CPR_combined.aln        -            226 query_cf5ea67d       -            145     1e-33  107.4   8.0   1   1   2.8e-34   1.1e-33  107.3   8.0    41   140     3   133     1   145 0.66 -
+CPR_RR-1.clean_seed.aln -            161 query_cf5ea67d       -            145   4.6e-14   42.7   0.6   1   1   1.3e-14   5.3e-14   42.5   0.6    13   118     5   134     1   143 0.65 -
+CPFL.aln                -            189 query_cf5ea67d       -            145   5.8e-06   17.1   9.6   1   1   4.3e-06   1.7e-05   15.6   9.6     1    64     1    60     1   144 0.71 -
+#
+# Program:         hmmscan
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SCAN
+# Query file:      /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_cf5ea67d.faa
+# Target file:     classifier_db/cuticulome_classifiers.hmm
+# Option settings: hmmscan --domtblout /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_cf5ea67d.domtbl classifier_db/cuticulome_classifiers.hmm /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_cf5ea67d.faa 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/db_working_classifier
+# Date:            Fri May  1 09:57:12 2026
+# [ok]

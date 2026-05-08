@@ -1,0 +1,23 @@
+#                                                                     --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name              accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#      ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Bdo_CPCFC                  -          CPCFC.aln            -            1.7e-69  230.6  28.6   1.9e-69  230.5  28.6   1.0   1   0   0   1   1   1   1 -
+Cfe_CL5048.Contig2-CPCFC   -          CPCFC.aln            -            2.4e-67  223.6  22.9   2.7e-67  223.5  22.9   1.0   1   0   0   1   1   1   1 -
+Foc_CPCFC1                 -          CPCFC.aln            -            7.4e-62  205.8  38.9   8.2e-62  205.6  38.9   1.0   1   0   0   1   1   1   1 -
+Cfe_Unigene17315-CPCFC     -          CPCFC.aln            -            1.7e-59  198.1  35.2   1.9e-59  198.0  35.2   1.0   1   0   0   1   1   1   1 -
+Foc_CPCFC2                 -          CPCFC.aln            -            1.1e-39  133.7  22.6   6.9e-23   79.0  13.9   2.1   1   1   1   2   2   2   2 -
+Lmi_CPFL2                  -          CPCFC.aln            -            2.7e-20   70.6  40.1   2.2e-09   35.2   3.1   2.9   1   1   2   3   3   3   3 -
+Bmo_CPH1                   -          CPCFC.aln            -            2.4e-11   41.5  13.6   4.9e-09   34.0   3.3   2.1   1   1   1   2   2   2   2 -
+Aga_CPR77                  -          CPCFC.aln            -            0.00043   17.9   0.2   0.00048   17.8   0.2   1.0   1   0   0   1   1   1   1 -
+Nlu_Cpr54                  -          CPCFC.aln            -             0.0015   16.2  11.2    0.0015   16.2  11.2   2.2   2   1   0   2   2   2   1 -
+Bmo_CPR96                  -          CPCFC.aln            -             0.0062   14.2   5.6    0.0079   13.8   5.6   1.2   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      CPCFC.hmm
+# Target file:     all_proteins.fasta
+# Option settings: hmmsearch --tblout CPCFC_vs_all.tbl CPCFC.hmm all_proteins.fasta 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/HMM
+# Date:            Fri May  1 08:56:16 2026
+# [ok]

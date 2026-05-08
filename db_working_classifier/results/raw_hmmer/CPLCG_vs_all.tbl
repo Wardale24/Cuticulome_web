@@ -1,0 +1,83 @@
+#                                                                      --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name               accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#       ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Aga_CPLCG20                 -          CPLCG.aln            -            5.9e-57  189.8 124.5     3e-27   93.5  39.9   4.9   2   2   2   4   4   4   4 -
+Dme_ACP1                    -          CPLCG.aln            -            8.3e-38  127.7  35.3   9.2e-38  127.6  35.3   1.0   1   0   0   1   1   1   1 -
+Dme_CG7203                  -          CPLCG.aln            -            1.8e-37  126.6  30.7   2.1e-37  126.4  30.7   1.0   1   0   0   1   1   1   1 -
+Dme_CG7214                  -          CPLCG.aln            -              6e-36  121.7  23.1   6.8e-36  121.5  23.1   1.0   1   0   0   1   1   1   1 -
+Dgr_CPLCG3                  -          CPLCG.aln            -            1.9e-35  120.0  31.7   2.1e-35  119.9  31.7   1.0   1   0   0   1   1   1   1 -
+Dvi_CPLCG3                  -          CPLCG.aln            -            2.5e-35  119.7  29.2   2.7e-35  119.6  29.2   1.0   1   0   0   1   1   1   1 -
+Dan_CPLCG2                  -          CPLCG.aln            -            4.3e-35  118.9  23.3   4.8e-35  118.7  23.3   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG14                 -          CPLCG.aln            -            7.6e-35  118.1  32.2   8.7e-35  117.9  32.2   1.0   1   0   0   1   1   1   1 -
+Dps_CPLCG2                  -          CPLCG.aln            -            1.2e-34  117.4  19.9   1.4e-34  117.3  19.9   1.0   1   0   0   1   1   1   1 -
+Dvi_CPLCG2                  -          CPLCG.aln            -            1.8e-34  116.9  22.6     2e-34  116.8  22.6   1.0   1   0   0   1   1   1   1 -
+Dan_CPLCG3                  -          CPLCG.aln            -            3.4e-34  116.0  37.6   3.8e-34  115.9  37.6   1.0   1   0   0   1   1   1   1 -
+Dps_CPLCG3                  -          CPLCG.aln            -            5.8e-34  115.2  33.8   6.6e-34  115.1  33.8   1.0   1   0   0   1   1   1   1 -
+Dwi_CPLCG3                  -          CPLCG.aln            -            7.9e-34  114.8  35.6   8.7e-34  114.7  35.6   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG12                 -          CPLCG.aln            -            2.7e-33  113.1  40.9   6.1e-33  111.9  40.9   1.5   1   1   0   1   1   1   1 -
+Aga_CPLCG10                 -          CPLCG.aln            -            4.2e-33  112.5  42.2   9.3e-33  111.3  42.2   1.5   1   1   0   1   1   1   1 -
+Dmo_CPLCG2                  -          CPLCG.aln            -            4.5e-33  112.4  20.8     5e-33  112.2  20.8   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG7                  -          CPLCG.aln            -            5.4e-33  112.1  43.1   1.2e-32  111.0  43.1   1.5   1   1   0   1   1   1   1 -
+Dvi_CPLCG1                  -          CPLCG.aln            -            4.3e-32  109.2  38.8   4.7e-32  109.0  38.8   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG21                 -          CPLCG.aln            -            5.7e-32  108.8  14.5   1.5e-18   65.3   3.5   2.1   2   0   0   2   2   2   2 -
+Dgr_CPLCG2                  -          CPLCG.aln            -            7.1e-32  108.5  23.5   8.5e-32  108.2  23.5   1.1   1   0   0   1   1   1   1 -
+Dmo_CPLCG3                  -          CPLCG.aln            -            7.2e-32  108.5  27.0   8.9e-32  108.2  27.0   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCG23                 -          CPLCG.aln            -            7.7e-32  108.4  21.1   8.6e-32  108.2  21.1   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG16                 -          CPLCG.aln            -              9e-32  108.1  50.8   5.3e-30  102.4  50.8   2.0   1   1   0   1   1   1   1 -
+Dmo_CPLCG1                  -          CPLCG.aln            -            9.8e-32  108.0  33.4   1.1e-31  107.9  33.4   1.0   1   0   0   1   1   1   1 -
+Dgr_CPLCG1                  -          CPLCG.aln            -            2.7e-31  106.6  36.3     3e-31  106.5  36.3   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG24                 -          CPLCG.aln            -            3.7e-31  106.1  20.4   4.1e-31  106.0  20.4   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG22                 -          CPLCG.aln            -            4.3e-31  105.9  63.7   1.4e-21   75.1  37.2   2.7   1   1   1   2   2   2   2 -
+Dan_CPLCG1                  -          CPLCG.aln            -              5e-31  105.7  43.0     9e-31  104.9  43.0   1.4   1   1   0   1   1   1   1 -
+Dwi_CPLCG2                  -          CPLCG.aln            -              8e-31  105.1  18.5   9.7e-31  104.8  18.5   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCG15                 -          CPLCG.aln            -            9.1e-31  104.9  20.3   1.2e-30  104.5  20.3   1.1   1   0   0   1   1   1   1 -
+Dps_CPLCG1                  -          CPLCG.aln            -            2.3e-30  103.6  31.7   2.5e-30  103.5  31.7   1.0   1   0   0   1   1   1   1 -
+Aga_CPLC8                   -          CPLCG.aln            -              3e-30  103.2  33.6   3.3e-30  103.1  33.6   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG3                  -          CPLCG.aln            -              3e-30  103.2  33.6   3.3e-30  103.1  33.6   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG6                  -          CPLCG.aln            -            2.3e-29  100.3   8.3   3.5e-29   99.7   8.3   1.3   1   0   0   1   1   1   1 -
+Aga_CPLCG25                 -          CPLCG.aln            -            2.8e-29  100.1   8.2   4.2e-29   99.5   8.2   1.3   1   0   0   1   1   1   1 -
+Aga_CPLCG11                 -          CPLCG.aln            -            3.4e-29   99.8   7.0   4.7e-29   99.3   7.0   1.2   1   0   0   1   1   1   1 -
+Aga_CPLCG17                 -          CPLCG.aln            -            3.4e-29   99.8   9.1   5.2e-29   99.2   9.1   1.3   1   0   0   1   1   1   1 -
+Dwi_CPLCG1                  -          CPLCG.aln            -            4.6e-29   99.4  42.9   1.3e-28   97.9  42.9   1.6   1   1   0   1   1   1   1 -
+Aga_CPLCG13                 -          CPLCG.aln            -            5.1e-29   99.2   7.2   7.9e-29   98.6   7.2   1.3   1   0   0   1   1   1   1 -
+Aga_CPLCG26                 -          CPLCG.aln            -            5.3e-29   99.2   7.3   7.6e-29   98.7   7.3   1.2   1   0   0   1   1   1   1 -
+Aga_CPLCG18                 -          CPLCG.aln            -            6.3e-29   98.9  11.4     1e-28   98.2  11.4   1.3   1   1   0   1   1   1   1 -
+Aga_CPLCG19                 -          CPLCG.aln            -            7.9e-29   98.6   6.2   9.2e-29   98.4   6.2   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG5                  -          CPLCG.aln            -            2.6e-28   96.9  37.6     3e-28   96.7  37.6   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG9                  -          CPLCG.aln            -            4.5e-28   96.2   5.6   5.3e-28   95.9   5.6   1.1   1   0   0   1   1   1   1 -
+Cpi_CPLCG5                  -          CPLCG.aln            -            1.4e-27   94.6  30.5   1.6e-27   94.4  30.5   1.0   1   0   0   1   1   1   1 -
+Aga_CPLCG27                 -          CPLCG.aln            -            1.7e-27   94.3   6.7     2e-27   94.0   6.7   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCG1                  -          CPLCG.aln            -            2.4e-25   87.3  21.9   3.1e-25   86.9  21.9   1.2   1   0   0   1   1   1   1 -
+Aga_CPLCG8                  -          CPLCG.aln            -            3.3e-25   86.9   8.3   5.1e-25   86.3   8.3   1.3   1   0   0   1   1   1   1 -
+Aga_CPLC#                   -          CPLCG.aln            -            4.6e-23   79.9  40.8   1.4e-22   78.4  40.8   1.6   1   1   0   1   1   1   1 -
+Aga_CPLCG4                  -          CPLCG.aln            -            4.6e-23   79.9  40.8   1.4e-22   78.4  40.8   1.6   1   1   0   1   1   1   1 -
+Aga_CPLCG2                  -          CPLCG.aln            -            1.4e-21   75.1   4.9   3.8e-20   70.5   3.8   2.0   1   1   1   2   2   2   1 -
+Cfe_Unigene362-CPLCG        -          CPLCG.aln            -            1.6e-15   55.5  29.8   3.2e-15   54.5  29.8   1.5   1   1   0   1   1   1   1 -
+Aga_CPLCW5                  -          CPLCG.aln            -            0.00011   20.4   1.8   0.00012   20.2   1.8   1.1   1   0   0   1   1   1   1 -
+Dma_A0A0P5STA8              -          CPLCG.aln            -            0.00012   20.2  15.2     0.031   12.4   0.0   4.0   1   1   2   3   3   3   2 -
+Aga_CPLCW7                  -          CPLCG.aln            -             0.0012   17.0   5.1    0.0018   16.5   5.1   1.4   1   1   0   1   1   1   1 -
+Dma_A0A0P5VU19              -          CPLCG.aln            -             0.0016   16.6   0.3    0.0022   16.1   0.3   1.4   1   1   0   1   1   1   1 -
+Aga_CPLCW1                  -          CPLCG.aln            -             0.0018   16.4   8.0    0.0028   15.8   8.0   1.4   1   1   0   1   1   1   1 -
+Dma_A0A164MLN1              -          CPLCG.aln            -             0.0028   15.8   0.3    0.0043   15.2   0.3   1.4   1   1   0   1   1   1   1 -
+Aga_CPLCW2                  -          CPLCG.aln            -             0.0029   15.8   7.2    0.0047   15.1   7.2   1.6   1   1   0   1   1   1   1 -
+Aga_CPLCW9                  -          CPLCG.aln            -              0.004   15.3   8.1      0.01   14.0   8.1   1.7   1   1   0   1   1   1   1 -
+Aga_CPLCW8                  -          CPLCG.aln            -              0.004   15.3   7.2    0.0068   14.6   7.2   1.6   1   1   0   1   1   1   1 -
+Aga_CPLCW4                  -          CPLCG.aln            -             0.0064   14.6   4.2    0.0086   14.2   4.2   1.5   1   1   0   1   1   1   1 -
+Bmo_CPR97                   -          CPLCG.aln            -             0.0087   14.2  21.4    0.0074   14.4  18.6   1.9   2   0   0   2   2   2   1 -
+Dma_A0A0P5WB21              -          CPLCG.aln            -              0.093   10.9   9.9      0.16   10.1   1.7   2.9   1   1   1   2   2   2   0 | Pro-resilin
+Foc_CPCFC2                  -          CPLCG.aln            -               0.35    9.0  12.1       1.4    7.1  12.1   1.8   1   1   0   1   1   1   0 -
+Bmo_CPR59                   -          CPLCG.aln            -               0.46    8.6  27.3        21    3.2  27.3   2.3   1   1   0   1   1   1   0 -
+Dwi_CPR_Uncharacterized_112 -          CPLCG.aln            -                0.5    8.5  39.7     0.049   11.8   5.4   2.2   2   0   0   2   2   2   0 -
+Dwi_CPR_Uncharacterized_113 -          CPLCG.aln            -                0.5    8.5  39.7     0.049   11.8   5.4   2.2   2   0   0   2   2   2   0 -
+Foc_CPF3                    -          CPLCG.aln            -               0.96    7.6  32.2       2.5    6.2  32.1   1.8   1   1   0   1   1   1   0 -
+Bmo_PCP                     -          CPLCG.aln            -                3.5    5.8  38.5    0.0042   15.2  16.5   2.3   1   1   1   2   2   1   0 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      CPLCG.hmm
+# Target file:     all_proteins.fasta
+# Option settings: hmmsearch --tblout CPLCG_vs_all.tbl CPLCG.hmm all_proteins.fasta 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/HMM
+# Date:            Thu Apr 30 14:02:30 2026
+# [ok]

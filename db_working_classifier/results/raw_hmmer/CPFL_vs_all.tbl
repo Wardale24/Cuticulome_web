@@ -1,0 +1,141 @@
+#                                                                      --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name               accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#       ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Aga_CPFL3                   -          CPFL.aln             -            3.7e-61  204.2  47.9   6.3e-38  128.4  31.0   2.0   1   1   1   2   2   2   2 -
+Aga_CPFL4                   -          CPFL.aln             -            1.8e-60  202.0  27.0     2e-60  201.8  27.0   1.0   1   0   0   1   1   1   1 -
+Aga_CPFL6                   -          CPFL.aln             -            1.8e-60  202.0  27.0     2e-60  201.8  27.0   1.0   1   0   0   1   1   1   1 -
+Aga_CPFL5                   -          CPFL.aln             -            1.2e-59  199.2  27.1   1.3e-59  199.1  27.1   1.0   1   0   0   1   1   1   1 -
+Aga_CPFL7                   -          CPFL.aln             -              1e-58  196.2  43.8   4.3e-37  125.7  29.5   2.0   1   1   1   2   2   2   2 -
+Aga_CPFL2                   -          CPFL.aln             -            1.7e-58  195.5  44.1   4.3e-37  125.7  29.5   2.0   1   1   1   2   2   2   2 -
+Bmo_CPFL2                   -          CPFL.aln             -            4.2e-44  148.6  14.6   6.5e-44  148.0  14.6   1.3   1   0   0   1   1   1   1 -
+Aga_CPFL1                   -          CPFL.aln             -            1.4e-41  140.3  70.7   2.2e-41  139.7  70.7   1.3   1   1   0   1   1   1   1 -
+Bmo_CPFL4                   -          CPFL.aln             -            2.4e-35  120.0 109.4   1.9e-24   84.5  62.4   4.0   1   1   1   2   2   2   2 -
+Cfe_Unigene13963-CPFL       -          CPFL.aln             -            1.3e-27   94.8  43.5   1.5e-27   94.6  43.5   1.0   1   0   0   1   1   1   1 -
+Bmo_CPFL3                   -          CPFL.aln             -            5.4e-22   76.5 105.1   3.1e-16   57.7  66.9   3.0   1   1   2   3   3   3   2 -
+Cfe_Unigene10721-CPFL       -          CPFL.aln             -            5.1e-14   50.4  26.9   1.5e-09   35.9  21.5   2.1   1   1   1   2   2   2   2 -
+Dgr_CPR_Uncharacterized_7   -          CPFL.aln             -            6.2e-14   50.2  40.5   8.8e-14   49.7  40.5   1.2   1   0   0   1   1   1   1 -
+Dgr_CPR_Uncharacterized_8   -          CPFL.aln             -            6.7e-14   50.1  40.6   8.8e-14   49.7  40.6   1.2   1   0   0   1   1   1   1 -
+Cfe_Unigene15011-CPFL       -          CPFL.aln             -            2.3e-13   48.3  15.2   3.9e-13   47.6   8.4   2.0   1   1   1   2   2   2   1 -
+Dvi_CPR_Uncharacterized_63  -          CPFL.aln             -            3.6e-13   47.7  44.8   4.7e-13   47.3  44.8   1.2   1   0   0   1   1   1   1 -
+Bmo_CPR67                   -          CPFL.aln             -              2e-12   45.2  21.0   2.4e-12   45.0  21.0   1.1   1   0   0   1   1   1   1 -
+Lmi_CPFL2                   -          CPFL.aln             -            8.3e-12   43.2  13.4   3.1e-10   38.1   8.4   2.1   1   1   1   2   2   2   2 -
+Aga_CPF2                    -          CPFL.aln             -              2e-11   42.0 109.5   5.2e-08   30.9  34.1   3.5   1   1   2   3   3   3   3 -
+Aga_CPF1                    -          CPFL.aln             -            2.6e-11   41.7  75.6   1.4e-08   32.7  75.6   2.5   1   1   0   1   1   1   1 -
+Dme_Ccp84Aa                 -          CPFL.aln             -            5.7e-11   40.5  30.2   7.5e-11   40.1  30.2   1.2   1   0   0   1   1   1   1 -
+Asi_CPF1                    -          CPFL.aln             -            7.4e-11   40.2  64.8   4.8e-10   37.5  64.8   2.3   1   1   0   1   1   1   1 -
+Bmo_CPFL1                   -          CPFL.aln             -            1.9e-10   38.8  42.0   9.8e-10   36.5  41.8   2.0   1   1   0   1   1   1   1 -
+Dan_CPR_Uncharacterized_98  -          CPFL.aln             -            2.5e-10   38.4  38.7   2.9e-10   38.2  38.7   1.1   1   0   0   1   1   1   1 -
+Dmo_CPR_Uncharacterized_62  -          CPFL.aln             -            2.6e-10   38.4  27.6   3.9e-10   37.8  27.6   1.3   1   0   0   1   1   1   1 -
+Dvi_CPR_Uncharacterized_65  -          CPFL.aln             -            1.5e-09   35.9  31.2   1.9e-09   35.5  31.2   1.1   1   0   0   1   1   1   1 -
+Dwi_CPR_Uncharacterized_116 -          CPFL.aln             -            1.5e-09   35.9  41.6   2.3e-09   35.3  41.6   1.3   1   0   0   1   1   1   1 -
+Dgr_CPF2                    -          CPFL.aln             -            2.3e-09   35.3  88.4   7.5e-06   23.8  56.9   4.9   1   1   1   2   2   2   2 -
+Dps_CPR_Uncharacterized_34  -          CPFL.aln             -              3e-09   34.9  34.4   3.6e-09   34.6  34.4   1.1   1   0   0   1   1   1   1 -
+Foc_CPF2                    -          CPFL.aln             -            3.6e-09   34.6  53.6   1.6e-05   22.7   0.9   2.2   2   0   0   2   2   2   2 -
+Dme_Ccp84Ad                 -          CPFL.aln             -            7.3e-09   33.6  29.6     1e-08   33.2  29.6   1.2   1   0   0   1   1   1   1 -
+Dan_CPR_Uncharacterized_99  -          CPFL.aln             -            1.1e-08   33.1  35.1   1.6e-08   32.5  35.1   1.3   1   0   0   1   1   1   1 -
+Dvi_CPR_Uncharacterized_66  -          CPFL.aln             -              2e-08   32.2  20.7   2.6e-08   31.8  20.7   1.2   1   0   0   1   1   1   1 -
+Dme_Ccp84Ab                 -          CPFL.aln             -            9.2e-08   30.1  49.4   1.5e-07   29.4  49.4   1.4   1   1   0   1   1   1   1 -
+Dvi_CPR_Uncharacterized_62  -          CPFL.aln             -            1.2e-07   29.7  69.5   8.5e-06   23.6  69.5   2.1   1   1   0   1   1   1   1 -
+Foc_CPF3                    -          CPFL.aln             -            1.6e-07   29.3  41.6     2e-07   28.9  41.6   1.2   1   0   0   1   1   1   1 -
+Dmo_CPR_Uncharacterized_63  -          CPFL.aln             -            2.9e-07   28.4  51.6   2.6e-05   22.1  51.6   2.1   1   1   0   1   1   1   1 -
+Sex_CPG860                  -          CPFL.aln             -            3.4e-07   28.2  30.4   3.9e-07   28.0  30.4   1.1   1   0   0   1   1   1   1 -
+Dps_CPR_Uncharacterized_37  -          CPFL.aln             -            4.4e-07   27.8  22.9   1.3e-06   26.3  22.9   1.7   1   1   0   1   1   1   1 -
+Dmo_CPF2                    -          CPFL.aln             -            5.2e-07   27.6  58.6    0.0015   16.3  33.3   2.5   1   1   1   2   2   2   2 -
+Dme_Cpr5C                   -          CPFL.aln             -            7.3e-07   27.1   5.7   1.2e-06   26.4   5.7   1.3   1   1   0   1   1   1   1 -
+Bmo_CPR92                   -          CPFL.aln             -            1.5e-06   26.1   9.0   1.5e-06   26.1   9.0   3.0   2   1   0   2   2   1   1 -
+Bmo_WCP5                    -          CPFL.aln             -            1.7e-06   26.0   8.7   1.7e-06   26.0   8.7   2.8   2   1   0   2   2   2   1 -
+Dme_Ccp84Af                 -          CPFL.aln             -            4.3e-06   24.6   4.5   5.8e-06   24.2   4.5   1.1   1   0   0   1   1   1   1 -
+Tpa_C1B-like                -          CPFL.aln             -              5e-06   24.4  49.9   6.3e-06   24.1  49.9   1.1   1   0   0   1   1   1   1 -
+Dps_CPR_Uncharacterized_39  -          CPFL.aln             -            5.1e-06   24.4  33.7   6.9e-06   23.9  33.7   1.2   1   0   0   1   1   1   1 -
+Dwi_CPR_Uncharacterized_115 -          CPFL.aln             -            7.1e-06   23.9  28.5   1.1e-05   23.2  28.5   1.3   1   1   0   1   1   1   1 -
+Dmo_CPR_Uncharacterized_57  -          CPFL.aln             -            7.8e-06   23.8   3.0   1.1e-05   23.3   3.0   1.2   1   0   0   1   1   1   1 -
+Tca_CP63                    -          CPFL.aln             -            1.1e-05   23.3  11.9   1.3e-05   23.1  11.9   1.1   1   0   0   1   1   1   1 -
+Bmo_ASSCP2                  -          CPFL.aln             -            1.9e-05   22.5  92.9     3e-05   21.9  40.1   2.1   1   1   1   2   2   2   1 -
+Dwi_CPR_Uncharacterized_110 -          CPFL.aln             -            1.9e-05   22.5   2.5   2.4e-05   22.2   2.5   1.2   1   0   0   1   1   1   1 -
+Cfe_Unigene14282-RR2        -          CPFL.aln             -            2.7e-05   22.0  24.8   0.00014   19.7  24.5   2.1   1   1   0   1   1   1   1 -
+Dvi_CPF2                    -          CPFL.aln             -            2.9e-05   21.9  76.3     0.022   12.5  30.0   3.6   1   1   1   2   2   2   1 -
+Tmo_LPCP-22                 -          CPFL.aln             -            3.7e-05   21.5  70.4   6.2e-05   20.8  70.4   1.4   1   1   0   1   1   1   1 -
+Dme_Ccp84Ag                 -          CPFL.aln             -            5.4e-05   21.0  28.6   6.8e-05   20.7  28.6   1.1   1   0   0   1   1   1   1 -
+Cfe_Unigene14189-RR2        -          CPFL.aln             -            6.1e-05   20.8  39.0   0.00016   19.5  39.0   1.7   1   1   0   1   1   1   1 -
+Dgr_CPF3                    -          CPFL.aln             -            6.8e-05   20.7  64.5   0.00021   19.1  48.7   2.6   1   1   1   2   2   2   1 -
+Bmo_CPR63                   -          CPFL.aln             -            8.7e-05   20.3  16.5   0.00013   19.8  16.5   1.2   1   0   0   1   1   1   1 -
+Dme_Cpr31A                  -          CPFL.aln             -            0.00011   20.0  25.1   0.00011   20.0  25.1   3.4   2   1   1   3   3   1   1 -
+Bmo_CPR98                   -          CPFL.aln             -            0.00022   19.0  47.1   0.00022   19.0  47.1   2.3   2   1   0   2   2   2   1 -
+Bmo_WCP2                    -          CPFL.aln             -            0.00023   19.0  47.5   0.00023   19.0  47.5   2.3   2   1   0   2   2   2   1 -
+Bmo_CPR93                   -          CPFL.aln             -            0.00023   19.0  36.5   0.00039   18.2  36.5   1.3   1   0   0   1   1   1   1 -
+Bmo_CPR99                   -          CPFL.aln             -            0.00025   18.9  47.6   0.00025   18.9  47.6   2.2   2   1   0   2   2   2   1 -
+Aga_CPR2                    -          CPFL.aln             -            0.00028   18.7  61.0   0.00071   17.4  61.0   1.9   1   1   0   1   1   1   1 -
+Aga_CPR4                    -          CPFL.aln             -            0.00028   18.7  61.0   0.00071   17.4  61.0   1.9   1   1   0   1   1   1   1 -
+Bmo_CPR161                  -          CPFL.aln             -            0.00029   18.6  47.5   0.00029   18.6  47.5   2.3   2   1   0   2   2   2   1 -
+Aga_CPR3                    -          CPFL.aln             -             0.0003   18.6  61.3   0.00079   17.2  61.3   1.9   1   1   0   1   1   1   1 -
+Sex_CPG316                  -          CPFL.aln             -            0.00031   18.6  38.0   0.00042   18.1  38.0   1.2   1   0   0   1   1   1   1 -
+Aga_CPR6                    -          CPFL.aln             -            0.00034   18.4  50.4   0.00067   17.5  50.4   1.7   1   1   0   1   1   1   1 -
+Aga_CPLCG10                 -          CPFL.aln             -            0.00037   18.3  36.6   0.00048   17.9  36.6   1.2   1   0   0   1   1   1   1 -
+Dvi_CPF3                    -          CPFL.aln             -            0.00042   18.1  45.0    0.0029   15.4  17.9   2.7   1   1   1   2   2   2   2 -
+Aga_CPR108                  -          CPFL.aln             -            0.00059   17.6   7.9   0.00076   17.3   7.9   1.2   1   0   0   1   1   1   1 -
+Aga_CPR84                   -          CPFL.aln             -            0.00059   17.6   7.9   0.00076   17.3   7.9   1.2   1   0   0   1   1   1   1 -
+Dps_CPR_Uncharacterized_33  -          CPFL.aln             -             0.0006   17.6  59.8    0.0016   16.2  59.8   1.7   1   1   0   1   1   1   1 -
+Aga_CPLCG12                 -          CPFL.aln             -            0.00064   17.5  35.5   0.00083   17.2  35.5   1.2   1   0   0   1   1   1   1 -
+Aga_CPR5                    -          CPFL.aln             -            0.00068   17.4  60.4    0.0015   16.3  60.4   1.7   1   1   0   1   1   1   1 -
+Foc_RR-2_10                 -          CPFL.aln             -            0.00081   17.2   0.1     0.001   16.8   0.1   1.1   1   0   0   1   1   1   1 -
+Aga_CPLCG7                  -          CPFL.aln             -            0.00085   17.1  37.1    0.0011   16.8  37.1   1.2   1   0   0   1   1   1   1 -
+Tca_CPR15                   -          CPFL.aln             -            0.00087   17.1   9.6    0.0026   15.6   9.6   1.8   1   1   0   1   1   1   1 -
+Dvi_CPF1                    -          CPFL.aln             -            0.00098   16.9  18.3    0.0012   16.6  18.3   1.1   1   0   0   1   1   1   1 -
+Cfe_Unigene13687-RR2        -          CPFL.aln             -             0.0017   16.1  60.3    0.0027   15.5  60.3   1.3   1   1   0   1   1   1   1 -
+Dps_CPR_Uncharacterized_26  -          CPFL.aln             -             0.0018   16.1   0.2    0.0033   15.2   0.0   1.4   1   1   0   1   1   1   1 -
+Dan_CPR_Uncharacterized_13  -          CPFL.aln             -             0.0018   16.0   7.1    0.0027   15.5   7.1   1.4   1   1   0   1   1   1   1 -
+Dmo_CPF3                    -          CPFL.aln             -              0.002   15.9  48.2     0.015   13.1  28.5   2.7   1   1   1   2   2   2   1 -
+Bmo_CPG3                    -          CPFL.aln             -             0.0021   15.8   0.1    0.0034   15.2   0.1   1.3   1   0   0   1   1   1   1 -
+Dwi_CPR_Uncharacterized_112 -          CPFL.aln             -             0.0028   15.4  54.0    0.0089   13.8  54.0   1.8   1   1   0   1   1   1   1 -
+Dwi_CPR_Uncharacterized_113 -          CPFL.aln             -             0.0028   15.4  54.0    0.0089   13.8  54.0   1.8   1   1   0   1   1   1   1 -
+Nlu_CPF3a                   -          CPFL.aln             -             0.0029   15.4  40.9     0.012   13.3  16.4   2.6   1   1   2   3   3   2   1 -
+Dmo_CPR_Uncharacterized_118 -          CPFL.aln             -              0.003   15.3   6.7    0.0052   14.5   6.7   1.3   1   1   0   1   1   1   1 -
+Dmo_CPR_Uncharacterized_59  -          CPFL.aln             -             0.0045   14.8  33.7     0.015   13.1  33.7   1.9   1   1   0   1   1   1   1 -
+Aga_CPR1                    -          CPFL.aln             -             0.0047   14.7  48.5     0.015   13.0  48.5   2.0   1   1   0   1   1   1   1 -
+Foc_CPF1                    -          CPFL.aln             -             0.0052   14.5  98.8      0.51    8.1  21.2   3.2   2   1   0   2   2   2   0 -
+Dgr_CPF1                    -          CPFL.aln             -             0.0063   14.3  23.1    0.0095   13.7  23.1   1.3   1   0   0   1   1   1   1 -
+Dme_Cpr62Bb                 -          CPFL.aln             -             0.0065   14.2  15.8     0.014   13.2  15.8   1.5   1   1   0   1   1   1   1 -
+Dps_CPF2                    -          CPFL.aln             -             0.0067   14.2  73.8      0.88    7.3   5.2   4.7   1   1   2   3   3   3   0 -
+Aga_CPR131                  -          CPFL.aln             -             0.0097   13.7  15.1      0.06   11.1  15.1   2.0   1   1   0   1   1   1   1 -
+Bmo_CPR157                  -          CPFL.aln             -              0.014   13.2  27.1     0.017   12.9  27.1   1.1   1   0   0   1   1   1   0 -
+Cfe_Unigene10128-CPLCA      -          CPFL.aln             -              0.014   13.2  13.6     0.019   12.7  13.6   1.2   1   0   0   1   1   1   0 -
+Bmo_CPR158                  -          CPFL.aln             -              0.017   12.8  27.5     0.022   12.5  27.5   1.1   1   0   0   1   1   1   0 -
+Dme_CG8541                  -          CPFL.aln             -              0.018   12.8  77.7      0.19    9.5  58.6   3.6   1   1   1   2   2   2   0 -
+Dps_CPR_Uncharacterized_36  -          CPFL.aln             -              0.022   12.5  49.5     0.033   11.9  49.5   1.3   1   1   0   1   1   1   0 -
+Bmo_CPR76                   -          CPFL.aln             -              0.049   11.4  27.8     0.062   11.1  27.8   1.2   1   0   0   1   1   1   0 -
+Bmo_CPR95                   -          CPFL.aln             -              0.057   11.2  46.3     0.097   10.4  41.2   2.7   2   1   0   2   2   2   0 -
+Dgr_CPR_Uncharacterized_10  -          CPFL.aln             -               0.06   11.1  46.1      0.11   10.3  46.1   1.6   1   1   0   1   1   1   0 -
+Bmo_CPR134                  -          CPFL.aln             -              0.066   11.0   9.7      0.45    8.2   9.5   1.9   1   1   0   1   1   1   0 -
+Nlu_CPF3b                   -          CPFL.aln             -               0.18    9.5  89.2      0.13   10.0  45.3   3.5   1   1   3   4   4   2   0 -
+Aga_CPF4                    -          CPFL.aln             -               0.19    9.5  50.1      0.29    8.9  50.1   1.3   1   1   0   1   1   1   0 -
+Dme_CG7548                  -          CPFL.aln             -               0.26    9.0  30.5       7.1    4.3  30.5   2.0   1   1   0   1   1   1   0 -
+Dps_CPR_Uncharacterized_B   -          CPFL.aln             -               0.27    9.0  40.4      0.28    8.9  21.9   2.3   2   0   0   2   2   2   0 -
+Dan_CPF3                    -          CPFL.aln             -               0.28    8.9  64.2     0.058   11.1  25.9   3.9   1   1   1   2   2   1   0 -
+Dmo_CPR_Uncharacterized_60  -          CPFL.aln             -               0.28    8.9  35.2      0.93    7.2  35.2   1.9   1   1   0   1   1   1   0 -
+Aga_CPLCX3                  -          CPFL.aln             -               0.28    8.9  55.4       1.1    7.0  55.4   1.8   1   1   0   1   1   1   0 -
+Dme_CG8543                  -          CPFL.aln             -               0.52    8.0  65.1        86    0.8  65.1   2.3   1   1   0   1   1   1   0 -
+Dps_CPF3                    -          CPFL.aln             -               0.54    8.0  66.8      0.62    7.8  32.3   4.2   1   1   1   2   2   1   0 -
+Bmo_CPR71                   -          CPFL.aln             -               0.56    7.9  41.5        20    2.9  41.5   3.0   1   1   0   1   1   1   0 -
+Aga_CPLCX2                  -          CPFL.aln             -               0.62    7.8  36.1       1.4    6.6  36.1   1.9   1   1   0   1   1   1   0 -
+Bmo_CPR150                  -          CPFL.aln             -               0.75    7.5  17.0       2.2    6.0  17.0   1.9   1   1   0   1   1   1   0 -
+Aga_CPLCA2                  -          CPFL.aln             -               0.84    7.4  62.9        11    3.7  62.9   2.0   1   1   0   1   1   1   0 -
+Bmo_CPG46                   -          CPFL.aln             -                1.2    6.9  40.5       3.1    5.5  40.5   1.8   1   1   0   1   1   1   0 -
+Dan_CPR_Uncharacterized_101 -          CPFL.aln             -                1.2    6.9  57.1       6.2    4.5  57.1   2.2   1   1   0   1   1   1   0 -
+Dan_CPF2                    -          CPFL.aln             -                1.7    6.4  98.0        11    3.8  63.6   5.2   1   1   1   2   2   1   0 -
+Aga_CPLCA1                  -          CPFL.aln             -                1.7    6.3  60.0       6.6    4.4  60.0   1.9   1   1   0   1   1   1   0 -
+Cfe_Unigene12042-RR2        -          CPFL.aln             -                3.9    5.2  45.6   5.7e+02   -1.9  45.6   3.0   1   1   0   1   1   0   0 -
+Bmo_CPH16                   -          CPFL.aln             -                4.3    5.0  56.5       5.4    4.7  38.2   2.3   1   1   1   2   2   2   0 -
+Bmo_CPR101                  -          CPFL.aln             -                6.1    4.5  42.4       1.3    6.7  36.2   2.3   1   1   0   2   2   2   0 -
+Aga_CPR59                   -          CPFL.aln             -                6.6    4.4  52.9        12    3.5  52.9   1.5   1   1   0   1   1   1   0 -
+Dwi_CPF2                    -          CPFL.aln             -                7.1    4.3  84.1        62    1.3  55.5   3.4   1   1   1   2   2   2   0 -
+Foc_RR-2_4                  -          CPFL.aln             -                7.6    4.2  63.5   2.4e+03   -3.9  63.5   2.9   1   1   0   1   1   0   0 -
+#
+# Program:         hmmsearch
+# Version:         3.4 (Aug 2023)
+# Pipeline mode:   SEARCH
+# Query file:      CPFL.hmm
+# Target file:     all_proteins.fasta
+# Option settings: hmmsearch --tblout CPFL_vs_all.tbl CPFL.hmm all_proteins.fasta 
+# Current dir:     /mnt/c/Users/alexw/cuticulome-db/HMM
+# Date:            Fri May  1 08:10:43 2026
+# [ok]

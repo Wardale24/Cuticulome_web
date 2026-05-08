@@ -1,0 +1,101 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.4 (Aug 2023); http://hmmer.org/
+# Copyright (C) 2023 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_cf5ea67d.faa
+# target HMM database:             classifier_db/cuticulome_classifiers.hmm
+# per-dom hits tabular output:     /mnt/c/Users/alexw/cuticulome-db/db_working_classifier/tmp_streamlit/query_cf5ea67d.domtbl
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query_cf5ea67d  [L=145]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model                   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                -----------
+    8.2e-43  136.4   3.2    9.4e-43  136.2   3.2    1.0  1  CPR_RR-2.clean_seed.aln  
+      1e-33  107.4   8.0    1.1e-33  107.3   8.0    1.0  1  CPR_combined.aln         
+    4.6e-14   42.7   0.6    5.3e-14   42.5   0.6    1.1  1  CPR_RR-1.clean_seed.aln  
+    5.8e-06   17.1   9.6    1.7e-05   15.6   9.6    1.8  1  CPFL.aln                 
+
+
+Domain annotation for each model (and alignments):
+>> CPR_RR-2.clean_seed.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.2   3.2   2.3e-43   9.4e-43      16     117 ..       1     130 [.       1     144 [. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 136.2 bits;  conditional E-value: 2.3e-43
+  CPR_RR-2.clean_seed.aln  16 maskllllaalvavaea......p.ays..gh......apvaha........ap......d.ydaepkYeFeYgVkDphtgdsksq 71 
+                              ma+k+lllaa ++ a+a      + ays  +h      ap a +        ap      + yd++p+Y+++Y+V+D+htgdsksq
+           query_cf5ea67d   1 MATKFLLLAATLSFAKAgllqqgHsAYSnvQHhpapapAP-A-HvvaavpavAPvvqtrvEpYDPNPQYNYAYAVNDQHTGDSKSQ 84 
+                              8999999887777776645543314565443435442211.1.12344444422666666569*********************** PP
+
+  CPR_RR-2.clean_seed.aln  72 kEsrdgdvVkGsYslvepDGskrtVeYtADkhnGFnAvVkreksap 117
+                              +E+r+gdvV+G+Ysl +pDGs+rtV+Y+A +h+GFnAvV+r+  a+
+           query_cf5ea67d  85 HETRNGDVVHGQYSLTDPDGSRRTVDYSAGPHTGFNAVVHRTAGAH 130
+                              ****************************************552233 PP
+
+>> CPR_combined.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.3   8.0   2.8e-34   1.1e-33      41     140 ..       3     133 ..       1     145 [] 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 107.3 bits;  conditional E-value: 2.8e-34
+  CPR_combined.aln  41 Mkfllllllalla.asa................p....apa..........pilrqese..d.ppdGYsfsYevsDisaeetGdlkgqhEtrd 99 
+                        k +lll+++l + a a                p    apa          p+++   e  d +p+ Y+++Y v+D   ++tGd+k+qhEtr+
+    query_cf5ea67d   3 TK-FLLLAATL-SfAKAgllqqghsaysnvqhhPapapAPAhvvaavpavaPVVQTRVEpyDpNPQ-YNYAYAVND---QHTGDSKSQHETRN 89 
+                       34.55533334.334444555556556666666255542223334443333444433344334499.*********...************** PP
+
+  CPR_combined.aln 100 g.vVkGsYsyvdpDGtkritVeYtADe.nGFq..Vk.pqgahlPap 140
+                       g vV+G+Ys++dpDG++r+ V+Y A + +GF+  V+   gah P+p
+    query_cf5ea67d  90 GdVVHGQYSLTDPDGSRRT-VDYSAGPhTGFNavVHrTAGAH-PVP 133
+                       ***************9999.************9888744899.755 PP
+
+>> CPR_RR-1.clean_seed.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   0.6   1.3e-14   5.3e-14      13     118 ..       5     134 ..       1     143 [. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 42.5 bits;  conditional E-value: 1.3e-14
+  CPR_RR-1.clean_seed.aln  13 llvllalvavalaa...................p..eske......apapilkqene.vnedGsYkysYetsnGisaeeegelkna 70 
+                              +l+l+a++ +a a                    p  +  +      a ap+++   e ++++ +Y+y+Y  ++  + + + + +  
+           query_cf5ea67d   5 FLLLAATLSFAKAGllqqghsaysnvqhhpapaPapA--HvvaavpAVAPVVQTRVEpYDPNPQYNYAYAVNDQHTGDSKSQHE-- 86 
+                              5555665655554466666665555555433321320..123333355668877666588999*********999998888843.. PP
+
+  CPR_RR-1.clean_seed.aln  71 gteealvvqGsysYtgpdGqtytvtYvADe.nGFqpq.....gahlPtpPpipe 118
+                               t+++ vv+G+ys t+pdG + tv+Y A+  +GF +      gah     p+p 
+           query_cf5ea67d  87 -TRNGDVVHGQYSLTDPDGSRRTVDYSAGPhTGFNAVvhrtaGAH-----PVPV 134
+                              .335679*********************9538**99844444443.....4444 PP
+
+>> CPFL.aln  
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   9.6   4.3e-06   1.7e-05       1      64 [.       1      60 [.       1     144 [. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 4.3e-06
+        CPFL.aln  1 Malklvvilaalaaasagyl.sgaLsiaaygvapavsysaPvaaaskeilaepalypvvekklah 64
+                    Ma+k++++ a+l+ a+ag l +g+   +ay+  +   ++aP +a++  ++a pa+ pvv+  +++
+  query_cf5ea67d  1 MATKFLLLAATLSFAKAGLLqQGH---SAYSNVQH--HPAPAPAPAHVVAAVPAVAPVVQTRVEP 60
+                    9*******************7777...24444433..5677888888999999999888777654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (145 residues searched)
+Target model(s):                          16  (3270 nodes)
+Passed MSV filter:                        12  (0.75); expected 0.3 (0.02)
+Passed bias filter:                        5  (0.3125); expected 0.3 (0.02)
+Passed Vit filter:                         4  (0.25); expected 0.0 (0.001)
+Passed Fwd filter:                         4  (0.25); expected 0.0 (1e-05)
+Initial search space (Z):                 16  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.10
+# Mc/sec: 4.65
+//
+[ok]

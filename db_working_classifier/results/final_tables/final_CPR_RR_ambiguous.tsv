@@ -1,0 +1,105 @@
+protein_id	protein_name	species_code	species_name	current_family	CPR_score	CPR_evalue	CPR_confident	RR1_score	RR2_score	delta_RR1_minus_RR2	RR_classifier_prediction	RR_classifier_status	final_prediction	final_status
+Aga_CPR112	CPR112	Aga	Anopheles gambiae	CPR RR-2	35.8	1.2e-09	yes	28.2	21.9	6.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Aga_CPR134	CPR134	Aga	Anopheles gambiae	CPR RR-1	37.5	3.6e-10	yes	33.7	22.0	11.7	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Aga_CPR144_iso1	CPR144_iso1	Aga	Anopheles gambiae	CPR	40.4	4.8e-11	yes	55.2	43.7	11.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Aga_CPR144_iso2	CPR144_iso2	Aga	Anopheles gambiae	CPR	40.5	4.5e-11	yes	55.0	44.2	10.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Aga_CPR159	CPR159	Aga	Anopheles gambiae	CPR	48.7	1.4e-13	yes	31.0	47.3	-16.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Aga_CPR161_iso2	CPR161_iso2	Aga	Anopheles gambiae	CPR	40.7	3.8e-11	yes	16.4	29.9	-13.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Aga_CPR9	CPR9	Aga	Anopheles gambiae	CPR RR-1	68.6	1.1e-19	yes	61.3	56.1	5.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Bmo_CPR147	CPR147	Bmo	Bombyx mori	CPR RR-3	62.8	6.9e-18	yes	56.7	53.9	2.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Bmo_CPR149	CPR149	Bmo	Bombyx mori	CPR RR-1	43.4	5.8e-12	yes	36.7	26.8	9.9	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Bmo_CPR47	CPR47	Bmo	Bombyx mori	CPR RR-1	50.1	5e-14	yes	51.3	37.6	13.7	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Bmo_CPR56	CPR56	Bmo	Bombyx mori	CPR RR-1	61.7	1.5e-17	yes	43.8	46.2	-2.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Cfe_Unigene14668-CPRNC	Unigene14668-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	64.9	1.5e-18	yes	46.0	51.4	-5.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Cfe_Unigene18393-CPRNC	Unigene18393-CPRNC	Cfe	Cryptolestes ferrugineus	CPR	37.4	3.9e-10	yes	23.3	19.3	4.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dan_CPR_Uncharacterized_27	CPR_Uncharacterized_27	Dan	Drosophila ananassae	CPR	68.1	1.6e-19	yes	51.7	51.3	0.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dan_CPR_Uncharacterized_42	CPR_Uncharacterized_42	Dan	Drosophila ananassae	CPR	47.0	4.6e-13	yes	27.8	39.0	-11.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dan_CPR_Uncharacterized_57	CPR_Uncharacterized_57	Dan	Drosophila ananassae	CPR	63.0	5.9e-18	yes	48.1	41.0	7.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dan_CPR_Uncharacterized_58	CPR_Uncharacterized_58	Dan	Drosophila ananassae	CPR	47.9	2.4e-13	yes	9.1	28.6	-19.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dan_CPR_Uncharacterized_67	CPR_Uncharacterized_67	Dan	Drosophila ananassae	CPR	67.9	1.8e-19	yes	49.5	48.7	0.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dan_CPR_Uncharacterized_75	CPR_Uncharacterized_75	Dan	Drosophila ananassae	CPR	57.4	3.1e-16	yes	50.8	33.1	17.7	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_100	CPR_Uncharacterized_100	Dgr	Drosophila grimshawi	CPR	62.7	7.4e-18	yes	40.3	21.1	19.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_32	CPR_Uncharacterized_32	Dgr	Drosophila grimshawi	CPR	42.4	1.1e-11	yes	42.7	23.9	18.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_36	CPR_Uncharacterized_36	Dgr	Drosophila grimshawi	CPR	52.3	1.1e-14	yes	50.8	39.2	11.6	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_37	CPR_Uncharacterized_37	Dgr	Drosophila grimshawi	CPR	65.5	1e-18	yes	54.1	44.3	9.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_38	CPR_Uncharacterized_38	Dgr	Drosophila grimshawi	CPR	59.3	7.7e-17	yes	43.4	29.3	14.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_52	CPR_Uncharacterized_52	Dgr	Drosophila grimshawi	CPR	61.4	1.7e-17	yes	40.7	52.7	-12.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_80	CPR_Uncharacterized_80	Dgr	Drosophila grimshawi	CPR	52.6	8.6e-15	yes	48.7	38.9	9.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dgr_CPR_Uncharacterized_82	CPR_Uncharacterized_82	Dgr	Drosophila grimshawi	CPR	52.3	1.1e-14	yes	26.5	40.7	-14.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dma_A0A0P5U952	A0A0P5U952	Dma	Daphnia magna	NULL	44.2	3.3e-12	yes	30.4	24.8	5.6	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr51A	Cpr51A	Dme	Drosophila melanogaster	NULL	64.2	2.5e-18	yes	50.0	52.3	-2.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr57A_iso1	Cpr57A_iso1	Dme	Drosophila melanogaster	CPR RR-1	69.6	5.7e-20	yes	51.0	53.0	-2.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr57A_iso2	Cpr57A_iso2	Dme	Drosophila melanogaster	CPR RR-1	69.6	5.7e-20	yes	51.0	53.0	-2.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr65Ay	Cpr65Ay	Dme	Drosophila melanogaster	NULL	45.1	1.7e-12	yes	42.6	27.5	15.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr67B	Cpr67B	Dme	Drosophila melanogaster	CPR RR-3	55.7	9.7e-16	yes	49.5	30.0	19.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr72Eb	Cpr72Eb	Dme	Drosophila melanogaster	CPR RR-3	57.4	3.1e-16	yes	46.4	38.9	7.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr72Ec	Cpr72Ec	Dme	Drosophila melanogaster	CPR RR-2	57.4	3e-16	yes	23.0	34.3	-11.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr73D_iso1	Cpr73D_iso1	Dme	Drosophila melanogaster	CPR RR-2	86.0	5.3e-25	yes	64.9	47.8	17.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr73D_iso2	Cpr73D_iso2	Dme	Drosophila melanogaster	CPR RR-2	70.6	2.8e-20	yes	49.2	48.8	0.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_Cpr92F	Cpr92F	Dme	Drosophila melanogaster	CPR RR-3	30.6	4.8e-08	yes	42.7	23.9	18.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dme_l(3)mbn	l(3)mbn	Dme	Drosophila melanogaster	CPR	58.7	1.2e-16	yes	36.1	31.4	4.7	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_108	CPR_Uncharacterized_108	Dmo	Drosophila mojavensis	CPR	59.3	7.9e-17	yes	51.4	31.6	19.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_109	CPR_Uncharacterized_109	Dmo	Drosophila mojavensis	CPR	58.0	2e-16	yes	44.8	46.2	-1.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_32	CPR_Uncharacterized_32	Dmo	Drosophila mojavensis	CPR	55.3	1.3e-15	yes	31.8	47.0	-15.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_42	CPR_Uncharacterized_42	Dmo	Drosophila mojavensis	CPR	69.4	6.2e-20	yes	50.9	51.9	-1.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_64	CPR_Uncharacterized_64	Dmo	Drosophila mojavensis	CPR	55.6	1e-15	yes	46.2	26.7	19.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_67	CPR_Uncharacterized_67	Dmo	Drosophila mojavensis	CPR	42.0	1.5e-11	yes	46.9	30.0	16.9	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_76	CPR_Uncharacterized_76	Dmo	Drosophila mojavensis	CPR	57.0	4e-16	yes	36.4	25.3	11.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_77	CPR_Uncharacterized_77	Dmo	Drosophila mojavensis	CPR	64.1	2.6e-18	yes	49.8	40.4	9.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_78	CPR_Uncharacterized_78	Dmo	Drosophila mojavensis	CPR	50.0	5.6e-14	yes	49.9	39.8	10.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_82	CPR_Uncharacterized_82	Dmo	Drosophila mojavensis	CPR	45.6	1.2e-12	yes	42.0	28.8	13.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dmo_CPR_Uncharacterized_A	CPR_Uncharacterized_A	Dmo	Drosophila mojavensis	CPR	39.5	8.6e-11	yes	24.8	27.8	-3.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_30	CPR_Uncharacterized_30	Dps	Drosophila pseudoobscura	CPR	58.9	1.1e-16	yes	41.0	37.2	3.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_59	CPR_Uncharacterized_59	Dps	Drosophila pseudoobscura	CPR	74.1	2.3e-21	yes	61.7	52.9	8.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_6	CPR_Uncharacterized_6	Dps	Drosophila pseudoobscura	CPR	34.8	2.4e-09	yes	42.2	26.0	16.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_75	CPR_Uncharacterized_75	Dps	Drosophila pseudoobscura	CPR	42.5	1.1e-11	yes	43.8	24.7	19.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_C	CPR_Uncharacterized_C	Dps	Drosophila pseudoobscura	CPR	66.6	4.7e-19	yes	47.5	55.8	-8.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_E	CPR_Uncharacterized_E	Dps	Drosophila pseudoobscura	CPR	41.6	2e-11	yes	31.1	25.9	5.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_G	CPR_Uncharacterized_G	Dps	Drosophila pseudoobscura	CPR	65.7	8.6e-19	yes	47.4	50.5	-3.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dps_CPR_Uncharacterized_K	CPR_Uncharacterized_K	Dps	Drosophila pseudoobscura	CPR	64.9	1.5e-18	yes	44.1	36.7	7.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_113	CPR_Uncharacterized_113	Dvi	Drosophila virilis	CPR	67.9	1.9e-19	yes	47.7	45.5	2.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_114	CPR_Uncharacterized_114	Dvi	Drosophila virilis	CPR	50.6	3.5e-14	yes	34.9	25.4	9.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_31	CPR_Uncharacterized_31	Dvi	Drosophila virilis	CPR	69.0	8.6e-20	yes	55.8	51.7	4.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_37	CPR_Uncharacterized_37	Dvi	Drosophila virilis	CPR	57.3	3.2e-16	yes	34.8	45.7	-10.9	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_74	CPR_Uncharacterized_74	Dvi	Drosophila virilis	CPR	33.8	4.7e-09	yes	42.3	32.2	10.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_87	CPR_Uncharacterized_87	Dvi	Drosophila virilis	CPR	51.9	1.4e-14	yes	46.6	29.7	16.9	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_91	CPR_Uncharacterized_91	Dvi	Drosophila virilis	CPR	55.3	1.3e-15	yes	53.1	40.7	12.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_92	CPR_Uncharacterized_92	Dvi	Drosophila virilis	CPR	65.5	1e-18	yes	51.5	46.3	5.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_93	CPR_Uncharacterized_93	Dvi	Drosophila virilis	CPR	61.1	2.2e-17	yes	41.5	37.5	4.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dvi_CPR_Uncharacterized_A	CPR_Uncharacterized_A	Dvi	Drosophila virilis	CPR	35.5	1.5e-09	yes	16.0	25.3	-9.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_10	CPR_Uncharacterized_10	Dwi	Drosophila willistoni	CPR	64.1	2.7e-18	yes	54.2	48.4	5.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_12	CPR_Uncharacterized_12	Dwi	Drosophila willistoni	CPR	63.5	4.1e-18	yes	52.1	50.8	1.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_13	CPR_Uncharacterized_13	Dwi	Drosophila willistoni	CPR	47.1	4.1e-13	yes	35.0	18.6	16.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_57	CPR_Uncharacterized_57	Dwi	Drosophila willistoni	CPR	53.4	5e-15	yes	31.7	44.6	-12.9	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_58	CPR_Uncharacterized_58	Dwi	Drosophila willistoni	CPR	53.8	3.7e-15	yes	31.6	44.1	-12.5	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_72	CPR_Uncharacterized_72	Dwi	Drosophila willistoni	CPR	61.4	1.7e-17	yes	42.4	32.4	10.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_73	CPR_Uncharacterized_73	Dwi	Drosophila willistoni	CPR	64.9	1.5e-18	yes	49.1	44.8	4.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_74	CPR_Uncharacterized_74	Dwi	Drosophila willistoni	CPR	54.7	1.9e-15	yes	54.0	38.0	16.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Dwi_CPR_Uncharacterized_9	CPR_Uncharacterized_9	Dwi	Drosophila willistoni	CPR	64.1	2.7e-18	yes	54.2	48.4	5.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-1_23	RR-1_23	Foc	Frankliniella occidentalis	CPR RR-1	37.7	3.2e-10	yes	30.3	19.9	10.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-2_2	RR-2_2	Foc	Frankliniella occidentalis	CPR RR-2	93.7	2.3e-27	yes	81.8	65.1	16.7	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-2_22	RR-2_22	Foc	Frankliniella occidentalis	CPR RR-2	41.4	2.4e-11	yes	34.6	33.6	1.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-2_28	RR-2_28	Foc	Frankliniella occidentalis	CPR RR-2	66.6	4.7e-19	yes	44.8	57.9	-13.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-2_3	RR-2_3	Foc	Frankliniella occidentalis	CPR RR-2	51.9	1.5e-14	yes	28.0	38.4	-10.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-2_30	RR-2_30	Foc	Frankliniella occidentalis	CPR RR-2	60.5	3.4e-17	yes	34.3	30.3	4.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Foc_RR-NC_3	RR-NC_3	Foc	Frankliniella occidentalis	NULL	30.1	6.6e-08	yes	26.3	17.9	8.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Iri_ACP10.9	ACP10.9	Iri	Ixodes ricinus	CPR RR-2	60.7	2.8e-17	yes	49.6	58.7	-9.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Iri_ACP16.8	ACP16.8	Iri	Ixodes ricinus	CPR RR-2	62.9	6.1e-18	yes	49.1	56.4	-7.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC01924.1	EEC01924.1	Isc	Ixodes scapularis	CPR	57.7	2.4e-16	yes	44.0	60.0	-16.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC01927.1	EEC01927.1	Isc	Ixodes scapularis	CPR	61.9	1.2e-17	yes	48.0	60.4	-12.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC01928.1	EEC01928.1	Isc	Ixodes scapularis	NULL	52.2	1.2e-14	yes	38.6	52.7	-14.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC03471.1	EEC03471.1	Isc	Ixodes scapularis	CPR RR-2	58.0	2e-16	yes	43.9	58.2	-14.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC04674.1	EEC04674.1	Isc	Ixodes scapularis	CPR RR-2	64.3	2.3e-18	yes	43.6	55.9	-12.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC04675.1	EEC04675.1	Isc	Ixodes scapularis	CPR	38.6	1.6e-10	yes	31.9	48.7	-16.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC09165.1	EEC09165.1	Isc	Ixodes scapularis	CPR RR-2	59.5	6.6e-17	yes	41.6	55.0	-13.4	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC09495.1	EEC09495.1	Isc	Ixodes scapularis	NULL	38.3	2.1e-10	yes	28.7	46.7	-18.0	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Isc_EEC14149.1	EEC14149.1	Isc	Ixodes scapularis	CPR RR-2	67.2	3e-19	yes	46.9	62.2	-15.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Nlu_Cpr34	Cpr34	Nlu	Nilaparvata lugens	CPR	45.1	1.8e-12	yes	31.3	38.5	-7.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Nlu_Cpr35	Cpr35	Nlu	Nilaparvata lugens	CPR	45.7	1.1e-12	yes	41.4	44.6	-3.2	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Nlu_Cpr92	Cpr92	Nlu	Nilaparvata lugens	CPR	45.7	1.1e-12	yes	33.9	44.8	-10.9	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Pci_CPR2	CPR2	Pci	Panonychus citri	CPR RR-2	59.9	5.3e-17	yes	42.0	60.3	-18.3	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Pps_CPR1	CPR1	Pps	Pardosa pseudoannulata	CPR RR-1	79.3	6e-23	yes	68.0	53.9	14.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Pps_CPR10	CPR10	Pps	Pardosa pseudoannulata	CPR RR-1	66.7	4.4e-19	yes	48.1	40.4	7.7	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Pps_CPR12	CPR12	Pps	Pardosa pseudoannulata	CPR RR-1	54.6	2.1e-15	yes	42.0	40.2	1.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Pps_CPR9	CPR9	Pps	Pardosa pseudoannulata	CPR RR-1	57.5	2.8e-16	yes	52.2	40.4	11.8	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
+Sli_LCP167	LCP167	Sli	Spodoptera litura	CPR RR-2	73.5	3.5e-21	yes	56.6	59.7	-3.1	CPR RR ambiguous	ambiguous	CPR_RR_ambiguous	CPR_RR_ambiguous
