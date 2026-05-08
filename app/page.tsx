@@ -39,7 +39,7 @@ const tools = [
   {
     title: "miniBLAST",
     description:
-      "Compare a protein sequence against all curated Cuticulome.db proteins.",
+      "Compare a protein sequence against all Cuticulome.db proteins.",
     href: "/tools/miniblast",
   },
   {
@@ -74,12 +74,12 @@ export default function Home() {
       value: statistics.totalSpecies.toLocaleString(),
     },
     {
-      label: "Proteins",
+      label: "Cuticular proteins",
       value: roundedDownCount(statistics.totalProteins, 100),
     },
     {
       label: "Function-defined",
-      value: roundedDownCount(statistics.functionDefinedProteins, 100),
+      value: roundedDownCount(statistics.functionDefinedProteins, 10),
     },
     {
       label: "Curated references",
@@ -103,10 +103,9 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#6a5d4d]">
-              Cuticulome.db provides curated cuticular protein entries,
-              standardized nomenclature, family classifications, references,
-              downloadable FASTA files, and sequence analysis tools for
-              comparative cuticle biology.
+              Cuticulome.org provides curated cuticular protein entries,
+              cuticular protein family classification, downloadable FASTA files,
+              and sequence analysis tools for comparative cuticle biology.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -242,9 +241,8 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-[#d8cbb7] bg-[#fffaf1]">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-6 py-8 text-sm text-[#6a5d4d] md:flex-row">
-          <p>© Cuticulome.db</p>
-          <p>Curated arthropod cuticular protein database</p>
+        <div className="mx-auto flex max-w-7xl px-6 py-8 text-sm text-[#6a5d4d]">
+          <p>© Cuticulome.org</p>
         </div>
       </footer>
     </main>
