@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "./components/SiteHeader";
-import { getDownloadsData } from "./lib/cuticulome-db";
+import { getDatabaseStatistics } from "./lib/statistics";
 
 const mainSections = [
   {
@@ -50,17 +50,41 @@ const tools = [
   },
 ];
 
+function roundedDownCount(value: number, interval: number) {
+  if (value <= 0) {
+    return "0";
+  }
+
+  if (value < interval) {
+    return `${value}+`;
+  }
+
+  return `${Math.floor(value / interval) * interval}+`;
+}
+
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export default function Home() {
-  const { totalProteins, totalSpecies, totalFamilies } = getDownloadsData();
+  const statistics = getDatabaseStatistics();
 
   const databaseStats = [
-    { label: "Species", value: totalSpecies.toLocaleString() },
-    { label: "Proteins", value: totalProteins.toLocaleString() },
-    { label: "Protein families", value: totalFamilies.toLocaleString() },
-    { label: "Analysis tools", value: tools.length.toLocaleString() },
+    {
+      label: "Species",
+      value: statistics.totalSpecies.toLocaleString(),
+    },
+    {
+      label: "Proteins",
+      value: roundedDownCount(statistics.totalProteins, 100),
+    },
+    {
+      label: "Function-defined",
+      value: roundedDownCount(statistics.functionDefinedProteins, 100),
+    },
+    {
+      label: "Curated references",
+      value: roundedDownCount(statistics.totalLiteratureReferences, 10),
+    },
   ];
 
   return (
@@ -123,40 +147,18 @@ export default function Home() {
                 ))}
               </div>
             </div>
-
-            <div className="mt-5 rounded-2xl border border-[#d8cbb7] p-5">
-              <p className="text-sm font-semibold text-[#2a2118]">
-                Example search
-              </p>
-              <div className="mt-3 rounded-xl border border-[#d8cbb7] bg-[#f7f2e8] px-4 py-3 text-sm text-[#6a5d4d]">
-                Try:{" "}
-                <span className="font-medium text-[#2a2118]">CPR RR-2</span>,{" "}
-                <span className="font-medium text-[#2a2118]">CPAP3</span>,{" "}
-                <span className="font-medium text-[#2a2118]">Drosophila</span>,
-                or{" "}
-                <span className="font-medium text-[#2a2118]">
-                  protein accession
-                </span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
-              Explore
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#2a2118]">
-              Database sections
-            </h2>
-          </div>
-          <p className="max-w-2xl text-sm leading-6 text-[#6a5d4d]">
-            Designed as a structured reference resource for browsing,
-            downloading, and comparing arthropod cuticular proteins.
+        <div className="mb-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
+            Explore
           </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#2a2118]">
+            Database sections
+          </h2>
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
@@ -171,9 +173,6 @@ export default function Home() {
               </h3>
               <p className="mt-3 text-sm leading-6 text-[#6a5d4d]">
                 {section.description}
-              </p>
-              <p className="mt-6 text-sm font-semibold text-[#8c3f2b]">
-                Open section →
               </p>
             </Link>
           ))}
@@ -203,9 +202,6 @@ export default function Home() {
                 </h3>
                 <p className="mt-3 max-w-2xl text-sm leading-6 text-[#6a5d4d]">
                   {tool.description}
-                </p>
-                <p className="mt-6 text-sm font-semibold text-[#8c3f2b]">
-                  Launch tool →
                 </p>
               </Link>
             ))}

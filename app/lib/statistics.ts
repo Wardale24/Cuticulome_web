@@ -27,6 +27,7 @@ export type DatabaseStatistics = {
   totalRepresentedFamilies: number;
   totalFamilyTerms: number;
   totalFunctionalEntries: number;
+  totalLiteratureReferences: number;
   functionDefinedProteins: number;
   nonFunctionDefinedProteins: number;
   functionDefinedPercentage: number;
@@ -116,6 +117,11 @@ export function getDatabaseStatistics(): DatabaseStatistics {
   const totalFunctionalEntries = getCount(`
     SELECT COUNT(*) AS count
     FROM entries
+  `);
+
+  const totalLiteratureReferences = getCount(`
+    SELECT COUNT(*) AS count
+    FROM literature_references
   `);
 
   const functionDefinedProteins = getCount(`
@@ -241,6 +247,7 @@ export function getDatabaseStatistics(): DatabaseStatistics {
     totalRepresentedFamilies,
     totalFamilyTerms,
     totalFunctionalEntries,
+    totalLiteratureReferences,
     functionDefinedProteins,
     nonFunctionDefinedProteins,
     functionDefinedPercentage: percentage(functionDefinedProteins, totalProteins),
