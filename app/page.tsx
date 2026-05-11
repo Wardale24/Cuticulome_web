@@ -6,19 +6,19 @@ const mainSections = [
   {
     title: "Browse the database",
     description:
-      "Search curated arthropod cuticular proteins by species, family, and standardized nomenclature.",
+      "Search curated arthropod cuticular proteins by species, family, accession, and standardized nomenclature.",
     href: "/browse",
   },
   {
     title: "Protein families",
     description:
-      "Explore cuticular protein families, conserved domains, and HMM-supported classifications.",
+      "Explore cuticular protein families, conserved domains, HMM-supported classifications, and literature references.",
     href: "/families",
   },
   {
     title: "Species",
     description:
-      "View species-specific protein sets, available annotations, and downloadable FASTA files.",
+      "View species-specific protein sets, taxonomy, available annotations, and downloadable FASTA files.",
     href: "/species",
   },
   {
@@ -39,11 +39,11 @@ const tools = [
   {
     title: "miniBLAST",
     description:
-      "Compare a protein sequence against all Cuticulome.db proteins.",
+      "Compare a protein sequence against all curated Cuticulome.org proteins.",
     href: "/tools/miniblast",
   },
   {
-    title: "Cuticular Classifier",
+    title: "Cuticular Protein Classifier",
     description:
       "Classify candidate proteins into cuticular protein families using curated HMM models.",
     href: "/tools/classifier",
@@ -115,6 +115,14 @@ export default function Home() {
               >
                 Browse database
               </Link>
+
+              <Link
+                href="/tools/miniblast"
+                className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+              >
+                BLAST protein
+              </Link>
+
               <Link
                 href="/tools/classifier"
                 className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
@@ -220,7 +228,7 @@ export default function Home() {
             Researchers may submit individual protein entries through the
             submission form. For large batches of newly identified proteins,
             species-level datasets, or functional annotations, please contact
-            the Cuticulome.db team directly.
+            the Cuticulome.org team directly.
           </p>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">

@@ -25,7 +25,7 @@ export default async function BrowsePage({ searchParams }: BrowsePageProps) {
     <SitePage
       eyebrow="Browse"
       title="Browse Cuticulome.org"
-      description="Search curated arthropod cuticular proteins by standardized name, protein name, accession, species, or family."
+      description="Search curated arthropod cuticular proteins by standardized name, protein name, accession, species, or cuticular protein family."
     >
       <BrowseDatabase
         searchTerm={searchTerm}

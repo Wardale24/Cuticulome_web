@@ -9,7 +9,7 @@ export default function StatisticsPage() {
     <SitePage
       eyebrow="Database statistics"
       title="Cuticulome.org statistics"
-      description="Explore summary statistics generated directly from the Cuticulome.org SQLite database, including protein counts, species representation, family distribution, functional annotation coverage, and sequence availability."
+      description="Explore Cuticulome.org summary statistics."
     >
       <StatisticsDashboard />
     </SitePage>

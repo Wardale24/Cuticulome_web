@@ -18,7 +18,7 @@ export default async function FamiliesPage({ searchParams }: FamiliesPageProps) 
     <SitePage
       eyebrow="Protein families"
       title="Explore cuticular protein families"
-      description="Browse cuticular protein families represented in Cuticulome.org, including protein counts, species coverage, average sequence length, and example proteins."
+      description="Browse cuticular protein families represented in Cuticulome.org, including protein counts per family, average sequence length, and function-defined proteins."
     >
       <FamiliesBrowser searchTerm={searchTerm} />
     </SitePage>

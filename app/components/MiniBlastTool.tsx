@@ -127,7 +127,7 @@ export default function MiniBlastTool() {
   return (
     <div className="space-y-8">
       <section className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm">
-        <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid items-start gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <label
               htmlFor="miniblast-query"
@@ -141,7 +141,7 @@ export default function MiniBlastTool() {
               value={queryText}
               onChange={(event) => setQueryText(event.target.value)}
               placeholder={">query\nMKKLLVVAAALVAAQASA..."}
-              className="mt-2 min-h-[260px] w-full resize-none rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 font-mono text-sm leading-6 text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
+              className="mt-2 h-[260px] w-full resize-none rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 font-mono text-sm leading-6 text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
             />
 
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">
@@ -169,29 +169,20 @@ export default function MiniBlastTool() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6 lg:mt-7">
+          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6 lg:mt-7 lg:h-[260px]">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
               How it works
             </p>
 
             <h2 className="mt-3 text-2xl font-semibold text-[#2a2118]">
-              Search Cuticulome.org using BLASTP
+              Search against Cuticulome.org proteins
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
               miniBLAST compares your pasted protein sequence against protein
-              entries stored in Cuticulome.org. Results are ranked by bit score,
+              entries stored in Cuticulome.org using BLASTP. Results are ranked by bit score,
               identity, query coverage, and E-value.
             </p>
-
-            <div className="mt-6 rounded-2xl border border-[#d8cbb7] bg-[#fffdf8] p-4">
-              <p className="text-sm font-semibold text-[#2a2118]">
-                Accepted input
-              </p>
-              <p className="mt-1 text-sm text-[#6a5d4d]">
-                Plain amino acid sequence or FASTA format.
-              </p>
-            </div>
           </div>
         </div>
       </section>

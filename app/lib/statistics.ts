@@ -114,19 +114,16 @@ export function getDatabaseStatistics(): DatabaseStatistics {
     FROM protein_family
   `);
 
-  const totalFunctionalEntries = getCount(`
-    SELECT COUNT(*) AS count
+  const functionDefinedProteins = getCount(`
+    SELECT COUNT(DISTINCT protein_id) AS count
     FROM entries
   `);
+
+  const totalFunctionalEntries = functionDefinedProteins;
 
   const totalLiteratureReferences = getCount(`
     SELECT COUNT(*) AS count
     FROM literature_references
-  `);
-
-  const functionDefinedProteins = getCount(`
-    SELECT COUNT(DISTINCT protein_id) AS count
-    FROM entries
   `);
 
   const nonFunctionDefinedProteins = Math.max(

@@ -1,13 +1,87 @@
 import Link from "next/link";
 import { getFamiliesData } from "../lib/cuticulome-db";
+import {
+  FamilyDefinedFunctionProtein,
+  getDefinedFunctionProteinsByFamily,
+} from "../lib/family-defined-functions";
 
 type FamiliesBrowserProps = {
   searchTerm: string;
 };
 
+function isUnassignedFamily(family: string) {
+  return family.trim().toLowerCase() === "unassigned";
+}
+
+function displayDetail(value: string) {
+  return value.trim().length > 0 ? value : "-";
+}
+
+function familyMatchesSearch({
+  family,
+  searchTerm,
+  definedFunctionProteins,
+}: {
+  family: ReturnType<typeof getFamiliesData>["familySummaries"][number];
+  searchTerm: string;
+  definedFunctionProteins: FamilyDefinedFunctionProtein[];
+}) {
+  const normalizedSearchTerm = searchTerm.toLowerCase().trim();
+
+  if (!normalizedSearchTerm) {
+    return true;
+  }
+
+  const searchableText = [
+    family.family,
+    family.proteinCount,
+    family.speciesCount,
+    family.averageLength,
+    family.species.join(" "),
+    family.exampleProteins
+      .map((protein) =>
+        [
+          protein.standardizedName,
+          protein.accession,
+          protein.species,
+          protein.speciesCode,
+        ].join(" ")
+      )
+      .join(" "),
+    definedFunctionProteins
+      .map((protein) =>
+        [
+          protein.standardizedName,
+          protein.accession,
+          protein.species,
+          protein.expressionDetails,
+          protein.functionDetails,
+        ].join(" ")
+      )
+      .join(" "),
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return searchableText.includes(normalizedSearchTerm);
+}
+
 export default function FamiliesBrowser({ searchTerm }: FamiliesBrowserProps) {
-  const { familySummaries, totalFamilies, totalProteins, totalSpecies } =
-    getFamiliesData(searchTerm);
+  const { familySummaries } = getFamiliesData("");
+  const definedFunctionProteinsByFamily = getDefinedFunctionProteinsByFamily(4);
+
+  const allVisibleFamilySummaries = familySummaries.filter(
+    (family) => !isUnassignedFamily(family.family)
+  );
+
+  const visibleFamilySummaries = allVisibleFamilySummaries.filter((family) =>
+    familyMatchesSearch({
+      family,
+      searchTerm,
+      definedFunctionProteins:
+        definedFunctionProteinsByFamily.get(family.family) ?? [],
+    })
+  );
 
   return (
     <div className="space-y-8">
@@ -29,7 +103,7 @@ export default function FamiliesBrowser({ searchTerm }: FamiliesBrowserProps) {
             name="q"
             type="text"
             defaultValue={searchTerm}
-            placeholder="Search by family, species, protein name, accession, or species code..."
+            placeholder="Search by family, species, function-defined protein, accession, or species code..."
             className="mt-2 w-full rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 text-sm text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
           />
         </div>
@@ -49,155 +123,131 @@ export default function FamiliesBrowser({ searchTerm }: FamiliesBrowserProps) {
             Reset
           </Link>
         </div>
-
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
-            <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalFamilies.toLocaleString()}
-            </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Protein families</p>
-          </div>
-
-          <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
-            <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalProteins.toLocaleString()}
-            </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Cuticular proteins</p>
-          </div>
-
-          <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
-            <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalSpecies.toLocaleString()}
-            </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Species represented</p>
-          </div>
-        </div>
       </form>
 
       <section className="grid gap-5">
-        {familySummaries.map((family) => (
-          <article
-            key={family.family}
-            className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm"
-          >
-            <div className="flex flex-col justify-between gap-5 lg:flex-row lg:items-start">
-              <div>
-                <h2 className="text-2xl font-semibold text-[#2a2118]">
-                  {family.family}
-                </h2>
+        {visibleFamilySummaries.map((family) => {
+          const definedFunctionProteins =
+            definedFunctionProteinsByFamily.get(family.family) ?? [];
 
-                <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6a5d4d]">
-                  {family.proteinCount.toLocaleString()} proteins across{" "}
-                  {family.speciesCount.toLocaleString()} species. Average
-                  sequence length:{" "}
-                  {family.averageLength > 0
-                    ? `${family.averageLength.toLocaleString()} aa`
-                    : "unknown"}
-                  .
-                </p>
+          return (
+            <article
+              key={family.family}
+              className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm"
+            >
+              <div className="flex flex-col justify-between gap-5 lg:flex-row lg:items-start">
+                <div>
+                  <h2 className="text-2xl font-semibold text-[#2a2118]">
+                    {family.family}
+                  </h2>
+
+                  <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6a5d4d]">
+                    {family.proteinCount.toLocaleString()} proteins across{" "}
+                    {family.speciesCount.toLocaleString()} species. Average
+                    sequence length:{" "}
+                    {family.averageLength > 0
+                      ? `${family.averageLength.toLocaleString()} aa`
+                      : "unknown"}
+                    .
+                  </p>
+                </div>
+
+                <Link
+                  href={`/browse?family=${encodeURIComponent(family.family)}`}
+                  className="rounded-full bg-[#2a2118] px-5 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
+                >
+                  View proteins
+                </Link>
               </div>
 
-              <Link
-                href={`/api/downloads/family?family=${encodeURIComponent(
-                  family.family
-                )}`}
-                className="rounded-full border border-[#c8b89d] px-5 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-              >
-                Download FASTA
-              </Link>
-            </div>
+              <div className="mt-6 grid gap-4 md:grid-cols-3">
+                <div className="rounded-2xl border border-[#e5d9c6] bg-[#f7f2e8] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8c3f2b]">
+                    Proteins
+                  </p>
+                  <p className="mt-3 text-2xl font-semibold text-[#2a2118]">
+                    {family.proteinCount.toLocaleString()}
+                  </p>
+                </div>
 
-            <div className="mt-6 grid gap-4 md:grid-cols-3">
-              <div className="rounded-2xl border border-[#e5d9c6] bg-[#f7f2e8] p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8c3f2b]">
-                  Proteins
-                </p>
-                <p className="mt-3 text-2xl font-semibold text-[#2a2118]">
-                  {family.proteinCount.toLocaleString()}
-                </p>
-              </div>
+                <div className="rounded-2xl border border-[#e5d9c6] bg-[#f7f2e8] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8c3f2b]">
+                    Species
+                  </p>
+                  <p className="mt-3 text-2xl font-semibold text-[#2a2118]">
+                    {family.speciesCount.toLocaleString()}
+                  </p>
+                </div>
 
-              <div className="rounded-2xl border border-[#e5d9c6] bg-[#f7f2e8] p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8c3f2b]">
-                  Species
-                </p>
-                <p className="mt-3 text-2xl font-semibold text-[#2a2118]">
-                  {family.speciesCount.toLocaleString()}
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#e5d9c6] bg-[#f7f2e8] p-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8c3f2b]">
-                  Average length
-                </p>
-                <p className="mt-3 text-2xl font-semibold text-[#2a2118]">
-                  {family.averageLength > 0
-                    ? `${family.averageLength.toLocaleString()} aa`
-                    : "Unknown"}
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 grid gap-5 lg:grid-cols-2">
-              <div className="rounded-2xl border border-[#e5d9c6] bg-[#fffaf1] p-5">
-                <p className="text-sm font-semibold text-[#2a2118]">
-                  Represented species
-                </p>
-
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {family.species.slice(0, 16).map((speciesName) => (
-                    <span
-                      key={speciesName}
-                      className="rounded-full bg-[#efe5d4] px-3 py-1 text-xs font-semibold text-[#6a5d4d]"
-                    >
-                      <span className="italic">{speciesName}</span>
-                    </span>
-                  ))}
-
-                  {family.species.length > 16 && (
-                    <span className="rounded-full bg-[#efe5d4] px-3 py-1 text-xs font-semibold text-[#6a5d4d]">
-                      +{family.species.length - 16} more
-                    </span>
-                  )}
+                <div className="rounded-2xl border border-[#e5d9c6] bg-[#f7f2e8] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8c3f2b]">
+                    Average length
+                  </p>
+                  <p className="mt-3 text-2xl font-semibold text-[#2a2118]">
+                    {family.averageLength > 0
+                      ? `${family.averageLength.toLocaleString()} aa`
+                      : "Unknown"}
+                  </p>
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-[#e5d9c6] bg-[#fffaf1] p-5">
+              <div className="mt-6 rounded-2xl border border-[#e5d9c6] bg-[#fffaf1] p-5">
                 <p className="text-sm font-semibold text-[#2a2118]">
-                  Example proteins
+                  Cuticular proteins with defined functions
                 </p>
 
-                <div className="mt-3 space-y-3">
-                  {family.exampleProteins.map((protein) => (
-                    <div
-                      key={protein.id}
-                      className="flex flex-col justify-between gap-2 rounded-xl border border-[#e5d9c6] bg-white p-3 sm:flex-row sm:items-center"
-                    >
-                      <div>
+                {definedFunctionProteins.length > 0 ? (
+                  <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+                    {definedFunctionProteins.map((protein) => (
+                      <div
+                        key={`${family.family}-${protein.id}`}
+                        className="rounded-2xl border border-[#e5d9c6] bg-white p-4"
+                      >
                         <Link
                           href={`/protein/${protein.id}`}
                           className="font-semibold text-[#8c3f2b] hover:underline"
                         >
                           {protein.standardizedName}
                         </Link>
-                        <p className="mt-1 text-xs text-[#6a5d4d]">
-                          <span className="italic">{protein.species}</span>{" "}
-                          · {protein.speciesCode}
+
+                        <p className="mt-2 text-sm text-[#6a5d4d]">
+                          <span className="italic">{protein.species}</span>
                         </p>
+
+                        <div className="mt-4 space-y-3">
+                          <div>
+                            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#8c3f2b]">
+                              Expression timing
+                            </p>
+                            <p className="mt-1 text-sm leading-6 text-[#6a5d4d]">
+                              {displayDetail(protein.expressionDetails)}
+                            </p>
+                          </div>
+
+                          <div>
+                            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#8c3f2b]">
+                              Defined function
+                            </p>
+                            <p className="mt-1 text-sm leading-6 text-[#6a5d4d]">
+                              {displayDetail(protein.functionDetails)}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-
-                      <p className="font-mono text-xs text-[#6a5d4d]">
-                        {protein.accession}
-                      </p>
-                    </div>
-                  ))}
-                </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
+                    No function-defined proteins are currently linked to this
+                    family.
+                  </p>
+                )}
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
 
-        {familySummaries.length === 0 && (
+        {visibleFamilySummaries.length === 0 && (
           <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-8 text-center shadow-sm">
             <p className="text-sm font-semibold text-[#2a2118]">
               No matching protein families found.

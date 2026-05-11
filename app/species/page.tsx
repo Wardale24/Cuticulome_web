@@ -18,7 +18,7 @@ export default async function SpeciesPage({ searchParams }: SpeciesPageProps) {
     <SitePage
       eyebrow="Species"
       title="Browse species"
-      description="Explore arthropod species represented in Cuticulome.org, including protein counts, family coverage, average sequence length, and species-specific FASTA downloads."
+      description="Explore arthropod species represented in Cuticulome.org, including family coverage, average sequence length, and species-specific FASTA downloads."
     >
       <SpeciesBrowser searchTerm={searchTerm} />
     </SitePage>

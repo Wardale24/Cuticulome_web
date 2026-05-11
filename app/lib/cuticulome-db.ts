@@ -46,6 +46,20 @@ type SQLiteEntryRow = {
   notes: string | null;
 };
 
+type SQLiteFamilyDefinedFunctionRow = {
+  id: number;
+  standardizedName: string | null;
+  accession: string | null;
+  genus: string | null;
+  species: string | null;
+  speciesCode: string | null;
+  familyName: string | null;
+  molecularFunction: string | null;
+  biologicalProcess: string | null;
+  functionDetails: string | null;
+  notes: string | null;
+};
+
 type SQLiteReferenceRow = Record<string, unknown>;
 
 export type LiteratureReferenceField = {
@@ -121,6 +135,15 @@ export type FamilyExampleProtein = {
   speciesCode: string;
 };
 
+export type FamilyDefinedFunctionProtein = {
+  id: number;
+  standardizedName: string;
+  accession: string;
+  species: string;
+  speciesCode: string;
+  functionSummary: string;
+};
+
 export type FamilySummary = {
   family: string;
   proteinCount: number;
@@ -128,6 +151,7 @@ export type FamilySummary = {
   averageLength: number;
   species: string[];
   exampleProteins: FamilyExampleProtein[];
+  definedFunctionProteins: FamilyDefinedFunctionProtein[];
 };
 
 export type FamiliesData = {
@@ -239,6 +263,33 @@ function extractSequence(
   return cleanProteinSequence(protFasta);
 }
 
+function makeSpeciesName(genus: string | null, speciesEpithet: string | null) {
+  return [normalizeText(genus), normalizeText(speciesEpithet)]
+    .filter(Boolean)
+    .join(" ");
+}
+
+function isUnassignedFamily(family: string) {
+  return family.trim().toLowerCase() === "unassigned";
+}
+
+function pickFunctionSummary(row: SQLiteFamilyDefinedFunctionRow) {
+  const candidates = [
+    row.molecularFunction,
+    row.biologicalProcess,
+    row.functionDetails,
+    row.notes,
+  ]
+    .map(normalizeText)
+    .filter(Boolean);
+
+  return candidates[0] ?? "Function-defined protein";
+}
+
+function shuffleArray<T>(array: T[]) {
+  return [...array].sort(() => Math.random() - 0.5);
+}
+
 export function wrapSequence(sequence: string, width = 80) {
   const cleanSequence = sequence.replace(/\s+/g, "");
   const wrappedLines = [];
@@ -302,9 +353,7 @@ function getAllProteinRecords() {
     const standardizedName = normalizeText(row.standardizedName);
     const proteinName = normalizeText(row.proteinName);
     const accession = normalizeText(row.accession);
-    const genus = normalizeText(row.genus);
-    const speciesEpithet = normalizeText(row.species);
-    const species = [genus, speciesEpithet].filter(Boolean).join(" ");
+    const species = makeSpeciesName(row.genus, row.species);
     const speciesCode = normalizeText(row.speciesCode);
     const familyName = normalizeText(row.familyName);
     const proteinSequence = extractSequence(row.proteinSequence, row.protFasta);
@@ -323,6 +372,78 @@ function getAllProteinRecords() {
       proteinSequence,
     };
   });
+}
+
+function getDefinedFunctionProteinsByFamily() {
+  const database = getDatabase();
+
+  const rows = database
+    .prepare(
+      `
+      SELECT
+        p.id AS id,
+        p.standardized_name AS standardizedName,
+        p.protein_accession AS accession,
+        s.genus AS genus,
+        s.species AS species,
+        s.species_code AS speciesCode,
+        pf.name AS familyName,
+        e.molecular_function AS molecularFunction,
+        e.biological_process AS biologicalProcess,
+        e.function_details AS functionDetails,
+        e.notes AS notes
+      FROM entries e
+      INNER JOIN proteins p ON e.protein_id = p.id
+      LEFT JOIN species s ON p.species_id = s.id
+      LEFT JOIN protein_family pf ON p.protein_family_id = pf.id
+      WHERE pf.name IS NOT NULL
+        AND TRIM(pf.name) != ''
+        AND LOWER(TRIM(pf.name)) != 'unassigned'
+      ORDER BY pf.name ASC, p.standardized_name ASC
+      `
+    )
+    .all() as SQLiteFamilyDefinedFunctionRow[];
+
+  const proteinsByFamily = new Map<string, FamilyDefinedFunctionProtein[]>();
+  const seenProteinIdsByFamily = new Map<string, Set<number>>();
+
+  for (const row of rows) {
+    const family = normalizeText(row.familyName);
+
+    if (!family || isUnassignedFamily(family)) {
+      continue;
+    }
+
+    if (!proteinsByFamily.has(family)) {
+      proteinsByFamily.set(family, []);
+      seenProteinIdsByFamily.set(family, new Set<number>());
+    }
+
+    const seenProteinIds = seenProteinIdsByFamily.get(family);
+
+    if (!seenProteinIds || seenProteinIds.has(row.id)) {
+      continue;
+    }
+
+    seenProteinIds.add(row.id);
+
+    proteinsByFamily.get(family)?.push({
+      id: row.id,
+      standardizedName: normalizeText(row.standardizedName) || "Unnamed protein",
+      accession: normalizeText(row.accession) || "No accession available",
+      species: makeSpeciesName(row.genus, row.species) || "Unknown species",
+      speciesCode: normalizeText(row.speciesCode) || "Unknown",
+      functionSummary: pickFunctionSummary(row),
+    });
+  }
+
+  const randomProteinsByFamily = new Map<string, FamilyDefinedFunctionProtein[]>();
+
+  for (const [family, proteins] of proteinsByFamily.entries()) {
+    randomProteinsByFamily.set(family, shuffleArray(proteins).slice(0, 4));
+  }
+
+  return randomProteinsByFamily;
 }
 
 function getReference(referenceId: number | null) {
@@ -595,7 +716,11 @@ export function getSpeciesData(searchTerm = ""): SpeciesData {
 
 export function getFamiliesData(searchTerm = ""): FamiliesData {
   const allRecords = getAllProteinRecords();
+  const familyRecords = allRecords.filter(
+    (record) => !isUnassignedFamily(record.family)
+  );
   const normalizedSearchTerm = searchTerm.toLowerCase().trim();
+  const definedFunctionProteinsByFamily = getDefinedFunctionProteinsByFamily();
 
   const familyMap = new Map<
     string,
@@ -609,7 +734,7 @@ export function getFamiliesData(searchTerm = ""): FamiliesData {
     }
   >();
 
-  for (const record of allRecords) {
+  for (const record of familyRecords) {
     if (!familyMap.has(record.family)) {
       familyMap.set(record.family, {
         family: record.family,
@@ -660,6 +785,8 @@ export function getFamiliesData(searchTerm = ""): FamiliesData {
         averageLength,
         species: Array.from(entry.species).sort(),
         exampleProteins: entry.exampleProteins,
+        definedFunctionProteins:
+          definedFunctionProteinsByFamily.get(entry.family) ?? [],
       };
     })
     .sort((a, b) => {
@@ -687,6 +814,17 @@ export function getFamiliesData(searchTerm = ""): FamiliesData {
           ].join(" ")
         )
         .join(" "),
+      entry.definedFunctionProteins
+        .map((protein) =>
+          [
+            protein.standardizedName,
+            protein.accession,
+            protein.species,
+            protein.speciesCode,
+            protein.functionSummary,
+          ].join(" ")
+        )
+        .join(" "),
     ]
       .join(" ")
       .toLowerCase();
@@ -699,14 +837,14 @@ export function getFamiliesData(searchTerm = ""): FamiliesData {
 
   const allSpecies = new Set<string>();
 
-  for (const record of allRecords) {
+  for (const record of familyRecords) {
     allSpecies.add(record.species);
   }
 
   return {
     familySummaries: filteredFamilySummaries,
     totalFamilies: allFamilySummaries.length,
-    totalProteins: allRecords.length,
+    totalProteins: familyRecords.length,
     totalSpecies: allSpecies.size,
   };
 }
