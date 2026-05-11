@@ -6,9 +6,8 @@ import { useState } from "react";
 
 const primaryLinks = [
   { label: "Browse", href: "/browse" },
-  { label: "Families", href: "/families" },
+  { label: "Protein Families", href: "/families" },
   { label: "Species", href: "/species" },
-  { label: "Statistics", href: "/statistics" },
   { label: "Downloads", href: "/downloads" },
   { label: "miniBLAST", href: "/tools/miniblast" },
   { label: "Classifier", href: "/tools/classifier" },

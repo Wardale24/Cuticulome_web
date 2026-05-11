@@ -39,7 +39,7 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
             name="q"
             type="text"
             defaultValue={searchTerm}
-            placeholder="Search species name or species code..."
+            placeholder="Search by species, family, protein count, or average length..."
             className="mt-2 w-full rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 text-sm text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
           />
         </div>
@@ -61,7 +61,7 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
         </div>
       </form>
 
-      <section className="grid items-stretch gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <section className="grid items-stretch gap-5 md:grid-cols-2">
         {sortedSpeciesSummaries.map((entry) => {
           const assignedFamilies = entry.families.filter(
             (family) => !isUnassignedFamily(family)
@@ -162,7 +162,7 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
         })}
 
         {sortedSpeciesSummaries.length === 0 && (
-          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-8 text-center shadow-sm md:col-span-2 xl:col-span-3">
+          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-8 text-center shadow-sm md:col-span-2">
             <p className="text-sm font-semibold text-[#2a2118]">
               No matching species found.
             </p>

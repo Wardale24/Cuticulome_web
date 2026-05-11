@@ -1,72 +1,89 @@
-import { classifyCuticularProtein } from "../../lib/cuticular-classifier";
+import { postprocessClassifierResult } from "../../lib/classifier-postprocess";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const maxDuration = 60;
 
-async function proxyClassifierToBackend(sequence: string) {
-  const backendUrl = process.env.CUTICULOME_TOOLS_BACKEND_URL;
+function getBackendBaseUrl() {
+  const backendUrl = process.env.CUTICULOME_TOOLS_BACKEND_URL?.trim();
 
   if (!backendUrl) {
-    return null;
+    throw new Error(
+      "CUTICULOME_TOOLS_BACKEND_URL is not set. Add it to .env.local and to the Vercel environment variables."
+    );
   }
 
-  const response = await fetch(`${backendUrl.replace(/\/$/, "")}/classifier`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      sequence,
-    }),
-  });
+  return backendUrl.replace(/\/+$/, "");
+}
 
-  const payload = await response.json();
-
-  if (!response.ok) {
-    const message =
-      typeof payload.detail === "string"
-        ? payload.detail
-        : payload.error ?? "The classifier backend failed.";
-
-    throw new Error(message);
+function normalizeSequenceInput(value: unknown) {
+  if (typeof value !== "string") {
+    return "";
   }
 
-  return payload;
+  return value.trim();
 }
 
 export async function POST(request: Request) {
   try {
-    const body = (await request.json()) as {
-      sequence?: string;
-    };
+    const payload = await request.json();
 
-    const sequence = body.sequence ?? "";
-    const backendResult = await proxyClassifierToBackend(sequence);
+    const sequence =
+      normalizeSequenceInput(payload.sequence) ||
+      normalizeSequenceInput(payload.query);
 
-    if (backendResult) {
-      return Response.json(backendResult, {
-        status: 200,
-      });
+    if (!sequence) {
+      return Response.json(
+        {
+          error: "Please paste a protein sequence before running the classifier.",
+        },
+        {
+          status: 400,
+        }
+      );
     }
 
-    const result = await classifyCuticularProtein(sequence);
+    const backendBaseUrl = getBackendBaseUrl();
 
-    return Response.json(result, {
-      status: 200,
+    const backendResponse = await fetch(`${backendBaseUrl}/classifier`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        sequence,
+        query: sequence,
+      }),
     });
+
+    const backendPayload = await backendResponse.json();
+
+    if (!backendResponse.ok) {
+      return Response.json(
+        {
+          error:
+            backendPayload.error ??
+            backendPayload.detail ??
+            "The classifier backend failed.",
+        },
+        {
+          status: backendResponse.status,
+        }
+      );
+    }
+
+    const processedPayload = postprocessClassifierResult(backendPayload);
+
+    return Response.json(processedPayload);
   } catch (error) {
     const message =
-      error instanceof Error
-        ? error.message
-        : "The classifier failed unexpectedly.";
+      error instanceof Error ? error.message : "The classifier failed.";
 
     return Response.json(
       {
         error: message,
       },
       {
-        status: 400,
+        status: 500,
       }
     );
   }

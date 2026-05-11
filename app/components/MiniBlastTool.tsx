@@ -36,11 +36,32 @@ function formatNumber(value: number) {
   return Number.isFinite(value) ? value.toFixed(2) : "—";
 }
 
+function formatAccession(accession: string) {
+  const normalizedAccession = accession.trim();
+
+  if (
+    normalizedAccession.length === 0 ||
+    normalizedAccession.toLowerCase() === "no accession available"
+  ) {
+    return "-";
+  }
+
+  return normalizedAccession;
+}
+
+function displayStatus(status: MiniBlastHit["status"]) {
+  if (status === "Non-function-defined") {
+    return "No function defined";
+  }
+
+  return status;
+}
+
 function buildCsv(result: MiniBlastResult) {
   const header = [
     "Status",
     "Protein",
-    "Accession",
+    "NCBI accession",
     "Species",
     "Species code",
     "% Identity",
@@ -52,9 +73,9 @@ function buildCsv(result: MiniBlastResult) {
   ];
 
   const rows = result.hits.map((hit) => [
-    hit.status,
+    displayStatus(hit.status),
     hit.protein,
-    hit.accession,
+    formatAccession(hit.accession),
     hit.species,
     hit.speciesCode,
     String(hit.percentIdentity),
@@ -175,12 +196,12 @@ export default function MiniBlastTool() {
             </p>
 
             <h2 className="mt-3 text-2xl font-semibold text-[#2a2118]">
-              Search against Cuticulome.org proteins
+              Search against Cuticulome.org
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
               miniBLAST compares your pasted protein sequence against protein
-              entries stored in Cuticulome.org using BLASTP. Results are ranked by bit score,
+              entries stored in Cuticulome.org with BLASTP. Results are ranked by bit score,
               identity, query coverage, and E-value.
             </p>
           </div>
@@ -226,22 +247,33 @@ export default function MiniBlastTool() {
 
           {result.hits.length > 0 ? (
             <div className="overflow-x-auto">
-              <table className="w-full min-w-[1100px] border-collapse text-left text-sm">
+              <table className="w-full min-w-[1160px] border-collapse text-left text-sm">
                 <thead className="bg-[#eadfca] text-[#2a2118]">
                   <tr>
-                    <th className="px-6 py-4 font-semibold">Status</th>
-                    <th className="px-6 py-4 font-semibold">Protein</th>
-                    <th className="px-6 py-4 font-semibold">Accession</th>
-                    <th className="px-6 py-4 font-semibold">Species</th>
-                    <th className="px-6 py-4 font-semibold">% Identity</th>
-                    <th className="px-6 py-4 font-semibold">
+                    <th className="w-[190px] px-6 py-4 font-semibold">
+                      Status
+                    </th>
+                    <th className="w-[240px] px-6 py-4 font-semibold">
+                      Protein
+                    </th>
+                    <th className="w-[180px] px-6 py-4 font-semibold">
+                      NCBI accession
+                    </th>
+                    <th className="w-[320px] px-6 py-4 font-semibold">
+                      Species
+                    </th>
+                    <th className="w-[120px] px-6 py-4 font-semibold">
+                      % Identity
+                    </th>
+                    <th className="w-[150px] px-6 py-4 font-semibold">
                       Query coverage
                     </th>
-                    <th className="px-6 py-4 font-semibold">
-                      Alignment length
+                    <th className="w-[140px] px-6 py-4 font-semibold">
+                      E-value
                     </th>
-                    <th className="px-6 py-4 font-semibold">E-value</th>
-                    <th className="px-6 py-4 font-semibold">Bit score</th>
+                    <th className="w-[120px] px-6 py-4 font-semibold">
+                      Bit score
+                    </th>
                   </tr>
                 </thead>
 
@@ -251,7 +283,7 @@ export default function MiniBlastTool() {
                       key={`${hit.proteinId}-${hit.bitScore}-${hit.evalue}-${index}`}
                       className="border-t border-[#e5d9c6] bg-[#fffdf8] transition hover:bg-[#fff7ea]"
                     >
-                      <td className="px-6 py-4">
+                      <td className="w-[190px] whitespace-nowrap px-6 py-4">
                         <span
                           className={
                             hit.status === "Function-defined"
@@ -259,11 +291,11 @@ export default function MiniBlastTool() {
                               : "rounded-full bg-[#f0ded8] px-3 py-1 text-xs font-semibold text-[#8c3f2b]"
                           }
                         >
-                          {hit.status}
+                          {displayStatus(hit.status)}
                         </span>
                       </td>
 
-                      <td className="px-6 py-4 font-semibold">
+                      <td className="w-[240px] px-6 py-4 font-semibold">
                         <Link
                           href={`/protein/${hit.proteinId}`}
                           className="text-[#8c3f2b] hover:underline"
@@ -272,36 +304,29 @@ export default function MiniBlastTool() {
                         </Link>
                       </td>
 
-                      <td className="px-6 py-4 font-mono text-xs text-[#6a5d4d]">
-                        {hit.accession}
+                      <td className="w-[180px] whitespace-nowrap px-6 py-4 font-mono text-xs text-[#6a5d4d]">
+                        {formatAccession(hit.accession)}
                       </td>
 
-                      <td className="px-6 py-4">
+                      <td className="w-[320px] whitespace-nowrap px-6 py-4">
                         <span className="italic text-[#2a2118]">
                           {hit.species}
                         </span>
-                        <span className="ml-2 rounded-full bg-[#efe5d4] px-2 py-1 text-xs font-semibold not-italic text-[#6a5d4d]">
-                          {hit.speciesCode}
-                        </span>
                       </td>
 
-                      <td className="px-6 py-4 text-[#2a2118]">
+                      <td className="w-[120px] whitespace-nowrap px-6 py-4 text-[#2a2118]">
                         {formatNumber(hit.percentIdentity)}
                       </td>
 
-                      <td className="px-6 py-4 text-[#2a2118]">
+                      <td className="w-[150px] whitespace-nowrap px-6 py-4 text-[#2a2118]">
                         {formatNumber(hit.queryCoverage)}
                       </td>
 
-                      <td className="px-6 py-4 text-[#6a5d4d]">
-                        {hit.alignmentLength}
-                      </td>
-
-                      <td className="px-6 py-4 font-mono text-xs text-[#6a5d4d]">
+                      <td className="w-[140px] whitespace-nowrap px-6 py-4 font-mono text-xs text-[#6a5d4d]">
                         {formatEvalue(hit.evalue)}
                       </td>
 
-                      <td className="px-6 py-4 text-[#2a2118]">
+                      <td className="w-[120px] whitespace-nowrap px-6 py-4 text-[#2a2118]">
                         {formatNumber(hit.bitScore)}
                       </td>
                     </tr>

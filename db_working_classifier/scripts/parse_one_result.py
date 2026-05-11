@@ -173,7 +173,7 @@ def build_result(ranked_hits):
     if not ranked_hits:
         return {
             "query": None,
-            "prediction": "No confident Cuticulome.db family detected",
+            "prediction": "No confident Cuticulome.org family detected",
             "confidence": "none",
             "best_hit": None,
             "all_hits": [],
@@ -186,7 +186,7 @@ def build_result(ranked_hits):
     prediction = best["model"]
 
     if confidence == "weak":
-        prediction = "No confident Cuticulome.db family detected"
+        prediction = "No confident Cuticulome.org family detected"
 
     return {
         "query": best["query"],
@@ -250,7 +250,7 @@ def print_text_result(result):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Parse one Cuticulome.db HMMER domtblout result."
+        description="Parse one Cuticulome.org HMMER domtblout result."
     )
 
     parser.add_argument(

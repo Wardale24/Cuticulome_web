@@ -80,7 +80,7 @@ export default function HelpPage() {
     <SitePage
       eyebrow="Documentation"
       title="Understanding Cuticulome.org"
-      description="Learn how to browse the database, interpret protein records, use miniBLAST, run the Cuticular Protein Classifier, understand standardized nomenclature, and contribute new annotations."
+      description="Learn how to browse the database, interpret protein records, filter and download datasets, use miniBLAST, run the Cuticular Protein Classifier, understand standardized nomenclature, and contribute new annotations."
     >
       <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
         <aside className="lg:sticky lg:top-8 lg:self-start">
@@ -96,8 +96,17 @@ export default function HelpPage() {
               <a href="#database-structure" className="hover:text-[#2a2118]">
                 Database structure
               </a>
-              <a href="#using-database" className="hover:text-[#2a2118]">
-                Using the database
+              <a href="#browse" className="hover:text-[#2a2118]">
+                Browse
+              </a>
+              <a href="#protein-families" className="hover:text-[#2a2118]">
+                Protein Families
+              </a>
+              <a href="#species" className="hover:text-[#2a2118]">
+                Species
+              </a>
+              <a href="#downloads" className="hover:text-[#2a2118]">
+                Downloads
               </a>
               <a href="#miniblast" className="hover:text-[#2a2118]">
                 miniBLAST
@@ -122,16 +131,17 @@ export default function HelpPage() {
           <HelpSection id="overview" title="Overview">
             <p>
               <strong className="text-[#2a2118]">Cuticulome.org</strong>{" "}
-              compiles verified information on function-defined arthropod
-              cuticular proteins, including protein family, tissue specificity,
-              and identified or inferred functions.
+              compiles curated information on arthropod cuticular proteins,
+              including protein sequences, protein family assignments, species
+              information, functional annotations, and supporting references
+              where available.
             </p>
 
             <p>
               The goal of Cuticulome.org is to centralize cuticular protein
-              information across arthropod species to facilitate downstream
-              comparative studies, sequence searches, functional annotation, and
-              broader cuticle biology analyses.
+              information across arthropod species to support comparative
+              studies, sequence searches, family classification, functional
+              annotation, and broader cuticle biology analyses.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row">
@@ -140,7 +150,7 @@ export default function HelpPage() {
                 href="/downloads"
                 className="inline-flex rounded-full border border-[#c8b89d] px-5 py-3 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
               >
-                View downloads
+                Build downloads
               </Link>
             </div>
           </HelpSection>
@@ -148,8 +158,9 @@ export default function HelpPage() {
           <HelpSection id="database-structure" title="Database structure">
             <p>
               The database is organized around curated cuticular protein records
-              linked to species information, standardized protein names,
-              source publications, and functional annotations where available.
+              linked to species information, standardized protein names, protein
+              family assignments, source publications, and functional
+              annotations where available.
             </p>
 
             <div>
@@ -163,27 +174,27 @@ export default function HelpPage() {
                     {
                       label: "Cuticular protein",
                       description:
-                        "Standardized name of the cuticular protein. See the nomenclature section below for more details.",
+                        "Standardized name of the cuticular protein. The standardized name is used to improve consistency across species and publications.",
                     },
                     {
                       label: "Protein family",
                       description:
-                        "Family or group to which the cuticular protein belongs, such as CPR, CPAP, CPF, CPFL, Tweedle, or CPLC.",
-                    },
-                    {
-                      label: "Function",
-                      description:
-                        "Biological role or experimentally validated/inferred function where available.",
+                        "Family or group to which the protein belongs, such as CPR, CPAP, CPF, CPFL, Tweedle, CPG, CPH, or other cuticular-related families.",
                     },
                     {
                       label: "Species",
                       description:
-                        "Species associated with the protein record, including standardized species code.",
+                        "Species associated with the protein record, including a standardized species code used internally by the database.",
                     },
                     {
-                      label: "Sequence",
+                      label: "Protein sequence",
                       description:
-                        "Protein sequence used for browsing, FASTA downloads, miniBLAST, and classifier support.",
+                        "Amino acid sequence used for browsing, FASTA downloads, miniBLAST, and classifier support.",
+                    },
+                    {
+                      label: "Function-defined status",
+                      description:
+                        "Indicates whether the protein is associated with at least one curated functional annotation entry.",
                     },
                   ]}
                 />
@@ -192,21 +203,36 @@ export default function HelpPage() {
 
             <div>
               <h3 className="text-lg font-semibold text-[#2a2118]">
-                Source publication information
+                Functional annotation information
               </h3>
 
               <div className="mt-3">
                 <HelpTable
                   rows={[
                     {
-                      label: "Reference",
+                      label: "Expression timing",
                       description:
-                        "Source publication that describes the function, annotation, or biological relevance of the protein.",
+                        "Curated expression timing or expression-related details from the source annotation, where available.",
                     },
                     {
-                      label: "DOI / URL",
+                      label: "Defined function",
                       description:
-                        "Digital Object Identifier or source URL associated with the publication.",
+                        "Curated functional description associated with the protein, where available.",
+                    },
+                    {
+                      label: "Molecular function",
+                      description:
+                        "Molecular-level functional annotation, where available.",
+                    },
+                    {
+                      label: "Biological process",
+                      description:
+                        "Biological process or broader functional context, where available.",
+                    },
+                    {
+                      label: "Reference",
+                      description:
+                        "Source publication or curated reference supporting the annotation.",
                     },
                   ]}
                 />
@@ -214,53 +240,190 @@ export default function HelpPage() {
             </div>
           </HelpSection>
 
-          <HelpSection id="using-database" title="Using the database">
+          <HelpSection id="browse" title="Browse">
+            <p>
+              The Browse page allows users to search curated protein records
+              directly. Results can be filtered by search term, protein family,
+              and species.
+            </p>
+
+            <p>
+              The table displays protein records in pages of 100 entries, with
+              pagination controls for moving through larger result sets.
+            </p>
+
+            <HelpTable
+              rows={[
+                {
+                  label: "Search database",
+                  description:
+                    "Search by standardized name, protein name, accession, species, species code, family, or sequence length.",
+                },
+                {
+                  label: "Protein family filter",
+                  description:
+                    "Restrict the displayed records to proteins assigned to a selected cuticular protein family.",
+                },
+                {
+                  label: "Species filter",
+                  description:
+                    "Restrict the displayed records to proteins from a selected species.",
+                },
+                {
+                  label: "Filtered records",
+                  description:
+                    "Number of records matching the current search and filter settings.",
+                },
+              ]}
+            />
+
+            <ActionLink href="/browse">Open Browse</ActionLink>
+          </HelpSection>
+
+          <HelpSection id="protein-families" title="Protein Families">
+            <p>
+              The Protein Families page summarizes cuticular protein families
+              represented in Cuticulome.org. The Unassigned family is excluded
+              from this page so users can focus on defined cuticular-related
+              families.
+            </p>
+
+            <p>
+              Each family card reports the number of proteins, number of species
+              represented, and average protein length. The View proteins button
+              opens the Browse page filtered to that family.
+            </p>
+
+            <p>
+              Each family also includes a section titled{" "}
+              <strong className="text-[#2a2118]">
+                Cuticular proteins with defined functions
+              </strong>
+              . This section displays representative function-defined proteins
+              from that family, preferentially selecting proteins with both
+              expression timing and defined function information, and
+              preferentially sampling different species where possible.
+            </p>
+
+            <HelpTable
+              rows={[
+                {
+                  label: "Proteins",
+                  description:
+                    "Number of database proteins assigned to the family.",
+                },
+                {
+                  label: "Species",
+                  description:
+                    "Number of species represented within the family.",
+                },
+                {
+                  label: "Average length",
+                  description:
+                    "Average amino acid length of proteins assigned to the family.",
+                },
+                {
+                  label: "Expression timing",
+                  description:
+                    "Expression details associated with a representative function-defined protein. A dash indicates no value is available.",
+                },
+                {
+                  label: "Defined function",
+                  description:
+                    "Curated function details associated with a representative function-defined protein. A dash indicates no value is available.",
+                },
+              ]}
+            />
+
+            <ActionLink href="/families">Open Protein Families</ActionLink>
+          </HelpSection>
+
+          <HelpSection id="species" title="Species">
+            <p>
+              The Species page summarizes arthropod species represented in
+              Cuticulome.org. Species cards are ordered from highest to lowest
+              number of proteins.
+            </p>
+
+            <p>
+              Each species card shows protein count, number of assigned protein
+              families, average sequence length, and the represented protein
+              families. Unassigned is excluded from the protein-family badges
+              shown inside each species card.
+            </p>
+
+            <p>
+              The View proteins button opens the Browse page filtered to the
+              selected species. The Download FASTA button downloads all protein
+              sequences associated with that species.
+            </p>
+
+            <ActionLink href="/species">Open Species</ActionLink>
+          </HelpSection>
+
+          <HelpSection id="downloads" title="Downloads">
+            <p>
+              The Downloads page uses a custom dataset builder. Users can filter
+              the database to create a tailored dataset, then download matching
+              proteins as FASTA or metadata as CSV.
+            </p>
+
             <div>
               <h3 className="text-lg font-semibold text-[#2a2118]">
-                Browsing and filtering
+                Available filters
+              </h3>
+
+              <div className="mt-3">
+                <HelpTable
+                  rows={[
+                    {
+                      label: "Search proteins",
+                      description:
+                        "Search by protein name, accession, species, species code, or protein family.",
+                    },
+                    {
+                      label: "Function or expression keyword",
+                      description:
+                        "Search curated function, expression timing, tissue, biological process, molecular function, or notes.",
+                    },
+                    {
+                      label: "Genus",
+                      description:
+                        "Restrict the dataset to a selected genus. Once a genus is selected, the Species dropdown only shows species from that genus.",
+                    },
+                    {
+                      label: "Species",
+                      description:
+                        "Restrict the dataset to a selected species.",
+                    },
+                    {
+                      label: "Protein family",
+                      description:
+                        "Restrict the dataset to a selected cuticular protein family.",
+                    },
+                    {
+                      label: "Function status",
+                      description:
+                        "Download all proteins, only function-defined proteins, or proteins lacking defined function.",
+                    },
+                  ]}
+                />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-[#2a2118]">
+                Download formats
               </h3>
 
               <p className="mt-2">
-                Use the Browse page to search curated protein entries by
-                standardized name, original protein name, accession, species,
-                species code, family, or sequence length.
-              </p>
-
-              <p>
-                The Species and Families pages provide higher-level summaries,
-                allowing users to inspect which species and protein families are
-                currently represented in Cuticulome.org.
+                Download FASTA for downstream sequence analysis. CSV is
+                available for metadata inspection, filtering in spreadsheets,
+                and dataset documentation.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold text-[#2a2118]">
-                Exporting data
-              </h3>
-
-              <p className="mt-2">
-                Download options are available for the complete protein set,
-                species-specific protein sets, family-specific protein sets, and
-                individual protein records.
-              </p>
-
-              <ul className="list-disc space-y-2 pl-6">
-                <li>All curated protein sequences as FASTA.</li>
-                <li>Species-specific FASTA files.</li>
-                <li>Family-specific FASTA files.</li>
-                <li>Single-protein FASTA files from individual records.</li>
-              </ul>
-            </div>
-
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <ActionLink href="/browse">Open database browser</ActionLink>
-              <Link
-                href="/downloads"
-                className="inline-flex rounded-full border border-[#c8b89d] px-5 py-3 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-              >
-                Open downloads
-              </Link>
-            </div>
+            <ActionLink href="/downloads">Open Downloads</ActionLink>
           </HelpSection>
 
           <HelpSection id="miniblast" title="miniBLAST">
@@ -293,7 +456,7 @@ export default function HelpPage() {
                 {
                   label: "Protein",
                   description:
-                    "Standardized Cuticulome.org protein name, or original protein name if no standardized name is available.",
+                    "Standardized Cuticulome.org protein name, linked to the individual protein record.",
                 },
                 {
                   label: "% Identity",
@@ -342,11 +505,10 @@ export default function HelpPage() {
             </p>
 
             <p>
-              This tool uses the family-specific profile HMMs developed for
-              Cuticulome.org, together with supporting conserved-sequence
-              features where relevant. These models are built directly from
-              curated cuticular protein sequences in the database and are
-              intended to help classify new or unannotated protein sequences.
+              This tool uses the current Cuticulome.org HMM classifier models
+              and reports the best supported cuticular protein family
+              classification, along with confidence, interpretation, best HMM
+              hit, and all detected HMM hits.
             </p>
 
             <p>
@@ -358,24 +520,29 @@ export default function HelpPage() {
             <HelpTable
               rows={[
                 {
-                  label: "Predicted family",
+                  label: "Prediction",
                   description:
-                    "The most likely cuticular protein family based on the classifier result.",
+                    "The most likely cuticular protein family based on classifier evidence.",
                 },
                 {
                   label: "Confidence",
                   description:
-                    "A confidence category based on HMM evidence and family-specific validation rules.",
+                    "A confidence category based on HMM evidence and supporting classifier logic.",
                 },
                 {
-                  label: "HMM hits",
+                  label: "Best HMM hit",
                   description:
-                    "Best-matching profile HMMs, including scores, E-values, and coverage values.",
+                    "The strongest HMM match, including model, E-value, bit score, model coverage, and query coverage.",
                 },
                 {
-                  label: "Review notes",
+                  label: "All HMM hits",
                   description:
-                    "Additional interpretation where a sequence shows ambiguous, weak, or cross-family evidence.",
+                    "Full list of HMM hits reported by the classifier.",
+                },
+                {
+                  label: "Interpretation",
+                  description:
+                    "A plain-language summary of the classifier result.",
                 },
               ]}
             />
@@ -576,9 +743,9 @@ export default function HelpPage() {
 
               <ul className="mt-2 list-disc space-y-2 pl-6">
                 <li>
-                  Cuticulome.org is not attempting to officially rename proteins.
-                  The standardization applies only within the database for
-                  consistency and searchability.
+                  Cuticulome.org is not attempting to officially rename
+                  proteins. The standardization applies only within the database
+                  for consistency and searchability.
                 </li>
                 <li>
                   Previous nomenclatures are preserved where available.
@@ -630,13 +797,6 @@ export default function HelpPage() {
 
             <ActionLink href="/contact">Contact us</ActionLink>
           </HelpSection>
-
-          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-5 text-sm text-[#6a5d4d]">
-            <p>
-              <strong className="text-[#2a2118]">Cuticulome.org v0.1</strong> ·
-              Latest update: 2026 Q2
-            </p>
-          </div>
         </div>
       </div>
     </SitePage>

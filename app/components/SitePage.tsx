@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "./SiteHeader";
 
 type SitePageProps = {
@@ -33,7 +34,7 @@ export default function SitePage({
           <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-8 shadow-sm">
             <p className="text-sm leading-7 text-[#6a5d4d]">
               This section is currently a design placeholder. The next version
-              can connect this page to the Cuticulome.db database and analysis
+              can connect this page to the Cuticulome.org database and analysis
               tools.
             </p>
           </div>
@@ -41,8 +42,12 @@ export default function SitePage({
       </section>
 
       <footer className="border-t border-[#d8cbb7] bg-[#fffaf1]">
-        <div className="mx-auto flex max-w-7xl px-6 py-8 text-sm text-[#6a5d4d]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-8 text-sm text-[#6a5d4d]">
           <p>© Cuticulome.org</p>
+
+          <Link href="/contact" className="underline hover:text-[#2a2118]">
+            Contact us
+          </Link>
         </div>
       </footer>
     </main>

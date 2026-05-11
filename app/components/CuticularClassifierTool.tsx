@@ -21,6 +21,27 @@ type ClassifierResult = {
   note?: string;
 };
 
+function cleanKnownModelNamesInText(text: string) {
+  return text
+    .replace(/Cuticulome\.db/g, "Cuticulome.org")
+    .replace(/CPR[\s_-]*RR[\s_-]*1(?:\.trimmed)?(?:\.hmm)?/gi, "CPR RR-1")
+    .replace(/CPR[\s_-]*RR[\s_-]*2(?:\.trimmed)?(?:\.hmm)?/gi, "CPR RR-2")
+    .replace(/CPAP[\s_-]*1(?:\.trimmed)?(?:\.hmm)?/gi, "CPAP1")
+    .replace(/CPAP[\s_-]*3(?:\.trimmed)?(?:\.hmm)?/gi, "CPAP3");
+}
+
+function displayModelName(model: string) {
+  const cleanedModel = cleanKnownModelNamesInText(model.trim());
+
+  return cleanedModel
+    .replace(/\.trimmed(?:\.hmm)?$/i, "")
+    .replace(/\.hmm$/i, "");
+}
+
+function displayInterpretation(text: string) {
+  return cleanKnownModelNamesInText(text);
+}
+
 function formatEvalue(value: number) {
   if (value === 0) {
     return "0";
@@ -40,6 +61,10 @@ function formatPercent(value: number) {
 function confidenceBadgeClass(confidence: string) {
   if (confidence === "strong") {
     return "rounded-full bg-[#dfead8] px-3 py-1 text-xs font-semibold text-[#486338]";
+  }
+
+  if (confidence === "moderate") {
+    return "rounded-full bg-[#e8e1c5] px-3 py-1 text-xs font-semibold text-[#735c1f]";
   }
 
   if (confidence === "ambiguous") {
@@ -86,7 +111,7 @@ export default function CuticularClassifierTool() {
       const message =
         error instanceof Error ? error.message : "The classifier failed.";
 
-      setErrorMessage(message);
+      setErrorMessage(message.replace(/Cuticulome\.db/g, "Cuticulome.org"));
     } finally {
       setIsRunning(false);
     }
@@ -175,7 +200,7 @@ export default function CuticularClassifierTool() {
                   Classification result
                 </p>
                 <h2 className="mt-3 text-3xl font-semibold text-[#2a2118]">
-                  {result.prediction}
+                  {displayModelName(result.prediction)}
                 </h2>
                 <p className="mt-2 text-sm text-[#6a5d4d]">
                   Query length: {result.queryLength} aa
@@ -183,7 +208,7 @@ export default function CuticularClassifierTool() {
               </div>
 
               <span className={confidenceBadgeClass(result.confidence)}>
-                {result.confidenceLabel}
+                {result.confidenceLabel ?? result.confidence}
               </span>
             </div>
 
@@ -192,7 +217,7 @@ export default function CuticularClassifierTool() {
                 Interpretation
               </h3>
               <p className="mt-2 text-sm leading-7 text-[#6a5d4d]">
-                {result.interpretation}
+                {displayInterpretation(result.interpretation)}
               </p>
             </div>
           </div>
@@ -200,7 +225,7 @@ export default function CuticularClassifierTool() {
           {result.best_hit && (
             <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
-                Best HMM hit
+                Selected classification hit
               </p>
 
               <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
@@ -209,7 +234,7 @@ export default function CuticularClassifierTool() {
                     Model
                   </p>
                   <p className="mt-3 break-words text-sm font-semibold text-[#2a2118]">
-                    {result.best_hit.model}
+                    {displayModelName(result.best_hit.model)}
                   </p>
                 </div>
 
@@ -286,7 +311,7 @@ export default function CuticularClassifierTool() {
                         className="border-t border-[#e5d9c6] bg-[#fffdf8] transition hover:bg-[#fff7ea]"
                       >
                         <td className="px-6 py-4 font-semibold text-[#8c3f2b]">
-                          {hit.model}
+                          {displayModelName(hit.model)}
                         </td>
 
                         <td className="px-6 py-4 font-mono text-xs text-[#6a5d4d]">

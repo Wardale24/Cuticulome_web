@@ -232,7 +232,7 @@ export default function BrowseDatabase({
               <tr>
                 <th className="px-6 py-4 font-semibold">Standardized name</th>
                 <th className="px-6 py-4 font-semibold">Protein name</th>
-                <th className="px-6 py-4 font-semibold">Accession</th>
+                <th className="px-6 py-4 font-semibold">NCBI Accession</th>
                 <th className="px-6 py-4 font-semibold">Species</th>
                 <th className="px-6 py-4 font-semibold">Family</th>
                 <th className="px-6 py-4 font-semibold">Length</th>

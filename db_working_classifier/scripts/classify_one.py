@@ -8,7 +8,7 @@ from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Classify one amino acid FASTA sequence using Cuticulome.db HMM classifiers."
+        description="Classify one amino acid FASTA sequence using Cuticulome.org HMM classifiers."
     )
 
     parser.add_argument(

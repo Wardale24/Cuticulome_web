@@ -187,7 +187,7 @@ function makeInterpretation(result: RawClassifierResult) {
 
   if (!bestHit || confidence === "none") {
     return (
-      "No convincing match was found against the current Cuticulome.db " +
+      "No convincing match was found against the current Cuticulome.org " +
       "classifier models. This sequence may belong to a family that is not " +
       "covered yet, or it may not be a cuticular protein."
     );

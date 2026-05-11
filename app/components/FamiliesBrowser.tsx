@@ -197,7 +197,7 @@ export default function FamiliesBrowser({ searchTerm }: FamiliesBrowserProps) {
                 </p>
 
                 {definedFunctionProteins.length > 0 ? (
-                  <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+                  <div className="mt-4 grid gap-3 md:grid-cols-2">
                     {definedFunctionProteins.map((protein) => (
                       <div
                         key={`${family.family}-${protein.id}`}

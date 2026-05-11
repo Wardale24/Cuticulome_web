@@ -183,7 +183,7 @@ export default function SubmissionForm() {
 
       setSuccessMessage(
         payload.message ??
-          "Submission received. Thank you — the Cuticulome.db team will review it before inclusion."
+          "Submission received. Thank you — the Cuticulome.org team will review it before inclusion."
       );
       setSubmission(initialSubmission);
     } catch (error) {
@@ -231,7 +231,7 @@ export default function SubmissionForm() {
             Use this form to submit a single protein annotation for curator
             review. For large batches of proteins, new species-level datasets,
             or extensive functional annotations, please contact the
-            Cuticulome.db team directly rather than submitting entries one by
+            Cuticulome.org team directly rather than submitting entries one by
             one.
           </p>
         </div>

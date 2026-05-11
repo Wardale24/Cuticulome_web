@@ -1,157 +1,148 @@
-import Link from "next/link";
-import { getDownloadsData } from "../lib/cuticulome-db";
+import DownloadsFilterForm from "./DownloadsFilterForm";
+import {
+  DownloadFilters,
+  getDownloadFilterOptions,
+  getFilteredDownloadSummary,
+} from "../lib/download-filters";
 
-export default function DownloadsBrowser() {
-  const { totalProteins, totalSpecies, totalFamilies, families, species } =
-    getDownloadsData();
+type DownloadsBrowserProps = {
+  filters: DownloadFilters;
+};
+
+function createDownloadHref(filters: DownloadFilters, format: "fasta" | "csv") {
+  const params = new URLSearchParams();
+
+  if (filters.query.trim().length > 0) {
+    params.set("q", filters.query.trim());
+  }
+
+  if (filters.genus.trim().length > 0) {
+    params.set("genus", filters.genus.trim());
+  }
+
+  if (filters.speciesId.trim().length > 0) {
+    params.set("speciesId", filters.speciesId.trim());
+  }
+
+  if (filters.family.trim().length > 0) {
+    params.set("family", filters.family.trim());
+  }
+
+  if (filters.functionStatus !== "all") {
+    params.set("functionStatus", filters.functionStatus);
+  }
+
+  if (filters.functionQuery.trim().length > 0) {
+    params.set("functionQuery", filters.functionQuery.trim());
+  }
+
+  params.set("format", format);
+
+  return `/api/downloads/custom?${params.toString()}`;
+}
+
+function hasActiveFilters(filters: DownloadFilters) {
+  return (
+    filters.query.trim().length > 0 ||
+    filters.genus.trim().length > 0 ||
+    filters.speciesId.trim().length > 0 ||
+    filters.family.trim().length > 0 ||
+    filters.functionStatus !== "all" ||
+    filters.functionQuery.trim().length > 0
+  );
+}
+
+export default function DownloadsBrowser({ filters }: DownloadsBrowserProps) {
+  const options = getDownloadFilterOptions();
+  const summary = getFilteredDownloadSummary(filters);
+  const activeFilters = hasActiveFilters(filters);
+  const hasMatchingRecords = summary.matchingRecords > 0;
 
   return (
     <div className="space-y-8">
+      <DownloadsFilterForm
+        filters={filters}
+        options={options}
+        activeFilters={activeFilters}
+      />
+
       <section className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm">
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
-            <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalProteins}
-            </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Total proteins</p>
-          </div>
-
-          <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
-            <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalSpecies}
-            </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Species</p>
-          </div>
-
-          <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
-            <p className="text-3xl font-semibold text-[#2a2118]">
-              {totalFamilies}
-            </p>
-            <p className="mt-1 text-sm text-[#6a5d4d]">Protein families</p>
-          </div>
-        </div>
-
-        <div className="mt-6 grid gap-5 lg:grid-cols-2">
-          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6">
+        <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-center">
+          <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
-              Complete FASTA dataset
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold text-[#2a2118]">
-              Download all protein sequences
-            </h2>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6a5d4d]">
-              Download a FASTA file containing all protein sequences currently
-              available in Cuticulome.org.
+              Matching dataset
             </p>
 
-            <Link
-              href="/api/downloads/all"
-              className="mt-6 inline-flex rounded-full bg-[#2a2118] px-6 py-3 text-sm font-semibold text-white hover:bg-[#453729]"
-            >
-              Download all FASTA
-            </Link>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#2a2118]">
+              {summary.matchingRecords.toLocaleString()} proteins
+            </h2>
+
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6a5d4d]">
+              This filtered dataset contains{" "}
+              {summary.speciesCount.toLocaleString()} species,{" "}
+              {summary.familyCount.toLocaleString()} protein families, and{" "}
+              {summary.functionDefinedCount.toLocaleString()} proteins with
+              defined functional annotations.
+            </p>
           </div>
 
-          <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
-              Complete CSV datasets
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold text-[#2a2118]">
-              Download database tables
-            </h2>
-            <p className="mt-3 max-w-3xl text-sm leading-7 text-[#6a5d4d]">
-              Download structured CSV files for protein metadata and curated
-              functional annotations.
-            </p>
+          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+            {hasMatchingRecords ? (
+              <>
+                <a
+                  href={createDownloadHref(filters, "fasta")}
+                  className="rounded-full bg-[#2a2118] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
+                >
+                  Download FASTA
+                </a>
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/api/downloads/csv/proteins"
-                className="rounded-full bg-[#2a2118] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
-              >
-                Protein metadata CSV
-              </Link>
-
-              <Link
-                href="/api/downloads/csv/annotations"
-                className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-              >
-                Functional annotations CSV
-              </Link>
-            </div>
+                <a
+                  href={createDownloadHref(filters, "csv")}
+                  className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+                >
+                  Download CSV
+                </a>
+              </>
+            ) : (
+              <span className="rounded-full border border-[#d8cbb7] px-6 py-3 text-center text-sm font-semibold text-[#9a8b78]">
+                No records to download
+              </span>
+            )}
           </div>
         </div>
       </section>
 
-      <section className="overflow-hidden rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] shadow-sm">
-        <div className="border-b border-[#d8cbb7] bg-[#fffaf1] px-6 py-5">
-          <h2 className="text-xl font-semibold text-[#2a2118]">
-            Family-specific FASTA files
-          </h2>
-          <p className="mt-1 text-sm text-[#6a5d4d]">
-            Download proteins grouped by curated cuticular protein family.
+      <section className="grid gap-5 lg:grid-cols-3">
+        <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6">
+          <h3 className="text-lg font-semibold text-[#2a2118]">
+            Taxonomy-focused downloads
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
+            Use genus and species filters to build datasets for one taxonomic
+            group, then combine them with protein family or function filters.
           </p>
         </div>
 
-        <div className="divide-y divide-[#e5d9c6]">
-          {families.map((family) => (
-            <div
-              key={family.family}
-              className="flex flex-col justify-between gap-4 px-6 py-5 md:flex-row md:items-center"
-            >
-              <div>
-                <p className="font-semibold text-[#2a2118]">{family.family}</p>
-                <p className="mt-1 text-sm text-[#6a5d4d]">
-                  {family.proteinCount} proteins
-                </p>
-              </div>
-
-              <Link
-                href={`/api/downloads/family?family=${encodeURIComponent(
-                  family.family
-                )}`}
-                className="rounded-full border border-[#c8b89d] px-5 py-2 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-              >
-                Download FASTA
-              </Link>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="overflow-hidden rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] shadow-sm">
-        <div className="border-b border-[#d8cbb7] bg-[#fffaf1] px-6 py-5">
-          <h2 className="text-xl font-semibold text-[#2a2118]">
-            Species-specific FASTA files
-          </h2>
-          <p className="mt-1 text-sm text-[#6a5d4d]">
-            Download proteins grouped by species.
+        <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6">
+          <h3 className="text-lg font-semibold text-[#2a2118]">
+            Function-focused downloads
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
+            Select function-defined proteins only, or search function and
+            expression text to extract proteins associated with specific
+            tissues, timings, structures, or biological roles.
           </p>
         </div>
 
-        <div className="divide-y divide-[#e5d9c6]">
-          {species.map((entry) => (
-            <div
-              key={`${entry.id}-${entry.species}`}
-              className="flex flex-col justify-between gap-4 px-6 py-5 md:flex-row md:items-center"
-            >
-              <div>
-                <p className="font-semibold text-[#2a2118]">
-                  <span className="italic">{entry.species}</span>
-                </p>
-                <p className="mt-1 text-sm text-[#6a5d4d]">
-                  {entry.speciesCode} · {entry.proteinCount} proteins
-                </p>
-              </div>
-
-              <Link
-                href={`/api/downloads/species/${entry.id}`}
-                className="rounded-full border border-[#c8b89d] px-5 py-2 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-              >
-                Download FASTA
-              </Link>
-            </div>
-          ))}
+        <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffaf1] p-6">
+          <h3 className="text-lg font-semibold text-[#2a2118]">
+            Format choice
+          </h3>
+          <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
+            Download FASTA for downstream sequence analysis. CSV is available
+            for metadata inspection, filtering in spreadsheets, and dataset
+            documentation.
+          </p>
         </div>
       </section>
     </div>

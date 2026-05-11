@@ -238,7 +238,7 @@ export async function POST(request: Request) {
     return Response.json(
       {
         message:
-          "Submission received. Thank you — the Cuticulome.db team will review it before inclusion.",
+          "Submission received. Thank you — the Cuticulome.org team will review it before inclusion.",
       },
       {
         status: 200,

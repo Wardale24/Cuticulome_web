@@ -7,7 +7,7 @@ export default function SubmitPage() {
     <SitePage
       eyebrow="Contributions"
       title="Submit protein annotations"
-      description="Submit individual arthropod cuticular protein annotations for curator review, or contact the Cuticulome.db team for batch submissions and large datasets."
+      description="Submit individual arthropod cuticular protein annotations for curator review, or contact the Cuticulome.org team for batch submissions and large datasets."
     >
       <div className="grid gap-8 lg:grid-cols-[1fr_320px]">
         <SubmissionForm />
@@ -34,7 +34,7 @@ export default function SubmitPage() {
 
             <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
               For large batches of proteins, newly annotated species datasets,
-              or extensive function tables, please contact the Cuticulome.db
+              or extensive function tables, please contact the Cuticulome.org
               team directly. This helps avoid repetitive individual submissions
               and allows curators to review the dataset structure first.
             </p>
@@ -54,7 +54,7 @@ export default function SubmitPage() {
 
             <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
               Submitted proteins are reviewed before inclusion in
-              Cuticulome.db. Submission does not guarantee immediate addition to
+              Cuticulome.org. Submission does not guarantee immediate addition to
               the public database.
             </p>
           </section>
