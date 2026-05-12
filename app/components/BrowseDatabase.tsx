@@ -60,6 +60,10 @@ function getVisiblePageNumbers(currentPage: number, totalPages: number) {
   return Array.from(pages).sort((a, b) => a - b);
 }
 
+function isUnassignedFamily(family: string) {
+  return family.trim().toLowerCase() === "unassigned";
+}
+
 export default function BrowseDatabase({
   searchTerm,
   selectedFamily,
@@ -83,8 +87,7 @@ export default function BrowseDatabase({
   const paginatedRecords = records.slice(startIndex, endIndex);
   const visiblePageNumbers = getVisiblePageNumbers(safeCurrentPage, totalPages);
 
-  const firstShownRecord =
-    filteredRecordCount === 0 ? 0 : startIndex + 1;
+  const firstShownRecord = filteredRecordCount === 0 ? 0 : startIndex + 1;
 
   const lastShownRecord = Math.min(endIndex, filteredRecordCount);
 
@@ -205,24 +208,15 @@ export default function BrowseDatabase({
 
       <div className="overflow-hidden rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] shadow-sm">
         <div className="border-b border-[#d8cbb7] bg-[#fffaf1] px-6 py-5">
-          <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
-            <div>
-              <h2 className="text-xl font-semibold text-[#2a2118]">
-                Protein records
-              </h2>
-              <p className="mt-1 text-sm text-[#6a5d4d]">
-                Showing {firstShownRecord.toLocaleString()}–
-                {lastShownRecord.toLocaleString()} of{" "}
-                {filteredRecordCount.toLocaleString()} matching records.
-              </p>
-            </div>
-
-            <Link
-              href="/api/downloads/all"
-              className="rounded-full border border-[#c8b89d] px-5 py-2 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-            >
-              Download all FASTA
-            </Link>
+          <div>
+            <h2 className="text-xl font-semibold text-[#2a2118]">
+              Protein records
+            </h2>
+            <p className="mt-1 text-sm text-[#6a5d4d]">
+              Showing {firstShownRecord.toLocaleString()}–
+              {lastShownRecord.toLocaleString()} of{" "}
+              {filteredRecordCount.toLocaleString()} matching records.
+            </p>
           </div>
         </div>
 
@@ -234,9 +228,9 @@ export default function BrowseDatabase({
                 <th className="px-6 py-4 font-semibold">Protein name</th>
                 <th className="px-6 py-4 font-semibold">NCBI Accession</th>
                 <th className="px-6 py-4 font-semibold">Species</th>
-                <th className="px-6 py-4 font-semibold">Family</th>
-                <th className="px-6 py-4 font-semibold">Length</th>
-                <th className="px-6 py-4 font-semibold">Record</th>
+                <th className="px-6 py-4 text-center font-semibold">Family</th>
+                <th className="px-6 py-4 text-center font-semibold">Length</th>
+                <th className="px-6 py-4 text-center font-semibold">Record</th>
               </tr>
             </thead>
 
@@ -272,17 +266,23 @@ export default function BrowseDatabase({
                     </span>
                   </td>
 
-                  <td className="px-6 py-4">
-                    <span className="rounded-full bg-[#8c3f2b]/10 px-3 py-1 text-xs font-semibold text-[#8c3f2b]">
-                      {record.family}
-                    </span>
+                  <td className="px-6 py-4 text-center">
+                    {isUnassignedFamily(record.family) ? (
+                      <span className="text-xs font-semibold text-[#6a5d4d]">
+                        {record.family}
+                      </span>
+                    ) : (
+                      <span className="rounded-full bg-[#8c3f2b]/10 px-3 py-1 text-xs font-semibold text-[#8c3f2b]">
+                        {record.family}
+                      </span>
+                    )}
                   </td>
 
-                  <td className="px-6 py-4 text-[#6a5d4d]">
+                  <td className="px-6 py-4 text-center text-[#6a5d4d]">
                     {record.length > 0 ? `${record.length} aa` : "Unknown"}
                   </td>
 
-                  <td className="px-6 py-4">
+                  <td className="px-6 py-4 text-center">
                     <Link
                       href={`/protein/${record.id}`}
                       className="rounded-full border border-[#c8b89d] px-4 py-2 text-xs font-semibold text-[#2a2118] hover:bg-[#efe5d4]"

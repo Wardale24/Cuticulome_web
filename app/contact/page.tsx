@@ -13,7 +13,7 @@ function ContactCard({
 }) {
   return (
     <div className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm">
-      <h2 className="text-2xl font-semibold text-[#2a2118]">{name}</h2>
+      <h2 className="pl-2 text-2xl font-semibold text-[#2a2118]">{name}</h2>
 
       <p className="mt-4 inline-flex rounded-full border border-[#c8b89d] px-5 py-3 text-sm font-semibold text-[#2a2118]">
         {email}
@@ -81,7 +81,7 @@ export default function ContactPage() {
             </p>
 
             <a
-              href="https://groups.oist.jp/bdu"
+              href="https://www.oist.jp/research/research-units/bde"
               target="_blank"
               rel="noreferrer"
               className="mt-5 inline-flex rounded-full bg-[#2a2118] px-5 py-3 text-sm font-semibold text-white hover:bg-[#453729]"
