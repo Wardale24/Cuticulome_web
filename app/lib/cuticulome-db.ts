@@ -290,6 +290,54 @@ function shuffleArray<T>(array: T[]) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
+const preferredFamilyOrder = [
+  "CPR",
+  "CPR RR-1",
+  "CPR RR-2",
+  "His-Rich CPR RR-2",
+  "CPR RR-3",
+  "CPAP",
+  "CPAP-1",
+  "CPAP-3",
+  "Tweedle",
+  "CPT",
+  "CPG",
+  "CPH",
+  "CPF",
+  "CPFL",
+  "CPLCA",
+  "CPLCG",
+  "CPLCP",
+  "CPLCW",
+  "CPCFC",
+  "Low complexity",
+  "Non-canonical CP",
+  "Chitinase",
+  "Chitinase - group I",
+  "Chitinase - group II",
+  "Chitinase - group III",
+  "Chitinase - group IV",
+  "Chitin deacetylase - group I",
+  "Yellow",
+  "ABC Transporter",
+  "Enzyme",
+];
+
+function normalizeFamilyForOrdering(family: string) {
+  return family.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+const preferredFamilyOrderMap = new Map(
+  preferredFamilyOrder.map((family, index) => [
+    normalizeFamilyForOrdering(family),
+    index,
+  ])
+);
+
+function getPreferredFamilyOrderIndex(family: string) {
+  return preferredFamilyOrderMap.get(normalizeFamilyForOrdering(family));
+}
+
 export function wrapSequence(sequence: string, width = 80) {
   const cleanSequence = sequence.replace(/\s+/g, "");
   const wrappedLines = [];
@@ -820,6 +868,21 @@ export function getFamiliesData(searchTerm = ""): FamiliesData {
       };
     })
     .sort((a, b) => {
+      const aPreferredIndex = getPreferredFamilyOrderIndex(a.family);
+      const bPreferredIndex = getPreferredFamilyOrderIndex(b.family);
+
+      if (aPreferredIndex !== undefined && bPreferredIndex !== undefined) {
+        return aPreferredIndex - bPreferredIndex;
+      }
+
+      if (aPreferredIndex !== undefined) {
+        return -1;
+      }
+
+      if (bPreferredIndex !== undefined) {
+        return 1;
+      }
+
       if (b.proteinCount !== a.proteinCount) {
         return b.proteinCount - a.proteinCount;
       }
