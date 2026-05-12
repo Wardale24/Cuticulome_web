@@ -1,32 +1,99 @@
 type SubmissionPayload = {
   submitterName?: string;
   submitterEmail?: string;
-  affiliation?: string;
   proteinName?: string;
   species?: string;
-  accession?: string;
   proteinFamily?: string;
   sequence?: string;
+  cdsSequence?: string;
+  tissueSpecificity?: string;
   functionDescription?: string;
   reference?: string;
   doi?: string;
-  notes?: string;
+  website?: string;
 };
+
+const SUCCESS_MESSAGE =
+  "Submission received. Thank you — the Cuticulome.org team will review it before inclusion.";
+
+const GENERIC_SUBMISSION_ERROR =
+  "The submission could not be sent right now. Please try again later or contact the Cuticulome.org team.";
 
 const requiredEnvironmentVariables = [
   "CUTICULOME_SUBMISSION_ENDPOINT",
-  "CUTICULOME_FORM_FIELD_SUBMITTER_NAME",
-  "CUTICULOME_FORM_FIELD_SUBMITTER_EMAIL",
-  "CUTICULOME_FORM_FIELD_AFFILIATION",
   "CUTICULOME_FORM_FIELD_PROTEIN_NAME",
   "CUTICULOME_FORM_FIELD_SPECIES",
-  "CUTICULOME_FORM_FIELD_ACCESSION",
   "CUTICULOME_FORM_FIELD_PROTEIN_FAMILY",
-  "CUTICULOME_FORM_FIELD_SEQUENCE",
   "CUTICULOME_FORM_FIELD_FUNCTION",
+  "CUTICULOME_FORM_FIELD_TISSUE_SPECIFICITY",
+  "CUTICULOME_FORM_FIELD_SEQUENCE",
+  "CUTICULOME_FORM_FIELD_CDS_SEQUENCE",
   "CUTICULOME_FORM_FIELD_REFERENCE",
   "CUTICULOME_FORM_FIELD_DOI",
-  "CUTICULOME_FORM_FIELD_NOTES",
+  "CUTICULOME_FORM_FIELD_SUBMITTER_NAME",
+  "CUTICULOME_FORM_FIELD_SUBMITTER_EMAIL",
+];
+
+const fieldLengthLimits: Array<{
+  field: keyof SubmissionPayload;
+  label: string;
+  maxLength: number;
+}> = [
+  {
+    field: "submitterName",
+    label: "Name",
+    maxLength: 120,
+  },
+  {
+    field: "submitterEmail",
+    label: "Email",
+    maxLength: 254,
+  },
+  {
+    field: "proteinName",
+    label: "Protein name",
+    maxLength: 200,
+  },
+  {
+    field: "species",
+    label: "Species",
+    maxLength: 200,
+  },
+  {
+    field: "proteinFamily",
+    label: "Protein family",
+    maxLength: 120,
+  },
+  {
+    field: "tissueSpecificity",
+    label: "Tissue specificity",
+    maxLength: 500,
+  },
+  {
+    field: "functionDescription",
+    label: "Function / evidence",
+    maxLength: 5000,
+  },
+  {
+    field: "sequence",
+    label: "Protein sequence",
+    maxLength: 20000,
+  },
+  {
+    field: "cdsSequence",
+    label: "CDS sequence",
+    maxLength: 60000,
+  },
+  {
+    field: "reference",
+    label: "Reference",
+    maxLength: 1000,
+  },
+  {
+    field: "doi",
+    label: "DOI / URL",
+    maxLength: 500,
+  },
 ];
 
 function cleanText(value: unknown) {
@@ -37,143 +104,184 @@ function cleanText(value: unknown) {
   return value.trim();
 }
 
+function removeFastaHeaders(sequence: string) {
+  return sequence
+    .split(/\r?\n/)
+    .filter((line) => !line.trim().startsWith(">"))
+    .join("")
+    .replace(/\s+/g, "")
+    .toUpperCase();
+}
+
 function validateSubmission(payload: SubmissionPayload) {
   const submitterName = cleanText(payload.submitterName);
   const submitterEmail = cleanText(payload.submitterEmail);
   const proteinName = cleanText(payload.proteinName);
   const species = cleanText(payload.species);
   const sequence = cleanText(payload.sequence);
+  const functionDescription = cleanText(payload.functionDescription);
 
-  if (!submitterName) {
-    return "Please provide your name.";
+  if (
+    !submitterName ||
+    !submitterEmail ||
+    !proteinName ||
+    !species ||
+    !sequence ||
+    !functionDescription
+  ) {
+    return "Please complete all required fields before submitting.";
   }
 
-  if (!submitterEmail || !submitterEmail.includes("@")) {
-    return "Please provide a valid email address.";
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(submitterEmail)) {
+    return "Please enter a valid email address.";
   }
 
-  if (!proteinName) {
-    return "Please provide a protein name.";
+  for (const limit of fieldLengthLimits) {
+    const value = cleanText(payload[limit.field]);
+
+    if (value.length > limit.maxLength) {
+      return `${limit.label} is too long. Please shorten it and try again.`;
+    }
   }
 
-  if (!species) {
-    return "Please provide the species name.";
-  }
+  const proteinSequenceWithoutHeader = removeFastaHeaders(sequence);
 
-  if (!sequence) {
-    return "Please provide a protein sequence.";
-  }
-
-  const sequenceWithoutHeader = sequence
-    .split(/\r?\n/)
-    .filter((line) => !line.trim().startsWith(">"))
-    .join("")
-    .replace(/\s+/g, "")
-    .toUpperCase();
-
-  if (sequenceWithoutHeader.length < 20) {
+  if (proteinSequenceWithoutHeader.length < 20) {
     return "The protein sequence looks very short. Please provide a full or meaningful amino acid sequence.";
   }
 
-  const invalidCharacters = Array.from(
-    new Set(sequenceWithoutHeader.split(""))
-  )
-    .filter((character) => !/^[ACDEFGHIKLMNPQRSTVWYXBZUO*.-]$/.test(character))
-    .sort();
+  if (!/^[ACDEFGHIKLMNPQRSTVWYXBZUO*.-]+$/.test(proteinSequenceWithoutHeader)) {
+    return "Please check the protein sequence. It should contain amino acid characters only.";
+  }
 
-  if (invalidCharacters.length > 0) {
-    return `Invalid character(s) found in sequence: ${invalidCharacters.join(
-      ", "
-    )}`;
+  const cdsSequence = cleanText(payload.cdsSequence);
+
+  if (cdsSequence) {
+    const cdsSequenceWithoutHeader = removeFastaHeaders(cdsSequence);
+
+    if (
+      cdsSequenceWithoutHeader.length > 0 &&
+      !/^[ACGTUNRYSWKMBDHV.-]+$/.test(cdsSequenceWithoutHeader)
+    ) {
+      return "Please check the CDS sequence. It should contain nucleotide characters only.";
+    }
   }
 
   return null;
 }
 
+function getEnvironmentVariable(variableName: string) {
+  return cleanText(process.env[variableName]);
+}
+
 function getMissingEnvironmentVariables() {
   return requiredEnvironmentVariables.filter(
-    (variableName) => !process.env[variableName]
+    (variableName) => !getEnvironmentVariable(variableName)
   );
 }
 
-function createSubmissionSummary(payload: SubmissionPayload) {
-  return [
-    `Submitter name: ${cleanText(payload.submitterName)}`,
-    `Submitter email: ${cleanText(payload.submitterEmail)}`,
-    `Affiliation: ${cleanText(payload.affiliation) || "Not provided"}`,
-    "",
-    `Protein name: ${cleanText(payload.proteinName)}`,
-    `Species: ${cleanText(payload.species)}`,
-    `Accession: ${cleanText(payload.accession) || "Not provided"}`,
-    `Suggested family: ${cleanText(payload.proteinFamily) || "Not provided"}`,
-    "",
-    "Protein sequence:",
-    cleanText(payload.sequence),
-    "",
-    "Function / evidence:",
-    cleanText(payload.functionDescription) || "Not provided",
-    "",
-    `Reference: ${cleanText(payload.reference) || "Not provided"}`,
-    `DOI / URL: ${cleanText(payload.doi) || "Not provided"}`,
-    "",
-    "Additional notes:",
-    cleanText(payload.notes) || "Not provided",
-  ].join("\n");
+function getGoogleFormEndpoint() {
+  const configuredEndpoint = getEnvironmentVariable(
+    "CUTICULOME_SUBMISSION_ENDPOINT"
+  );
+
+  return configuredEndpoint
+    .replace("/viewform", "/formResponse")
+    .replace(/\?.*$/, "");
+}
+
+function addGoogleFormField(
+  body: URLSearchParams,
+  environmentVariableName: string,
+  value: string
+) {
+  const fieldId = getEnvironmentVariable(environmentVariableName);
+
+  if (!fieldId) {
+    return;
+  }
+
+  body.set(fieldId, value);
 }
 
 function buildGoogleFormsBody(payload: SubmissionPayload) {
   const body = new URLSearchParams();
 
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_SUBMITTER_NAME ?? "",
-    cleanText(payload.submitterName)
-  );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_SUBMITTER_EMAIL ?? "",
-    cleanText(payload.submitterEmail)
-  );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_AFFILIATION ?? "",
-    cleanText(payload.affiliation)
-  );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_PROTEIN_NAME ?? "",
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_PROTEIN_NAME",
     cleanText(payload.proteinName)
   );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_SPECIES ?? "",
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_SPECIES",
     cleanText(payload.species)
   );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_ACCESSION ?? "",
-    cleanText(payload.accession)
-  );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_PROTEIN_FAMILY ?? "",
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_PROTEIN_FAMILY",
     cleanText(payload.proteinFamily)
   );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_SEQUENCE ?? "",
-    cleanText(payload.sequence)
-  );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_FUNCTION ?? "",
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_FUNCTION",
     cleanText(payload.functionDescription)
   );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_REFERENCE ?? "",
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_TISSUE_SPECIFICITY",
+    cleanText(payload.tissueSpecificity)
+  );
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_SEQUENCE",
+    cleanText(payload.sequence)
+  );
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_CDS_SEQUENCE",
+    cleanText(payload.cdsSequence)
+  );
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_REFERENCE",
     cleanText(payload.reference)
   );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_DOI ?? "",
-    cleanText(payload.doi)
+  addGoogleFormField(body, "CUTICULOME_FORM_FIELD_DOI", cleanText(payload.doi));
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_SUBMITTER_NAME",
+    cleanText(payload.submitterName)
   );
-  body.set(
-    process.env.CUTICULOME_FORM_FIELD_NOTES ?? "",
-    cleanText(payload.notes)
+  addGoogleFormField(
+    body,
+    "CUTICULOME_FORM_FIELD_SUBMITTER_EMAIL",
+    cleanText(payload.submitterEmail)
   );
 
   return body;
+}
+
+async function sendToGoogleForm(payload: SubmissionPayload) {
+  const googleFormEndpoint = getGoogleFormEndpoint();
+  const googleFormsBody = buildGoogleFormsBody(payload);
+
+  if (!googleFormEndpoint.includes("/formResponse")) {
+    throw new Error("Invalid Google Form endpoint.");
+  }
+
+  const googleFormsResponse = await fetch(googleFormEndpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    body: googleFormsBody.toString(),
+    redirect: "follow",
+  });
+
+  if (!googleFormsResponse.ok) {
+    throw new Error("Google Form submission failed.");
+  }
 }
 
 export const runtime = "nodejs";
@@ -182,6 +290,18 @@ export const dynamic = "force-dynamic";
 export async function POST(request: Request) {
   try {
     const payload = (await request.json()) as SubmissionPayload;
+
+    if (cleanText(payload.website)) {
+      return Response.json(
+        {
+          message: SUCCESS_MESSAGE,
+        },
+        {
+          status: 200,
+        }
+      );
+    }
+
     const validationError = validateSubmission(payload);
 
     if (validationError) {
@@ -198,61 +318,36 @@ export async function POST(request: Request) {
     const missingEnvironmentVariables = getMissingEnvironmentVariables();
 
     if (missingEnvironmentVariables.length > 0) {
+      console.error("Submission form configuration is incomplete.", {
+        missingEnvironmentVariables,
+      });
+
       return Response.json(
         {
-          error:
-            "The submission form is not connected to a Google Form yet. The submission has not been sent.",
-          configurationMissing: true,
-          missingEnvironmentVariables,
-          submissionSummary: createSubmissionSummary(payload),
+          error: GENERIC_SUBMISSION_ERROR,
         },
         {
-          status: 501,
+          status: 503,
         }
       );
     }
 
-    const googleFormEndpoint = process.env.CUTICULOME_SUBMISSION_ENDPOINT ?? "";
-    const googleFormsBody = buildGoogleFormsBody(payload);
-
-    const googleFormsResponse = await fetch(googleFormEndpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: googleFormsBody.toString(),
-    });
-
-    if (!googleFormsResponse.ok && googleFormsResponse.status < 300) {
-      return Response.json(
-        {
-          error:
-            "The submission could not be forwarded to the configured Google Form.",
-        },
-        {
-          status: 502,
-        }
-      );
-    }
+    await sendToGoogleForm(payload);
 
     return Response.json(
       {
-        message:
-          "Submission received. Thank you — the Cuticulome.org team will review it before inclusion.",
+        message: SUCCESS_MESSAGE,
       },
       {
         status: 200,
       }
     );
   } catch (error) {
-    const message =
-      error instanceof Error
-        ? error.message
-        : "The submission could not be processed.";
+    console.error("Submission error:", error);
 
     return Response.json(
       {
-        error: message,
+        error: GENERIC_SUBMISSION_ERROR,
       },
       {
         status: 500,

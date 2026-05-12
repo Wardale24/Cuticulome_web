@@ -5,39 +5,36 @@ import { useMemo, useState } from "react";
 type SubmissionPayload = {
   submitterName: string;
   submitterEmail: string;
-  affiliation: string;
   proteinName: string;
   species: string;
-  accession: string;
   proteinFamily: string;
   sequence: string;
+  cdsSequence: string;
+  tissueSpecificity: string;
   functionDescription: string;
   reference: string;
   doi: string;
-  notes: string;
+  website: string;
 };
 
 type SubmissionResponse = {
   message?: string;
   error?: string;
-  configurationMissing?: boolean;
-  missingEnvironmentVariables?: string[];
-  submissionSummary?: string;
 };
 
 const initialSubmission: SubmissionPayload = {
   submitterName: "",
   submitterEmail: "",
-  affiliation: "",
   proteinName: "",
   species: "",
-  accession: "",
   proteinFamily: "",
   sequence: "",
+  cdsSequence: "",
+  tissueSpecificity: "",
   functionDescription: "",
   reference: "",
   doi: "",
-  notes: "",
+  website: "",
 };
 
 function FieldLabel({
@@ -64,6 +61,7 @@ function TextInput({
   placeholder,
   required = false,
   type = "text",
+  maxLength,
 }: {
   id: keyof SubmissionPayload;
   value: string;
@@ -71,6 +69,7 @@ function TextInput({
   placeholder?: string;
   required?: boolean;
   type?: string;
+  maxLength?: number;
 }) {
   return (
     <input
@@ -79,6 +78,7 @@ function TextInput({
       type={type}
       value={value}
       required={required}
+      maxLength={maxLength}
       placeholder={placeholder}
       onChange={(event) => onChange(id, event.target.value)}
       className="mt-2 w-full rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 text-sm text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
@@ -94,6 +94,7 @@ function TextArea({
   required = false,
   rows = 5,
   mono = false,
+  maxLength,
 }: {
   id: keyof SubmissionPayload;
   value: string;
@@ -102,6 +103,7 @@ function TextArea({
   required?: boolean;
   rows?: number;
   mono?: boolean;
+  maxLength?: number;
 }) {
   return (
     <textarea
@@ -110,6 +112,7 @@ function TextArea({
       value={value}
       required={required}
       rows={rows}
+      maxLength={maxLength}
       placeholder={placeholder}
       onChange={(event) => onChange(id, event.target.value)}
       className={`mt-2 w-full rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 text-sm leading-6 text-[#2a2118] outline-none transition placeholder:text-[#9a8b78] focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20 ${
@@ -125,7 +128,6 @@ export default function SubmissionForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [configurationSummary, setConfigurationSummary] = useState("");
 
   const completedRequiredFields = useMemo(() => {
     const requiredFields = [
@@ -134,6 +136,7 @@ export default function SubmissionForm() {
       submission.proteinName,
       submission.species,
       submission.sequence,
+      submission.functionDescription,
     ];
 
     return requiredFields.filter((value) => value.trim().length > 0).length;
@@ -146,21 +149,12 @@ export default function SubmissionForm() {
     }));
   }
 
-  function copySubmissionSummary() {
-    if (!configurationSummary) {
-      return;
-    }
-
-    navigator.clipboard.writeText(configurationSummary);
-  }
-
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     setIsSubmitting(true);
     setSuccessMessage("");
     setErrorMessage("");
-    setConfigurationSummary("");
 
     try {
       const response = await fetch("/api/submissions", {
@@ -174,11 +168,10 @@ export default function SubmissionForm() {
       const payload = (await response.json()) as SubmissionResponse;
 
       if (!response.ok) {
-        if (payload.configurationMissing && payload.submissionSummary) {
-          setConfigurationSummary(payload.submissionSummary);
-        }
-
-        throw new Error(payload.error ?? "The submission could not be sent.");
+        throw new Error(
+          payload.error ??
+            "The submission could not be sent right now. Please try again later or contact the Cuticulome.org team."
+        );
       }
 
       setSuccessMessage(
@@ -190,7 +183,7 @@ export default function SubmissionForm() {
       const message =
         error instanceof Error
           ? error.message
-          : "The submission could not be sent.";
+          : "The submission could not be sent right now. Please try again later or contact the Cuticulome.org team.";
 
       setErrorMessage(message);
     } finally {
@@ -204,7 +197,7 @@ export default function SubmissionForm() {
         <div className="grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-[#d8cbb7] bg-[#f7f2e8] p-5">
             <p className="text-3xl font-semibold text-[#2a2118]">
-              {completedRequiredFields}/5
+              {completedRequiredFields}/6
             </p>
             <p className="mt-1 text-sm text-[#6a5d4d]">
               Required fields completed
@@ -229,10 +222,8 @@ export default function SubmissionForm() {
         <div className="mt-6 rounded-2xl border border-[#d8cbb7] bg-[#fffaf1] p-5">
           <p className="text-sm leading-7 text-[#6a5d4d]">
             Use this form to submit a single protein annotation for curator
-            review. For large batches of proteins, new species-level datasets,
-            or extensive functional annotations, please contact the
-            Cuticulome.org team directly rather than submitting entries one by
-            one.
+            review. Submissions are saved through a Google Form and reviewed
+            before inclusion in Cuticulome.org.
           </p>
         </div>
       </section>
@@ -241,6 +232,19 @@ export default function SubmissionForm() {
         onSubmit={handleSubmit}
         className="space-y-8 rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm md:p-8"
       >
+        <div className="hidden" aria-hidden="true">
+          <label htmlFor="website">Website</label>
+          <input
+            id="website"
+            name="website"
+            type="text"
+            value={submission.website}
+            tabIndex={-1}
+            autoComplete="off"
+            onChange={(event) => updateField("website", event.target.value)}
+          />
+        </div>
+
         <section>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
             Submitter information
@@ -255,6 +259,7 @@ export default function SubmissionForm() {
                 id="submitterName"
                 value={submission.submitterName}
                 required
+                maxLength={120}
                 placeholder="Your name"
                 onChange={updateField}
               />
@@ -269,17 +274,8 @@ export default function SubmissionForm() {
                 value={submission.submitterEmail}
                 required
                 type="email"
+                maxLength={254}
                 placeholder="your.email@example.com"
-                onChange={updateField}
-              />
-            </div>
-
-            <div className="md:col-span-2">
-              <FieldLabel htmlFor="affiliation">Affiliation</FieldLabel>
-              <TextInput
-                id="affiliation"
-                value={submission.affiliation}
-                placeholder="Institution, laboratory, or organization"
                 onChange={updateField}
               />
             </div>
@@ -300,6 +296,7 @@ export default function SubmissionForm() {
                 id="proteinName"
                 value={submission.proteinName}
                 required
+                maxLength={200}
                 placeholder="Example: CPR1, CPAP3-A, Tweedle-like protein"
                 onChange={updateField}
               />
@@ -313,28 +310,20 @@ export default function SubmissionForm() {
                 id="species"
                 value={submission.species}
                 required
+                maxLength={200}
                 placeholder="Example: Drosophila melanogaster"
                 onChange={updateField}
               />
             </div>
 
-            <div>
-              <FieldLabel htmlFor="accession">Protein accession</FieldLabel>
-              <TextInput
-                id="accession"
-                value={submission.accession}
-                placeholder="NCBI / UniProt / other accession"
-                onChange={updateField}
-              />
-            </div>
-
-            <div>
+            <div className="md:col-span-2">
               <FieldLabel htmlFor="proteinFamily">
                 Suggested protein family
               </FieldLabel>
               <TextInput
                 id="proteinFamily"
                 value={submission.proteinFamily}
+                maxLength={120}
                 placeholder="Example: CPR RR-2, CPAP3, CPF, Tweedle"
                 onChange={updateField}
               />
@@ -350,7 +339,21 @@ export default function SubmissionForm() {
                 required
                 mono
                 rows={10}
+                maxLength={20000}
                 placeholder={">protein_name\nMKKLLVVAAALVAAQASA..."}
+                onChange={updateField}
+              />
+            </div>
+
+            <div className="md:col-span-2">
+              <FieldLabel htmlFor="cdsSequence">CDS sequence</FieldLabel>
+              <TextArea
+                id="cdsSequence"
+                value={submission.cdsSequence}
+                mono
+                rows={8}
+                maxLength={60000}
+                placeholder={">protein_name_cds\nATGGCCAAG..."}
                 onChange={updateField}
               />
             </div>
@@ -364,14 +367,29 @@ export default function SubmissionForm() {
 
           <div className="mt-5 grid gap-5">
             <div>
-              <FieldLabel htmlFor="functionDescription">
+              <FieldLabel htmlFor="functionDescription" required>
                 Function / evidence
               </FieldLabel>
               <TextArea
                 id="functionDescription"
                 value={submission.functionDescription}
+                required
                 rows={5}
-                placeholder="Describe the experimentally validated or inferred function, tissue specificity, phenotype, expression evidence, or other support."
+                maxLength={5000}
+                placeholder="Describe the experimentally validated or inferred function, phenotype, expression evidence, or other support."
+                onChange={updateField}
+              />
+            </div>
+
+            <div>
+              <FieldLabel htmlFor="tissueSpecificity">
+                Tissue specificity
+              </FieldLabel>
+              <TextInput
+                id="tissueSpecificity"
+                value={submission.tissueSpecificity}
+                maxLength={500}
+                placeholder="Example: epidermis, wing disc, leg cuticle, whole body"
                 onChange={updateField}
               />
             </div>
@@ -382,6 +400,7 @@ export default function SubmissionForm() {
                 <TextInput
                   id="reference"
                   value={submission.reference}
+                  maxLength={1000}
                   placeholder="Author et al., year, title, journal"
                   onChange={updateField}
                 />
@@ -392,21 +411,11 @@ export default function SubmissionForm() {
                 <TextInput
                   id="doi"
                   value={submission.doi}
+                  maxLength={500}
                   placeholder="https://doi.org/... or publication URL"
                   onChange={updateField}
                 />
               </div>
-            </div>
-
-            <div>
-              <FieldLabel htmlFor="notes">Additional notes</FieldLabel>
-              <TextArea
-                id="notes"
-                value={submission.notes}
-                rows={4}
-                placeholder="Alternative names, special nomenclature notes, batch-submission context, or anything curators should know."
-                onChange={updateField}
-              />
             </div>
           </div>
         </section>
@@ -428,7 +437,6 @@ export default function SubmissionForm() {
                 setSubmission(initialSubmission);
                 setSuccessMessage("");
                 setErrorMessage("");
-                setConfigurationSummary("");
               }}
               className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4] disabled:cursor-not-allowed disabled:opacity-60"
             >
@@ -457,30 +465,6 @@ export default function SubmissionForm() {
           <p className="mt-2 whitespace-pre-wrap text-sm leading-7 text-[#6a2f24]">
             {errorMessage}
           </p>
-
-          {configurationSummary && (
-            <div className="mt-5">
-              <p className="text-sm font-semibold text-[#6a2f24]">
-                Your completed submission summary
-              </p>
-              <p className="mt-1 text-sm leading-7 text-[#6a2f24]">
-                The form content is shown below so it can be copied while the
-                submission backend is being configured.
-              </p>
-
-              <pre className="mt-3 max-h-[420px] overflow-auto rounded-2xl border border-[#c48a7a] bg-white p-4 text-xs leading-6 text-[#2a2118]">
-                {configurationSummary}
-              </pre>
-
-              <button
-                type="button"
-                onClick={copySubmissionSummary}
-                className="mt-4 rounded-full border border-[#c48a7a] px-5 py-2 text-sm font-semibold text-[#6a2f24] hover:bg-[#ffe4dc]"
-              >
-                Copy submission summary
-              </button>
-            </div>
-          )}
         </section>
       )}
     </div>
