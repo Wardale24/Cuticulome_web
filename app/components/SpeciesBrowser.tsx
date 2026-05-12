@@ -5,8 +5,174 @@ type SpeciesBrowserProps = {
   searchTerm: string;
 };
 
+type CharacterizationReference = {
+  label: string;
+  url: string;
+};
+
+const characterizationReferencesBySpecies: Record<
+  string,
+  CharacterizationReference[]
+> = {
+  "Anopheles gambiae": [
+    {
+      label: "Cornman et al. 2008",
+      url: "https://doi.org/10.1186/1471-2164-9-22",
+    },
+    {
+      label: "Zhou et al. 2016",
+      url: "https://doi.org/10.1016/j.ibmb.2016.05.001",
+    },
+    {
+      label: "Zhou et al. 2017",
+      url: "https://doi.org/10.1002/ps.4649",
+    },
+  ],
+  "Acyrthosiphon pisum": [
+    {
+      label: "Guschinskaya et al. 2020",
+      url: "https://doi.org/10.1016/j.isci.2020.100828",
+    },
+  ],
+  "Bombyx mori": [
+    {
+      label: "Yan et al. 2022",
+      url: "https://doi.org/10.3390/ijms23095155",
+    },
+  ],
+  "Cryptolestes ferrugineus": [
+    {
+      label: "Tang et al. 2023",
+      url: "https://doi.org/10.1016/j.pestbp.2023.105491",
+    },
+  ],
+  "Daphnia magna": [
+    {
+      label: "Otte et al. 2024",
+      url: "https://doi.org/10.1002/pmic.202300292",
+    },
+  ],
+  "Drosophila melanogaster": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila ananassae": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila pseudoobscura": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila pseudobscura": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila willistoni": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila mojavensis": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila virilis": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Drosophila grimshawi": [
+    {
+      label: "Cornman 2009",
+      url: "https://doi.org/10.1371/journal.pone.0008345",
+    },
+  ],
+  "Frankliniella occidentalis": [
+    {
+      label: "Zheng et al. 2024",
+      url: "https://doi.org/10.1002/arch.22102",
+    },
+  ],
+  "Locusta migratoria": [
+    {
+      label: "Zhao et al. 2017",
+      url: "https://doi.org/10.1038/srep45462",
+    },
+  ],
+};
+
 function isUnassignedFamily(family: string) {
   return family.trim().toLowerCase() === "unassigned";
+}
+
+function getCharacterizationReferences(species: string) {
+  return characterizationReferencesBySpecies[species] ?? [];
+}
+
+function CharacterizationReferenceButton({
+  references,
+}: {
+  references: CharacterizationReference[];
+}) {
+  if (references.length === 0) {
+    return null;
+  }
+
+  if (references.length === 1) {
+    const reference = references[0];
+
+    return (
+      <a
+        href={reference.url}
+        target="_blank"
+        rel="noreferrer"
+        className="rounded-full border border-[#c8b89d] px-5 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+      >
+        Reference
+      </a>
+    );
+  }
+
+  return (
+    <details className="group relative">
+      <summary className="list-none rounded-full border border-[#c8b89d] px-5 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4] [&::-webkit-details-marker]:hidden">
+        <span className="cursor-pointer select-none">Reference</span>
+      </summary>
+
+      <div className="z-10 mt-2 min-w-[18rem] rounded-2xl border border-[#d8cbb7] bg-[#fffdf8] p-3 shadow-md sm:absolute">
+        <p className="px-3 pb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#8c3f2b]">
+          References
+        </p>
+
+        <div className="flex flex-col gap-1">
+          {references.map((reference) => (
+            <a
+              key={`${reference.label}-${reference.url}`}
+              href={reference.url}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-xl px-3 py-2 text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+            >
+              {reference.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </details>
+  );
 }
 
 export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
@@ -65,6 +231,9 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
         {sortedSpeciesSummaries.map((entry) => {
           const assignedFamilies = entry.families.filter(
             (family) => !isUnassignedFamily(family)
+          );
+          const characterizationReferences = getCharacterizationReferences(
+            entry.species
           );
 
           return (
@@ -139,7 +308,7 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
                   )}
                 </div>
 
-                <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row">
+                <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
                   <Link
                     href={`/browse?species=${encodeURIComponent(
                       entry.species
@@ -148,6 +317,10 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
                   >
                     View proteins
                   </Link>
+
+                  <CharacterizationReferenceButton
+                    references={characterizationReferences}
+                  />
 
                   <Link
                     href={`/api/downloads/species/${entry.id}`}

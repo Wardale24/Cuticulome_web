@@ -69,7 +69,6 @@ function buildCsv(result: MiniBlastResult) {
     "Alignment Length",
     "E-value",
     "Bit Score",
-    "Protein URL",
   ];
 
   const rows = result.hits.map((hit) => [
@@ -83,7 +82,6 @@ function buildCsv(result: MiniBlastResult) {
     String(hit.alignmentLength),
     String(hit.evalue),
     String(hit.bitScore),
-    `/protein/${hit.proteinId}`,
   ]);
 
   const escapeCsvCell = (value: string) => {
@@ -201,8 +199,8 @@ export default function MiniBlastTool() {
 
             <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
               miniBLAST compares your pasted protein sequence against protein
-              entries stored in Cuticulome.org with BLASTP. Results are ranked by bit score,
-              identity, query coverage, and E-value.
+              entries stored in Cuticulome.org with BLASTP. Results are ranked
+              by bit score, identity, query coverage, and E-value.
             </p>
           </div>
         </div>

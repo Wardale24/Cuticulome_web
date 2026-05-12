@@ -29,6 +29,7 @@ export type DownloadRecord = {
   standardizedName: string;
   proteinName: string;
   accession: string;
+  cdsAccession: string;
   genus: string;
   species: string;
   speciesCode: string;
@@ -36,10 +37,18 @@ export type DownloadRecord = {
   sequence: string;
   length: number;
   functionDefined: boolean;
+  expressionTissue: string;
+  expressionTiming: string;
   expressionDetails: string;
-  functionDetails: string;
+  expressionStressVariation: string;
   molecularFunction: string;
   biologicalProcess: string;
+  functionDetails: string;
+  molecularMechanisms: string;
+  notes: string;
+  literatureReference: string;
+  referenceYear: string;
+  referenceDoi: string;
 };
 
 export type FilteredDownloadSummary = {
@@ -54,6 +63,7 @@ type SQLiteDownloadRow = {
   standardizedName: string | null;
   proteinName: string | null;
   accession: string | null;
+  cdsAccession: string | null;
   protFasta: string | null;
   proteinSequence: string | null;
   genus: string | null;
@@ -61,10 +71,18 @@ type SQLiteDownloadRow = {
   speciesCode: string | null;
   familyName: string | null;
   functionalEntryCount: number;
+  expressionTissue: string | null;
+  expressionTiming: string | null;
   expressionDetails: string | null;
-  functionDetails: string | null;
+  expressionStressVariation: string | null;
   molecularFunction: string | null;
   biologicalProcess: string | null;
+  functionDetails: string | null;
+  molecularMechanisms: string | null;
+  notes: string | null;
+  literatureReference: string | null;
+  referenceYear: string | null;
+  referenceDoi: string | null;
 };
 
 let cachedDatabase: Database.Database | null = null;
@@ -127,13 +145,13 @@ function extractSequence(
   return cleanProteinSequence(protFasta);
 }
 
-function uniqueJoinedText(value: string | null | undefined) {
+function normalizeGroupedText(value: string | null | undefined) {
   if (!value) {
     return "";
   }
 
   const parts = value
-    .split(",")
+    .split(" || ")
     .map((part) => part.trim())
     .filter(Boolean);
 
@@ -175,6 +193,7 @@ function makeSqlFilters(filters: DownloadFilters) {
         LOWER(COALESCE(p.standardized_name, '')) LIKE @query
         OR LOWER(COALESCE(p.protein_name, '')) LIKE @query
         OR LOWER(COALESCE(p.protein_accession, '')) LIKE @query
+        OR LOWER(COALESCE(p.cds_accession, '')) LIKE @query
         OR LOWER(COALESCE(s.genus, '')) LIKE @query
         OR LOWER(COALESCE(s.species, '')) LIKE @query
         OR LOWER(COALESCE(s.species_code, '')) LIKE @query
@@ -215,6 +234,9 @@ function makeSqlFilters(filters: DownloadFilters) {
         OR LOWER(COALESCE(e.function_details, '')) LIKE @functionQuery
         OR LOWER(COALESCE(e.molecular_mechanisms, '')) LIKE @functionQuery
         OR LOWER(COALESCE(e.notes, '')) LIKE @functionQuery
+        OR LOWER(COALESCE(lr.reference_text, '')) LIKE @functionQuery
+        OR LOWER(COALESCE(CAST(lr.year AS TEXT), '')) LIKE @functionQuery
+        OR LOWER(COALESCE(lr.doi, '')) LIKE @functionQuery
       )
     `);
   }
@@ -331,6 +353,7 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
         p.standardized_name AS standardizedName,
         p.protein_name AS proteinName,
         p.protein_accession AS accession,
+        p.cds_accession AS cdsAccession,
         p.prot_fasta AS protFasta,
         p.protein_sequence AS proteinSequence,
         s.genus AS genus,
@@ -338,14 +361,23 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
         s.species_code AS speciesCode,
         COALESCE(pf.name, 'Unassigned') AS familyName,
         COUNT(e.id) AS functionalEntryCount,
-        GROUP_CONCAT(DISTINCT e.expression_details) AS expressionDetails,
-        GROUP_CONCAT(DISTINCT e.function_details) AS functionDetails,
-        GROUP_CONCAT(DISTINCT e.molecular_function) AS molecularFunction,
-        GROUP_CONCAT(DISTINCT e.biological_process) AS biologicalProcess
+        GROUP_CONCAT(NULLIF(TRIM(e.expression_tissue), ''), ' || ') AS expressionTissue,
+        GROUP_CONCAT(NULLIF(TRIM(e.expression_timing), ''), ' || ') AS expressionTiming,
+        GROUP_CONCAT(NULLIF(TRIM(e.expression_details), ''), ' || ') AS expressionDetails,
+        GROUP_CONCAT(NULLIF(TRIM(e.expression_stress_variation), ''), ' || ') AS expressionStressVariation,
+        GROUP_CONCAT(NULLIF(TRIM(e.molecular_function), ''), ' || ') AS molecularFunction,
+        GROUP_CONCAT(NULLIF(TRIM(e.biological_process), ''), ' || ') AS biologicalProcess,
+        GROUP_CONCAT(NULLIF(TRIM(e.function_details), ''), ' || ') AS functionDetails,
+        GROUP_CONCAT(NULLIF(TRIM(e.molecular_mechanisms), ''), ' || ') AS molecularMechanisms,
+        GROUP_CONCAT(NULLIF(TRIM(e.notes), ''), ' || ') AS notes,
+        GROUP_CONCAT(NULLIF(TRIM(lr.reference_text), ''), ' || ') AS literatureReference,
+        GROUP_CONCAT(NULLIF(TRIM(CAST(lr.year AS TEXT)), ''), ' || ') AS referenceYear,
+        GROUP_CONCAT(NULLIF(TRIM(lr.doi), ''), ' || ') AS referenceDoi
       FROM proteins p
       LEFT JOIN species s ON p.species_id = s.id
       LEFT JOIN protein_family pf ON p.protein_family_id = pf.id
       LEFT JOIN entries e ON e.protein_id = p.id
+      LEFT JOIN literature_references lr ON e.reference_id = lr.id
       ${whereSql}
       GROUP BY p.id
       ${havingSql}
@@ -363,7 +395,8 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
       id: row.id,
       standardizedName: normalizeText(row.standardizedName) || "Unnamed protein",
       proteinName: normalizeText(row.proteinName) || "No protein name available",
-      accession: normalizeText(row.accession) || "No accession available",
+      accession: normalizeText(row.accession),
+      cdsAccession: normalizeText(row.cdsAccession),
       genus: genus || "Unknown",
       species: species || "Unknown species",
       speciesCode: normalizeText(row.speciesCode) || "Unknown",
@@ -371,10 +404,20 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
       sequence,
       length: sequence.length,
       functionDefined: row.functionalEntryCount > 0,
-      expressionDetails: uniqueJoinedText(row.expressionDetails),
-      functionDetails: uniqueJoinedText(row.functionDetails),
-      molecularFunction: uniqueJoinedText(row.molecularFunction),
-      biologicalProcess: uniqueJoinedText(row.biologicalProcess),
+      expressionTissue: normalizeGroupedText(row.expressionTissue),
+      expressionTiming: normalizeGroupedText(row.expressionTiming),
+      expressionDetails: normalizeGroupedText(row.expressionDetails),
+      expressionStressVariation: normalizeGroupedText(
+        row.expressionStressVariation
+      ),
+      molecularFunction: normalizeGroupedText(row.molecularFunction),
+      biologicalProcess: normalizeGroupedText(row.biologicalProcess),
+      functionDetails: normalizeGroupedText(row.functionDetails),
+      molecularMechanisms: normalizeGroupedText(row.molecularMechanisms),
+      notes: normalizeGroupedText(row.notes),
+      literatureReference: normalizeGroupedText(row.literatureReference),
+      referenceYear: normalizeGroupedText(row.referenceYear),
+      referenceDoi: normalizeGroupedText(row.referenceDoi),
     };
   });
 }
@@ -393,20 +436,48 @@ export function getFilteredDownloadSummary(
   };
 }
 
+function cleanFastaHeaderPart(value: string | null | undefined) {
+  return (
+    value
+      ?.trim()
+      .replace(/\s+/g, "_")
+      .replace(/\|/g, "-") ?? ""
+  );
+}
+
+function hasUsableAccession(accession: string | null | undefined) {
+  const cleanedAccession = cleanFastaHeaderPart(accession).toLowerCase();
+
+  return (
+    cleanedAccession.length > 0 &&
+    cleanedAccession !== "no_accession_available" &&
+    cleanedAccession !== "no accession available" &&
+    cleanedAccession !== "unknown" &&
+    cleanedAccession !== "na" &&
+    cleanedAccession !== "n/a"
+  );
+}
+
+function makeFilteredFastaHeader(record: DownloadRecord) {
+  const headerParts = [
+    cleanFastaHeaderPart(record.standardizedName),
+    hasUsableAccession(record.accession)
+      ? cleanFastaHeaderPart(record.accession)
+      : "",
+    cleanFastaHeaderPart(record.species),
+    cleanFastaHeaderPart(record.family),
+  ].filter(Boolean);
+
+  return `>${headerParts.join("|")}`;
+}
+
 export function buildFilteredFasta(records: DownloadRecord[]) {
   return records
     .filter((record) => record.sequence.length > 0)
     .map((record) => {
-      const header = [
-        record.standardizedName,
-        record.accession,
-        record.speciesCode,
-        record.species,
-        record.family,
-        record.functionDefined ? "function-defined" : "function-not-defined",
-      ].join(" | ");
+      const header = makeFilteredFastaHeader(record);
 
-      return `>${header}\n${wrapSequence(record.sequence)}`;
+      return `${header}\n${wrapSequence(record.sequence)}`;
     })
     .join("\n\n")
     .concat("\n");
@@ -414,38 +485,52 @@ export function buildFilteredFasta(records: DownloadRecord[]) {
 
 export function buildFilteredCsv(records: DownloadRecord[]) {
   const header = [
-    "protein_id",
-    "standardized_name",
-    "protein_name",
-    "accession",
-    "species",
-    "species_code",
-    "genus",
-    "protein_family",
-    "sequence_length",
-    "function_defined",
-    "expression_details",
-    "function_details",
-    "molecular_function",
-    "biological_process",
-    "protein_sequence",
+    "Standardized name",
+    "Protein name",
+    "NCBI accession",
+    "CDS accession",
+    "Species",
+    "Species code",
+    "Genus",
+    "Protein family",
+    "Sequence length",
+    "Expression tissue",
+    "Expression timing",
+    "Expression details",
+    "Expression stress variation",
+    "Molecular function",
+    "Biological process",
+    "Function details",
+    "Molecular mechanisms",
+    "Notes",
+    "Literature reference",
+    "Reference year",
+    "Reference DOI",
+    "Protein sequence",
   ];
 
   const rows = records.map((record) => [
-    record.id,
     record.standardizedName,
     record.proteinName,
     record.accession,
+    record.cdsAccession,
     record.species,
     record.speciesCode,
     record.genus,
     record.family,
     record.length,
-    record.functionDefined,
+    record.expressionTissue,
+    record.expressionTiming,
     record.expressionDetails,
-    record.functionDetails,
+    record.expressionStressVariation,
     record.molecularFunction,
     record.biologicalProcess,
+    record.functionDetails,
+    record.molecularMechanisms,
+    record.notes,
+    record.literatureReference,
+    record.referenceYear,
+    record.referenceDoi,
     record.sequence,
   ]);
 

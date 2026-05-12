@@ -301,19 +301,46 @@ export function wrapSequence(sequence: string, width = 80) {
   return wrappedLines.join("\n");
 }
 
+function cleanFastaHeaderPart(value: string | null | undefined) {
+  return (
+    value
+      ?.trim()
+      .replace(/\s+/g, "_")
+      .replace(/\|/g, "-") ?? ""
+  );
+}
+
+function hasUsableAccession(accession: string | null | undefined) {
+  const cleanedAccession = cleanFastaHeaderPart(accession).toLowerCase();
+
+  return (
+    cleanedAccession.length > 0 &&
+    cleanedAccession !== "no_accession_available" &&
+    cleanedAccession !== "no accession available" &&
+    cleanedAccession !== "unknown" &&
+    cleanedAccession !== "na" &&
+    cleanedAccession !== "n/a"
+  );
+}
+
+function makeFastaHeader(record: ProteinRecord) {
+  const headerParts = [
+    cleanFastaHeaderPart(record.standardizedName),
+    hasUsableAccession(record.accession)
+      ? cleanFastaHeaderPart(record.accession)
+      : "",
+    cleanFastaHeaderPart(record.species),
+    cleanFastaHeaderPart(record.family),
+  ].filter(Boolean);
+
+  return `>${headerParts.join("|")}`;
+}
+
 function buildFasta(records: ProteinRecord[]) {
   return records
     .filter((record) => record.proteinSequence.length > 0)
     .map((record) => {
-      const headerParts = [
-        record.standardizedName,
-        record.accession,
-        record.speciesCode,
-        record.species,
-        record.family,
-      ].filter(Boolean);
-
-      const header = `>${headerParts.join(" | ")}`;
+      const header = makeFastaHeader(record);
       const sequence = wrapSequence(record.proteinSequence);
 
       return `${header}\n${sequence}`;
@@ -437,7 +464,10 @@ function getDefinedFunctionProteinsByFamily() {
     });
   }
 
-  const randomProteinsByFamily = new Map<string, FamilyDefinedFunctionProtein[]>();
+  const randomProteinsByFamily = new Map<
+    string,
+    FamilyDefinedFunctionProtein[]
+  >();
 
   for (const [family, proteins] of proteinsByFamily.entries()) {
     randomProteinsByFamily.set(family, shuffleArray(proteins).slice(0, 4));
