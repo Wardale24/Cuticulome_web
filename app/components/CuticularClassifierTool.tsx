@@ -344,6 +344,40 @@ export default function CuticularClassifierTool() {
           </div>
         </section>
       )}
+
+      <section className="rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] p-6 shadow-sm">
+        <div className="max-w-4xl">
+          <h2 className="text-2xl font-semibold text-[#2a2118]">
+            More information on Cuticulome.org classifier models
+          </h2>
+
+          <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
+            The Cuticulome.org classifier implements HMMs trained from curated
+            seed FASTA datasets assembled from Cuticulome.org protein family
+            annotations and manually reviewed arthropod cuticular protein
+            sequences. Seed FASTA files, model details, cutoff criteria, and
+            more information can be found in the Zenodo archive.
+          </p>
+
+          <p className="mt-4 text-sm leading-7 text-[#6a5d4d]">
+            Wardale, A., &amp; Finet, C. (2026).{" "}
+            <span className="italic">
+              Cuticulome.org HMM classifier models for arthropod cuticular
+              protein family annotation
+            </span>{" "}
+            (v1.0.0). Zenodo.
+          </p>
+
+          <a
+            href="https://doi.org/10.5281/zenodo.20150640"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-5 -ml-2 inline-flex items-center justify-center rounded-full bg-[#2a2118] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
+          >
+            Zenodo model archive
+          </a>
+        </div>
+      </section>
     </div>
   );
 }
