@@ -15,6 +15,11 @@ export type SpeciesStatistic = {
   familyCount: number;
 };
 
+export type PublicationYearStatistic = {
+  year: number;
+  publicationCount: number;
+};
+
 export type SequenceAvailability = {
   label: string;
   count: number;
@@ -33,6 +38,7 @@ export type DatabaseStatistics = {
   functionDefinedPercentage: number;
   familyDistribution: DistributionRow[];
   topSpecies: SpeciesStatistic[];
+  publicationsByYear: PublicationYearStatistic[];
   sequenceAvailability: SequenceAvailability[];
 };
 
@@ -50,6 +56,11 @@ type SpeciesStatisticRow = {
   speciesCode: string | null;
   proteinCount: number;
   familyCount: number;
+};
+
+type PublicationYearRow = {
+  year: number;
+  publicationCount: number;
 };
 
 let cachedDatabase: Database.Database | null = null;
@@ -90,6 +101,52 @@ function percentage(count: number, total: number) {
   return Math.round((count / total) * 1000) / 10;
 }
 
+function formatSpeciesStatisticsRow(row: SpeciesStatisticRow) {
+  return {
+    species: row.species?.trim() || "Unknown species",
+    speciesCode: row.speciesCode ?? "Unknown",
+    proteinCount: row.proteinCount,
+    familyCount: row.familyCount,
+  };
+}
+
+function getPublicationTimeline(database: Database.Database) {
+  const currentYear = new Date().getFullYear();
+  const startYear = currentYear - 19;
+
+  const publicationRows = database
+    .prepare(
+      `
+      SELECT
+        year,
+        COUNT(*) AS publicationCount
+      FROM literature_references
+      WHERE year IS NOT NULL
+        AND year BETWEEN ? AND ?
+      GROUP BY year
+      ORDER BY year ASC
+      `
+    )
+    .all(startYear, currentYear) as PublicationYearRow[];
+
+  const publicationCountsByYear = publicationRows.reduce<Record<number, number>>(
+    (counts, row) => {
+      counts[row.year] = row.publicationCount;
+      return counts;
+    },
+    {}
+  );
+
+  return Array.from({ length: 20 }, (_, index) => {
+    const year = startYear + index;
+
+    return {
+      year,
+      publicationCount: publicationCountsByYear[year] ?? 0,
+    };
+  });
+}
+
 export function getDatabaseStatistics(): DatabaseStatistics {
   const database = getDatabase();
 
@@ -99,8 +156,9 @@ export function getDatabaseStatistics(): DatabaseStatistics {
   `);
 
   const totalSpecies = getCount(`
-    SELECT COUNT(*) AS count
-    FROM species
+    SELECT COUNT(DISTINCT species_id) AS count
+    FROM proteins
+    WHERE species_id IS NOT NULL
   `);
 
   const totalRepresentedFamilies = getCount(`
@@ -151,7 +209,7 @@ export function getDatabaseStatistics(): DatabaseStatistics {
     percentage: percentage(row.count, totalProteins),
   }));
 
-  const speciesRows = database
+  const topSpeciesRows = database
     .prepare(
       `
       SELECT
@@ -160,20 +218,15 @@ export function getDatabaseStatistics(): DatabaseStatistics {
         COUNT(p.id) AS proteinCount,
         COUNT(DISTINCT p.protein_family_id) AS familyCount
       FROM species s
-      LEFT JOIN proteins p ON p.species_id = s.id
+      INNER JOIN proteins p ON p.species_id = s.id
       GROUP BY s.id
-      ORDER BY proteinCount DESC, species ASC
-      LIMIT 12
+      ORDER BY proteinCount DESC, familyCount DESC, species ASC
+      LIMIT 7
       `
     )
     .all() as SpeciesStatisticRow[];
 
-  const topSpecies = speciesRows.map((row) => ({
-    species: row.species?.trim() || "Unknown species",
-    speciesCode: row.speciesCode ?? "Unknown",
-    proteinCount: row.proteinCount,
-    familyCount: row.familyCount,
-  }));
+  const topSpecies = topSpeciesRows.map(formatSpeciesStatisticsRow);
 
   const proteinsWithProteinSequence = getCount(`
     SELECT COUNT(*) AS count
@@ -250,6 +303,7 @@ export function getDatabaseStatistics(): DatabaseStatistics {
     functionDefinedPercentage: percentage(functionDefinedProteins, totalProteins),
     familyDistribution,
     topSpecies,
+    publicationsByYear: getPublicationTimeline(database),
     sequenceAvailability,
   };
 }

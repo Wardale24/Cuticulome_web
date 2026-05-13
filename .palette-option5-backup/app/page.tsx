@@ -120,14 +120,14 @@ export default function Home() {
 
               <Link
                 href="/tools/miniblast"
-                className="rounded-full border border-[#d8cbb7] bg-white px-6 py-3 text-center text-sm font-semibold text-[#2a2118] shadow-sm hover:bg-[#fffdf8]"
+                className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
               >
                 BLAST protein
               </Link>
 
               <Link
                 href="/tools/classifier"
-                className="rounded-full border border-[#d8cbb7] bg-white px-6 py-3 text-center text-sm font-semibold text-[#2a2118] shadow-sm hover:bg-[#fffdf8]"
+                className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
               >
                 Classify protein
               </Link>
@@ -242,7 +242,7 @@ export default function Home() {
             </Link>
             <Link
               href="/contact"
-              className="rounded-full border border-[#c8b89d] bg-white px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#fffdf8]"
+              className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
             >
               Contact us
             </Link>
@@ -250,7 +250,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-[#d8cbb7] bg-white">
+      <footer className="border-t border-[#d8cbb7] bg-[#fffaf1]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-8 text-sm text-[#6a5d4d]">
           <p>© Cuticulome.org</p>
 
