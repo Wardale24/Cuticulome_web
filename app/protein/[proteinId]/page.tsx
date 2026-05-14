@@ -142,9 +142,11 @@ function ReferenceBlock({
 function FunctionalEntryCard({
   entry,
   index,
+  totalEntries,
 }: {
   entry: FunctionalEntry;
   index: number;
+  totalEntries: number;
 }) {
   const hasExpressionData =
     entry.expressionTissue ||
@@ -162,10 +164,17 @@ function FunctionalEntryCard({
   return (
     <article className="overflow-hidden rounded-3xl border border-[#d8cbb7] bg-[#fffdf8] shadow-sm">
       <div className="border-b border-[#d8cbb7] bg-[#fffaf1] px-6 py-5">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
-          Curated entry {index + 1}
-        </p>
-        <h3 className="mt-2 text-2xl font-semibold text-[#2a2118]">
+        {totalEntries > 1 && (
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8c3f2b]">
+            Curated entry {index + 1}
+          </p>
+        )}
+
+        <h3
+          className={`text-2xl font-semibold text-[#2a2118] ${
+            totalEntries > 1 ? "mt-2" : ""
+          }`}
+        >
           Functional annotation
         </h3>
       </div>
@@ -335,6 +344,7 @@ export default async function ProteinPage({ params }: ProteinPageProps) {
                   key={entry.id}
                   entry={entry}
                   index={index}
+                  totalEntries={functionalEntries.length}
                 />
               ))
             ) : (
