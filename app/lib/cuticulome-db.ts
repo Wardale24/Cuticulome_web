@@ -310,6 +310,7 @@ const preferredFamilyOrder = [
   "CPLCP",
   "CPLCW",
   "CPCFC",
+  "Engineered CPs",
   "Low complexity",
   "Non-canonical CP",
   "Chitinase",

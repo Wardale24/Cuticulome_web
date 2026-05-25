@@ -12,6 +12,8 @@ type BrowseDatabaseProps = {
   currentPage: number;
 };
 
+type BrowseRecord = ReturnType<typeof getBrowseData>["records"][number];
+
 function createPageHref({
   page,
   searchTerm,
@@ -78,6 +80,31 @@ function formatAccession(accession: string) {
   return cleanedAccession;
 }
 
+function isPlaceholderSpecies(species: string, speciesCode: string) {
+  return species.trim() === "-" && speciesCode.trim() === "-";
+}
+
+function compareRecordsForBrowse(a: BrowseRecord, b: BrowseRecord) {
+  const aIsPlaceholderSpecies = isPlaceholderSpecies(
+    a.species,
+    a.speciesCode
+  );
+  const bIsPlaceholderSpecies = isPlaceholderSpecies(
+    b.species,
+    b.speciesCode
+  );
+
+  if (aIsPlaceholderSpecies && !bIsPlaceholderSpecies) {
+    return 1;
+  }
+
+  if (bIsPlaceholderSpecies && !aIsPlaceholderSpecies) {
+    return -1;
+  }
+
+  return a.standardizedName.localeCompare(b.standardizedName);
+}
+
 export default function BrowseDatabase({
   searchTerm,
   selectedFamily,
@@ -92,12 +119,13 @@ export default function BrowseDatabase({
 
   const statistics = getDatabaseStatistics();
 
-  const filteredRecordCount = records.length;
+  const sortedRecords = [...records].sort(compareRecordsForBrowse);
+  const filteredRecordCount = sortedRecords.length;
   const totalPages = Math.max(Math.ceil(filteredRecordCount / PAGE_SIZE), 1);
   const safeCurrentPage = Math.min(Math.max(currentPage, 1), totalPages);
   const startIndex = (safeCurrentPage - 1) * PAGE_SIZE;
   const endIndex = startIndex + PAGE_SIZE;
-  const paginatedRecords = records.slice(startIndex, endIndex);
+  const paginatedRecords = sortedRecords.slice(startIndex, endIndex);
   const visiblePageNumbers = getVisiblePageNumbers(safeCurrentPage, totalPages);
 
   const firstShownRecord = filteredRecordCount === 0 ? 0 : startIndex + 1;
@@ -260,12 +288,18 @@ export default function BrowseDatabase({
                     </td>
 
                     <td className="min-w-[260px] whitespace-nowrap px-6 py-4">
-                      <span className="italic text-[#2a2118]">
-                        {record.species}
-                      </span>
-                      <span className="ml-2 rounded-full bg-[#efe5d4] px-2 py-1 text-xs font-semibold not-italic text-[#6a5d4d]">
-                        {record.speciesCode}
-                      </span>
+                      {isPlaceholderSpecies(record.species, record.speciesCode) ? (
+                        <span className="text-[#2a2118]">-</span>
+                      ) : (
+                        <>
+                          <span className="italic text-[#2a2118]">
+                            {record.species}
+                          </span>
+                          <span className="ml-2 rounded-full bg-[#efe5d4] px-2 py-1 text-xs font-semibold not-italic text-[#6a5d4d]">
+                            {record.speciesCode}
+                          </span>
+                        </>
+                      )}
                     </td>
 
                     <td className="px-6 py-4 text-center">

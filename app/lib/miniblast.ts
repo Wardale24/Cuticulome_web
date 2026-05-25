@@ -14,6 +14,8 @@ import {
 
 const execFileAsync = promisify(execFile);
 
+const MAX_MINIBLAST_HITS = 30;
+
 type MiniBlastProteinRow = {
   proteinId: number;
   proteinName: string | null;
@@ -324,7 +326,7 @@ async function runBlastp(
         "-outfmt",
         "6 sseqid pident length evalue bitscore qcovs",
         "-max_target_seqs",
-        "200",
+        String(MAX_MINIBLAST_HITS),
       ],
       {
         maxBuffer: 50 * 1024 * 1024,
@@ -462,7 +464,8 @@ export async function runMiniBlast(queryText: string): Promise<MiniBlastResult> 
         }
 
         return a.evalue - b.evalue;
-      });
+      })
+      .slice(0, MAX_MINIBLAST_HITS);
 
     return {
       queryLength: querySequence.length,

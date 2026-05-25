@@ -9,6 +9,80 @@ type FamiliesBrowserProps = {
   searchTerm: string;
 };
 
+type FamilySummary = ReturnType<typeof getFamiliesData>["familySummaries"][number];
+
+const preferredFamilyOrder = [
+  "CPR",
+  "CPR RR-1",
+  "CPR RR-2",
+  "His-Rich CPR RR-2",
+  "CPR RR-3",
+  "CPAP",
+  "CPAP-1",
+  "CPAP-3",
+  "Tweedle",
+  "CPT",
+  "CPG",
+  "CPH",
+  "CPF",
+  "CPFL",
+  "CPLCA",
+  "CPLCG",
+  "CPLCP",
+  "CPLCW",
+  "CPCFC",
+  "Engineered CP",
+  "Low complexity",
+  "Non-canonical CP",
+  "Chitinase",
+  "Chitinase - group I",
+  "Chitinase - group II",
+  "Chitinase - group III",
+  "Chitinase - group IV",
+  "Chitin deacetylase - group I",
+  "Yellow",
+  "ABC Transporter",
+  "Enzyme",
+];
+
+function normalizeFamilyForOrdering(family: string) {
+  return family.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+const preferredFamilyOrderMap = new Map(
+  preferredFamilyOrder.map((family, index) => [
+    normalizeFamilyForOrdering(family),
+    index,
+  ])
+);
+
+function compareFamiliesForDisplay(a: FamilySummary, b: FamilySummary) {
+  const aPreferredIndex = preferredFamilyOrderMap.get(
+    normalizeFamilyForOrdering(a.family)
+  );
+  const bPreferredIndex = preferredFamilyOrderMap.get(
+    normalizeFamilyForOrdering(b.family)
+  );
+
+  if (aPreferredIndex !== undefined && bPreferredIndex !== undefined) {
+    return aPreferredIndex - bPreferredIndex;
+  }
+
+  if (aPreferredIndex !== undefined) {
+    return -1;
+  }
+
+  if (bPreferredIndex !== undefined) {
+    return 1;
+  }
+
+  if (b.proteinCount !== a.proteinCount) {
+    return b.proteinCount - a.proteinCount;
+  }
+
+  return a.family.localeCompare(b.family);
+}
+
 function isUnassignedFamily(family: string) {
   return family.trim().toLowerCase() === "unassigned";
 }
@@ -70,9 +144,9 @@ export default function FamiliesBrowser({ searchTerm }: FamiliesBrowserProps) {
   const { familySummaries } = getFamiliesData("");
   const definedFunctionProteinsByFamily = getDefinedFunctionProteinsByFamily(4);
 
-  const allVisibleFamilySummaries = familySummaries.filter(
-    (family) => !isUnassignedFamily(family.family)
-  );
+  const allVisibleFamilySummaries = familySummaries
+    .filter((family) => !isUnassignedFamily(family.family))
+    .sort(compareFamiliesForDisplay);
 
   const visibleFamilySummaries = allVisibleFamilySummaries.filter((family) =>
     familyMatchesSearch({

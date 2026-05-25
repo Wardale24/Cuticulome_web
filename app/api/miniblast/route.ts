@@ -4,6 +4,28 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
+const MAX_MINIBLAST_HITS = 30;
+
+type MiniBlastBackendResult = {
+  queryLength?: number;
+  databaseProteinCount?: number;
+  hitCount?: number;
+  hits?: unknown[];
+  [key: string]: unknown;
+};
+
+function capMiniBlastResult(result: MiniBlastBackendResult) {
+  const hits = Array.isArray(result.hits)
+    ? result.hits.slice(0, MAX_MINIBLAST_HITS)
+    : [];
+
+  return {
+    ...result,
+    hitCount: hits.length,
+    hits,
+  };
+}
+
 async function proxyMiniBlastToBackend(query: string) {
   const backendUrl = process.env.CUTICULOME_TOOLS_BACKEND_URL;
 
@@ -18,6 +40,9 @@ async function proxyMiniBlastToBackend(query: string) {
     },
     body: JSON.stringify({
       query,
+      maxResults: MAX_MINIBLAST_HITS,
+      max_hits: MAX_MINIBLAST_HITS,
+      limit: MAX_MINIBLAST_HITS,
     }),
   });
 
@@ -32,7 +57,7 @@ async function proxyMiniBlastToBackend(query: string) {
     throw new Error(message);
   }
 
-  return payload;
+  return capMiniBlastResult(payload as MiniBlastBackendResult);
 }
 
 export async function POST(request: Request) {

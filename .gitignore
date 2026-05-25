@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local Cuticulome.org database admin helpers
+/engineered_cp_add.py
+/admin_entry_app.py
+/bulk_add.py
+/data/admin_backups/
