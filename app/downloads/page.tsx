@@ -46,8 +46,8 @@ export default async function DownloadsPage({
 
   return (
     <SitePage
-      eyebrow="Downloads"
-      title="Downloads"
+      eyebrow="Download"
+      title="Download datasets"
       description="Build and download custom datasets by filtering proteins by taxonomy, species, protein family, functional annotation status, and curated function."
     >
       <DownloadsBrowser filters={filters} />
