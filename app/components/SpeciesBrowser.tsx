@@ -118,6 +118,12 @@ const characterizationReferencesBySpecies: Record<
       url: "https://doi.org/10.1038/srep45462",
     },
   ],
+  "Microplitis mediator": [
+    {
+      label: "Volovych et al. 2020",
+      url: "https://doi.org/10.1111/1744-7917.12711",
+    },
+  ],
 };
 
 function isUnassignedFamily(family: string) {
