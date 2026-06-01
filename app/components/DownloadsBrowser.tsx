@@ -16,8 +16,8 @@ function createDownloadHref(filters: DownloadFilters, format: "fasta" | "csv") {
     params.set("q", filters.query.trim());
   }
 
-  if (filters.genus.trim().length > 0) {
-    params.set("genus", filters.genus.trim());
+  if (filters.taxonomicClass.trim().length > 0) {
+    params.set("class", filters.taxonomicClass.trim());
   }
 
   if (filters.speciesId.trim().length > 0) {
@@ -44,7 +44,7 @@ function createDownloadHref(filters: DownloadFilters, format: "fasta" | "csv") {
 function hasActiveFilters(filters: DownloadFilters) {
   return (
     filters.query.trim().length > 0 ||
-    filters.genus.trim().length > 0 ||
+    filters.taxonomicClass.trim().length > 0 ||
     filters.speciesId.trim().length > 0 ||
     filters.family.trim().length > 0 ||
     filters.functionStatus !== "all" ||
@@ -91,20 +91,20 @@ export default function DownloadsBrowser({ filters }: DownloadsBrowserProps) {
               <>
                 <a
                   href={createDownloadHref(filters, "fasta")}
-                  className="rounded-full bg-[#2a2118] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
+                  className="inline-flex min-w-[10rem] items-center justify-center rounded-full bg-[#2a2118] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
                 >
                   Download FASTA
                 </a>
 
                 <a
                   href={createDownloadHref(filters, "csv")}
-                  className="rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+                  className="inline-flex min-w-[10rem] items-center justify-center rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
                 >
                   Download CSV
                 </a>
               </>
             ) : (
-              <span className="rounded-full border border-[#d8cbb7] px-6 py-3 text-center text-sm font-semibold text-[#9a8b78]">
+              <span className="inline-flex min-w-[10rem] items-center justify-center rounded-full border border-[#d8cbb7] px-6 py-3 text-center text-sm font-semibold text-[#9a8b78]">
                 No records to download
               </span>
             )}
@@ -118,7 +118,7 @@ export default function DownloadsBrowser({ filters }: DownloadsBrowserProps) {
             Taxonomy-focused downloads
           </h3>
           <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
-            Use genus and species filters to build datasets for one taxonomic
+            Use class and species filters to build datasets for one taxonomic
             group, then combine them with protein family or function filters.
           </p>
         </div>

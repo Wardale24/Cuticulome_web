@@ -13,7 +13,7 @@ function getFiltersFromUrl(url: URL): DownloadFilters {
 
   return {
     query: url.searchParams.get("q") ?? "",
-    genus: url.searchParams.get("genus") ?? "",
+    taxonomicClass: url.searchParams.get("class") ?? "",
     speciesId: url.searchParams.get("speciesId") ?? "",
     family: url.searchParams.get("family") ?? "",
     functionStatus:

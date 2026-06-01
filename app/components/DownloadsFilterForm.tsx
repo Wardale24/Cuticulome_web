@@ -28,7 +28,7 @@ export default function DownloadsFilterForm({
 }: DownloadsFilterFormProps) {
   const [query, setQuery] = useState(filters.query);
   const [functionQuery, setFunctionQuery] = useState(filters.functionQuery);
-  const [selectedGenus, setSelectedGenus] = useState(filters.genus);
+  const [selectedClass, setSelectedClass] = useState(filters.taxonomicClass);
   const [selectedSpeciesId, setSelectedSpeciesId] = useState(filters.speciesId);
   const [selectedFamily, setSelectedFamily] = useState(filters.family);
   const [selectedFunctionStatus, setSelectedFunctionStatus] = useState(
@@ -38,19 +38,21 @@ export default function DownloadsFilterForm({
   useEffect(() => {
     setQuery(filters.query);
     setFunctionQuery(filters.functionQuery);
-    setSelectedGenus(filters.genus);
+    setSelectedClass(filters.taxonomicClass);
     setSelectedSpeciesId(filters.speciesId);
     setSelectedFamily(filters.family);
     setSelectedFunctionStatus(filters.functionStatus);
   }, [filters]);
 
   const filteredSpecies = useMemo(() => {
-    if (!selectedGenus) {
+    if (!selectedClass) {
       return options.species;
     }
 
-    return options.species.filter((species) => species.genus === selectedGenus);
-  }, [options.species, selectedGenus]);
+    return options.species.filter(
+      (species) => species.taxonomicClass === selectedClass
+    );
+  }, [options.species, selectedClass]);
 
   useEffect(() => {
     if (!selectedSpeciesId) {
@@ -69,7 +71,7 @@ export default function DownloadsFilterForm({
   function resetFilters() {
     setQuery("");
     setFunctionQuery("");
-    setSelectedGenus("");
+    setSelectedClass("");
     setSelectedSpeciesId("");
     setSelectedFamily("");
     setSelectedFunctionStatus("all");
@@ -141,26 +143,26 @@ export default function DownloadsFilterForm({
         <div className="grid gap-5 md:grid-cols-2">
           <div>
             <label
-              htmlFor="genus-filter"
+              htmlFor="class-filter"
               className="text-sm font-semibold text-[#2a2118]"
             >
-              Genus
+              Class
             </label>
             <div className="relative mt-2">
               <select
-                id="genus-filter"
-                name="genus"
-                value={selectedGenus}
+                id="class-filter"
+                name="class"
+                value={selectedClass}
                 onChange={(event) => {
-                  setSelectedGenus(event.target.value);
+                  setSelectedClass(event.target.value);
                   setSelectedSpeciesId("");
                 }}
                 className="w-full appearance-none rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 pr-11 text-sm text-[#2a2118] outline-none transition focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
               >
-                <option value="">All genera</option>
-                {options.genera.map((genus) => (
-                  <option key={genus} value={genus}>
-                    {genus}
+                <option value="">All classes</option>
+                {options.classes.map((taxonomicClass) => (
+                  <option key={taxonomicClass} value={taxonomicClass}>
+                    {taxonomicClass}
                   </option>
                 ))}
               </select>
@@ -184,8 +186,8 @@ export default function DownloadsFilterForm({
                 className="w-full appearance-none rounded-2xl border border-[#d8cbb7] bg-white px-4 py-3 pr-11 text-sm text-[#2a2118] outline-none transition focus:border-[#8c3f2b] focus:ring-2 focus:ring-[#8c3f2b]/20"
               >
                 <option value="">
-                  {selectedGenus
-                    ? `All ${selectedGenus} species`
+                  {selectedClass
+                    ? `All ${selectedClass} species`
                     : "All species"}
                 </option>
                 {filteredSpecies.map((species) => (

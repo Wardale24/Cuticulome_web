@@ -4,7 +4,7 @@ import Database from "better-sqlite3";
 
 export type DownloadFilters = {
   query: string;
-  genus: string;
+  taxonomicClass: string;
   speciesId: string;
   family: string;
   functionStatus: "all" | "defined" | "lacking";
@@ -13,13 +13,14 @@ export type DownloadFilters = {
 
 export type DownloadFilterSpeciesOption = {
   id: number;
+  taxonomicClass: string;
   genus: string;
   species: string;
   speciesCode: string;
 };
 
 export type DownloadFilterOptions = {
-  genera: string[];
+  classes: string[];
   species: DownloadFilterSpeciesOption[];
   families: string[];
 };
@@ -181,7 +182,7 @@ function makeSqlFilters(filters: DownloadFilters) {
   const parameters: Record<string, string | number> = {};
 
   const query = filters.query.trim();
-  const genus = filters.genus.trim();
+  const taxonomicClass = filters.taxonomicClass.trim();
   const speciesId = filters.speciesId.trim();
   const family = filters.family.trim();
   const functionQuery = filters.functionQuery.trim();
@@ -194,6 +195,7 @@ function makeSqlFilters(filters: DownloadFilters) {
         OR LOWER(COALESCE(p.protein_name, '')) LIKE @query
         OR LOWER(COALESCE(p.protein_accession, '')) LIKE @query
         OR LOWER(COALESCE(p.cds_accession, '')) LIKE @query
+        OR LOWER(COALESCE(s.class_name, '')) LIKE @query
         OR LOWER(COALESCE(s.genus, '')) LIKE @query
         OR LOWER(COALESCE(s.species, '')) LIKE @query
         OR LOWER(COALESCE(s.species_code, '')) LIKE @query
@@ -202,9 +204,9 @@ function makeSqlFilters(filters: DownloadFilters) {
     `);
   }
 
-  if (genus.length > 0) {
-    parameters.genus = genus;
-    whereClauses.push("s.genus = @genus");
+  if (taxonomicClass.length > 0) {
+    parameters.taxonomicClass = taxonomicClass;
+    whereClauses.push("s.class_name = @taxonomicClass");
   }
 
   if (speciesId.length > 0) {
@@ -263,7 +265,7 @@ function makeSqlFilters(filters: DownloadFilters) {
 export function getDefaultDownloadFilters(): DownloadFilters {
   return {
     query: "",
-    genus: "",
+    taxonomicClass: "",
     speciesId: "",
     family: "",
     functionStatus: "all",
@@ -274,18 +276,20 @@ export function getDefaultDownloadFilters(): DownloadFilters {
 export function getDownloadFilterOptions(): DownloadFilterOptions {
   const database = getDatabase();
 
-  const genera = database
+  const classes = database
     .prepare(
       `
-      SELECT DISTINCT genus
+      SELECT DISTINCT class_name AS taxonomicClass
       FROM species
-      WHERE genus IS NOT NULL
-        AND TRIM(genus) != ''
-      ORDER BY genus ASC
+      WHERE class_name IS NOT NULL
+        AND TRIM(class_name) != ''
+      ORDER BY class_name ASC
       `
     )
     .all()
-    .map((row) => normalizeText((row as { genus: string | null }).genus))
+    .map((row) =>
+      normalizeText((row as { taxonomicClass: string | null }).taxonomicClass)
+    )
     .filter(Boolean);
 
   const species = database
@@ -293,17 +297,19 @@ export function getDownloadFilterOptions(): DownloadFilterOptions {
       `
       SELECT
         id,
+        class_name AS taxonomicClass,
         genus,
         species,
         species_code AS speciesCode
       FROM species
-      ORDER BY genus ASC, species ASC
+      ORDER BY class_name ASC, genus ASC, species ASC
       `
     )
     .all()
     .map((row) => {
       const typedRow = row as {
         id: number;
+        taxonomicClass: string | null;
         genus: string | null;
         species: string | null;
         speciesCode: string | null;
@@ -313,6 +319,7 @@ export function getDownloadFilterOptions(): DownloadFilterOptions {
 
       return {
         id: typedRow.id,
+        taxonomicClass: normalizeText(typedRow.taxonomicClass),
         genus,
         species:
           makeSpeciesName(typedRow.genus, typedRow.species) ||
@@ -335,7 +342,7 @@ export function getDownloadFilterOptions(): DownloadFilterOptions {
     .filter(Boolean);
 
   return {
-    genera,
+    classes,
     species,
     families,
   };

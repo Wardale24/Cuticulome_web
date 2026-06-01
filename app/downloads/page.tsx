@@ -8,7 +8,7 @@ import {
 type DownloadsPageProps = {
   searchParams: Promise<{
     q?: string;
-    genus?: string;
+    "class"?: string;
     speciesId?: string;
     family?: string;
     functionStatus?: string;
@@ -24,7 +24,7 @@ function resolveDownloadFilters(
 
   return {
     query: searchParams.q ?? defaultFilters.query,
-    genus: searchParams.genus ?? defaultFilters.genus,
+    taxonomicClass: searchParams["class"] ?? defaultFilters.taxonomicClass,
     speciesId: searchParams.speciesId ?? defaultFilters.speciesId,
     family: searchParams.family ?? defaultFilters.family,
     functionStatus:

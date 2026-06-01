@@ -106,6 +106,12 @@ const characterizationReferencesBySpecies: Record<
       url: "https://doi.org/10.1002/arch.22102",
     },
   ],
+  "Gerris buenoi": [
+    {
+      label: "Armisén et al. 2018",
+      url: "https://doi.org/10.1186/s12864-018-5163-2",
+    },
+  ],
   "Locusta migratoria": [
     {
       label: "Zhao et al. 2017",
