@@ -1,4 +1,5 @@
 import { getProteinFasta } from "../../../../lib/cuticulome-db";
+import { getProteinCdsFasta } from "../../../../lib/cds-downloads";
 
 type ProteinDownloadRouteProps = {
   params: Promise<{
@@ -9,8 +10,15 @@ type ProteinDownloadRouteProps = {
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+function isCdsRequest(request: Request) {
+  const url = new URL(request.url);
+  const format = url.searchParams.get("format");
+
+  return format === "cds" || format === "cds-fasta";
+}
+
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: ProteinDownloadRouteProps
 ) {
   const resolvedParams = await params;
@@ -25,15 +33,23 @@ export async function GET(
     });
   }
 
-  const fasta = getProteinFasta(proteinId);
+  const downloadCds = isCdsRequest(request);
+  const fasta = downloadCds
+    ? getProteinCdsFasta(proteinId)
+    : getProteinFasta(proteinId);
 
   if (fasta.recordCount === 0) {
-    return new Response("No protein sequence found for this record.", {
-      status: 404,
-      headers: {
-        "Content-Type": "text/plain; charset=utf-8",
-      },
-    });
+    return new Response(
+      downloadCds
+        ? "No CDS sequence found for this record."
+        : "No protein sequence found for this record.",
+      {
+        status: 404,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+        },
+      }
+    );
   }
 
   return new Response(fasta.content, {

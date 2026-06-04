@@ -1,4 +1,5 @@
 import { getSpeciesFasta } from "../../../../lib/cuticulome-db";
+import { getSpeciesCdsFasta } from "../../../../lib/cds-downloads";
 
 type SpeciesDownloadRouteProps = {
   params: Promise<{
@@ -9,7 +10,17 @@ type SpeciesDownloadRouteProps = {
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-export async function GET(_request: Request, { params }: SpeciesDownloadRouteProps) {
+function isCdsRequest(request: Request) {
+  const url = new URL(request.url);
+  const format = url.searchParams.get("format");
+
+  return format === "cds" || format === "cds-fasta";
+}
+
+export async function GET(
+  request: Request,
+  { params }: SpeciesDownloadRouteProps
+) {
   const resolvedParams = await params;
   const speciesId = Number(resolvedParams.speciesId);
 
@@ -22,15 +33,23 @@ export async function GET(_request: Request, { params }: SpeciesDownloadRoutePro
     });
   }
 
-  const fasta = getSpeciesFasta(speciesId);
+  const downloadCds = isCdsRequest(request);
+  const fasta = downloadCds
+    ? getSpeciesCdsFasta(speciesId)
+    : getSpeciesFasta(speciesId);
 
   if (fasta.recordCount === 0) {
-    return new Response("No protein sequences found for this species.", {
-      status: 404,
-      headers: {
-        "Content-Type": "text/plain; charset=utf-8",
-      },
-    });
+    return new Response(
+      downloadCds
+        ? "No CDS sequences found for this species."
+        : "No protein sequences found for this species.",
+      {
+        status: 404,
+        headers: {
+          "Content-Type": "text/plain; charset=utf-8",
+        },
+      }
+    );
   }
 
   return new Response(fasta.content, {

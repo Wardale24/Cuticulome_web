@@ -9,7 +9,10 @@ type DownloadsBrowserProps = {
   filters: DownloadFilters;
 };
 
-function createDownloadHref(filters: DownloadFilters, format: "fasta" | "csv") {
+function createDownloadHref(
+  filters: DownloadFilters,
+  format: "protein-fasta" | "cds-fasta" | "csv"
+) {
   const params = new URLSearchParams();
 
   if (filters.query.trim().length > 0) {
@@ -52,11 +55,19 @@ function hasActiveFilters(filters: DownloadFilters) {
   );
 }
 
+const primaryButtonClass =
+  "inline-flex w-full whitespace-nowrap rounded-full bg-[#2a2118] px-4 py-3 text-center text-xs font-semibold text-white hover:bg-[#453729] sm:w-auto sm:min-w-[12rem] sm:justify-center";
+
+const secondaryButtonClass =
+  "inline-flex w-full whitespace-nowrap rounded-full border border-[#c8b89d] px-4 py-3 text-center text-xs font-semibold text-[#2a2118] hover:bg-[#efe5d4] sm:w-auto sm:min-w-[12rem] sm:justify-center";
+
 export default function DownloadsBrowser({ filters }: DownloadsBrowserProps) {
   const options = getDownloadFilterOptions();
   const summary = getFilteredDownloadSummary(filters);
   const activeFilters = hasActiveFilters(filters);
   const hasMatchingRecords = summary.matchingRecords > 0;
+  const hasProteinSequences = summary.proteinSequenceCount > 0;
+  const hasCdsSequences = summary.cdsSequenceCount > 0;
 
   return (
     <div className="space-y-8">
@@ -82,29 +93,43 @@ export default function DownloadsBrowser({ filters }: DownloadsBrowserProps) {
               {summary.speciesCount.toLocaleString()} species,{" "}
               {summary.familyCount.toLocaleString()} protein families, and{" "}
               {summary.functionDefinedCount.toLocaleString()} proteins with
-              defined functional annotations.
+              defined functional annotations. Protein FASTA is available for{" "}
+              {summary.proteinSequenceCount.toLocaleString()} records and CDS
+              FASTA is available for {summary.cdsSequenceCount.toLocaleString()}{" "}
+              records.
             </p>
           </div>
 
-          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-            {hasMatchingRecords ? (
-              <>
-                <a
-                  href={createDownloadHref(filters, "fasta")}
-                  className="inline-flex min-w-[10rem] items-center justify-center rounded-full bg-[#2a2118] px-6 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
-                >
-                  Download FASTA
-                </a>
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:flex-col lg:items-stretch xl:flex-row xl:flex-nowrap">
+            {hasProteinSequences && (
+              <a
+                href={createDownloadHref(filters, "protein-fasta")}
+                className={primaryButtonClass}
+              >
+                Download Protein FASTA
+              </a>
+            )}
 
-                <a
-                  href={createDownloadHref(filters, "csv")}
-                  className="inline-flex min-w-[10rem] items-center justify-center rounded-full border border-[#c8b89d] px-6 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
-                >
-                  Download CSV
-                </a>
-              </>
-            ) : (
-              <span className="inline-flex min-w-[10rem] items-center justify-center rounded-full border border-[#d8cbb7] px-6 py-3 text-center text-sm font-semibold text-[#9a8b78]">
+            {hasCdsSequences && (
+              <a
+                href={createDownloadHref(filters, "cds-fasta")}
+                className={secondaryButtonClass}
+              >
+                Download CDS FASTA
+              </a>
+            )}
+
+            {hasMatchingRecords && (
+              <a
+                href={createDownloadHref(filters, "csv")}
+                className={secondaryButtonClass}
+              >
+                Download CSV
+              </a>
+            )}
+
+            {!hasMatchingRecords && (
+              <span className="inline-flex w-full whitespace-nowrap rounded-full border border-[#d8cbb7] px-4 py-3 text-center text-xs font-semibold text-[#9a8b78] sm:w-auto sm:min-w-[12rem] sm:justify-center">
                 No records to download
               </span>
             )}
@@ -139,9 +164,9 @@ export default function DownloadsBrowser({ filters }: DownloadsBrowserProps) {
             Format choice
           </h3>
           <p className="mt-3 text-sm leading-7 text-[#6a5d4d]">
-            Download FASTA for downstream sequence analysis. CSV is available
-            for metadata inspection, filtering in spreadsheets, and dataset
-            documentation.
+            Download Protein FASTA or CDS FASTA for downstream sequence
+            analysis. CSV is available for metadata inspection, filtering in
+            spreadsheets, and dataset documentation.
           </p>
         </div>
       </section>

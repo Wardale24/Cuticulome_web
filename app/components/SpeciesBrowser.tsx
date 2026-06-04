@@ -1,9 +1,16 @@
 import Link from "next/link";
 import { getSpeciesData } from "../lib/cuticulome-db";
+import { getSpeciesCdsAvailabilityMap } from "../lib/cds-downloads";
 
 type SpeciesBrowserProps = {
   searchTerm: string;
 };
+
+const primaryButtonClass =
+  "inline-flex items-center justify-center rounded-full bg-[#2a2118] px-5 py-3 text-center text-xs font-semibold text-white hover:bg-[#453729] whitespace-nowrap";
+
+const secondaryButtonClass =
+  "inline-flex items-center justify-center rounded-full border border-[#c8b89d] px-5 py-3 text-center text-xs font-semibold text-[#2a2118] hover:bg-[#efe5d4] whitespace-nowrap";
 
 type CharacterizationReference = {
   label: string;
@@ -189,6 +196,7 @@ function CharacterizationReferenceButton({
 
 export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
   const { speciesSummaries } = getSpeciesData(searchTerm);
+  const cdsAvailabilityBySpeciesId = getSpeciesCdsAvailabilityMap();
 
   const sortedSpeciesSummaries = [...speciesSummaries].sort((a, b) => {
     if (b.proteinCount !== a.proteinCount) {
@@ -247,6 +255,8 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
           const characterizationReferences = getCharacterizationReferences(
             entry.species
           );
+          const hasCdsSequences =
+            (cdsAvailabilityBySpeciesId.get(entry.id) ?? 0) > 0;
 
           return (
             <article
@@ -325,7 +335,7 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
                     href={`/browse?species=${encodeURIComponent(
                       entry.species
                     )}`}
-                    className="rounded-full bg-[#2a2118] px-5 py-3 text-center text-sm font-semibold text-white hover:bg-[#453729]"
+                    className={primaryButtonClass}
                   >
                     View proteins
                   </Link>
@@ -335,11 +345,20 @@ export default function SpeciesBrowser({ searchTerm }: SpeciesBrowserProps) {
                   />
 
                   <Link
-                    href={`/api/downloads/species/${entry.id}`}
-                    className="rounded-full border border-[#c8b89d] px-5 py-3 text-center text-sm font-semibold text-[#2a2118] hover:bg-[#efe5d4]"
+                    href={`/api/downloads/species/${entry.id}?format=protein-fasta`}
+                    className={secondaryButtonClass}
                   >
-                    Download FASTA
+                    Download Protein FASTA
                   </Link>
+
+                  {hasCdsSequences && (
+                    <Link
+                      href={`/api/downloads/species/${entry.id}?format=cds-fasta`}
+                      className={secondaryButtonClass}
+                    >
+                      Download CDS FASTA
+                    </Link>
+                  )}
                 </div>
               </div>
             </article>

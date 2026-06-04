@@ -1,4 +1,5 @@
 import {
+  buildFilteredCdsFasta,
   buildFilteredCsv,
   buildFilteredFasta,
   DownloadFilters,
@@ -24,21 +25,48 @@ function getFiltersFromUrl(url: URL): DownloadFilters {
   };
 }
 
-function makeFileName(format: "fasta" | "csv") {
-  const date = new Date().toISOString().slice(0, 10);
-  const extension = format === "fasta" ? "fasta" : "csv";
+type DownloadFormat = "protein-fasta" | "cds-fasta" | "csv";
 
-  return `cuticulome_filtered_download_${date}.${extension}`;
+function getDownloadFormat(url: URL): DownloadFormat {
+  const format = url.searchParams.get("format");
+
+  if (format === "csv") {
+    return "csv";
+  }
+
+  if (format === "cds-fasta" || format === "cds") {
+    return "cds-fasta";
+  }
+
+  return "protein-fasta";
+}
+
+function makeFileName(format: DownloadFormat) {
+  const date = new Date().toISOString().slice(0, 10);
+
+  if (format === "csv") {
+    return `cuticulome_filtered_download_${date}.csv`;
+  }
+
+  if (format === "cds-fasta") {
+    return `cuticulome_filtered_cds_${date}.fasta`;
+  }
+
+  return `cuticulome_filtered_proteins_${date}.fasta`;
 }
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const format = url.searchParams.get("format") === "csv" ? "csv" : "fasta";
+  const format = getDownloadFormat(url);
   const filters = getFiltersFromUrl(url);
   const records = getFilteredDownloadRecords(filters);
 
   const content =
-    format === "csv" ? buildFilteredCsv(records) : buildFilteredFasta(records);
+    format === "csv"
+      ? buildFilteredCsv(records)
+      : format === "cds-fasta"
+      ? buildFilteredCdsFasta(records)
+      : buildFilteredFasta(records);
 
   const contentType =
     format === "csv" ? "text/csv; charset=utf-8" : "text/plain; charset=utf-8";

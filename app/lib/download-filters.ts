@@ -36,7 +36,9 @@ export type DownloadRecord = {
   speciesCode: string;
   family: string;
   sequence: string;
+  cdsSequence: string;
   length: number;
+  cdsLength: number;
   functionDefined: boolean;
   expressionTissue: string;
   expressionTiming: string;
@@ -57,6 +59,8 @@ export type FilteredDownloadSummary = {
   speciesCount: number;
   familyCount: number;
   functionDefinedCount: number;
+  proteinSequenceCount: number;
+  cdsSequenceCount: number;
 };
 
 type SQLiteDownloadRow = {
@@ -66,6 +70,7 @@ type SQLiteDownloadRow = {
   accession: string | null;
   cdsAccession: string | null;
   protFasta: string | null;
+  cdsFasta: string | null;
   proteinSequence: string | null;
   genus: string | null;
   speciesEpithet: string | null;
@@ -119,7 +124,7 @@ function makeSpeciesName(genus: string | null, speciesEpithet: string | null) {
     .join(" ");
 }
 
-function cleanProteinSequence(text: string | null | undefined) {
+function cleanSequence(text: string | null | undefined) {
   if (!text) {
     return "";
   }
@@ -137,13 +142,13 @@ function extractSequence(
   proteinSequence: string | null,
   protFasta: string | null
 ) {
-  const directSequence = cleanProteinSequence(proteinSequence);
+  const directSequence = cleanSequence(proteinSequence);
 
   if (directSequence.length > 0) {
     return directSequence;
   }
 
-  return cleanProteinSequence(protFasta);
+  return cleanSequence(protFasta);
 }
 
 function normalizeGroupedText(value: string | null | undefined) {
@@ -362,6 +367,7 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
         p.protein_accession AS accession,
         p.cds_accession AS cdsAccession,
         p.prot_fasta AS protFasta,
+        p.cds_fasta AS cdsFasta,
         p.protein_sequence AS proteinSequence,
         s.genus AS genus,
         s.species AS speciesEpithet,
@@ -395,6 +401,7 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
 
   return rows.map((row) => {
     const sequence = extractSequence(row.proteinSequence, row.protFasta);
+    const cdsSequence = cleanSequence(row.cdsFasta);
     const genus = normalizeText(row.genus);
     const species = makeSpeciesName(row.genus, row.speciesEpithet);
 
@@ -409,7 +416,9 @@ export function getFilteredDownloadRecords(filters: DownloadFilters) {
       speciesCode: normalizeText(row.speciesCode) || "Unknown",
       family: normalizeText(row.familyName) || "Unassigned",
       sequence,
+      cdsSequence,
       length: sequence.length,
+      cdsLength: cdsSequence.length,
       functionDefined: row.functionalEntryCount > 0,
       expressionTissue: normalizeGroupedText(row.expressionTissue),
       expressionTiming: normalizeGroupedText(row.expressionTiming),
@@ -440,6 +449,10 @@ export function getFilteredDownloadSummary(
     familyCount: new Set(records.map((record) => record.family)).size,
     functionDefinedCount: records.filter((record) => record.functionDefined)
       .length,
+    proteinSequenceCount: records.filter((record) => record.sequence.length > 0)
+      .length,
+    cdsSequenceCount: records.filter((record) => record.cdsSequence.length > 0)
+      .length,
   };
 }
 
@@ -465,14 +478,19 @@ function hasUsableAccession(accession: string | null | undefined) {
   );
 }
 
-function makeFilteredFastaHeader(record: DownloadRecord) {
+function makeFilteredFastaHeader(
+  record: DownloadRecord,
+  sequenceType: "protein" | "cds"
+) {
+  const accession =
+    sequenceType === "cds" ? record.cdsAccession : record.accession;
+
   const headerParts = [
     cleanFastaHeaderPart(record.standardizedName),
-    hasUsableAccession(record.accession)
-      ? cleanFastaHeaderPart(record.accession)
-      : "",
+    hasUsableAccession(accession) ? cleanFastaHeaderPart(accession) : "",
     cleanFastaHeaderPart(record.species),
     cleanFastaHeaderPart(record.family),
+    sequenceType === "cds" ? "CDS" : "protein",
   ].filter(Boolean);
 
   return `>${headerParts.join("|")}`;
@@ -482,9 +500,21 @@ export function buildFilteredFasta(records: DownloadRecord[]) {
   return records
     .filter((record) => record.sequence.length > 0)
     .map((record) => {
-      const header = makeFilteredFastaHeader(record);
+      const header = makeFilteredFastaHeader(record, "protein");
 
       return `${header}\n${wrapSequence(record.sequence)}`;
+    })
+    .join("\n\n")
+    .concat("\n");
+}
+
+export function buildFilteredCdsFasta(records: DownloadRecord[]) {
+  return records
+    .filter((record) => record.cdsSequence.length > 0)
+    .map((record) => {
+      const header = makeFilteredFastaHeader(record, "cds");
+
+      return `${header}\n${wrapSequence(record.cdsSequence)}`;
     })
     .join("\n\n")
     .concat("\n");
@@ -494,13 +524,14 @@ export function buildFilteredCsv(records: DownloadRecord[]) {
   const header = [
     "Standardized name",
     "Protein name",
-    "NCBI accession",
+    "Protein accession",
     "CDS accession",
     "Species",
     "Species code",
     "Genus",
     "Protein family",
-    "Sequence length",
+    "Protein sequence length",
+    "CDS sequence length",
     "Expression tissue",
     "Expression timing",
     "Expression details",
@@ -514,6 +545,7 @@ export function buildFilteredCsv(records: DownloadRecord[]) {
     "Reference year",
     "Reference DOI",
     "Protein sequence",
+    "CDS sequence",
   ];
 
   const rows = records.map((record) => [
@@ -526,6 +558,7 @@ export function buildFilteredCsv(records: DownloadRecord[]) {
     record.genus,
     record.family,
     record.length,
+    record.cdsLength,
     record.expressionTissue,
     record.expressionTiming,
     record.expressionDetails,
@@ -539,6 +572,7 @@ export function buildFilteredCsv(records: DownloadRecord[]) {
     record.referenceYear,
     record.referenceDoi,
     record.sequence,
+    record.cdsSequence,
   ]);
 
   return [header, ...rows]
